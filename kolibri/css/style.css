@@ -18,8 +18,6 @@
 
 html {
   font-size: 16px;
-  min-height: 100%;
-  height: auto;
 }
 
 a {
@@ -47,12 +45,14 @@ button:disabled, input:disabled, textarea:disabled {
 body {
   width: 100%;
   height: 100%;
-  min-height: 100vh;
   font-family: "Raleway", sans-serif;
   font-size: 14px;
   line-height: 16.8px;
   font-weight: 400;
   color: #1E2022;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .wrapper {
@@ -61,6 +61,7 @@ body {
   display: flex;
   width: 100%;
   min-height: 100vh;
+  overflow-y: hidden;
   height: 100%;
 }
 
@@ -639,7 +640,6 @@ body {
           box-shadow: 0px 4px 50px #DDE7F7;
   position: relative;
   z-index: 2;
-  min-height: 100%;
 }
 .aside .asideIn {
   padding: 11px 0;
@@ -873,7 +873,6 @@ body {
 
 .main {
   width: 100%;
-  min-height: 100%;
   background-color: #F1EFFF;
 }
 
@@ -885,7 +884,8 @@ body {
   border-bottom: 2px solid #C5D0E7;
 }
 .headerInfo .headerInfoTop {
-  padding: 20px 0;
+  padding: 20px 20px;
+  padding-left: 90px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -911,7 +911,7 @@ body {
 }
 .headerInfo .headerInfoBottom {
   padding: 5px 0;
-  padding-left: 77px;
+  padding-left: 90px;
 }
 .headerInfo .headerInfoBottom .pathList {
   display: -webkit-box;
