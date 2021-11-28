@@ -1,0 +1,270 @@
+.playersList {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .playersListEx {
+
+        .playersListExSearch {
+            width: 530px;
+            position: relative;
+
+            margin-bottom: 20px;
+
+            input {
+                padding-right: 35px;
+                color: $gray3;
+                // border: 1px solid #DBF0FF;
+            }
+            
+            button {
+                position: absolute;
+                top: 13px;
+                right: 15px;
+
+            }
+ 
+        }
+
+        .playersListExInfo {
+            width: 530px;
+            
+
+            .playersListExInfoMain {
+                padding: 20px 20px;
+                border-bottom: 1px solid #C5D0E7;
+
+                display: flex;
+                align-items: center;
+
+                .profilePic {
+                    height: 80px;
+                    width: 80px;
+                    background-image: url('../img/ph.svg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+
+                    margin-right: 10px;
+                }
+
+                .profileDescr {
+                    .profileDescrName {
+                        color: $gray3;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 19.2px;
+                        margin-bottom: 9px;
+                    }
+                    .profileDescrInfo {
+
+                        span {
+                            color: $dark2;
+                            font-size: 14px;
+                            line-height: 16.8px;
+                        }
+                        .age {
+                            margin-right: 13px;
+                        }
+                        .city {
+
+                        }
+                    }
+                }
+            }
+
+            .playersListExInfoDetails {
+                display: flex;
+                justify-content: space-between;
+
+                padding: 20px;
+
+                .infoList {
+                    display: flex;
+                    
+                    .infoListNames {
+                        margin-right: 25px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+
+                        .infoListName {
+                            margin-bottom: 13px;
+                            font-size: 14px;
+                            line-height: 16.8px;
+                            color: $dark2;
+
+                            &:last-child {
+                                margin: 0;
+                            }
+                        }
+                    }
+
+                    .infoListValues {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-end;
+                        .infoListValue {
+                            margin-bottom: 13px;
+                            font-size: 14px;
+                            line-height: 16.8px;
+                            color: $gray3;
+                            font-weight: 600;
+                        }
+                    }
+                }
+
+                .infoContact {
+                    .infoContactItem {
+                        display: block;
+                        margin-bottom: 15px;
+                        position: relative;
+
+                        font-size: 14px;
+                        line-height: 16.44px;
+                        color: $dark2;
+                        font-weight: 600;
+                        
+                        &:after {
+
+                        }
+
+                        &:last-child {
+                            margin: 0;
+                        }
+
+                        div {
+                            width: 30px;
+                            height: 30px;
+                            display: inline-flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 100%;
+                            margin-right: 6px;
+                        }
+                    }
+
+                    .infoContactSend {
+                        div {
+                            background-color: $green1;
+
+                            svg {
+                                path {
+                                    fill: $green;
+                                }
+                            }
+                        }
+                    }
+
+                    .infoContactMore {
+                        div {
+                            background-color: $yellow1;
+
+                            svg {
+                                path {
+                                    fill: $yellow;
+                                }
+                            }
+                        }
+                    }
+
+                    .infoContactBlock {
+                        div {
+                            background-color: $red1;
+
+                            svg {
+                                path {
+                                    fill: $red;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .playersListMain {
+        width: 750px;
+        // height: 70vh;
+        height: 797px;
+        overflow: hidden;
+
+        overflow-y: scroll;
+
+        scrollbar-color:red;     /* «цвет ползунка» «цвет полосы скроллбара» */
+        scrollbar-width: 9.38px; 
+
+        &::-webkit-scrollbar {
+            width: 9.38px;
+            background-color: transparent;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #fff;
+            border: 1px solid #A9B4CB;
+            border-radius: 15px;
+        }
+
+        .playerListMainTitle {
+            font-size: 18px;
+            line-height: 21.6px;
+            font-weight: 600;
+            margin-bottom: 14px;
+
+            padding: 30px 30px 0;
+        }
+
+        .playerListMainTable {
+            width: 100%;
+            border-spacing: 0;
+            .tableBody {
+
+                .tableRowHead {
+
+                    th {
+                        padding: 16px 16px 16px 30px;
+
+                        .tableTitleHead {
+                            text-align: left;
+                            font-size: 14px;
+                            line-height: 16.8px;
+                            color: $gray3;
+                        }
+                        
+                    }
+                }
+
+                .tableRow {
+                    td {
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 19.6px;
+                        color: $gray3;   
+                        padding: 16px 16px 16px 30px; 
+
+                        border-top: 2px solid #C5D0E7;
+
+                        .tableRowItem {
+                            display: flex;
+                            align-items: center;
+                            .profilePic {
+                                width: 30px;
+                                height: 30px;
+                                background-image: url('../img/ph.svg');
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                background-position: center;
+                                // display: flex;
+                                // justify-content: center;
+                                border-radius: 100%;
+                                margin-right: 10px;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}

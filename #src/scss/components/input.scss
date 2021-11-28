@@ -12,5 +12,5 @@
 
 .input.inputError {
     @include input;
-    border: 2px solid #F57243;
+    border: 2px solid $red3;
 }

@@ -12,6 +12,9 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+*:focus {
+  outline: none;
+}
 
 html {
   font-size: 16px;
@@ -30,6 +33,11 @@ li {
 
 input, button {
   background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
 }
 
 body {
@@ -52,6 +60,20 @@ body {
   height: 100%;
 }
 
+.container {
+  max-width: 1410px;
+  margin: 0 auto 0 0;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.block {
+  border-radius: 15px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 4px 50px #DDE7F7;
+          box-shadow: 0px 4px 50px #DDE7F7;
+}
+
 /* Компонетны */
 /* КНОПКИ */
 /* Сплошные кнопки */
@@ -60,10 +82,11 @@ body {
 /* Без иконки */
 .input {
   display: block;
-  background-color: transparent;
-  border: 1px solid #C5D0E7;
+  background-color: #fff;
+  border: 2px solid #C5D0E7;
   border-radius: 10px;
   padding: 14px 15px;
+  width: 100%;
   color: #52616B;
   font-size: 14px;
   line-height: 16.8px;
@@ -75,21 +98,22 @@ body {
 .input:hover {
   border-color: #7F84EC;
 }
-.input:active {
+.input:focus {
   border: 2px solid #7F84EC;
 }
 .input:disabled {
   color: #A9B4CB;
   background-color: #F0F5F9;
-  border: 1px solid #C5D0E7;
+  border: 2px solid #C5D0E7;
 }
 
 .input.inputSuccess {
   display: block;
-  background-color: transparent;
-  border: 1px solid #C5D0E7;
+  background-color: #fff;
+  border: 2px solid #C5D0E7;
   border-radius: 10px;
   padding: 14px 15px;
+  width: 100%;
   color: #52616B;
   font-size: 14px;
   line-height: 16.8px;
@@ -102,21 +126,22 @@ body {
 .input.inputSuccess:hover {
   border-color: #7F84EC;
 }
-.input.inputSuccess:active {
+.input.inputSuccess:focus {
   border: 2px solid #7F84EC;
 }
 .input.inputSuccess:disabled {
   color: #A9B4CB;
   background-color: #F0F5F9;
-  border: 1px solid #C5D0E7;
+  border: 2px solid #C5D0E7;
 }
 
 .input.inputError {
   display: block;
-  background-color: transparent;
-  border: 1px solid #C5D0E7;
+  background-color: #fff;
+  border: 2px solid #C5D0E7;
   border-radius: 10px;
   padding: 14px 15px;
+  width: 100%;
   color: #52616B;
   font-size: 14px;
   line-height: 16.8px;
@@ -129,13 +154,13 @@ body {
 .input.inputError:hover {
   border-color: #7F84EC;
 }
-.input.inputError:active {
+.input.inputError:focus {
   border: 2px solid #7F84EC;
 }
 .input.inputError:disabled {
   color: #A9B4CB;
   background-color: #F0F5F9;
-  border: 1px solid #C5D0E7;
+  border: 2px solid #C5D0E7;
 }
 
 /* Блоки */
@@ -312,13 +337,373 @@ body {
   background-color: #F0F3FF;
 }
 
+.header {
+  background: -o-linear-gradient(359.81deg, #4881B6 0%, #5C35CB 50.83%, #2D129A 100%);
+  background: linear-gradient(90.19deg, #4881B6 0%, #5C35CB 50.83%, #2D129A 100%);
+}
+.header .headerIn {
+  padding: 15px 0;
+  padding-left: 5%;
+  padding-right: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header .headerLogo img {
+  max-width: 187px;
+  max-height: 80px;
+}
+.header .headerNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 16px;
+}
+.header .headerNav li {
+  margin-right: 60px;
+}
+.header .headerNav li:last-child {
+  margin: 0;
+}
+.header .headerNav .headerNavItem {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19.2px;
+  color: #F0F3FF;
+}
+.header .headerAcc {
+  display: block;
+  font-size: 16px;
+  line-height: 18.78px;
+  color: #FFFBE5;
+  font-weight: 600;
+  padding-bottom: 16px;
+}
+.header .headerAcc svg {
+  margin-right: 11px;
+}
+.header .headerAcc svg path {
+  fill: #ffffff;
+}
+
 .content {
   width: 100%;
   height: 100%;
+  padding: 30px 20px 10px 90px;
+  max-width: 1410px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .main {
   width: 100%;
+  min-height: 100%;
   background-color: #F1EFFF;
-  height: 100%;
+}
+
+.headerInfo {
+  width: 100%;
+  background-color: #fff;
+}
+.headerInfo .container:nth-child(1) {
+  border-bottom: 2px solid #C5D0E7;
+}
+.headerInfo .headerInfoTop {
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.headerInfo .headerInfoTop .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.headerInfo .headerInfoTop .user .userImg {
+  margin-right: 15px;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background-image: url("../img/ph.svg");
+}
+.headerInfo .headerInfoBottom {
+  padding: 5px 0;
+  padding-left: 77px;
+}
+.headerInfo .headerInfoBottom .pathList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.headerInfo .headerInfoBottom .pathList .pathItem {
+  display: block;
+  position: relative;
+  padding-right: 15px;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 500;
+  color: #52616B;
+  margin-right: 8px;
+}
+.headerInfo .headerInfoBottom .pathList .pathItem:after {
+  position: absolute;
+  content: "";
+  background-image: url("../img/right-ar.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 5px;
+  height: 8.5px;
+  top: calc(50% - 4.25px);
+  right: 0;
+}
+.headerInfo .headerInfoBottom .pathList .pathItem.pathItemCurrent {
+  color: #2FC083;
+  padding-left: 0;
+  margin-right: 0;
+}
+.headerInfo .headerInfoBottom .pathList .pathItem.pathItemCurrent:after {
+  display: none;
+}
+
+.playersList {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.playersList .playersListEx .playersListExSearch {
+  width: 530px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.playersList .playersListEx .playersListExSearch input {
+  padding-right: 35px;
+  color: #627698;
+}
+.playersList .playersListEx .playersListExSearch button {
+  position: absolute;
+  top: 13px;
+  right: 15px;
+}
+.playersList .playersListEx .playersListExInfo {
+  width: 530px;
+}
+.playersList .playersListEx .playersListExInfo .playersListExInfoMain {
+  padding: 20px 20px;
+  border-bottom: 1px solid #C5D0E7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.playersList .playersListEx .playersListExInfo .playersListExInfoMain .profilePic {
+  height: 80px;
+  width: 80px;
+  background-image: url("../img/ph.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-right: 10px;
+}
+.playersList .playersListEx .playersListExInfo .playersListExInfoMain .profileDescr .profileDescrName {
+  color: #627698;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19.2px;
+  margin-bottom: 9px;
+}
+.playersList .playersListEx .playersListExInfo .playersListExInfoMain .profileDescr .profileDescrInfo span {
+  color: #52616B;
+  font-size: 14px;
+  line-height: 16.8px;
+}
+.playersList .playersListEx .playersListExInfo .playersListExInfoMain .profileDescr .profileDescrInfo .age {
+  margin-right: 13px;
+}
+.playersList .playersListEx .playersListExInfo .playersListExInfoDetails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+}
+.playersList .playersListEx .playersListExInfo .playersListExInfoDetails .infoList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.playersList .playersListEx .playersListExInfo .playersListExInfoDetails .infoList .infoListNames {
+  margin-right: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.playersList .playersListEx .playersListExInfo .playersListExInfoDetails .infoList .infoListNames .infoListName {
+  margin-bottom: 13px;
+  font-size: 14px;
+  line-height: 16.8px;
+  color: #52616B;
+}
+.playersList .playersListEx .playersListExInfo .playersListExInfoDetails .infoList .infoListNames .infoListName:last-child {
+  margin: 0;
+}
+.playersList .playersListEx .playersListExInfo .playersListExInfoDetails .infoList .infoListValues {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.playersList .playersListEx .playersListExInfo .playersListExInfoDetails .infoList .infoListValues .infoListValue {
+  margin-bottom: 13px;
+  font-size: 14px;
+  line-height: 16.8px;
+  color: #627698;
+  font-weight: 600;
+}
+.playersList .playersListEx .playersListExInfo .playersListExInfoDetails .infoContact .infoContactItem {
+  display: block;
+  margin-bottom: 15px;
+  position: relative;
+  font-size: 14px;
+  line-height: 16.44px;
+  color: #52616B;
+  font-weight: 600;
+}
+.playersList .playersListEx .playersListExInfo .playersListExInfoDetails .infoContact .infoContactItem:last-child {
+  margin: 0;
+}
+.playersList .playersListEx .playersListExInfo .playersListExInfoDetails .infoContact .infoContactItem div {
+  width: 30px;
+  height: 30px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 100%;
+  margin-right: 6px;
+}
+.playersList .playersListEx .playersListExInfo .playersListExInfoDetails .infoContact .infoContactSend div {
+  background-color: #D9FAFF;
+}
+.playersList .playersListEx .playersListExInfo .playersListExInfoDetails .infoContact .infoContactSend div svg path {
+  fill: #4AD39A;
+}
+.playersList .playersListEx .playersListExInfo .playersListExInfoDetails .infoContact .infoContactMore div {
+  background-color: #FFFBE5;
+}
+.playersList .playersListEx .playersListExInfo .playersListExInfoDetails .infoContact .infoContactMore div svg path {
+  fill: #FFD565;
+}
+.playersList .playersListEx .playersListExInfo .playersListExInfoDetails .infoContact .infoContactBlock div {
+  background-color: #FFF1E5;
+}
+.playersList .playersListEx .playersListExInfo .playersListExInfoDetails .infoContact .infoContactBlock div svg path {
+  fill: #E54D4D;
+}
+.playersList .playersListMain {
+  width: 750px;
+  height: 797px;
+  overflow: hidden;
+  overflow-y: scroll;
+  scrollbar-color: red;
+  /* «цвет ползунка» «цвет полосы скроллбара» */
+  scrollbar-width: 9.38px;
+}
+.playersList .playersListMain::-webkit-scrollbar {
+  width: 9.38px;
+  background-color: transparent;
+}
+.playersList .playersListMain::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border: 1px solid #A9B4CB;
+  border-radius: 15px;
+}
+.playersList .playersListMain .playerListMainTitle {
+  font-size: 18px;
+  line-height: 21.6px;
+  font-weight: 600;
+  margin-bottom: 14px;
+  padding: 30px 30px 0;
+}
+.playersList .playersListMain .playerListMainTable {
+  width: 100%;
+  border-spacing: 0;
+}
+.playersList .playersListMain .playerListMainTable .tableBody .tableRowHead th {
+  padding: 16px 16px 16px 30px;
+}
+.playersList .playersListMain .playerListMainTable .tableBody .tableRowHead th .tableTitleHead {
+  text-align: left;
+  font-size: 14px;
+  line-height: 16.8px;
+  color: #627698;
+}
+.playersList .playersListMain .playerListMainTable .tableBody .tableRow td {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19.6px;
+  color: #627698;
+  padding: 16px 16px 16px 30px;
+  border-top: 2px solid #C5D0E7;
+}
+.playersList .playersListMain .playerListMainTable .tableBody .tableRow td .tableRowItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.playersList .playersListMain .playerListMainTable .tableBody .tableRow td .tableRowItem .profilePic {
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/ph.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 100%;
+  margin-right: 10px;
 }

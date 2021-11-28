@@ -1,15 +1,34 @@
 // Главные цвета ============================================================
 
-$black:#1E2022;
-$gray:#52616B;
-$aqua:#DBF0FF;
-$l-gray:#F0F5F9;
+$dark:#1E2022;
+$dark2:#52616B;
+$secondary1:#DBF0FF;
+$secondary2:#F0F5F9;
 $orange:#F57243;
 $yellow:#FFD565;
 $green:#4AD39A;
 $blue:#1B3764;
 $red:#E54D4D;
-$purp:#5939D6;
+$violet:#5939D6;
+
+
+//Второстепенные цвета ============================================================
+$red1: #FFF1E5;
+$red2: #FAB294;
+$red3: #F57243;
+
+$yellow1: #FFFBE5;
+$yellow2: #D2D2A6;
+$yellow3: #AAA981;
+
+$green1: #D9FAFF;
+$green2: #7ACED0;
+$green3: #41A4A4;
+
+$gray1: #F0F3FF;
+$gray2: #A9B4CB;
+$gray3: #627698;
+
 
 
 // Миксины для анимаций (если станет много тогда надо перенести в отдельный файл animations.scss ) ============================================================
@@ -44,8 +63,8 @@ $purp:#5939D6;
     }
 
     &:disabled {
-        color: #A9B4CB;
-        background-color: #F0F3FF;
+        color: $gray2;
+        background-color: $gray1;
     }
 }
 
@@ -69,8 +88,8 @@ $purp:#5939D6;
     }
 
     &:disabled {
-        color: #A9B4CB;
-        background-color: #F0F3FF;
+        color: $gray2;
+        background-color: $gray1;
     }
 }
 
@@ -78,7 +97,7 @@ $purp:#5939D6;
     font-size: 16px;
     line-height: 18.78px;
     font-weight: 600;
-    color: #FFF1E5;
+    color: $red1;
     background-color: $orange;
     border-radius: 15px;
     padding: 15px 30px;
@@ -94,8 +113,8 @@ $purp:#5939D6;
     }
 
     &:disabled {
-        color: #A9B4CB;
-        background-color: #F0F3FF;
+        color: $gray2;
+        background-color: $gray1;
     }
 }
 
@@ -103,7 +122,7 @@ $purp:#5939D6;
     font-size: 16px;
     line-height: 18.78px;
     font-weight: 600;
-    color: #FFFBE5;
+    color: $yellow1;
     background-color: $yellow;
     border-radius: 15px;
     padding: 15px 30px;
@@ -119,8 +138,8 @@ $purp:#5939D6;
     }
 
     &:disabled {
-        color: #A9B4CB;
-        background-color: #F0F3FF;
+        color: $gray2;
+        background-color: $gray1;
     }
 }
 
@@ -130,7 +149,7 @@ $purp:#5939D6;
     line-height: 18.78px;
     font-weight: 600;
     color: #EBC233;
-    background-color: #FFFBE5;
+    background-color: $yellow1;
     border: 1px solid #EBC233;
     border-radius: 15px;
     padding: 15px 30px;
@@ -146,9 +165,9 @@ $purp:#5939D6;
     }
 
     &:disabled {
-        color: #A9B4CB;
-        background-color: #F0F3FF;
-        border-color: #A9B4CB;
+        color: $gray2;
+        background-color: $gray1;
+        border-color: $gray2;
     }
 }
 
@@ -173,9 +192,9 @@ $purp:#5939D6;
     }
 
     &:disabled {
-        color: #A9B4CB;
-        background-color: #F0F3FF;
-        border-color: #A9B4CB;
+        color: $gray2;
+        background-color: $gray1;
+        border-color: $gray2;
     }
 }
 
@@ -200,9 +219,9 @@ $purp:#5939D6;
     }
 
     &:disabled {
-        color: #A9B4CB;
-        background-color: #F0F3FF;
-        border-color: #A9B4CB;
+        color: $gray2;
+        background-color: $gray1;
+        border-color: $gray2;
     }
 }
 
@@ -227,9 +246,9 @@ $purp:#5939D6;
     }
 
     &:disabled {
-        color: #A9B4CB;
-        background-color: #F0F3FF;
-        border-color: #A9B4CB;
+        color: $gray2;
+        background-color: $gray1;
+        border-color: $gray2;
     }
 }
 
@@ -240,12 +259,13 @@ $purp:#5939D6;
 /* Без иконки */
 @mixin input {
     display: block;
-    background-color: transparent;
-    border: 1px solid #C5D0E7;
+    background-color: #fff;
+    border: 2px solid #C5D0E7;
     border-radius: 10px;
     padding: 14px 15px;
-
-    color: $gray;
+    width: 100%;
+    
+    color: $dark2;
     font-size: 14px;
     line-height: 16.8px;
     font-weight: 600;
@@ -255,14 +275,14 @@ $purp:#5939D6;
         border-color: #7F84EC;
     }
 
-    &:active {
+    &:focus {
         border: 2px solid #7F84EC;
     }
 
     &:disabled {
-        color: #A9B4CB;
-        background-color: #F0F5F9;
-        border: 1px solid #C5D0E7;
+        color: $gray2;
+        background-color: $secondary2;
+        border: 2px solid #C5D0E7;
     }
 }
 

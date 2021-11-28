@@ -2,5 +2,5 @@
 /*!***************************!*\
   !*** ./#src/js/script.js ***!
   \***************************/
-/*! no static exports found */function(e,t){document.addEventListener("DOMContentLoaded",()=>{var e,t,r;e=".asideNavItem",t="asideNavItemDropped",r=".asideNavItemList",document.querySelectorAll(e).forEach(e=>{e.addEventListener("click",n=>{let o=n.currentTarget.querySelector(r);e.classList.toggle(t),e.classList.contains(t)&&(o.style.height=o.scrollHeight+"px"),e.classList.contains(t)||(o.style.height="0px")})})})}});
+/*! no static exports found */function(e,t){document.addEventListener("DOMContentLoaded",()=>{var e,t,r,n;e=".asideNavItem",t="asideNavItemDropped",r=".asideNavItemList",n="asideNavItemHead",document.querySelectorAll(e).forEach(e=>{e.addEventListener("click",o=>{let i=o.currentTarget,c=i.querySelector(r);i.querySelector("."+n)&&e.classList.toggle(t),e.classList.contains(t)&&(c.style.height=c.scrollHeight+"px"),e.classList.contains(t)||(c.style.height="0px")})})})}});
 //# sourceMappingURL=bundle.js.map

@@ -65,6 +65,7 @@
                 height: 0;
                 overflow: hidden;
                 @include ease-02;
+
                 li {
 
                 }
@@ -104,25 +105,25 @@
 
         .asideNavItem.questions {
             .asideNavItemHead {
-                color: #F57243;
+                color: $orange;
 
                 svg {
                     path {
-                        fill: #F57243;
+                        fill: $orange;
                     }
                 }
 
                 &:hover {
-                    background-color: #FFF1E5;
+                    background-color: $red1;
                 }
             }
 
             .asideNavItemList {
                 .asideNavItemListLink {
-                    color: #FAB294;
+                    color: $red2;
 
                     &:hover {
-                        color: #F57243;
+                        color: $red3;
                     }
                 }
             }
@@ -139,7 +140,7 @@
                 }
 
                 &:hover {
-                    background-color: #FFFBE5;
+                    background-color: $yellow1;
                 }
             }
 
@@ -182,24 +183,24 @@
 
         .asideNavItem.settings {
             .asideNavItemHead {
-                color: #627698;
+                color: $gray3;
 
                 svg {
                     path {
-                        fill: #627698;
+                        fill: $gray3;
                     }
                 }
 
                 &:hover {
-                    background-color: #F0F3FF;
+                    background-color: $gray1;
                 }
             }
             .asideNavItemList {
                 .asideNavItemListLink {
-                    color: #A9B4CB;
+                    color: $gray2;
                     
                     &:hover {
-                        color: #627698;
+                        color: $gray3;
                     }
                 }
             }
@@ -212,12 +213,12 @@
         }
         .questions.asideNavItemDropped {
             .asideNavItemHead {
-                background-color: #FFF1E5;
+                background-color: $red1;
             }
         }
         .players.asideNavItemDropped {
             .asideNavItemHead {
-                background-color: #FFFBE5;
+                background-color: $yellow1;
             }
         }
         .teams.asideNavItemDropped {
@@ -227,7 +228,7 @@
         }
         .settings.asideNavItemDropped {
             .asideNavItemHead {
-                background-color: #F0F3FF;
+                background-color: $gray1;
             }
         }
     }
