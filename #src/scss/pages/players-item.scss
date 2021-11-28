@@ -1,0 +1,144 @@
+.playersItem {
+    display: flex;
+    width: 100%;
+
+
+    .playersItemProfile {
+        width: 310px;
+        height: 452px;
+        margin-right: 10px;
+        .playersItemProfileMain {
+            
+            border-bottom: 1px solid #A9B4CB;
+            padding: 30px 0 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    
+            .profileImg {
+                width: 150px;
+                height: 150px;
+                background-image: url('../img/ph.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover; 
+    
+                margin-bottom: 14px;
+            }
+    
+            .profileName {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 21.6px;
+                margin-bottom: 9px;
+            }
+    
+            .profileID {
+                font-size: 14px;
+                line-height: 16.8px;
+    
+                span {
+                    font-size: 18px;
+                    line-height: 20px; 
+                }
+            }
+        }
+
+        .playersItemProfileInfo {
+            padding: 20px 30px;
+            border-bottom: 1px solid #A9B4CB;
+            display: flex;
+            justify-content: space-between;
+
+            .playersItemProfileInfoNames {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                .playersItemProfileInfoName {
+                    font-size: 14px;
+                    line-height: 16.8px;
+                    color: $dark2;
+                    margin-bottom: 15px;
+
+                    &:last-child {
+                        margin: 0;
+                    }
+                }
+            }
+            .playersItemProfileInfoValues {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+
+                .playersItemProfileInfoValue {
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 16.8px;
+                    color: $dark2;
+                    margin-bottom: 15px;
+
+                    &:last-child {
+                        margin: 0;
+                    }
+
+                }
+            }
+        }
+
+        .playersItemProfileBtns {
+
+            padding: 15px 30px;
+
+            .playersItemProfileBtn {
+                margin-bottom: 11px;
+            }
+
+        }
+    }
+
+    .playersItemMore {
+        margin-left: 10px;
+        width: 640px;
+        max-height: 317px;
+        display: flex;
+        padding: 30px;
+
+        .sex {
+            margin-bottom: 40px;
+        }
+        .contacts {
+            margin-bottom: 40px;
+        }
+        .playersItemMoreNames {
+            margin-right: 30px;
+
+            .playersItemMoreName {
+                font-size: 16px;
+                line-height: 19.2px;
+                margin-bottom: 16px;
+
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+
+        .playersItemMoreValues {
+
+            .playersItemMoreValue {
+                font-weight: 600;
+                font-size: 18px;
+                line-height:20px;
+                color: $gray3;
+
+                margin-bottom: 15px;
+
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+    }
+    
+}

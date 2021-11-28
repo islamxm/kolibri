@@ -1,0 +1,47 @@
+.playersBlacklist {
+    // display: flex;
+    width: 100%;
+
+    .playersBlacklistTop {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 22px;
+
+        .playersBlacklistTopInput {
+            width: 530px;   
+        }
+
+        .playersBlacklistTopBtns {
+            .btn-tr-orange {
+                margin-right: 15px;
+
+
+                svg {
+                    margin-right: 9px;
+                    path {
+                        fill: $orange;
+                    }
+                    ellipse {
+                        fill: $orange;
+                    }
+                }
+            }
+            .btn-tr-green {
+
+                svg {
+                    margin-right: 9px;
+                    rect {
+                        fill: $green;
+                    }
+
+                }
+            }
+        }
+    }
+
+    .playersBlacklistMain {
+        height: 265px;
+    }
+
+}

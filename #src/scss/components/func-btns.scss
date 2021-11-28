@@ -1,0 +1,54 @@
+.funcBtn {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 16.44px;
+    color: $dark2;
+    font-weight: 600;
+
+    div {
+        width: 30px;
+        height: 30px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+        margin-right: 6px;
+    }
+}
+
+.funcBtn.btnSendPush {
+    div {
+        background-color: $green1;
+
+        svg {
+            path {
+                fill: $green;
+            }
+        }
+    }
+}
+
+.funcBtn.btnBlock {
+    div {
+        background-color: $red1;
+
+        svg {
+            path {
+                fill: $red;
+            }
+        }
+    }
+}
+
+.funcBtn.btnExInfo {
+    div {
+        background-color: $yellow1;
+
+        svg {
+            path {
+                fill: $yellow;
+            }
+        }
+    }
+}

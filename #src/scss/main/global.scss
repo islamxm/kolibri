@@ -32,6 +32,13 @@ input, button {
     line-height: inherit;
 }
 
+button, input, textarea {
+
+    &:disabled {
+        pointer-events: none;
+    }
+}
+
 
 body {
     width: 100%;

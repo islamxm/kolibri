@@ -40,6 +40,10 @@ input, button {
   line-height: inherit;
 }
 
+button:disabled, input:disabled, textarea:disabled {
+  pointer-events: none;
+}
+
 body {
   width: 100%;
   height: 100%;
@@ -161,6 +165,470 @@ body {
   color: #A9B4CB;
   background-color: #F0F5F9;
   border: 2px solid #C5D0E7;
+}
+
+.btn-blue {
+  font-size: 16px;
+  line-height: 18.78px;
+  font-weight: 600;
+  color: #F0F1FF;
+  background-color: #7F84EC;
+  border-radius: 15px;
+  padding: 15px 30px;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.btn-blue svg path {
+  fill: #F0F1FF;
+}
+.btn-blue svg rect {
+  fill: #F0F1FF;
+}
+.btn-blue svg ellipse {
+  fill: #F0F1FF;
+}
+.btn-blue:hover {
+  border-radius: 20px;
+}
+.btn-blue:active {
+  border-radius: 20px;
+  -webkit-transform: scale(0.97);
+      -ms-transform: scale(0.97);
+          transform: scale(0.97);
+}
+.btn-blue:disabled {
+  color: #A9B4CB;
+  background-color: #F0F3FF;
+}
+.btn-blue:disabled svg path {
+  fill: #A9B4CB !important;
+}
+.btn-blue:disabled svg rect {
+  fill: #A9B4CB !important;
+}
+.btn-blue:disabled svg ellipse {
+  fill: #A9B4CB !important;
+}
+
+.btn-green {
+  font-size: 16px;
+  line-height: 18.78px;
+  font-weight: 600;
+  color: #E5FFEF;
+  background-color: #4AD39A;
+  border-radius: 15px;
+  padding: 15px 30px;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.btn-green svg path {
+  fill: #F0F1FF;
+}
+.btn-green svg rect {
+  fill: #F0F1FF;
+}
+.btn-green svg ellipse {
+  fill: #F0F1FF;
+}
+.btn-green:hover {
+  border-radius: 20px;
+}
+.btn-green:active {
+  border-radius: 20px;
+  -webkit-transform: scale(0.97);
+      -ms-transform: scale(0.97);
+          transform: scale(0.97);
+}
+.btn-green:disabled {
+  color: #A9B4CB;
+  background-color: #F0F3FF;
+}
+.btn-green:disabled svg path {
+  fill: #A9B4CB !important;
+}
+.btn-green:disabled svg rect {
+  fill: #A9B4CB !important;
+}
+.btn-green:disabled svg ellipse {
+  fill: #A9B4CB !important;
+}
+
+.btn-orange {
+  font-size: 16px;
+  line-height: 18.78px;
+  font-weight: 600;
+  color: #FFF1E5;
+  background-color: #F57243;
+  border-radius: 15px;
+  padding: 15px 30px;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.btn-orange svg path {
+  fill: #F0F1FF;
+}
+.btn-orange svg rect {
+  fill: #F0F1FF;
+}
+.btn-orange svg ellipse {
+  fill: #F0F1FF;
+}
+.btn-orange:hover {
+  border-radius: 20px;
+}
+.btn-orange:active {
+  border-radius: 20px;
+  -webkit-transform: scale(0.97);
+      -ms-transform: scale(0.97);
+          transform: scale(0.97);
+}
+.btn-orange:disabled {
+  color: #A9B4CB;
+  background-color: #F0F3FF;
+}
+.btn-orange:disabled svg path {
+  fill: #A9B4CB !important;
+}
+.btn-orange:disabled svg rect {
+  fill: #A9B4CB !important;
+}
+.btn-orange:disabled svg ellipse {
+  fill: #A9B4CB !important;
+}
+
+.btn-yellow {
+  font-size: 16px;
+  line-height: 18.78px;
+  font-weight: 600;
+  color: #FFFBE5;
+  background-color: #FFD565;
+  border-radius: 15px;
+  padding: 15px 30px;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.btn-yellow svg path {
+  fill: #F0F1FF;
+}
+.btn-yellow svg rect {
+  fill: #F0F1FF;
+}
+.btn-yellow svg ellipse {
+  fill: #F0F1FF;
+}
+.btn-yellow:hover {
+  border-radius: 20px;
+}
+.btn-yellow:active {
+  border-radius: 20px;
+  -webkit-transform: scale(0.97);
+      -ms-transform: scale(0.97);
+          transform: scale(0.97);
+}
+.btn-yellow:disabled {
+  color: #A9B4CB;
+  background-color: #F0F3FF;
+}
+.btn-yellow:disabled svg path {
+  fill: #A9B4CB !important;
+}
+.btn-yellow:disabled svg rect {
+  fill: #A9B4CB !important;
+}
+.btn-yellow:disabled svg ellipse {
+  fill: #A9B4CB !important;
+}
+
+.funcBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  line-height: 16.44px;
+  color: #52616B;
+  font-weight: 600;
+}
+.funcBtn div {
+  width: 30px;
+  height: 30px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 100%;
+  margin-right: 6px;
+}
+
+.funcBtn.btnSendPush div {
+  background-color: #D9FAFF;
+}
+.funcBtn.btnSendPush div svg path {
+  fill: #4AD39A;
+}
+
+.funcBtn.btnBlock div {
+  background-color: #FFF1E5;
+}
+.funcBtn.btnBlock div svg path {
+  fill: #E54D4D;
+}
+
+.funcBtn.btnExInfo div {
+  background-color: #FFFBE5;
+}
+.funcBtn.btnExInfo div svg path {
+  fill: #FFD565;
+}
+
+.btn-tr-yellow {
+  font-size: 16px;
+  line-height: 18.78px;
+  font-weight: 600;
+  color: #EBC233;
+  background-color: #FFFBE5;
+  border: 1px solid #EBC233;
+  border-radius: 15px;
+  padding: 15px 30px;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.btn-tr-yellow svg path {
+  fill: #EBC233;
+}
+.btn-tr-yellow svg rect {
+  fill: #EBC233;
+}
+.btn-tr-yellow svg ellipse {
+  fill: #EBC233;
+}
+.btn-tr-yellow:hover {
+  border-radius: 20px;
+}
+.btn-tr-yellow:active {
+  border-radius: 20px;
+  -webkit-transform: scale(0.97);
+      -ms-transform: scale(0.97);
+          transform: scale(0.97);
+}
+.btn-tr-yellow:disabled {
+  color: #A9B4CB;
+  background-color: #F0F3FF;
+  border-color: #A9B4CB;
+}
+.btn-tr-yellow:disabled svg path {
+  fill: #A9B4CB !important;
+}
+.btn-tr-yellow:disabled svg rect {
+  fill: #A9B4CB !important;
+}
+.btn-tr-yellow:disabled svg ellipse {
+  fill: #A9B4CB !important;
+}
+
+.btn-tr-green {
+  font-size: 16px;
+  line-height: 18.78px;
+  font-weight: 600;
+  color: #2FC083;
+  background-color: #E5FFEF;
+  border: 1px solid #5FDAA6;
+  border-radius: 15px;
+  padding: 15px 30px;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.btn-tr-green svg path {
+  fill: #2FC083;
+}
+.btn-tr-green svg rect {
+  fill: #2FC083;
+}
+.btn-tr-green svg ellipse {
+  fill: #2FC083;
+}
+.btn-tr-green:hover {
+  border-radius: 20px;
+}
+.btn-tr-green:active {
+  border-radius: 20px;
+  -webkit-transform: scale(0.97);
+      -ms-transform: scale(0.97);
+          transform: scale(0.97);
+}
+.btn-tr-green:disabled {
+  color: #A9B4CB;
+  background-color: #F0F3FF;
+  border-color: #A9B4CB;
+}
+.btn-tr-green:disabled svg path {
+  fill: #A9B4CB !important;
+}
+.btn-tr-green:disabled svg rect {
+  fill: #A9B4CB !important;
+}
+.btn-tr-green:disabled svg ellipse {
+  fill: #A9B4CB !important;
+}
+
+.btn-tr-blue {
+  font-size: 16px;
+  line-height: 18.78px;
+  font-weight: 600;
+  color: #2F35C0;
+  background-color: #F0F1FF;
+  border: 1px solid #7F84EC;
+  border-radius: 15px;
+  padding: 15px 30px;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.btn-tr-blue svg path {
+  fill: #2F35C0;
+}
+.btn-tr-blue svg rect {
+  fill: #2F35C0;
+}
+.btn-tr-blue svg ellipse {
+  fill: #2F35C0;
+}
+.btn-tr-blue:hover {
+  border-radius: 20px;
+}
+.btn-tr-blue:active {
+  border-radius: 20px;
+  -webkit-transform: scale(0.97);
+      -ms-transform: scale(0.97);
+          transform: scale(0.97);
+}
+.btn-tr-blue:disabled {
+  color: #A9B4CB;
+  background-color: #F0F3FF;
+  border-color: #A9B4CB;
+}
+.btn-tr-blue:disabled svg path {
+  fill: #A9B4CB !important;
+}
+.btn-tr-blue:disabled svg rect {
+  fill: #A9B4CB !important;
+}
+.btn-tr-blue:disabled svg ellipse {
+  fill: #A9B4CB !important;
+}
+
+.btn-tr-orange {
+  font-size: 16px;
+  line-height: 18.78px;
+  font-weight: 600;
+  color: #F57243;
+  background-color: #FFF1E5;
+  border: 1px solid #FAB294;
+  border-radius: 15px;
+  padding: 15px 30px;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.btn-tr-orange svg path {
+  fill: #F57243;
+}
+.btn-tr-orange svg rect {
+  fill: #F57243;
+}
+.btn-tr-orange svg ellipse {
+  fill: #F57243;
+}
+.btn-tr-orange:hover {
+  border-radius: 20px;
+}
+.btn-tr-orange:active {
+  border-radius: 20px;
+  -webkit-transform: scale(0.97);
+      -ms-transform: scale(0.97);
+          transform: scale(0.97);
+}
+.btn-tr-orange:disabled {
+  color: #A9B4CB;
+  background-color: #F0F3FF;
+  border-color: #A9B4CB;
+}
+.btn-tr-orange:disabled svg path {
+  fill: #A9B4CB !important;
+}
+.btn-tr-orange:disabled svg rect {
+  fill: #A9B4CB !important;
+}
+.btn-tr-orange:disabled svg ellipse {
+  fill: #A9B4CB !important;
+}
+
+.table {
+  border-spacing: 0;
+  width: 100%;
+}
+.table .tableHeadaRow {
+  cursor: pointer;
+}
+.table .tableHeadaRow .tableHeadRowItem {
+  border-bottom: 2px solid #C5D0E7;
+  text-align: left;
+  padding: 16px 30px;
+  font-size: 14px;
+  line-height: 16.8px;
+  color: #627698;
+}
+.table .tableRow {
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.table .tableRow .tableRowItem {
+  padding: 16px 30px;
+  border-bottom: 1px solid #C5D0E7;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19.6px;
+}
+.table .tableRow:last-child .tableRowItem {
+  border: none;
+}
+.table .tableRow:hover {
+  background-color: #F8F8F8;
+}
+.table .tableRow.tableRowItemActive {
+  background-color: #E5FFEF;
+}
+.table .tableRow.tableRowItemActive .tableRowItem {
+  border-bottom: 2px solid #4AD39A;
+}
+
+.scroll-custom {
+  overflow: hidden;
+  overflow-y: scroll !important;
+}
+.scroll-custom::-webkit-scrollbar {
+  width: 9.38px;
+  background-color: transparent;
+}
+.scroll-custom::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border: 1px solid #A9B4CB;
+  border-radius: 15px;
 }
 
 /* Блоки */
@@ -481,6 +949,7 @@ body {
   display: none;
 }
 
+/* Страницы */
 .playersList {
   width: 100%;
   display: -webkit-box;
@@ -599,67 +1068,15 @@ body {
   font-weight: 600;
 }
 .playersList .playersListEx .playersListExInfo .playersListExInfoDetails .infoContact .infoContactItem {
-  display: block;
   margin-bottom: 15px;
-  position: relative;
-  font-size: 14px;
-  line-height: 16.44px;
-  color: #52616B;
-  font-weight: 600;
 }
 .playersList .playersListEx .playersListExInfo .playersListExInfoDetails .infoContact .infoContactItem:last-child {
   margin: 0;
-}
-.playersList .playersListEx .playersListExInfo .playersListExInfoDetails .infoContact .infoContactItem div {
-  width: 30px;
-  height: 30px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border-radius: 100%;
-  margin-right: 6px;
-}
-.playersList .playersListEx .playersListExInfo .playersListExInfoDetails .infoContact .infoContactSend div {
-  background-color: #D9FAFF;
-}
-.playersList .playersListEx .playersListExInfo .playersListExInfoDetails .infoContact .infoContactSend div svg path {
-  fill: #4AD39A;
-}
-.playersList .playersListEx .playersListExInfo .playersListExInfoDetails .infoContact .infoContactMore div {
-  background-color: #FFFBE5;
-}
-.playersList .playersListEx .playersListExInfo .playersListExInfoDetails .infoContact .infoContactMore div svg path {
-  fill: #FFD565;
-}
-.playersList .playersListEx .playersListExInfo .playersListExInfoDetails .infoContact .infoContactBlock div {
-  background-color: #FFF1E5;
-}
-.playersList .playersListEx .playersListExInfo .playersListExInfoDetails .infoContact .infoContactBlock div svg path {
-  fill: #E54D4D;
 }
 .playersList .playersListMain {
   width: 750px;
   height: 797px;
   overflow: hidden;
-  overflow-y: scroll;
-  scrollbar-color: red;
-  /* «цвет ползунка» «цвет полосы скроллбара» */
-  scrollbar-width: 9.38px;
-}
-.playersList .playersListMain::-webkit-scrollbar {
-  width: 9.38px;
-  background-color: transparent;
-}
-.playersList .playersListMain::-webkit-scrollbar-thumb {
-  background-color: #fff;
-  border: 1px solid #A9B4CB;
-  border-radius: 15px;
 }
 .playersList .playersListMain .playerListMainTitle {
   font-size: 18px;
@@ -673,6 +1090,7 @@ body {
   border-spacing: 0;
 }
 .playersList .playersListMain .playerListMainTable .tableBody .tableRowHead th {
+  cursor: pointer;
   padding: 16px 16px 16px 30px;
 }
 .playersList .playersListMain .playerListMainTable .tableBody .tableRowHead th .tableTitleHead {
@@ -681,7 +1099,14 @@ body {
   line-height: 16.8px;
   color: #627698;
 }
+.playersList .playersListMain .playerListMainTable .tableBody .tableRow {
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  background-color: #fff;
+}
 .playersList .playersListMain .playerListMainTable .tableBody .tableRow td {
+  cursor: pointer;
   font-weight: 500;
   font-size: 14px;
   line-height: 19.6px;
@@ -706,4 +1131,195 @@ body {
   background-position: center;
   border-radius: 100%;
   margin-right: 10px;
+}
+.playersList .playersListMain .playerListMainTable .tableBody .tableRow:hover {
+  background-color: #F8F8F8;
+}
+.playersList .playersListMain .playerListMainTable .tableBody .tableRow.tableRowActive {
+  background-color: #E5FFEF;
+}
+.playersList .playersListMain .playerListMainTable .tableBody .tableRow.tableRowActive td {
+  border-bottom: 2px solid #4AD39A;
+}
+
+.playersItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+.playersItem .playersItemProfile {
+  width: 310px;
+  height: 452px;
+  margin-right: 10px;
+}
+.playersItem .playersItemProfile .playersItemProfileMain {
+  border-bottom: 1px solid #A9B4CB;
+  padding: 30px 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.playersItem .playersItemProfile .playersItemProfileMain .profileImg {
+  width: 150px;
+  height: 150px;
+  background-image: url("../img/ph.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 14px;
+}
+.playersItem .playersItemProfile .playersItemProfileMain .profileName {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21.6px;
+  margin-bottom: 9px;
+}
+.playersItem .playersItemProfile .playersItemProfileMain .profileID {
+  font-size: 14px;
+  line-height: 16.8px;
+}
+.playersItem .playersItemProfile .playersItemProfileMain .profileID span {
+  font-size: 18px;
+  line-height: 20px;
+}
+.playersItem .playersItemProfile .playersItemProfileInfo {
+  padding: 20px 30px;
+  border-bottom: 1px solid #A9B4CB;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.playersItem .playersItemProfile .playersItemProfileInfo .playersItemProfileInfoNames {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.playersItem .playersItemProfile .playersItemProfileInfo .playersItemProfileInfoNames .playersItemProfileInfoName {
+  font-size: 14px;
+  line-height: 16.8px;
+  color: #52616B;
+  margin-bottom: 15px;
+}
+.playersItem .playersItemProfile .playersItemProfileInfo .playersItemProfileInfoNames .playersItemProfileInfoName:last-child {
+  margin: 0;
+}
+.playersItem .playersItemProfile .playersItemProfileInfo .playersItemProfileInfoValues {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.playersItem .playersItemProfile .playersItemProfileInfo .playersItemProfileInfoValues .playersItemProfileInfoValue {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16.8px;
+  color: #52616B;
+  margin-bottom: 15px;
+}
+.playersItem .playersItemProfile .playersItemProfileInfo .playersItemProfileInfoValues .playersItemProfileInfoValue:last-child {
+  margin: 0;
+}
+.playersItem .playersItemProfile .playersItemProfileBtns {
+  padding: 15px 30px;
+}
+.playersItem .playersItemProfile .playersItemProfileBtns .playersItemProfileBtn {
+  margin-bottom: 11px;
+}
+.playersItem .playersItemMore {
+  margin-left: 10px;
+  width: 640px;
+  max-height: 317px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px;
+}
+.playersItem .playersItemMore .sex {
+  margin-bottom: 40px;
+}
+.playersItem .playersItemMore .contacts {
+  margin-bottom: 40px;
+}
+.playersItem .playersItemMore .playersItemMoreNames {
+  margin-right: 30px;
+}
+.playersItem .playersItemMore .playersItemMoreNames .playersItemMoreName {
+  font-size: 16px;
+  line-height: 19.2px;
+  margin-bottom: 16px;
+}
+.playersItem .playersItemMore .playersItemMoreNames .playersItemMoreName:last-child {
+  margin: 0;
+}
+.playersItem .playersItemMore .playersItemMoreValues .playersItemMoreValue {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+  color: #627698;
+  margin-bottom: 15px;
+}
+.playersItem .playersItemMore .playersItemMoreValues .playersItemMoreValue:last-child {
+  margin: 0;
+}
+
+.playersBlacklist {
+  width: 100%;
+}
+.playersBlacklist .playersBlacklistTop {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 22px;
+}
+.playersBlacklist .playersBlacklistTop .playersBlacklistTopInput {
+  width: 530px;
+}
+.playersBlacklist .playersBlacklistTop .playersBlacklistTopBtns .btn-tr-orange {
+  margin-right: 15px;
+}
+.playersBlacklist .playersBlacklistTop .playersBlacklistTopBtns .btn-tr-orange svg {
+  margin-right: 9px;
+}
+.playersBlacklist .playersBlacklistTop .playersBlacklistTopBtns .btn-tr-orange svg path {
+  fill: #F57243;
+}
+.playersBlacklist .playersBlacklistTop .playersBlacklistTopBtns .btn-tr-orange svg ellipse {
+  fill: #F57243;
+}
+.playersBlacklist .playersBlacklistTop .playersBlacklistTopBtns .btn-tr-green svg {
+  margin-right: 9px;
+}
+.playersBlacklist .playersBlacklistTop .playersBlacklistTopBtns .btn-tr-green svg rect {
+  fill: #4AD39A;
+}
+.playersBlacklist .playersBlacklistMain {
+  height: 265px;
 }

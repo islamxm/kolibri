@@ -1,0 +1,53 @@
+.table {
+    border-spacing: 0;
+    width: 100%;    
+
+
+    .tableHeadaRow {
+        cursor: pointer;    
+        .tableHeadRowItem {
+            border-bottom: 2px solid #C5D0E7;
+            text-align: left;
+            padding: 16px 30px;
+
+            font-size: 14px;
+            line-height: 16.8px;
+            color: $gray3;
+        }
+    }
+
+    .tableRow {
+        @include ease-02;
+        cursor: pointer;
+
+        .tableRowItem {
+            padding: 16px 30px;
+            border-bottom: 1px solid #C5D0E7;
+
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 19.6px;
+        }
+
+        
+
+        &:last-child {
+            .tableRowItem {
+                border: none;
+            }
+
+        }
+
+        &:hover {
+            background-color: #F8F8F8;
+        }
+    }
+
+    .tableRow.tableRowItemActive {
+        background-color: #E5FFEF;
+        
+        .tableRowItem {
+            border-bottom: 2px solid $green;
+        }
+    }
+}

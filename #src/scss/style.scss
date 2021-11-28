@@ -10,6 +10,10 @@
 /* Компонетны */
 @import './components/input.scss';
 @import './components/button.scss';
+@import './components/func-btns.scss';
+@import './components/button-tr.scss';
+@import './components/table.scss';
+@import './components/scroll-custom.scss';
 
 
 /* Блоки */
@@ -18,5 +22,10 @@
 @import './blocks/content.scss';
 @import './blocks/main.scss';
 @import './blocks/header-info.scss';
-@import './blocks/players-list.scss';
+
+
+/* Страницы */
+@import './pages/players-list.scss';
+@import './pages/players-item.scss';
+@import './pages/players-blacklist.scss';
 

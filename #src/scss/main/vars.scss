@@ -53,6 +53,18 @@ $gray3: #627698;
     padding: 15px 30px;
     @include ease-02;
 
+    svg {
+        path {
+            fill: #F0F1FF;
+        }
+        rect {
+            fill: #F0F1FF;
+        }
+        ellipse {
+            fill: #F0F1FF;
+        }
+    }
+
     &:hover {
         border-radius: 20px;
     }
@@ -65,6 +77,21 @@ $gray3: #627698;
     &:disabled {
         color: $gray2;
         background-color: $gray1;
+
+        svg {
+            path {
+                fill: $gray2 !important;
+            }
+    
+            rect {
+                fill: $gray2 !important;
+            }
+    
+            ellipse {
+                fill: $gray2 !important;
+            }
+        }
+        
     }
 }
 
@@ -78,6 +105,18 @@ $gray3: #627698;
     padding: 15px 30px;
     @include ease-02;
 
+    svg {
+        path {
+            fill: #F0F1FF;
+        }
+        rect {
+            fill: #F0F1FF;
+        }
+        ellipse {
+            fill: #F0F1FF;
+        }
+    }
+
     &:hover {
         border-radius: 20px;
     }
@@ -90,6 +129,20 @@ $gray3: #627698;
     &:disabled {
         color: $gray2;
         background-color: $gray1;
+
+        svg {
+            path {
+                fill: $gray2 !important;
+            }
+    
+            rect {
+                fill: $gray2 !important;
+            }
+    
+            ellipse {
+                fill: $gray2 !important;
+            }
+        }
     }
 }
 
@@ -103,6 +156,18 @@ $gray3: #627698;
     padding: 15px 30px;
     @include ease-02;
 
+    svg {
+        path {
+            fill: #F0F1FF;
+        }
+        rect {
+            fill: #F0F1FF;
+        }
+        ellipse {
+            fill: #F0F1FF;
+        }
+    }
+
     &:hover {
         border-radius: 20px;
     }
@@ -115,6 +180,20 @@ $gray3: #627698;
     &:disabled {
         color: $gray2;
         background-color: $gray1;
+
+        svg {
+            path {
+                fill: $gray2 !important;
+            }
+    
+            rect {
+                fill: $gray2 !important;
+            }
+    
+            ellipse {
+                fill: $gray2 !important;
+            }
+        }
     }
 }
 
@@ -128,6 +207,18 @@ $gray3: #627698;
     padding: 15px 30px;
     @include ease-02;
 
+    svg {
+        path {
+            fill: #F0F1FF;
+        }
+        rect {
+            fill: #F0F1FF;
+        }
+        ellipse {
+            fill: #F0F1FF;
+        }
+    }
+
     &:hover {
         border-radius: 20px;
     }
@@ -140,6 +231,20 @@ $gray3: #627698;
     &:disabled {
         color: $gray2;
         background-color: $gray1;
+
+        svg {
+            path {
+                fill: $gray2 !important;
+            }
+    
+            rect {
+                fill: $gray2 !important;
+            }
+    
+            ellipse {
+                fill: $gray2 !important;
+            }
+        }
     }
 }
 
@@ -155,6 +260,19 @@ $gray3: #627698;
     padding: 15px 30px;
     @include ease-02;
 
+    svg {
+        path {
+            fill: #EBC233;
+        }
+
+        rect {
+            fill: #EBC233;
+        }
+
+        ellipse {
+            fill: #EBC233;
+        }
+    }
     &:hover {
         border-radius: 20px;
     }
@@ -168,6 +286,20 @@ $gray3: #627698;
         color: $gray2;
         background-color: $gray1;
         border-color: $gray2;
+
+        svg {
+            path {
+                fill: $gray2 !important;
+            }
+    
+            rect {
+                fill: $gray2 !important;
+            }
+    
+            ellipse {
+                fill: $gray2 !important;
+            }
+        }
     }
 }
 
@@ -182,6 +314,20 @@ $gray3: #627698;
     padding: 15px 30px;
     @include ease-02;
 
+    svg {
+        path {
+            fill: #2FC083;
+        }
+
+        rect {
+            fill: #2FC083;
+        }
+
+        ellipse {
+            fill: #2FC083;
+        }
+    }
+
     &:hover {
         border-radius: 20px;
     }
@@ -195,7 +341,22 @@ $gray3: #627698;
         color: $gray2;
         background-color: $gray1;
         border-color: $gray2;
+
+        svg {
+            path {
+                fill: $gray2 !important;
+            }
+    
+            rect {
+                fill: $gray2 !important;
+            }
+    
+            ellipse {
+                fill: $gray2 !important;
+            }
+        }
     }
+    
 }
 
 @mixin btn-tr-blue {
@@ -209,6 +370,20 @@ $gray3: #627698;
     padding: 15px 30px;
     @include ease-02;
 
+    svg {
+        path {
+            fill: #2F35C0;
+        }
+
+        rect {
+            fill: #2F35C0;
+        }
+
+        ellipse {
+            fill: #2F35C0;
+        }
+    }
+
     &:hover {
         border-radius: 20px;
     }
@@ -222,6 +397,20 @@ $gray3: #627698;
         color: $gray2;
         background-color: $gray1;
         border-color: $gray2;
+
+        svg {
+            path {
+                fill: $gray2 !important;
+            }
+    
+            rect {
+                fill: $gray2 !important;
+            }
+    
+            ellipse {
+                fill: $gray2 !important;
+            }
+        }
     }
 }
 
@@ -236,6 +425,20 @@ $gray3: #627698;
     padding: 15px 30px;
     @include ease-02;
 
+    svg {
+        path {
+            fill: $orange;
+        }
+
+        rect {
+            fill: $orange;
+        }
+
+        ellipse {
+            fill: $orange;
+        }
+    }
+
     &:hover {
         border-radius: 20px;
     }
@@ -249,6 +452,20 @@ $gray3: #627698;
         color: $gray2;
         background-color: $gray1;
         border-color: $gray2;
+
+        svg {
+            path {
+                fill: $gray2 !important;
+            }
+    
+            rect {
+                fill: $gray2 !important;
+            }
+    
+            ellipse {
+                fill: $gray2 !important;
+            }
+        }
     }
 }
 

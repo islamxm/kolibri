@@ -117,67 +117,10 @@
 
                 .infoContact {
                     .infoContactItem {
-                        display: block;
                         margin-bottom: 15px;
-                        position: relative;
-
-                        font-size: 14px;
-                        line-height: 16.44px;
-                        color: $dark2;
-                        font-weight: 600;
-                        
-                        &:after {
-
-                        }
 
                         &:last-child {
                             margin: 0;
-                        }
-
-                        div {
-                            width: 30px;
-                            height: 30px;
-                            display: inline-flex;
-                            align-items: center;
-                            justify-content: center;
-                            border-radius: 100%;
-                            margin-right: 6px;
-                        }
-                    }
-
-                    .infoContactSend {
-                        div {
-                            background-color: $green1;
-
-                            svg {
-                                path {
-                                    fill: $green;
-                                }
-                            }
-                        }
-                    }
-
-                    .infoContactMore {
-                        div {
-                            background-color: $yellow1;
-
-                            svg {
-                                path {
-                                    fill: $yellow;
-                                }
-                            }
-                        }
-                    }
-
-                    .infoContactBlock {
-                        div {
-                            background-color: $red1;
-
-                            svg {
-                                path {
-                                    fill: $red;
-                                }
-                            }
                         }
                     }
                 }
@@ -191,20 +134,7 @@
         height: 797px;
         overflow: hidden;
 
-        overflow-y: scroll;
-
-        scrollbar-color:red;     /* «цвет ползунка» «цвет полосы скроллбара» */
-        scrollbar-width: 9.38px; 
-
-        &::-webkit-scrollbar {
-            width: 9.38px;
-            background-color: transparent;
-        }
-        &::-webkit-scrollbar-thumb {
-            background-color: #fff;
-            border: 1px solid #A9B4CB;
-            border-radius: 15px;
-        }
+        
 
         .playerListMainTitle {
             font-size: 18px;
@@ -223,6 +153,7 @@
                 .tableRowHead {
 
                     th {
+                        cursor: pointer;
                         padding: 16px 16px 16px 30px;
 
                         .tableTitleHead {
@@ -236,7 +167,10 @@
                 }
 
                 .tableRow {
+                    @include ease-02;
+                    background-color: #fff;
                     td {
+                        cursor: pointer;
                         font-weight: 500;
                         font-size: 14px;
                         line-height: 19.6px;
@@ -261,7 +195,20 @@
                                 margin-right: 10px;
                             }
                         }
+
                         
+                    }
+
+                    &:hover {
+                        background-color: #F8F8F8;
+                    }
+                }
+
+                .tableRow.tableRowActive {
+                    background-color: #E5FFEF;
+                    
+                    td {
+                        border-bottom: 2px solid #4AD39A;
                     }
                 }
             }
