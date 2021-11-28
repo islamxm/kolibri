@@ -1,0 +1,234 @@
+.aside {
+    max-width: 220px;
+    background-color: #fff;
+    box-shadow: 0px 4px 50px #DDE7F7;
+    position: relative;
+    z-index: 2;
+    min-height: 100%;
+
+    .asideIn {
+        padding: 11px 0;
+    }
+
+    .asideLogo {
+        display: block;
+        margin-bottom: 57px;
+        padding: 0 40px;
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .asideNav {
+        padding: 0 15px;
+        .asideNavItem.asideNavItemDropped {
+            .asideNavItemHead {
+                .navArrow {
+                    transform: rotate(90deg);
+                }
+            }
+        }
+        .asideNavItem {
+            margin-bottom: 15px;
+
+            .asideNavItemHead {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 16.44px;
+                padding: 16px 20px;
+                border-radius: 15px;
+                cursor: pointer;
+
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                @include ease-02;
+
+                .mainPart {
+                    display: flex;
+                    align-items: center;
+
+                    svg {
+                        margin-right: 12px;
+                    }
+                }
+
+                .navArrow {
+                    @include ease-02;
+                }
+            }
+
+            .asideNavItemList {
+                height: 0;
+                overflow: hidden;
+                @include ease-02;
+                li {
+
+                }
+                .asideNavItemListLink {
+                    font-weight: 600;
+                    display: block;
+                    padding: 12px 20px;
+                    @include ease-02;
+                }
+            }
+        }
+
+        .asideNavItem.tournament {
+            .asideNavItemHead {
+                color: #2FC083;
+
+                svg {
+                    path {
+                        fill: #2FC083;
+                    }
+                }
+
+                &:hover {
+                    background-color: #E5FFEF;
+                }
+            }
+            .asideNavItemList {
+                .asideNavItemListLink {
+                    color: #5FDAA6;
+                    
+                    &:hover {
+                        color: #2FC083;
+                    }
+                }
+            }
+        }
+
+        .asideNavItem.questions {
+            .asideNavItemHead {
+                color: #F57243;
+
+                svg {
+                    path {
+                        fill: #F57243;
+                    }
+                }
+
+                &:hover {
+                    background-color: #FFF1E5;
+                }
+            }
+
+            .asideNavItemList {
+                .asideNavItemListLink {
+                    color: #FAB294;
+
+                    &:hover {
+                        color: #F57243;
+                    }
+                }
+            }
+        }
+
+        .asideNavItem.players {
+            .asideNavItemHead {
+                color: #D6AA0E;
+
+                svg {
+                    path {
+                        fill: #D6AA0E;
+                    }
+                }
+
+                &:hover {
+                    background-color: #FFFBE5;
+                }
+            }
+
+            .asideNavItemList {
+                .asideNavItemListLink {
+                    color: #EBC233;
+
+                    &:hover {
+
+                    }
+                }
+            }
+        }
+
+        .asideNavItem.teams {
+            .asideNavItemHead {
+                color: #2F35C0;
+
+                svg {
+                    path {
+                        fill: #2F35C0;
+                    }
+                }
+
+                &:hover {
+                    background-color: #E5E6FF;
+                }
+            }
+
+            .asideNavItemList {
+                .asideNavItemListLink {
+                    color: #2F35C0;
+                    
+                    &:hover {
+                        color: #2F35C0;
+                    }
+                }
+            }
+        }
+
+        .asideNavItem.settings {
+            .asideNavItemHead {
+                color: #627698;
+
+                svg {
+                    path {
+                        fill: #627698;
+                    }
+                }
+
+                &:hover {
+                    background-color: #F0F3FF;
+                }
+            }
+            .asideNavItemList {
+                .asideNavItemListLink {
+                    color: #A9B4CB;
+                    
+                    &:hover {
+                        color: #627698;
+                    }
+                }
+            }
+        }
+
+        .tournament.asideNavItemDropped {
+            .asideNavItemHead {
+                background-color: #E5FFEF;
+            }
+        }
+        .questions.asideNavItemDropped {
+            .asideNavItemHead {
+                background-color: #FFF1E5;
+            }
+        }
+        .players.asideNavItemDropped {
+            .asideNavItemHead {
+                background-color: #FFFBE5;
+            }
+        }
+        .teams.asideNavItemDropped {
+            .asideNavItemHead {
+                background-color: #E5E6FF;
+            }
+        }
+        .settings.asideNavItemDropped {
+            .asideNavItemHead {
+                background-color: #F0F3FF;
+            }
+        }
+    }
+}

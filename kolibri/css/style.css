@@ -1,0 +1,324 @@
+@charset "UTF-8";
+/* Библиотеки */
+/* Главные стили */
+/* КНОПКИ */
+/* Сплошные кнопки */
+/* Полупрозрачные кнопки */
+/* ИНПУТЫ */
+/* Без иконки */
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  min-height: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+input, button {
+  background-color: transparent;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  line-height: 16.8px;
+  font-weight: 400;
+  color: #1E2022;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+}
+
+/* Компонетны */
+/* КНОПКИ */
+/* Сплошные кнопки */
+/* Полупрозрачные кнопки */
+/* ИНПУТЫ */
+/* Без иконки */
+.input {
+  display: block;
+  background-color: transparent;
+  border: 1px solid #C5D0E7;
+  border-radius: 10px;
+  padding: 14px 15px;
+  color: #52616B;
+  font-size: 14px;
+  line-height: 16.8px;
+  font-weight: 600;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.input:hover {
+  border-color: #7F84EC;
+}
+.input:active {
+  border: 2px solid #7F84EC;
+}
+.input:disabled {
+  color: #A9B4CB;
+  background-color: #F0F5F9;
+  border: 1px solid #C5D0E7;
+}
+
+.input.inputSuccess {
+  display: block;
+  background-color: transparent;
+  border: 1px solid #C5D0E7;
+  border-radius: 10px;
+  padding: 14px 15px;
+  color: #52616B;
+  font-size: 14px;
+  line-height: 16.8px;
+  font-weight: 600;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  border: 2px solid #5FDAA6;
+}
+.input.inputSuccess:hover {
+  border-color: #7F84EC;
+}
+.input.inputSuccess:active {
+  border: 2px solid #7F84EC;
+}
+.input.inputSuccess:disabled {
+  color: #A9B4CB;
+  background-color: #F0F5F9;
+  border: 1px solid #C5D0E7;
+}
+
+.input.inputError {
+  display: block;
+  background-color: transparent;
+  border: 1px solid #C5D0E7;
+  border-radius: 10px;
+  padding: 14px 15px;
+  color: #52616B;
+  font-size: 14px;
+  line-height: 16.8px;
+  font-weight: 600;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  border: 2px solid #F57243;
+}
+.input.inputError:hover {
+  border-color: #7F84EC;
+}
+.input.inputError:active {
+  border: 2px solid #7F84EC;
+}
+.input.inputError:disabled {
+  color: #A9B4CB;
+  background-color: #F0F5F9;
+  border: 1px solid #C5D0E7;
+}
+
+/* Блоки */
+.aside {
+  max-width: 220px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 4px 50px #DDE7F7;
+          box-shadow: 0px 4px 50px #DDE7F7;
+  position: relative;
+  z-index: 2;
+  min-height: 100%;
+}
+.aside .asideIn {
+  padding: 11px 0;
+}
+.aside .asideLogo {
+  display: block;
+  margin-bottom: 57px;
+  padding: 0 40px;
+}
+.aside .asideLogo img {
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.aside .asideNav {
+  padding: 0 15px;
+}
+.aside .asideNav .asideNavItem.asideNavItemDropped .asideNavItemHead .navArrow {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.aside .asideNav .asideNavItem {
+  margin-bottom: 15px;
+}
+.aside .asideNav .asideNavItem .asideNavItemHead {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16.44px;
+  padding: 16px 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.aside .asideNav .asideNavItem .asideNavItemHead .mainPart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.aside .asideNav .asideNavItem .asideNavItemHead .mainPart svg {
+  margin-right: 12px;
+}
+.aside .asideNav .asideNavItem .asideNavItemHead .navArrow {
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.aside .asideNav .asideNavItem .asideNavItemList {
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.aside .asideNav .asideNavItem .asideNavItemList .asideNavItemListLink {
+  font-weight: 600;
+  display: block;
+  padding: 12px 20px;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.aside .asideNav .asideNavItem.tournament .asideNavItemHead {
+  color: #2FC083;
+}
+.aside .asideNav .asideNavItem.tournament .asideNavItemHead svg path {
+  fill: #2FC083;
+}
+.aside .asideNav .asideNavItem.tournament .asideNavItemHead:hover {
+  background-color: #E5FFEF;
+}
+.aside .asideNav .asideNavItem.tournament .asideNavItemList .asideNavItemListLink {
+  color: #5FDAA6;
+}
+.aside .asideNav .asideNavItem.tournament .asideNavItemList .asideNavItemListLink:hover {
+  color: #2FC083;
+}
+.aside .asideNav .asideNavItem.questions .asideNavItemHead {
+  color: #F57243;
+}
+.aside .asideNav .asideNavItem.questions .asideNavItemHead svg path {
+  fill: #F57243;
+}
+.aside .asideNav .asideNavItem.questions .asideNavItemHead:hover {
+  background-color: #FFF1E5;
+}
+.aside .asideNav .asideNavItem.questions .asideNavItemList .asideNavItemListLink {
+  color: #FAB294;
+}
+.aside .asideNav .asideNavItem.questions .asideNavItemList .asideNavItemListLink:hover {
+  color: #F57243;
+}
+.aside .asideNav .asideNavItem.players .asideNavItemHead {
+  color: #D6AA0E;
+}
+.aside .asideNav .asideNavItem.players .asideNavItemHead svg path {
+  fill: #D6AA0E;
+}
+.aside .asideNav .asideNavItem.players .asideNavItemHead:hover {
+  background-color: #FFFBE5;
+}
+.aside .asideNav .asideNavItem.players .asideNavItemList .asideNavItemListLink {
+  color: #EBC233;
+}
+.aside .asideNav .asideNavItem.teams .asideNavItemHead {
+  color: #2F35C0;
+}
+.aside .asideNav .asideNavItem.teams .asideNavItemHead svg path {
+  fill: #2F35C0;
+}
+.aside .asideNav .asideNavItem.teams .asideNavItemHead:hover {
+  background-color: #E5E6FF;
+}
+.aside .asideNav .asideNavItem.teams .asideNavItemList .asideNavItemListLink {
+  color: #2F35C0;
+}
+.aside .asideNav .asideNavItem.teams .asideNavItemList .asideNavItemListLink:hover {
+  color: #2F35C0;
+}
+.aside .asideNav .asideNavItem.settings .asideNavItemHead {
+  color: #627698;
+}
+.aside .asideNav .asideNavItem.settings .asideNavItemHead svg path {
+  fill: #627698;
+}
+.aside .asideNav .asideNavItem.settings .asideNavItemHead:hover {
+  background-color: #F0F3FF;
+}
+.aside .asideNav .asideNavItem.settings .asideNavItemList .asideNavItemListLink {
+  color: #A9B4CB;
+}
+.aside .asideNav .asideNavItem.settings .asideNavItemList .asideNavItemListLink:hover {
+  color: #627698;
+}
+.aside .asideNav .tournament.asideNavItemDropped .asideNavItemHead {
+  background-color: #E5FFEF;
+}
+.aside .asideNav .questions.asideNavItemDropped .asideNavItemHead {
+  background-color: #FFF1E5;
+}
+.aside .asideNav .players.asideNavItemDropped .asideNavItemHead {
+  background-color: #FFFBE5;
+}
+.aside .asideNav .teams.asideNavItemDropped .asideNavItemHead {
+  background-color: #E5E6FF;
+}
+.aside .asideNav .settings.asideNavItemDropped .asideNavItemHead {
+  background-color: #F0F3FF;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  width: 100%;
+  background-color: #F1EFFF;
+  height: 100%;
+}

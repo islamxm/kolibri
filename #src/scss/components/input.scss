@@ -1,0 +1,16 @@
+@import '../main/vars.scss';
+
+
+.input {
+    @include input;
+}
+
+.input.inputSuccess {
+    @include input;
+    border: 2px solid #5FDAA6;
+}
+
+.input.inputError {
+    @include input;
+    border: 2px solid #F57243;
+}

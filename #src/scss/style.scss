@@ -1,0 +1,20 @@
+/* Библиотеки */
+
+
+/* Главные стили */
+@import './main/vars.scss';
+@import './main/global.scss';
+@import './main/animations.scss';
+
+
+/* Компонетны */
+@import './components/input.scss';
+@import './components/button.scss';
+
+
+/* Блоки */
+@import './blocks/aside.scss';
+@import './blocks/header.scss';
+@import './blocks/content.scss';
+@import './blocks/main.scss';
+

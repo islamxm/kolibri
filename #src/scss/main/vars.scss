@@ -1,0 +1,271 @@
+// Главные цвета ============================================================
+
+$black:#1E2022;
+$gray:#52616B;
+$aqua:#DBF0FF;
+$l-gray:#F0F5F9;
+$orange:#F57243;
+$yellow:#FFD565;
+$green:#4AD39A;
+$blue:#1B3764;
+$red:#E54D4D;
+$purp:#5939D6;
+
+
+// Миксины для анимаций (если станет много тогда надо перенести в отдельный файл animations.scss ) ============================================================
+@mixin ease-02 {
+    transition: all .2s ease;
+}
+
+
+
+// Миксины для глобальных классов (компонентов) ============================================================
+
+/* КНОПКИ */
+
+/* Сплошные кнопки */
+@mixin btn-blue {
+    font-size: 16px;
+    line-height: 18.78px;
+    font-weight: 600;
+    color: #F0F1FF;
+    background-color: #7F84EC;
+    border-radius: 15px;
+    padding: 15px 30px;
+    @include ease-02;
+
+    &:hover {
+        border-radius: 20px;
+    }
+
+    &:active {
+        border-radius: 20px;
+        transform: scale(0.97);
+    }
+
+    &:disabled {
+        color: #A9B4CB;
+        background-color: #F0F3FF;
+    }
+}
+
+@mixin btn-green {
+    font-size: 16px;
+    line-height: 18.78px;
+    font-weight: 600;
+    color: #E5FFEF;
+    background-color: $green;
+    border-radius: 15px;
+    padding: 15px 30px;
+    @include ease-02;
+
+    &:hover {
+        border-radius: 20px;
+    }
+
+    &:active {
+        border-radius: 20px;
+        transform: scale(0.97);
+    }
+
+    &:disabled {
+        color: #A9B4CB;
+        background-color: #F0F3FF;
+    }
+}
+
+@mixin btn-orange {
+    font-size: 16px;
+    line-height: 18.78px;
+    font-weight: 600;
+    color: #FFF1E5;
+    background-color: $orange;
+    border-radius: 15px;
+    padding: 15px 30px;
+    @include ease-02;
+
+    &:hover {
+        border-radius: 20px;
+    }
+
+    &:active {
+        border-radius: 20px;
+        transform: scale(0.97);
+    }
+
+    &:disabled {
+        color: #A9B4CB;
+        background-color: #F0F3FF;
+    }
+}
+
+@mixin btn-yellow {
+    font-size: 16px;
+    line-height: 18.78px;
+    font-weight: 600;
+    color: #FFFBE5;
+    background-color: $yellow;
+    border-radius: 15px;
+    padding: 15px 30px;
+    @include ease-02;
+
+    &:hover {
+        border-radius: 20px;
+    }
+
+    &:active {
+        border-radius: 20px;
+        transform: scale(0.97);
+    }
+
+    &:disabled {
+        color: #A9B4CB;
+        background-color: #F0F3FF;
+    }
+}
+
+/* Полупрозрачные кнопки */
+@mixin btn-tr-yellow {
+    font-size: 16px;
+    line-height: 18.78px;
+    font-weight: 600;
+    color: #EBC233;
+    background-color: #FFFBE5;
+    border: 1px solid #EBC233;
+    border-radius: 15px;
+    padding: 15px 30px;
+    @include ease-02;
+
+    &:hover {
+        border-radius: 20px;
+    }
+
+    &:active {
+        border-radius: 20px;
+        transform: scale(0.97);
+    }
+
+    &:disabled {
+        color: #A9B4CB;
+        background-color: #F0F3FF;
+        border-color: #A9B4CB;
+    }
+}
+
+@mixin btn-tr-green {
+    font-size: 16px;
+    line-height: 18.78px;
+    font-weight: 600;
+    color: #2FC083;
+    background-color: #E5FFEF;
+    border: 1px solid #5FDAA6;
+    border-radius: 15px;
+    padding: 15px 30px;
+    @include ease-02;
+
+    &:hover {
+        border-radius: 20px;
+    }
+
+    &:active {
+        border-radius: 20px;
+        transform: scale(0.97);
+    }
+
+    &:disabled {
+        color: #A9B4CB;
+        background-color: #F0F3FF;
+        border-color: #A9B4CB;
+    }
+}
+
+@mixin btn-tr-blue {
+    font-size: 16px;
+    line-height: 18.78px;
+    font-weight: 600;
+    color: #2F35C0;
+    background-color: #F0F1FF;
+    border: 1px solid #7F84EC;
+    border-radius: 15px;
+    padding: 15px 30px;
+    @include ease-02;
+
+    &:hover {
+        border-radius: 20px;
+    }
+
+    &:active {
+        border-radius: 20px;
+        transform: scale(0.97);
+    }
+
+    &:disabled {
+        color: #A9B4CB;
+        background-color: #F0F3FF;
+        border-color: #A9B4CB;
+    }
+}
+
+@mixin btn-tr-orange {
+    font-size: 16px;
+    line-height: 18.78px;
+    font-weight: 600;
+    color: $orange;
+    background-color: #FFF1E5;
+    border: 1px solid #FAB294;
+    border-radius: 15px;
+    padding: 15px 30px;
+    @include ease-02;
+
+    &:hover {
+        border-radius: 20px;
+    }
+
+    &:active {
+        border-radius: 20px;
+        transform: scale(0.97);
+    }
+
+    &:disabled {
+        color: #A9B4CB;
+        background-color: #F0F3FF;
+        border-color: #A9B4CB;
+    }
+}
+
+
+
+/* ИНПУТЫ */
+
+/* Без иконки */
+@mixin input {
+    display: block;
+    background-color: transparent;
+    border: 1px solid #C5D0E7;
+    border-radius: 10px;
+    padding: 14px 15px;
+
+    color: $gray;
+    font-size: 14px;
+    line-height: 16.8px;
+    font-weight: 600;
+    @include ease-02;
+
+    &:hover {
+        border-color: #7F84EC;
+    }
+
+    &:active {
+        border: 2px solid #7F84EC;
+    }
+
+    &:disabled {
+        color: #A9B4CB;
+        background-color: #F0F5F9;
+        border: 1px solid #C5D0E7;
+    }
+}
+
+
+
+
