@@ -1,0 +1,22 @@
+#popupUnblock {
+    display: none;
+    .popupOverlay {
+
+        .popupUnblock {
+            max-width: 447px;
+            width: 100%;
+
+            .popupUnblockTitle {
+                max-width: 325px;
+                margin-bottom: 10px;
+            }
+            .popupUnblockInfo {
+                margin-bottom: 15px;
+                font-weight: 500;
+                color: var(--pallete_blue2);
+                font-size: 14px;
+                line-height: 19.6px;
+            }
+        }
+    }
+}

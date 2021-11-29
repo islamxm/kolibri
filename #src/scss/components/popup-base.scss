@@ -1,0 +1,33 @@
+.popup {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0, .3);
+    z-index: 100;
+    .popupOverlay {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        .popupContent {
+            background-color: #fff;
+            box-shadow: none;
+            padding: 30px;
+            position: relative;
+
+            .popupCloseBtn {
+                position: absolute;
+                top: 30px;
+                right: 30px;
+            }
+
+            .popupTitle {
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 21.6px;
+            }
+        }
+    }
+}

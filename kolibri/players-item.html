@@ -242,6 +242,193 @@
             </div>    
         </main>
     </div>
+    <!-- Popups -->
+    <div class="popup" id="popupBlock">
+    <div class="popupOverlay">
+        <div class="popupContent popupBlock block">
+            <div class="popupTitle popupBlockTitle">
+                Заблокировать игрока/команду
+            </div>
+            <div class="popupBlockInfo">
+                <div class="popupBlockInfoName">Велонская Анастасия Николаевна,</div>
+                <div class="popupBlockInfoID">ID 0120120102102</div>
+            </div>
+            <div class="popupBlockContent">
+                <form class="popupBlockForm">
+                    <div class="popupBlockFormTitle">
+                        Укажите причину блокировки
+                    </div>
+                    <div class="popupBlockCheckboxBody">
+                        <div class="popupBlockCheckboxItem">
+                            <input id="first" type="checkbox">
+                            <label for="first">Сквернословие или неподобающее поведение в общем чате</label>
+                        </div>
+                        <div class="popupBlockCheckboxItem">
+                            <input id="second" type="checkbox" checked>
+                            <label for="second">Сквернословие или неподобающее поведение в общем чате</label>
+                        </div>
+                        <div class="popupBlockCheckboxItem">
+                            <input id="third" type="checkbox">
+                            <label for="third">Сквернословие или неподобающее поведение в общем чате</label>
+                        </div>
+                    </div>
+                    <div class="popupBlockField">
+                        <textarea class="input" name="" placeholder="Напишите пояснение или укажите иную причину блокировки"></textarea>
+                    </div>
+                    <div class="popupBlockDates">
+                        <div class="popupBlockDate">
+                            <div class="popupBlockDateTitle">Время блокировки </div>
+                            <div class="popupBlockDateHead">1 месяц</div>
+                        </div>
+                        <div class="popupUnBlockDate">
+                            <div class="popupUnBlockDateTitle">Дата разблокировки</div>
+                            <div class="popupUnBlockDateHead">25.02.2021</div>
+                        </div>
+                    </div>
+                    <div class="popupBlockBtns">
+                        <button class="btn-orange">Заблокировать</button>
+                        <button class="btn-tr-yellow">Отмена</button>
+                    </div>
+                </form>  
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="popup" id="popupNotification">
+    <div class="popupOverlay">
+        <div class="popupContent popupNotification block">
+            <button class="popupCloseBtn"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="15" cy="15" r="15" fill="#FFF1E5"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.4142 15L20.7072 10.707C21.0982 10.316 21.0982 9.68401 20.7072 9.29301C20.3162 8.90201 19.6842 8.90201 19.2933 9.29301L15.0002 13.586L10.7072 9.29301C10.3162 8.90201 9.68425 8.90201 9.29325 9.29301C8.90225 9.68401 8.90225 10.316 9.29325 10.707L13.5862 15L9.29325 19.293C8.90225 19.684 8.90225 20.316 9.29325 20.707C9.48825 20.902 9.74425 21 10.0002 21C10.2563 21 10.5122 20.902 10.7072 20.707L15.0002 16.414L19.2933 20.707C19.4882 20.902 19.7443 21 20.0002 21C20.2562 21 20.5122 20.902 20.7072 20.707C21.0982 20.316 21.0982 19.684 20.7072 19.293L16.4142 15Z" fill="#FAB294"/>
+                </svg>
+                </button>
+            <div class="popupTitle popupNotificationTitle">
+                Уведомить игрока/команду
+            </div> 
+            <div class="popupNotificationField">
+                <textarea class="input" name="" placeholder="Уведомите игрока о изменениях или о иных новостях..."></textarea>
+            </div>
+            <div class="popupNotificationBtn">
+                <button class="btn-green">Отправить</button>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="popup" id="popupUnblock">
+    <div class="popupOverlay">
+        <div class="popupContent popupUnblock block">
+            <button class="popupCloseBtn"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="15" cy="15" r="15" fill="#FFF1E5"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.4142 15L20.7072 10.707C21.0982 10.316 21.0982 9.68401 20.7072 9.29301C20.3162 8.90201 19.6842 8.90201 19.2933 9.29301L15.0002 13.586L10.7072 9.29301C10.3162 8.90201 9.68425 8.90201 9.29325 9.29301C8.90225 9.68401 8.90225 10.316 9.29325 10.707L13.5862 15L9.29325 19.293C8.90225 19.684 8.90225 20.316 9.29325 20.707C9.48825 20.902 9.74425 21 10.0002 21C10.2563 21 10.5122 20.902 10.7072 20.707L15.0002 16.414L19.2933 20.707C19.4882 20.902 19.7443 21 20.0002 21C20.2562 21 20.5122 20.902 20.7072 20.707C21.0982 20.316 21.0982 19.684 20.7072 19.293L16.4142 15Z" fill="#FAB294"/>
+            </svg>
+            </button>
+            <div class="popupTitle popupUnblockTitle">
+                Вы уверены, что хотите разблокировать данного участника?
+            </div>
+            <div class="popupUnblockInfo">
+                <div class="popupUnblockInfoName">Велонская Анастасия Николаевна,</div>
+                <div class="popupUnblockInfoID">ID 0120120102102</div>
+            </div>
+            <div class="popupUnblockBtn">
+                <button class="btn-green">Разблокировать</button>
+            </div>
+        </div>
+    </div>
+</div>    
+
+    <!-- Push-notifications -->
+    <div class="push" id="pushBlockSucces">
+    <div class="pushContent pushBlockSucces block">
+        <button class="pushClose">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="15" cy="15" r="15" fill="#FFF1E5"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.4142 15L20.7072 10.707C21.0982 10.316 21.0982 9.68401 20.7072 9.29301C20.3162 8.90201 19.6842 8.90201 19.2933 9.29301L15.0002 13.586L10.7072 9.29301C10.3162 8.90201 9.68425 8.90201 9.29325 9.29301C8.90225 9.68401 8.90225 10.316 9.29325 10.707L13.5862 15L9.29325 19.293C8.90225 19.684 8.90225 20.316 9.29325 20.707C9.48825 20.902 9.74425 21 10.0002 21C10.2563 21 10.5122 20.902 10.7072 20.707L15.0002 16.414L19.2933 20.707C19.4882 20.902 19.7443 21 20.0002 21C20.2562 21 20.5122 20.902 20.7072 20.707C21.0982 20.316 21.0982 19.684 20.7072 19.293L16.4142 15Z" fill="#FAB294"/>
+                </svg>
+                
+        </button>
+        <div class="pushTitle pushBlockSuccesTitle">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="15" cy="15" r="15" fill="#4AD39A"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.70711 14.2929C8.31658 13.9024 7.68342 13.9024 7.29289 14.2929C6.90237 14.6834 6.90237 15.3166 7.29289 15.7071L12.2929 20.7071C12.698 21.1122 13.36 21.0948 13.7433 20.669L22.7433 10.669C23.1128 10.2585 23.0795 9.62617 22.669 9.25671C22.2585 8.88726 21.6262 8.92053 21.2567 9.33104L12.9618 18.5476L8.70711 14.2929Z" fill="#fff"/>
+                </svg>
+                
+            Велонская Анастасия Николаевна - заблокирована до 25.02.2021
+        </div>
+        <div class="pushInfo pushBlockSuccesInfo">
+            Благодарим за поддержание порядка
+        </div>
+        
+    </div>
+</div>
+    <div class="push" id="pushUnblockSucces">
+    <div class="pushContent pushUnblockSucces block">
+        <button class="pushClose">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="15" cy="15" r="15" fill="#FFF1E5"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.4142 15L20.7072 10.707C21.0982 10.316 21.0982 9.68401 20.7072 9.29301C20.3162 8.90201 19.6842 8.90201 19.2933 9.29301L15.0002 13.586L10.7072 9.29301C10.3162 8.90201 9.68425 8.90201 9.29325 9.29301C8.90225 9.68401 8.90225 10.316 9.29325 10.707L13.5862 15L9.29325 19.293C8.90225 19.684 8.90225 20.316 9.29325 20.707C9.48825 20.902 9.74425 21 10.0002 21C10.2563 21 10.5122 20.902 10.7072 20.707L15.0002 16.414L19.2933 20.707C19.4882 20.902 19.7443 21 20.0002 21C20.2562 21 20.5122 20.902 20.7072 20.707C21.0982 20.316 21.0982 19.684 20.7072 19.293L16.4142 15Z" fill="#FAB294"/>
+                </svg>
+                
+        </button>
+        <div class="pushTitle pushUnblockSuccesTitle">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="15" cy="15" r="15" fill="#4AD39A"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.70711 14.2929C8.31658 13.9024 7.68342 13.9024 7.29289 14.2929C6.90237 14.6834 6.90237 15.3166 7.29289 15.7071L12.2929 20.7071C12.698 21.1122 13.36 21.0948 13.7433 20.669L22.7433 10.669C23.1128 10.2585 23.0795 9.62617 22.669 9.25671C22.2585 8.88726 21.6262 8.92053 21.2567 9.33104L12.9618 18.5476L8.70711 14.2929Z" fill="#fff"/>
+                </svg>
+                
+            Велонская Анастасия Николаевна - свободна от блокировки
+        </div>
+        <div class="pushInfo pushUnblockSuccesInfo">
+            Благодарим за поддержание порядка
+        </div>
+        
+    </div>
+</div>
+    <div class="push" id="pushBlockError">
+    <div class="pushContent pushBlockError block">
+        <button class="pushClose">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="15" cy="15" r="15" fill="#FFF1E5"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.4142 15L20.7072 10.707C21.0982 10.316 21.0982 9.68401 20.7072 9.29301C20.3162 8.90201 19.6842 8.90201 19.2933 9.29301L15.0002 13.586L10.7072 9.29301C10.3162 8.90201 9.68425 8.90201 9.29325 9.29301C8.90225 9.68401 8.90225 10.316 9.29325 10.707L13.5862 15L9.29325 19.293C8.90225 19.684 8.90225 20.316 9.29325 20.707C9.48825 20.902 9.74425 21 10.0002 21C10.2563 21 10.5122 20.902 10.7072 20.707L15.0002 16.414L19.2933 20.707C19.4882 20.902 19.7443 21 20.0002 21C20.2562 21 20.5122 20.902 20.7072 20.707C21.0982 20.316 21.0982 19.684 20.7072 19.293L16.4142 15Z" fill="#FAB294"/>
+            </svg>                
+        </button>
+        <div class="pushTitle pushBlockErrorTitle">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="15" cy="15" r="15" fill="#FFF1E5"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.4142 15L20.7072 10.707C21.0982 10.316 21.0982 9.68401 20.7072 9.29301C20.3162 8.90201 19.6842 8.90201 19.2933 9.29301L15.0002 13.586L10.7072 9.29301C10.3162 8.90201 9.68425 8.90201 9.29325 9.29301C8.90225 9.68401 8.90225 10.316 9.29325 10.707L13.5862 15L9.29325 19.293C8.90225 19.684 8.90225 20.316 9.29325 20.707C9.48825 20.902 9.74425 21 10.0002 21C10.2563 21 10.5122 20.902 10.7072 20.707L15.0002 16.414L19.2933 20.707C19.4882 20.902 19.7443 21 20.0002 21C20.2562 21 20.5122 20.902 20.7072 20.707C21.0982 20.316 21.0982 19.684 20.7072 19.293L16.4142 15Z" fill="#FAB294"/>
+                </svg>
+                
+                
+            Не удалось заблокировать - Велонская Анастасия Николаевна
+        </div>
+        <div class="pushBtn pushBlockErrorBtn">
+            <button class="btn-blue">Попробовать снова</button>
+        </div>
+        
+    </div>
+</div>
+    <div class="push" id="pushUnblockError">
+    <div class="pushContent pushUnblockError block">
+        <button class="pushClose">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="15" cy="15" r="15" fill="#FFF1E5"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.4142 15L20.7072 10.707C21.0982 10.316 21.0982 9.68401 20.7072 9.29301C20.3162 8.90201 19.6842 8.90201 19.2933 9.29301L15.0002 13.586L10.7072 9.29301C10.3162 8.90201 9.68425 8.90201 9.29325 9.29301C8.90225 9.68401 8.90225 10.316 9.29325 10.707L13.5862 15L9.29325 19.293C8.90225 19.684 8.90225 20.316 9.29325 20.707C9.48825 20.902 9.74425 21 10.0002 21C10.2563 21 10.5122 20.902 10.7072 20.707L15.0002 16.414L19.2933 20.707C19.4882 20.902 19.7443 21 20.0002 21C20.2562 21 20.5122 20.902 20.7072 20.707C21.0982 20.316 21.0982 19.684 20.7072 19.293L16.4142 15Z" fill="#FAB294"/>
+            </svg>                
+        </button>
+        <div class="pushTitle pushUnblockErrorTitle">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="15" cy="15" r="15" fill="#FFF1E5"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.4142 15L20.7072 10.707C21.0982 10.316 21.0982 9.68401 20.7072 9.29301C20.3162 8.90201 19.6842 8.90201 19.2933 9.29301L15.0002 13.586L10.7072 9.29301C10.3162 8.90201 9.68425 8.90201 9.29325 9.29301C8.90225 9.68401 8.90225 10.316 9.29325 10.707L13.5862 15L9.29325 19.293C8.90225 19.684 8.90225 20.316 9.29325 20.707C9.48825 20.902 9.74425 21 10.0002 21C10.2563 21 10.5122 20.902 10.7072 20.707L15.0002 16.414L19.2933 20.707C19.4882 20.902 19.7443 21 20.0002 21C20.2562 21 20.5122 20.902 20.7072 20.707C21.0982 20.316 21.0982 19.684 20.7072 19.293L16.4142 15Z" fill="#FAB294"/>
+                </svg>
+                
+                
+            Не удалось освободить - Велонская Анастасия Николаевна
+        </div>
+        <div class="pushBtn pushUnblockErrorBtn">
+            <button class="btn-blue">Попробовать снова</button>
+        </div>
+        
+    </div>
+</div>
     <script src="./js/bundle.js"></script>
 </body>
 </html>

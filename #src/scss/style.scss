@@ -14,6 +14,8 @@
 @import './components/button-tr.scss';
 @import './components/table.scss';
 @import './components/scroll-custom.scss';
+@import './components/popup-base.scss';
+@import './components/push-base.scss';
 
 
 /* Блоки */
@@ -28,4 +30,16 @@
 @import './pages/players-list.scss';
 @import './pages/players-item.scss';
 @import './pages/players-blacklist.scss';
+
+
+/* Попапы */
+@import './blocks/popup-block.scss';
+@import './blocks/popup-notification.scss';
+@import './blocks/popup-unblock.scss';
+
+/* Пуш уведомления */
+@import './blocks/push-block-success.scss';
+@import './blocks/push-unblock-success.scss';
+@import './blocks/push-block-error.scss';
+@import './blocks/push-unblock-error.scss';
 

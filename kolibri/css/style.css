@@ -32,6 +32,7 @@
   --pallete_blue3: #2F35C0;
   --window: 0px 4px 50px #E3ECFA;
   --block-shadow: 0px 4px 50px #DDE7F7;
+  --push_shadow: 4px 10px 20px 3px rgba(178, 172, 220, 0.6);
 }
 
 /* КНОПКИ */
@@ -71,6 +72,40 @@ input, button {
   line-height: inherit;
 }
 
+button::-webkit-input-placeholder, input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  font-family: "Raleway", sans-serif;
+  font-size: inherit;
+  line-height: inherit;
+  color: var(--text_dark);
+}
+
+button::-moz-placeholder, input::-moz-placeholder, textarea::-moz-placeholder {
+  font-family: "Raleway", sans-serif;
+  font-size: inherit;
+  line-height: inherit;
+  color: var(--text_dark);
+}
+
+button:-ms-input-placeholder, input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  font-family: "Raleway", sans-serif;
+  font-size: inherit;
+  line-height: inherit;
+  color: var(--text_dark);
+}
+
+button::-ms-input-placeholder, input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+  font-family: "Raleway", sans-serif;
+  font-size: inherit;
+  line-height: inherit;
+  color: var(--text_dark);
+}
+
+button::placeholder, input::placeholder, textarea::placeholder {
+  font-family: "Raleway", sans-serif;
+  font-size: inherit;
+  line-height: inherit;
+  color: var(--text_dark);
+}
 button:disabled, input:disabled, textarea:disabled {
   pointer-events: none;
 }
@@ -82,10 +117,13 @@ body {
   font-size: 14px;
   line-height: 16.8px;
   font-weight: 400;
+  -webkit-font-feature-settings: "pnum" on, "lnum" on;
+          font-feature-settings: "pnum" on, "lnum" on;
   color: var(--text_dark);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
 .wrapper {
@@ -144,6 +182,7 @@ body {
   --pallete_blue3: #2F35C0;
   --window: 0px 4px 50px #E3ECFA;
   --block-shadow: 0px 4px 50px #DDE7F7;
+  --push_shadow: 4px 10px 20px 3px rgba(178, 172, 220, 0.6);
 }
 
 /* КНОПКИ */
@@ -696,6 +735,76 @@ body {
   background-color: #fff;
   border: 1px solid var(--pallete_gray2);
   border-radius: 15px;
+}
+
+.popup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+.popup .popupOverlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+.popup .popupOverlay .popupContent {
+  background-color: #fff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 30px;
+  position: relative;
+}
+.popup .popupOverlay .popupContent .popupCloseBtn {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+.popup .popupOverlay .popupContent .popupTitle {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.6px;
+}
+
+.push {
+  position: absolute;
+  bottom: 150px;
+  right: 150px;
+}
+.push .pushContent {
+  padding: 30px;
+  width: 491px;
+  position: relative;
+  -webkit-box-shadow: var(--push_shadow);
+          box-shadow: var(--push_shadow);
+}
+.push .pushContent .pushClose {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+.push .pushContent .pushTitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21.6px;
+  max-width: 360px;
+  width: 100%;
+}
+.push .pushContent .pushInfo {
+  font-size: 16px;
+  line-height: 19.2px;
+  font-weight: 500;
+  color: var(--text_dark2);
 }
 
 /* Блоки */
@@ -1386,4 +1495,272 @@ body {
 }
 .playersBlacklist .playersBlacklistMain {
   height: 265px;
+}
+
+/* Попапы */
+#popupBlock {
+  display: none;
+}
+#popupBlock .popupOverlay .popupBlock {
+  max-width: 551px;
+  width: 100%;
+}
+#popupBlock .popupOverlay .popupBlock .popupBlockTitle {
+  margin-bottom: 10px;
+}
+#popupBlock .popupOverlay .popupBlock .popupBlockInfo {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19.6px;
+  color: var(--pallete_blue2);
+  margin-bottom: 15px;
+}
+#popupBlock .popupOverlay .popupBlock .popupBlockContent .popupBlockForm .popupBlockFormTitle {
+  font-size: 14px;
+  line-height: 16.8px;
+  margin-bottom: 15px;
+}
+#popupBlock .popupOverlay .popupBlock .popupBlockContent .popupBlockForm .popupBlockCheckboxBody {
+  margin-bottom: 16px;
+}
+#popupBlock .popupOverlay .popupBlock .popupBlockContent .popupBlockForm .popupBlockCheckboxBody .popupBlockCheckboxItem {
+  margin-bottom: 17px;
+}
+#popupBlock .popupOverlay .popupBlock .popupBlockContent .popupBlockForm .popupBlockCheckboxBody .popupBlockCheckboxItem:last-child {
+  margin: 0;
+}
+#popupBlock .popupOverlay .popupBlock .popupBlockContent .popupBlockForm .popupBlockCheckboxBody .popupBlockCheckboxItem input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  pointer-events: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+#popupBlock .popupOverlay .popupBlock .popupBlockContent .popupBlockForm .popupBlockCheckboxBody .popupBlockCheckboxItem label {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16.8px;
+  color: var(--text_dark2);
+  display: block;
+  padding-left: 24px;
+  position: relative;
+  cursor: pointer;
+}
+#popupBlock .popupOverlay .popupBlock .popupBlockContent .popupBlockForm .popupBlockCheckboxBody .popupBlockCheckboxItem label:after {
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 17px;
+  height: 17px;
+  border: 1px solid var(--text_dark2);
+  border-radius: 3px;
+  content: "";
+  background-image: none;
+}
+#popupBlock .popupOverlay .popupBlock .popupBlockContent .popupBlockForm .popupBlockCheckboxBody .popupBlockCheckboxItem input:checked ~ label {
+  color: var(--text_dark);
+}
+#popupBlock .popupOverlay .popupBlock .popupBlockContent .popupBlockForm .popupBlockCheckboxBody .popupBlockCheckboxItem input:checked ~ label:after {
+  background-image: url("../img/checked.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-color: var(--base_green);
+}
+#popupBlock .popupOverlay .popupBlock .popupBlockContent .popupBlockForm .popupBlockField {
+  width: 100%;
+  margin-bottom: 15px;
+}
+#popupBlock .popupOverlay .popupBlock .popupBlockContent .popupBlockForm .popupBlockField textarea {
+  width: 100% !important;
+  height: 64px;
+  resize: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 16.8px;
+  color: var(--text_dark);
+}
+#popupBlock .popupOverlay .popupBlock .popupBlockContent .popupBlockForm .popupBlockDates {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+#popupBlock .popupOverlay .popupBlock .popupBlockContent .popupBlockForm .popupBlockDates .popupBlockDate {
+  width: 220px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+#popupBlock .popupOverlay .popupBlock .popupBlockContent .popupBlockForm .popupBlockDates .popupBlockDate .popupBlockDateTitle {
+  margin-bottom: 6px;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 500;
+  color: var(--pallete_gray3);
+}
+#popupBlock .popupOverlay .popupBlock .popupBlockContent .popupBlockForm .popupBlockDates .popupBlockDate .popupBlockDateHead {
+  padding: 14px 32px 14px 15px;
+  border: 1px solid var(--devaider);
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16.8px;
+  color: var(--pallete_gray3);
+  position: relative;
+}
+#popupBlock .popupOverlay .popupBlock .popupBlockContent .popupBlockForm .popupBlockDates .popupBlockDate .popupBlockDateHead:after {
+  position: absolute;
+  content: url("../img/top-ar.svg");
+  top: calc(50% - 8.4px);
+  right: 17px;
+}
+#popupBlock .popupOverlay .popupBlock .popupBlockContent .popupBlockForm .popupBlockDates .popupUnBlockDate {
+  width: 148px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+#popupBlock .popupOverlay .popupBlock .popupBlockContent .popupBlockForm .popupBlockDates .popupUnBlockDate .popupUnBlockDateTitle {
+  margin-bottom: 6px;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 500;
+  color: var(--text_dark2);
+}
+#popupBlock .popupOverlay .popupBlock .popupBlockContent .popupBlockForm .popupBlockDates .popupUnBlockDate .popupUnBlockDateHead {
+  padding: 14px 15px;
+  background-color: var(--secdr_2);
+  border: 1px solid var(--devaider);
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16.8px;
+  color: var(--pallete_gray2);
+}
+#popupBlock .popupOverlay .popupBlock .popupBlockContent .popupBlockForm .popupBlockBtns .btn-orange {
+  background-color: var(--base_red);
+}
+#popupBlock .popupOverlay .popupBlock .popupBlockContent .popupBlockForm .popupBlockBtns button:nth-child(1) {
+  margin-right: 10px;
+}
+#popupBlock .popupOverlay .popupBlock .popupBlockContent .popupBlockForm .popupBlockBtns button:nth-child(2) {
+  margin-left: 10px;
+}
+
+#popupNotification {
+  display: none;
+}
+#popupNotification .popupOverlay .popupNotification {
+  max-width: 560px;
+  width: 100%;
+}
+#popupNotification .popupOverlay .popupNotification .popupNotificationTitle {
+  margin-bottom: 20px;
+}
+#popupNotification .popupOverlay .popupNotification .popupNotificationField {
+  margin-bottom: 15px;
+}
+#popupNotification .popupOverlay .popupNotification .popupNotificationField textarea {
+  resize: none;
+  padding: 10px 15px;
+  height: 192px;
+}
+#popupNotification .popupOverlay .popupNotification .popupNotificationBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#popupUnblock {
+  display: none;
+}
+#popupUnblock .popupOverlay .popupUnblock {
+  max-width: 447px;
+  width: 100%;
+}
+#popupUnblock .popupOverlay .popupUnblock .popupUnblockTitle {
+  max-width: 325px;
+  margin-bottom: 10px;
+}
+#popupUnblock .popupOverlay .popupUnblock .popupUnblockInfo {
+  margin-bottom: 15px;
+  font-weight: 500;
+  color: var(--pallete_blue2);
+  font-size: 14px;
+  line-height: 19.6px;
+}
+
+/* Пуш уведомления */
+#pushBlockSucces {
+  display: none;
+}
+#pushBlockSucces .pushBlockSucces .pushBlockSuccesTitle {
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 10px;
+}
+#pushBlockSucces .pushBlockSucces .pushBlockSuccesTitle svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#pushUnblockSucces {
+  display: none;
+}
+#pushUnblockSucces .pushUnblockSucces .pushUnblockSuccesTitle {
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 10px;
+}
+#pushUnblockSucces .pushUnblockSucces .pushUnblockSuccesTitle svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#pushBlockError {
+  display: none;
+}
+#pushBlockError .pushBlockError .pushBlockErrorTitle {
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 20px;
+}
+#pushBlockError .pushBlockError .pushBlockErrorTitle svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#pushBlockError .pushBlockError .pushBlockErrorTitle svg path {
+  fill: #fff;
+}
+#pushBlockError .pushBlockError .pushBlockErrorTitle svg circle {
+  fill: #E54D4D;
+}
+
+#pushUnblockError {
+  display: none;
+}
+#pushUnblockError .pushUnblockError .pushUnblockErrorTitle {
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 20px;
+}
+#pushUnblockError .pushUnblockError .pushUnblockErrorTitle svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#pushUnblockError .pushUnblockError .pushUnblockErrorTitle svg path {
+  fill: #fff;
+}
+#pushUnblockError .pushUnblockError .pushUnblockErrorTitle svg circle {
+  fill: #E54D4D;
 }

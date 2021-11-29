@@ -1,0 +1,200 @@
+#popupBlock {
+    display: none;
+    
+    .popupOverlay {
+
+        .popupBlock {
+            max-width: 551px;
+            width: 100%;
+
+            .popupBlockTitle {
+                margin-bottom: 10px;
+            }
+
+            .popupBlockInfo {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 19.6px;
+                color: var(--pallete_blue2);
+                margin-bottom: 15px;
+
+                .popupBlockInfoName {
+
+                }
+                .popupBlockInfoID {
+
+                }
+            }
+
+            .popupBlockContent {
+                
+                
+                .popupBlockForm {
+
+                    .popupBlockFormTitle {
+                        font-size: 14px;
+                        line-height: 16.8px;
+                        margin-bottom: 15px;
+                    }
+
+                    .popupBlockCheckboxBody {
+                        margin-bottom: 16px;
+
+                        .popupBlockCheckboxItem {
+                            margin-bottom: 17px;
+
+                            &:last-child {
+                                margin: 0;
+                            }
+                            input {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                display: none;
+                                pointer-events: none;
+                                appearance: none;
+                            }
+
+                            label {
+                                font-weight: 600;
+                                font-size: 14px;
+                                line-height: 16.8px;
+                                color: var(--text_dark2);
+                                display: block;
+                                padding-left: 24px;
+                                position: relative;
+                                cursor: pointer;
+
+                                &:after {
+                                    position: absolute;
+                                    top: -2px;
+                                    left: 0;
+                                    width: 17px;
+                                    height: 17px;
+                                    border: 1px solid var(--text_dark2);
+                                    border-radius: 3px;
+                                    content: '';
+                                    background-image: none;
+                                }
+                            }
+
+                            input:checked ~ label {
+                                color: var(--text_dark);
+
+                                &:after {
+                                    background-image: url('../img/checked.svg');
+                                    background-repeat: no-repeat;
+                                    background-size: cover;
+                                    background-position: center;
+                                    border-color: var(--base_green);
+
+                                }
+                                
+                            }
+                        }
+                    }
+                    .popupBlockField {
+                        width: 100%;
+                        margin-bottom: 15px;
+                        textarea {
+                            width: 100% !important;
+                            height: 64px;
+                            resize: none;
+                            padding: 10px 15px;
+                            // border: 1px solid var(--devaider);
+                            border-radius: 5px;
+                            font-size: 14px;
+                            line-height: 16.8px;
+                            color: var(--text_dark);
+
+                        }
+                    }
+
+                    .popupBlockDates {
+                        display: flex;
+                        margin-bottom: 30px;
+
+                        .popupBlockDate {
+                            width: 220px;
+                            cursor: pointer;
+                            margin-right: 10px;
+
+                            .popupBlockDateTitle {
+                                margin-bottom: 6px;
+                                font-size: 12px;
+                                line-height: 14px;
+                                font-weight: 500;
+                                color: var(--pallete_gray3);
+                            }
+                            .popupBlockDateHead {
+                                padding: 14px 32px 14px 15px;
+                                border: 1px solid var(--devaider);
+                                border-radius: 10px;
+
+                                font-size: 14px;
+                                font-weight: 600;
+                                line-height: 16.8px;
+                                color:var(--pallete_gray3); 
+
+                                position: relative;
+
+                                &:after {
+                                    position: absolute;
+                                    content: url('../img/top-ar.svg');
+                                    top: calc(50% - 8.4px);
+                                    right: 17px;
+
+
+                                }
+                                
+                            }
+                        }
+
+                        .popupUnBlockDate {
+                            width: 148px;
+                            cursor: pointer;
+                            margin-left: 10px;
+
+                            .popupUnBlockDateTitle {
+                                margin-bottom: 6px;
+                                font-size: 12px;
+                                line-height: 14px;
+                                font-weight: 500;
+                                color: var(--text_dark2);
+                                
+                            }
+                            .popupUnBlockDateHead {
+                                padding: 14px 15px;
+                                background-color: var(--secdr_2);
+                                border: 1px solid var(--devaider);
+                                border-radius: 10px;
+
+                                font-size: 14px;
+                                font-weight: 600;
+                                line-height: 16.8px;
+                                color:var(--pallete_gray2); 
+
+                            }
+                        }
+                    }
+
+                    .popupBlockBtns {
+
+                        .btn-orange {
+                            background-color: var(--base_red);
+                        }
+
+                        button {
+                            &:nth-child(1) {
+                                margin-right: 10px;
+                            }
+                            &:nth-child(2) {
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

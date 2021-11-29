@@ -35,7 +35,12 @@ input, button {
 }
 
 button, input, textarea {
-
+    &::placeholder {
+        font-family: 'Raleway', sans-serif;
+        font-size: inherit;
+        line-height: inherit;
+        color: var(--text_dark);
+    }
     &:disabled {
         pointer-events: none;
     }
@@ -49,8 +54,10 @@ body {
     font-size: 14px;
     line-height: 16.8px;
     font-weight: 400;
+    font-feature-settings: 'pnum' on, 'lnum' on;
     color: var(--text_dark);
     display: flex;
+    position: relative;
 }
 
 //HELPERS

@@ -1,0 +1,28 @@
+#popupNotification {
+    display: none;
+    .popupOverlay {
+
+        .popupNotification {
+            max-width: 560px;
+            width: 100%;
+
+            .popupNotificationTitle {
+                margin-bottom: 20px;
+            }
+
+            .popupNotificationField {
+                margin-bottom: 15px;
+                textarea {
+                    resize: none;
+                    padding: 10px 15px;
+                    height: 192px;
+                }
+            }
+
+            .popupNotificationBtn {
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+    }
+}
