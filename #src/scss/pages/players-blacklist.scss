@@ -20,10 +20,10 @@
                 svg {
                     margin-right: 9px;
                     path {
-                        fill: $orange;
+                        fill: var(--base_orange);
                     }
                     ellipse {
-                        fill: $orange;
+                        fill: var(--base_orange);
                     }
                 }
             }
@@ -32,7 +32,7 @@
                 svg {
                     margin-right: 9px;
                     rect {
-                        fill: $green;
+                        fill: var(--base_green);
                     }
 
                 }

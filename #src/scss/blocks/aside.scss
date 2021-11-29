@@ -1,7 +1,7 @@
 .aside {
     max-width: 220px;
     background-color: #fff;
-    box-shadow: 0px 4px 50px #DDE7F7;
+    box-shadow: var(--block-shadow);
     position: relative;
     z-index: 2;
 
@@ -79,24 +79,24 @@
 
         .asideNavItem.tournament {
             .asideNavItemHead {
-                color: #2FC083;
+                color: var(--pallete_green3);
 
                 svg {
                     path {
-                        fill: #2FC083;
+                        fill: var(--pallete_green3);
                     }
                 }
 
                 &:hover {
-                    background-color: #E5FFEF;
+                    background-color: var(--pallete_green1);
                 }
             }
             .asideNavItemList {
                 .asideNavItemListLink {
-                    color: #5FDAA6;
+                    color: var(--pallete_green2);
                     
                     &:hover {
-                        color: #2FC083;
+                        color: var(--pallete_green3);
                     }
                 }
             }
@@ -104,25 +104,25 @@
 
         .asideNavItem.questions {
             .asideNavItemHead {
-                color: $orange;
+                color: var(--base_orange);
 
                 svg {
                     path {
-                        fill: $orange;
+                        fill: var(--base_orange);
                     }
                 }
 
                 &:hover {
-                    background-color: $red1;
+                    background-color: var(--pallete_red1);
                 }
             }
 
             .asideNavItemList {
                 .asideNavItemListLink {
-                    color: $red2;
+                    color: var(--pallete_red2);
 
                     &:hover {
-                        color: $red3;
+                        color: var(--pallete_red3);
                     }
                 }
             }
@@ -130,22 +130,22 @@
 
         .asideNavItem.players {
             .asideNavItemHead {
-                color: #D6AA0E;
+                color: var(--pallete_yellow3);
 
                 svg {
                     path {
-                        fill: #D6AA0E;
+                        fill: var(--pallete_yellow3);
                     }
                 }
 
                 &:hover {
-                    background-color: $yellow1;
+                    background-color: var(--pallete_yellow1);
                 }
             }
 
             .asideNavItemList {
                 .asideNavItemListLink {
-                    color: #EBC233;
+                    color: var(--pallete_yellow2);
 
                     &:hover {
 
@@ -156,11 +156,11 @@
 
         .asideNavItem.teams {
             .asideNavItemHead {
-                color: #2F35C0;
+                color: var(--pallete_blue3);
 
                 svg {
                     path {
-                        fill: #2F35C0;
+                        fill: var(--pallete_blue3);
                     }
                 }
 
@@ -171,10 +171,10 @@
 
             .asideNavItemList {
                 .asideNavItemListLink {
-                    color: #2F35C0;
+                    color: var(--pallete_blue3);
                     
                     &:hover {
-                        color: #2F35C0;
+                        color: var(--pallete_blue3);
                     }
                 }
             }
@@ -182,24 +182,24 @@
 
         .asideNavItem.settings {
             .asideNavItemHead {
-                color: $gray3;
+                color: var(--pallete_gray3);
 
                 svg {
                     path {
-                        fill: $gray3;
+                        fill: var(--pallete_gray3);
                     }
                 }
 
                 &:hover {
-                    background-color: $gray1;
+                    background-color: var(--pallete_gray1);
                 }
             }
             .asideNavItemList {
                 .asideNavItemListLink {
-                    color: $gray2;
+                    color: var(--pallete_gray2);
                     
                     &:hover {
-                        color: $gray3;
+                        color: var(--pallete_gray3);
                     }
                 }
             }
@@ -207,17 +207,17 @@
 
         .tournament.asideNavItemDropped {
             .asideNavItemHead {
-                background-color: #E5FFEF;
+                background-color: var(--pallete_green1);
             }
         }
         .questions.asideNavItemDropped {
             .asideNavItemHead {
-                background-color: $red1;
+                background-color: var(--pallete_red1);
             }
         }
         .players.asideNavItemDropped {
             .asideNavItemHead {
-                background-color: $yellow1;
+                background-color: var(--pallete_yellow1);
             }
         }
         .teams.asideNavItemDropped {
@@ -227,7 +227,7 @@
         }
         .settings.asideNavItemDropped {
             .asideNavItemHead {
-                background-color: $gray1;
+                background-color: var(--pallete_gray1);
             }
         }
     }

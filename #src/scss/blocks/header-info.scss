@@ -40,7 +40,7 @@
                 line-height: 19px;
                 font-weight: 500;
 
-                color: $dark2;
+                color: var(--text_dark2);
                 margin-right: 8px;
 
                 &:after {
@@ -58,7 +58,7 @@
             }
 
             .pathItem.pathItemCurrent {
-                color: #2FC083;
+                color: var(--pallete_green3);
                 padding-left: 0;
                 margin-right: 0;
 

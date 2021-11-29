@@ -6,13 +6,13 @@
     .tableHeadaRow {
         cursor: pointer;    
         .tableHeadRowItem {
-            border-bottom: 2px solid #C5D0E7;
+            border-bottom: 1px solid var(--devaider);
             text-align: left;
             padding: 16px 30px;
 
             font-size: 14px;
             line-height: 16.8px;
-            color: $gray3;
+            color: var(--pallete_gray3);
         }
     }
 
@@ -22,7 +22,7 @@
 
         .tableRowItem {
             padding: 16px 30px;
-            border-bottom: 1px solid #C5D0E7;
+            border-bottom: 1px solid var(--devaider);
 
             font-weight: 500;
             font-size: 14px;
@@ -39,15 +39,15 @@
         }
 
         &:hover {
-            background-color: #F8F8F8;
+            background-color: var(--hover);
         }
     }
 
     .tableRow.tableRowItemActive {
-        background-color: #E5FFEF;
+        background-color: var(--pallete_green1);
         
         .tableRowItem {
-            border-bottom: 2px solid $green;
+            border-bottom: 2px solid var(--base_green);
         }
     }
 }

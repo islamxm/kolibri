@@ -9,7 +9,7 @@
         margin-right: 10px;
         .playersItemProfileMain {
             
-            border-bottom: 1px solid #A9B4CB;
+            border-bottom: 1px solid var(--pallete_gray2);
             padding: 30px 0 20px;
             display: flex;
             flex-direction: column;
@@ -46,7 +46,7 @@
 
         .playersItemProfileInfo {
             padding: 20px 30px;
-            border-bottom: 1px solid #A9B4CB;
+            border-bottom: 1px solid var(--pallete_gray2);
             display: flex;
             justify-content: space-between;
 
@@ -58,7 +58,7 @@
                 .playersItemProfileInfoName {
                     font-size: 14px;
                     line-height: 16.8px;
-                    color: $dark2;
+                    color: var(--text_dark2);
                     margin-bottom: 15px;
 
                     &:last-child {
@@ -75,7 +75,7 @@
                     font-weight: 600;
                     font-size: 14px;
                     line-height: 16.8px;
-                    color: $dark2;
+                    color: var(--text_dark2);
                     margin-bottom: 15px;
 
                     &:last-child {
@@ -130,7 +130,7 @@
                 font-weight: 600;
                 font-size: 18px;
                 line-height:20px;
-                color: $gray3;
+                color: var(--pallete_gray3);
 
                 margin-bottom: 15px;
 

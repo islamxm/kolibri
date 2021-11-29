@@ -14,7 +14,7 @@
 
             input {
                 padding-right: 35px;
-                color: $gray3;
+                color: var(--pallete_gray3);
                 // border: 1px solid #DBF0FF;
             }
             
@@ -33,7 +33,7 @@
 
             .playersListExInfoMain {
                 padding: 20px 20px;
-                border-bottom: 1px solid #C5D0E7;
+                border-bottom: 1px solid var(--devaider);
 
                 display: flex;
                 align-items: center;
@@ -51,7 +51,7 @@
 
                 .profileDescr {
                     .profileDescrName {
-                        color: $gray3;
+                        color: var(--pallete_gray3);
                         font-weight: 700;
                         font-size: 16px;
                         line-height: 19.2px;
@@ -60,7 +60,7 @@
                     .profileDescrInfo {
 
                         span {
-                            color: $dark2;
+                            color: var(--text_dark2);
                             font-size: 14px;
                             line-height: 16.8px;
                         }
@@ -93,7 +93,7 @@
                             margin-bottom: 13px;
                             font-size: 14px;
                             line-height: 16.8px;
-                            color: $dark2;
+                            color: var(--text_dark2);
 
                             &:last-child {
                                 margin: 0;
@@ -109,7 +109,7 @@
                             margin-bottom: 13px;
                             font-size: 14px;
                             line-height: 16.8px;
-                            color: $gray3;
+                            color: var(--pallete_gray3);
                             font-weight: 600;
                         }
                     }
@@ -160,7 +160,7 @@
                             text-align: left;
                             font-size: 14px;
                             line-height: 16.8px;
-                            color: $gray3;
+                            color: var(--pallete_gray3);
                         }
                         
                     }
@@ -174,10 +174,10 @@
                         font-weight: 500;
                         font-size: 14px;
                         line-height: 19.6px;
-                        color: $gray3;   
+                        color: var(--pallete_gray3);   
                         padding: 16px 16px 16px 30px; 
 
-                        border-top: 2px solid #C5D0E7;
+                        border-top: 2px solid var(--devaider);
 
                         .tableRowItem {
                             display: flex;
@@ -200,15 +200,15 @@
                     }
 
                     &:hover {
-                        background-color: #F8F8F8;
+                        background-color: var(--hover);
                     }
                 }
 
                 .tableRow.tableRowActive {
-                    background-color: #E5FFEF;
+                    background-color: var(--pallete_green1);
                     
                     td {
-                        border-bottom: 2px solid #4AD39A;
+                        border-bottom: 2px solid var(--base_green);
                     }
                 }
             }

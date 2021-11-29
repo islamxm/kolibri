@@ -3,7 +3,7 @@
     align-items: center;
     font-size: 14px;
     line-height: 16.44px;
-    color: $dark2;
+    color: var(--text_dark2);
     font-weight: 600;
 
     div {
@@ -19,11 +19,11 @@
 
 .funcBtn.btnSendPush {
     div {
-        background-color: $green1;
+        background-color: var(--pallete_green1);
 
         svg {
             path {
-                fill: $green;
+                fill: var(--base_green);
             }
         }
     }
@@ -31,11 +31,11 @@
 
 .funcBtn.btnBlock {
     div {
-        background-color: $red1;
+        background-color: var(--pallete_red1);
 
         svg {
             path {
-                fill: $red;
+                fill: var(--base_red);
             }
         }
     }
@@ -43,11 +43,11 @@
 
 .funcBtn.btnExInfo {
     div {
-        background-color: $yellow1;
+        background-color: var(--pallete_yellow1);
 
         svg {
             path {
-                fill: $yellow;
+                fill: var(--base_yellow);
             }
         }
     }

@@ -1,33 +1,54 @@
-// Главные цвета ============================================================
+:root {
+    // Главные цвета ============================================================
+    --bg: #F3F9FF;
+    --devaider: #C5D0E7;
+    --hover: #F8F8F8;
 
-$dark:#1E2022;
-$dark2:#52616B;
-$secondary1:#DBF0FF;
-$secondary2:#F0F5F9;
-$orange:#F57243;
-$yellow:#FFD565;
-$green:#4AD39A;
-$blue:#1B3764;
-$red:#E54D4D;
-$violet:#5939D6;
+    //Второстепенные цвета ============================================================
+    --secdr_1: #DBF0FF;
+    --secdr_2: #F0F5F9;
+
+    //База ============================================================
+    --base_violet: #5939D6;
+    --base_green: #4AD39A;
+    --base_yellow: #FFD565;
+    --base_orange: #F57243;
+    --base_blue: #1B3764;
+    --base_red: #E54D4D;
 
 
-//Второстепенные цвета ============================================================
-$red1: #FFF1E5;
-$red2: #FAB294;
-$red3: #F57243;
+    //Текст ============================================================
+    --text_dark: #1E2022;
+    --text_dark2: #52616B;
 
-$yellow1: #FFFBE5;
-$yellow2: #D2D2A6;
-$yellow3: #AAA981;
+    //Палитра ============================================================
+    --pallete_red1: #FFF1E5;
+    --pallete_red2: #FAB294;
+    --pallete_red3: #F57243;
 
-$green1: #D9FAFF;
-$green2: #7ACED0;
-$green3: #41A4A4;
+    --pallete_yellow1: #FFFBE5;
+    --pallete_yellow2: #EBC233;
+    --pallete_yellow3: #D6AA0E;
 
-$gray1: #F0F3FF;
-$gray2: #A9B4CB;
-$gray3: #627698;
+    --pallete_green1: #E5FFEF;
+    --pallete_green2: #5FDAA6;
+    --pallete_green3: #2FC083;
+
+    --pallete_gray1: #F0F3FF;
+    --pallete_gray2: #A9B4CB;
+    --pallete_gray3: #627698;
+
+    --pallete_blue1: #F0F1FF;
+    --pallete_blue2: #7F84EC;
+    --pallete_blue3: #2F35C0;
+
+
+    //Тень для блока ============================================================
+    --window: 0px 4px 50px #E3ECFA;
+    --block-shadow: 0px 4px 50px #DDE7F7;
+    // --table_border: 1px solid #C5D0E7;
+
+}
 
 
 
@@ -47,21 +68,21 @@ $gray3: #627698;
     font-size: 16px;
     line-height: 18.78px;
     font-weight: 600;
-    color: #F0F1FF;
-    background-color: #7F84EC;
+    color: var(--pallete_blue1);
+    background-color: var(--pallete_blue2);
     border-radius: 15px;
     padding: 15px 30px;
     @include ease-02;
 
     svg {
         path {
-            fill: #F0F1FF;
+            fill: var(--pallete_blue1);
         }
         rect {
-            fill: #F0F1FF;
+            fill: var(--pallete_blue1);
         }
         ellipse {
-            fill: #F0F1FF;
+            fill: var(--pallete_blue1);
         }
     }
 
@@ -75,20 +96,20 @@ $gray3: #627698;
     }
 
     &:disabled {
-        color: $gray2;
-        background-color: $gray1;
+        color: var(--pallete_gray2);
+        background-color: var(--pallete_gray1);
 
         svg {
             path {
-                fill: $gray2 !important;
+                fill: var(--pallete_gray2) !important;
             }
     
             rect {
-                fill: $gray2 !important;
+                fill: var(--pallete_gray2) !important;
             }
     
             ellipse {
-                fill: $gray2 !important;
+                fill: var(--pallete_gray2) !important;
             }
         }
         
@@ -99,21 +120,21 @@ $gray3: #627698;
     font-size: 16px;
     line-height: 18.78px;
     font-weight: 600;
-    color: #E5FFEF;
-    background-color: $green;
+    color: var(--pallete_green1);
+    background-color: var(--base_green);
     border-radius: 15px;
     padding: 15px 30px;
     @include ease-02;
 
     svg {
         path {
-            fill: #F0F1FF;
+            fill: var(--pallete_blue1);
         }
         rect {
-            fill: #F0F1FF;
+            fill: var(--pallete_blue1);
         }
         ellipse {
-            fill: #F0F1FF;
+            fill: var(--pallete_blue1);
         }
     }
 
@@ -127,20 +148,20 @@ $gray3: #627698;
     }
 
     &:disabled {
-        color: $gray2;
-        background-color: $gray1;
+        color: var(--pallete_gray2);
+        background-color: var(--pallete_gray1);
 
         svg {
             path {
-                fill: $gray2 !important;
+                fill: var(--pallete_gray2) !important;
             }
     
             rect {
-                fill: $gray2 !important;
+                fill: var(--pallete_gray2) !important;
             }
     
             ellipse {
-                fill: $gray2 !important;
+                fill: var(--pallete_gray2) !important;
             }
         }
     }
@@ -150,21 +171,21 @@ $gray3: #627698;
     font-size: 16px;
     line-height: 18.78px;
     font-weight: 600;
-    color: $red1;
-    background-color: $orange;
+    color: var(--pallete_red1);
+    background-color: var(--base_orange);
     border-radius: 15px;
     padding: 15px 30px;
     @include ease-02;
 
     svg {
         path {
-            fill: #F0F1FF;
+            fill: var(--pallete_blue1);
         }
         rect {
-            fill: #F0F1FF;
+            fill: var(--pallete_blue1);
         }
         ellipse {
-            fill: #F0F1FF;
+            fill: var(--pallete_blue1);
         }
     }
 
@@ -178,20 +199,20 @@ $gray3: #627698;
     }
 
     &:disabled {
-        color: $gray2;
-        background-color: $gray1;
+        color: var(--pallete_gray2);
+        background-color: var(--pallete_gray1);
 
         svg {
             path {
-                fill: $gray2 !important;
+                fill: var(--pallete_gray2) !important;
             }
     
             rect {
-                fill: $gray2 !important;
+                fill: var(--pallete_gray2) !important;
             }
     
             ellipse {
-                fill: $gray2 !important;
+                fill: var(--pallete_gray2) !important;
             }
         }
     }
@@ -201,21 +222,21 @@ $gray3: #627698;
     font-size: 16px;
     line-height: 18.78px;
     font-weight: 600;
-    color: $yellow1;
-    background-color: $yellow;
+    color: var(--pallete_yellow1);
+    background-color: var(--base_yellow);
     border-radius: 15px;
     padding: 15px 30px;
     @include ease-02;
 
     svg {
         path {
-            fill: #F0F1FF;
+            fill: var(--pallete_blue1);
         }
         rect {
-            fill: #F0F1FF;
+            fill: var(--pallete_blue1);
         }
         ellipse {
-            fill: #F0F1FF;
+            fill: var(--pallete_blue1);
         }
     }
 
@@ -229,20 +250,20 @@ $gray3: #627698;
     }
 
     &:disabled {
-        color: $gray2;
-        background-color: $gray1;
+        color: var(--pallete_gray2);
+        background-color: var(--pallete_gray1);
 
         svg {
             path {
-                fill: $gray2 !important;
+                fill: var(--pallete_gray2) !important;
             }
     
             rect {
-                fill: $gray2 !important;
+                fill: var(--pallete_gray2) !important;
             }
     
             ellipse {
-                fill: $gray2 !important;
+                fill: var(--pallete_gray2) !important;
             }
         }
     }
@@ -253,24 +274,24 @@ $gray3: #627698;
     font-size: 16px;
     line-height: 18.78px;
     font-weight: 600;
-    color: #EBC233;
-    background-color: $yellow1;
-    border: 1px solid #EBC233;
+    color: var(--pallete_yellow2);
+    background-color: var(--pallete_yellow1);
+    border: 1px solid var(--pallete_yellow2);
     border-radius: 15px;
     padding: 15px 30px;
     @include ease-02;
 
     svg {
         path {
-            fill: #EBC233;
+            fill: var(--pallete_yellow2);
         }
 
         rect {
-            fill: #EBC233;
+            fill: var(--pallete_yellow2);
         }
 
         ellipse {
-            fill: #EBC233;
+            fill: var(--pallete_yellow2);
         }
     }
     &:hover {
@@ -283,21 +304,21 @@ $gray3: #627698;
     }
 
     &:disabled {
-        color: $gray2;
-        background-color: $gray1;
-        border-color: $gray2;
+        color: var(--pallete_gray2);
+        background-color: var(--pallete_gray1);
+        border-color: var(--pallete_gray2);
 
         svg {
             path {
-                fill: $gray2 !important;
+                fill: var(--pallete_gray2) !important;
             }
     
             rect {
-                fill: $gray2 !important;
+                fill: var(--pallete_gray2) !important;
             }
     
             ellipse {
-                fill: $gray2 !important;
+                fill: var(--pallete_gray2) !important;
             }
         }
     }
@@ -307,24 +328,24 @@ $gray3: #627698;
     font-size: 16px;
     line-height: 18.78px;
     font-weight: 600;
-    color: #2FC083;
-    background-color: #E5FFEF;
-    border: 1px solid #5FDAA6;
+    color: var(--pallete_green3);
+    background-color: var(--pallete_green1);
+    border: 1px solid var(--pallete_green2);
     border-radius: 15px;
     padding: 15px 30px;
     @include ease-02;
 
     svg {
         path {
-            fill: #2FC083;
+            fill: var(--pallete_green3);
         }
 
         rect {
-            fill: #2FC083;
+            fill: var(--pallete_green3);
         }
 
         ellipse {
-            fill: #2FC083;
+            fill: var(--pallete_green3);
         }
     }
 
@@ -338,21 +359,21 @@ $gray3: #627698;
     }
 
     &:disabled {
-        color: $gray2;
-        background-color: $gray1;
-        border-color: $gray2;
+        color: var(--pallete_gray2);
+        background-color: var(--pallete_gray1);
+        border-color: var(--pallete_gray2);
 
         svg {
             path {
-                fill: $gray2 !important;
+                fill: var(--pallete_gray2) !important;
             }
     
             rect {
-                fill: $gray2 !important;
+                fill: var(--pallete_gray2) !important;
             }
     
             ellipse {
-                fill: $gray2 !important;
+                fill: var(--pallete_gray2) !important;
             }
         }
     }
@@ -363,24 +384,24 @@ $gray3: #627698;
     font-size: 16px;
     line-height: 18.78px;
     font-weight: 600;
-    color: #2F35C0;
-    background-color: #F0F1FF;
-    border: 1px solid #7F84EC;
+    color: var(--pallete_blue3);
+    background-color: var(--pallete_blue1);
+    border: 1px solid var(--pallete_blue2);
     border-radius: 15px;
     padding: 15px 30px;
     @include ease-02;
 
     svg {
         path {
-            fill: #2F35C0;
+            fill: var(--pallete_blue3);
         }
 
         rect {
-            fill: #2F35C0;
+            fill: var(--pallete_blue3);
         }
 
         ellipse {
-            fill: #2F35C0;
+            fill: var(--pallete_blue3);
         }
     }
 
@@ -394,21 +415,21 @@ $gray3: #627698;
     }
 
     &:disabled {
-        color: $gray2;
-        background-color: $gray1;
-        border-color: $gray2;
+        color: var(--pallete_gray2);
+        background-color: var(--pallete_gray1);
+        border-color: var(--pallete_gray2);
 
         svg {
             path {
-                fill: $gray2 !important;
+                fill: var(--pallete_gray2) !important;
             }
     
             rect {
-                fill: $gray2 !important;
+                fill: var(--pallete_gray2) !important;
             }
     
             ellipse {
-                fill: $gray2 !important;
+                fill: var(--pallete_gray2) !important;
             }
         }
     }
@@ -418,24 +439,24 @@ $gray3: #627698;
     font-size: 16px;
     line-height: 18.78px;
     font-weight: 600;
-    color: $orange;
-    background-color: #FFF1E5;
-    border: 1px solid #FAB294;
+    color: var(--base_orange);
+    background-color: var(--pallete_red1);
+    border: 1px solid var(--pallete_red2);
     border-radius: 15px;
     padding: 15px 30px;
     @include ease-02;
 
     svg {
         path {
-            fill: $orange;
+            fill: var(--base_orange);
         }
 
         rect {
-            fill: $orange;
+            fill: var(--base_orange);
         }
 
         ellipse {
-            fill: $orange;
+            fill: var(--base_orange);
         }
     }
 
@@ -449,21 +470,21 @@ $gray3: #627698;
     }
 
     &:disabled {
-        color: $gray2;
-        background-color: $gray1;
-        border-color: $gray2;
+        color: var(--pallete_gray2);
+        background-color: var(--pallete_gray1);
+        border-color: var(--pallete_gray2);
 
         svg {
             path {
-                fill: $gray2 !important;
+                fill: var(--pallete_gray2) !important;
             }
     
             rect {
-                fill: $gray2 !important;
+                fill: var(--pallete_gray2) !important;
             }
     
             ellipse {
-                fill: $gray2 !important;
+                fill: var(--pallete_gray2) !important;
             }
         }
     }
@@ -477,29 +498,29 @@ $gray3: #627698;
 @mixin input {
     display: block;
     background-color: #fff;
-    border: 2px solid #C5D0E7;
+    border: 2px solid var(--devaider);
     border-radius: 10px;
     padding: 14px 15px;
     width: 100%;
     
-    color: $dark2;
+    color: var(--text_dark2);
     font-size: 14px;
     line-height: 16.8px;
     font-weight: 600;
     @include ease-02;
 
     &:hover {
-        border-color: #7F84EC;
+        border-color: var(--pallete_blue2);
     }
 
     &:focus {
-        border: 2px solid #7F84EC;
+        border: 2px solid var(--pallete_blue2);
     }
 
     &:disabled {
-        color: $gray2;
-        background-color: $secondary2;
-        border: 2px solid #C5D0E7;
+        color: var(--pallete_gray2);
+        background-color: var(--secdr_2);
+        border: 2px solid var(--devaider);
     }
 }
 

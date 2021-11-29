@@ -37,7 +37,7 @@
             font-weight: 500;
             font-size: 16px;
             line-height: 19.2px;
-            color: $gray1;
+            color: var(--pallete_gray1);
             
 
             
@@ -48,13 +48,13 @@
         display: block;
         font-size: 16px;
         line-height: 18.78px;
-        color: $yellow1;
+        color: var(--pallete_yellow1);
         font-weight: 600;   
         padding-bottom: 16px;
         svg {
             margin-right: 11px;
             path {
-                fill: #ffffff;
+                fill: #fff;
             }
         }
     }
