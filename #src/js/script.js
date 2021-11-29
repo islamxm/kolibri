@@ -26,6 +26,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     /* Функционал для аккордеона главного меню(сайдбара) */
     accordeonFunc('.asideNavItem', 'asideNavItemDropped', '.asideNavItemList', 'asideNavItemHead');
+    accordeonFunc('.popupBlockDateDrop', 'popupBlockDateDropActive', '.popupBlockDateList', 'popupBlockDateHead');
+    accordeonFunc('.playersListExSearch', 'playersListExSearchActive', '.playersListExSearchList', 'playersListExSearchHead');
+    accordeonFunc('.playersBlacklistTopInput', 'playersBlacklistTopInputActive', '.playersBlacklistTopInputList', 'playersBlacklistTopInputHead');
 });
 
 

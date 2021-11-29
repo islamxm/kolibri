@@ -119,12 +119,32 @@
                             cursor: pointer;
                             margin-right: 10px;
 
+
                             .popupBlockDateTitle {
                                 margin-bottom: 6px;
                                 font-size: 12px;
                                 line-height: 14px;
                                 font-weight: 500;
                                 color: var(--pallete_gray3);
+                            }
+
+                            .popupBlockDateDrop {
+                                overflow: hidden;
+
+                                .popupBlockDateList {
+                                    opacity: 0;
+                                }
+                            }
+                            .popupBlockDateDrop.popupBlockDateDropActive {
+                                .popupBlockDateHead {
+                                    border: 2px solid var(--pallete_blue2);
+                                    &:after {
+                                        transform: rotate(180deg);
+                                    }
+                                }
+                                .popupBlockDateList {
+                                    opacity: 1;
+                                }
                             }
                             .popupBlockDateHead {
                                 padding: 14px 32px 14px 15px;
@@ -137,16 +157,42 @@
                                 color:var(--pallete_gray3); 
 
                                 position: relative;
+                                
 
                                 &:after {
                                     position: absolute;
                                     content: url('../img/top-ar.svg');
                                     top: calc(50% - 8.4px);
                                     right: 17px;
+                                    @include ease-02;
 
 
                                 }
                                 
+                            }
+
+                            .popupBlockDateList {
+                                margin-top: 3px;
+                                height: 0;
+                                overflow: hidden;
+                                @include ease-02;
+                                border: 1px solid #F6F6F6;
+                                box-shadow: 0px 6px 30px rgba(102, 45, 252, 0.03);
+                                border-radius: 15px;
+
+                                .popupBlockDateListItem {
+                                    padding: 5px 15px;
+                                    font-weight: 600;
+                                    font-size: 14px;
+                                    line-height: 16.8px;
+                                    color: var(--pallete_gray3);
+                                    @include ease-02;
+
+                                    &:hover {
+                                        color: var(--pallete_blue3);
+                                        background-color: var(--hover);
+                                    }
+                                }
                             }
                         }
 
