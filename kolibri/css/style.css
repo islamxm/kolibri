@@ -880,9 +880,6 @@ body {
   width: 100%;
   background-color: #fff;
 }
-.headerInfo .container:nth-child(1) {
-  border-bottom: 2px solid #C5D0E7;
-}
 .headerInfo .headerInfoTop {
   padding: 20px 20px;
   padding-left: 90px;
@@ -893,6 +890,7 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  border-bottom: 2px solid #C5D0E7;
 }
 .headerInfo .headerInfoTop .user {
   display: -webkit-box;
