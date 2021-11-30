@@ -1,28 +1,109 @@
+.aside.asideActive {
+    width: 64px;
+    overflow: hidden;
+    .asideLogo {
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+        img {
+            
+        }
+        span {
+            width: 0;
+            opacity: 0;
+            appearance: none;
+            pointer-events: none;
+        }
+    }
+    .asideNav {
+        padding: 0 12px;
+
+        .asideNavItem {
+            .asideNavItemList {
+                height: 0 !important;
+            }
+            .asideNavItemHead {
+                margin-bottom: 15px;
+                padding: 10px;
+                justify-content: center;
+                align-items: center;
+                border-radius: 100%;
+
+                &:hover {
+                    border-radius: 100%;
+                }
+                .mainPart {
+                    width: 19px;
+                    height: 19px;
+                    display: flex;
+                    justify-content: center;
+                    svg {
+                        margin: 0;
+                        width: 17px;
+                        height: 17px;
+                    }
+                    span {
+                        display: none;
+                    }
+                }
+
+                .navArrow {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
 .aside {
-    max-width: 220px;
+    width: 220px;
     background-color: #fff;
     box-shadow: var(--block-shadow);
     position: relative;
     z-index: 2;
+    @include ease-02;
 
     .asideIn {
         padding: 11px 0;
+        padding-top: 0;
+    }
+
+    .asideBtn {
+        position: absolute;
+        top: 65px;
+        right: 0;
     }
 
     .asideLogo {
-        display: block;
-        margin-bottom: 57px;
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 65px;
         padding: 0 40px;
+        @include ease-02;
 
         img {
             max-width: 100%;
             max-height: 100%;
             object-fit: contain;
         }
+
+        span {
+            display: block;
+            padding-bottom: 7px;
+            font-weight: 600;
+            font-size: 15.56px;
+            line-height: 18.76px;
+            color: var(--base_blue);
+            @include ease-02;
+            width: auto;
+
+        }
     }
 
     .asideNav {
         padding: 0 15px;
+        @include ease-02;
+
         .asideNavItem.asideNavItemDropped {
             .asideNavItemHead {
                 .navArrow {
@@ -49,9 +130,11 @@
                 .mainPart {
                     display: flex;
                     align-items: center;
+                    @include ease-02;
 
                     svg {
                         margin-right: 12px;
+                        @include ease-02;
                     }
                 }
 

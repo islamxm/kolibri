@@ -150,6 +150,10 @@ body {
           box-shadow: var(--block-shadow);
 }
 
+.hide {
+  display: none !important;
+}
+
 /* Компонетны */
 :root {
   --bg: #F3F9FF;
@@ -808,21 +812,101 @@ body {
 }
 
 /* Блоки */
+.aside.asideActive {
+  width: 64px;
+  overflow: hidden;
+}
+.aside.asideActive .asideLogo {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.aside.asideActive .asideLogo span {
+  width: 0;
+  opacity: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  pointer-events: none;
+}
+.aside.asideActive .asideNav {
+  padding: 0 12px;
+}
+.aside.asideActive .asideNav .asideNavItem .asideNavItemList {
+  height: 0 !important;
+}
+.aside.asideActive .asideNav .asideNavItem .asideNavItemHead {
+  margin-bottom: 15px;
+  padding: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 100%;
+}
+.aside.asideActive .asideNav .asideNavItem .asideNavItemHead:hover {
+  border-radius: 100%;
+}
+.aside.asideActive .asideNav .asideNavItem .asideNavItemHead .mainPart {
+  width: 19px;
+  height: 19px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.aside.asideActive .asideNav .asideNavItem .asideNavItemHead .mainPart svg {
+  margin: 0;
+  width: 17px;
+  height: 17px;
+}
+.aside.asideActive .asideNav .asideNavItem .asideNavItemHead .mainPart span {
+  display: none;
+}
+.aside.asideActive .asideNav .asideNavItem .asideNavItemHead .navArrow {
+  display: none;
+}
+
 .aside {
-  max-width: 220px;
+  width: 220px;
   background-color: #fff;
   -webkit-box-shadow: var(--block-shadow);
           box-shadow: var(--block-shadow);
   position: relative;
   z-index: 2;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 .aside .asideIn {
   padding: 11px 0;
+  padding-top: 0;
+}
+.aside .asideBtn {
+  position: absolute;
+  top: 65px;
+  right: 0;
 }
 .aside .asideLogo {
-  display: block;
-  margin-bottom: 57px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 65px;
   padding: 0 40px;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 .aside .asideLogo img {
   max-width: 100%;
@@ -830,8 +914,23 @@ body {
   -o-object-fit: contain;
      object-fit: contain;
 }
+.aside .asideLogo span {
+  display: block;
+  padding-bottom: 7px;
+  font-weight: 600;
+  font-size: 15.56px;
+  line-height: 18.76px;
+  color: var(--base_blue);
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  width: auto;
+}
 .aside .asideNav {
   padding: 0 15px;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 .aside .asideNav .asideNavItem.asideNavItemDropped .asideNavItemHead .navArrow {
   -webkit-transform: rotate(90deg);
@@ -868,9 +967,15 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 .aside .asideNav .asideNavItem .asideNavItemHead .mainPart svg {
   margin-right: 12px;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 .aside .asideNav .asideNavItem .asideNavItemHead .navArrow {
   -webkit-transition: all 0.2s ease;
