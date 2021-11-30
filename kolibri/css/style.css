@@ -782,8 +782,8 @@ body {
 
 .push {
   position: absolute;
-  bottom: 150px;
-  right: 150px;
+  bottom: 65px;
+  right: 10px;
 }
 .push .pushContent {
   padding: 30px;
@@ -809,6 +809,47 @@ body {
   line-height: 19.2px;
   font-weight: 500;
   color: var(--text_dark2);
+}
+
+.dropdownDefault.dropdownDefaultActive .dropdownDefaultList {
+  opacity: 1;
+  -webkit-box-shadow: var(--push_shadow);
+          box-shadow: var(--push_shadow);
+}
+
+.dropdownDefault .dropdownDefaultList {
+  background-color: #fff;
+  border: 1px solid #F6F6F6;
+  -webkit-box-shadow: 0px 6px 30px rgba(102, 45, 252, 0.03);
+          box-shadow: 0px 6px 30px rgba(102, 45, 252, 0.03);
+  border-radius: 15px;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  padding: 0;
+  opacity: 0;
+  position: absolute;
+  top: calc(100% + 7px);
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.dropdownDefault .dropdownDefaultList .dropdownDefaultListItem {
+  padding: 9.5px 15px 9.5px 15px;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  color: var(--pallete_gray3);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16.8px;
+}
+.dropdownDefault .dropdownDefaultList .dropdownDefaultListItem:hover {
+  background-color: var(--hover);
+  color: var(--pallete_blue3);
 }
 
 /* Блоки */
@@ -1239,10 +1280,6 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.playersList .playersListEx .playersListExSearch.playersListExSearchActive .playersListExSearchList {
-  margin-top: 14px;
-  opacity: 1;
-}
 .playersList .playersListEx .playersListExSearch {
   width: 530px;
   position: relative;
@@ -1256,35 +1293,6 @@ body {
   position: absolute;
   top: 13px;
   right: 15px;
-}
-.playersList .playersListEx .playersListExSearch .playersListExSearchList {
-  background-color: #fff;
-  border: 1px solid #F6F6F6;
-  -webkit-box-shadow: 0px 6px 30px rgba(102, 45, 252, 0.03);
-          box-shadow: 0px 6px 30px rgba(102, 45, 252, 0.03);
-  border-radius: 15px;
-  height: 0;
-  overflow: hidden;
-  -webkit-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-  padding: 0;
-  opacity: 0;
-}
-.playersList .playersListEx .playersListExSearch .playersListExSearchList .playersListExSearchListItem {
-  padding: 9.5px 15px 9.5px 15px;
-  -webkit-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-  cursor: pointer;
-  color: var(--pallete_gray3);
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 16.8px;
-}
-.playersList .playersListEx .playersListExSearch .playersListExSearchList .playersListExSearchListItem:hover {
-  background-color: var(--hover);
-  color: var(--pallete_blue3);
 }
 .playersList .playersListEx .playersListExInfo {
   width: 530px;
@@ -1610,10 +1618,6 @@ body {
           justify-content: space-between;
   margin-bottom: 22px;
 }
-.playersBlacklist .playersBlacklistTop .playersBlacklistTopInput.playersBlacklistTopInputActive .playersBlacklistTopInputList {
-  margin-top: 14px;
-  opacity: 1;
-}
 .playersBlacklist .playersBlacklistTop .playersBlacklistTopInput {
   width: 530px;
   position: relative;
@@ -1622,34 +1626,6 @@ body {
   position: absolute;
   top: 13px;
   right: 15px;
-}
-.playersBlacklist .playersBlacklistTop .playersBlacklistTopInputList {
-  background-color: #fff;
-  border: 1px solid #F6F6F6;
-  -webkit-box-shadow: 0px 6px 30px rgba(102, 45, 252, 0.03);
-          box-shadow: 0px 6px 30px rgba(102, 45, 252, 0.03);
-  border-radius: 15px;
-  height: 0;
-  overflow: hidden;
-  -webkit-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-  opacity: 0;
-}
-.playersBlacklist .playersBlacklistTop .playersBlacklistTopInputList .playersBlacklistTopInputListItem {
-  padding: 9.5px 15px 9.5px 15px;
-  -webkit-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-  cursor: pointer;
-  color: var(--pallete_gray3);
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 16.8px;
-}
-.playersBlacklist .playersBlacklistTop .playersBlacklistTopInputList .playersBlacklistTopInputListItem:hover {
-  background-color: var(--hover);
-  color: var(--pallete_blue3);
 }
 .playersBlacklist .playersBlacklistTop .playersBlacklistTopBtns .btn-tr-orange {
   margin-right: 15px;

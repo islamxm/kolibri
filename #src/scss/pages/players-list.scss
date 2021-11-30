@@ -6,14 +6,7 @@
 
     .playersListEx {
 
-        .playersListExSearch.playersListExSearchActive {
-            .playersListExSearchList {
-                margin-top: 14px;
-                // padding: 14px 0;
-                opacity: 1;
-
-            }
-        }
+        
         .playersListExSearch {
             width: 530px;
             position: relative;
@@ -39,33 +32,33 @@
             }
 
             .playersListExSearchList {
-                background-color: #fff;
-                border: 1px solid #F6F6F6;
-                box-shadow: 0px 6px 30px rgba(102, 45, 252, 0.03);
-                border-radius: 15px;
-                height: 0;
-                overflow: hidden;
-                @include ease-02;
-                // margin-top: 14px;
-                padding: 0;
-                // margin-top: 14px;
-                opacity: 0;
+                // background-color: #fff;
+                // border: 1px solid #F6F6F6;
+                // box-shadow: 0px 6px 30px rgba(102, 45, 252, 0.03);
+                // border-radius: 15px;
+                // height: 0;
+                // overflow: hidden;
+                // @include ease-02;
+                // // margin-top: 14px;
+                // padding: 0;
+                // // margin-top: 14px;
+                // opacity: 0;
 
-                .playersListExSearchListItem {
-                    padding: 9.5px 15px 9.5px 15px;
-                    @include ease-02;
-                    cursor: pointer;
-                    color: var(--pallete_gray3);
-                    font-weight: 600;
-                    font-size: 14px;
-                    line-height: 16.8px;
+                // .playersListExSearchListItem {
+                //     padding: 9.5px 15px 9.5px 15px;
+                //     @include ease-02;
+                //     cursor: pointer;
+                //     color: var(--pallete_gray3);
+                //     font-weight: 600;
+                //     font-size: 14px;
+                //     line-height: 16.8px;
 
 
-                    &:hover {
-                        background-color: var(--hover);
-                        color: var(--pallete_blue3);
-                    }
-                }
+                //     &:hover {
+                //         background-color: var(--hover);
+                //         color: var(--pallete_blue3);
+                //     }
+                // }
             }
  
         }

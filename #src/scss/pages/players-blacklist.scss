@@ -9,12 +9,12 @@
         margin-bottom: 22px;
 
 
-        .playersBlacklistTopInput.playersBlacklistTopInputActive {
-            .playersBlacklistTopInputList {
-                margin-top: 14px;
-                opacity: 1;
-            }
-        }
+        // .playersBlacklistTopInput.playersBlacklistTopInputActive {
+        //     .playersBlacklistTopInputList {
+        //         margin-top: 14px;
+        //         opacity: 1;
+        //     }
+        // }
         .playersBlacklistTopInput {
             width: 530px;  
             position: relative; 
@@ -32,30 +32,30 @@
         }
 
         .playersBlacklistTopInputList {
-            background-color: #fff;
-            border: 1px solid #F6F6F6;
-            box-shadow: 0px 6px 30px rgba(102, 45, 252, 0.03);
-            border-radius: 15px;
-            height: 0;
-            overflow: hidden;
-            @include ease-02;
-            opacity: 0;
+            // background-color: #fff;
+            // border: 1px solid #F6F6F6;
+            // box-shadow: 0px 6px 30px rgba(102, 45, 252, 0.03);
+            // border-radius: 15px;
+            // height: 0;
+            // overflow: hidden;
+            // @include ease-02;
+            // opacity: 0;
 
-            .playersBlacklistTopInputListItem {
-                padding: 9.5px 15px 9.5px 15px;
-                @include ease-02;
-                cursor: pointer;
-                color: var(--pallete_gray3);
-                font-weight: 600;
-                font-size: 14px;
-                line-height: 16.8px;
+            // .playersBlacklistTopInputListItem {
+            //     padding: 9.5px 15px 9.5px 15px;
+            //     @include ease-02;
+            //     cursor: pointer;
+            //     color: var(--pallete_gray3);
+            //     font-weight: 600;
+            //     font-size: 14px;
+            //     line-height: 16.8px;
 
 
-                &:hover {
-                    background-color: var(--hover);
-                    color: var(--pallete_blue3);
-                }
-            }
+            //     &:hover {
+            //         background-color: var(--hover);
+            //         color: var(--pallete_blue3);
+            //     }
+            // }
         }
 
         .playersBlacklistTopBtns {
