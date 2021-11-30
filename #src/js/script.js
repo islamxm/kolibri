@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if(i.classList.contains(droppedClass)) {
                     targetList.style.height = `${targetList.scrollHeight}px`;
                     
-                    if(dropItemsQuery.classList.contains('asideNavItem')) {
+                    if(dropItems[0].classList.contains('asideNavItem')) {
                         aside.classList.remove('asideActive');
                     }
 

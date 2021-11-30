@@ -1,5 +1,5 @@
 #popupBlock {
-    display: none;
+    // display: none;
     
     .popupOverlay {
 
@@ -129,7 +129,8 @@
                             }
 
                             .popupBlockDateDrop {
-                                overflow: hidden;
+                                // overflow: hidden;
+                                position: relative;
 
                                 .popupBlockDateList {
                                     opacity: 0;
@@ -144,6 +145,7 @@
                                 }
                                 .popupBlockDateList {
                                     opacity: 1;
+                                    box-shadow: var(--push_shadow);
                                 }
                             }
                             .popupBlockDateHead {
@@ -172,13 +174,19 @@
                             }
 
                             .popupBlockDateList {
-                                margin-top: 3px;
+                                // margin-top: 3px;
                                 height: 0;
                                 overflow: hidden;
                                 @include ease-02;
+                                background-color: #fff;
                                 border: 1px solid #F6F6F6;
                                 box-shadow: 0px 6px 30px rgba(102, 45, 252, 0.03);
                                 border-radius: 15px;
+                                position: absolute;
+                                top: calc(100% + 3px);
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
 
                                 .popupBlockDateListItem {
                                     padding: 5px 15px;
