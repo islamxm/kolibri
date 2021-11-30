@@ -1,0 +1,17 @@
+#popupQSave {
+    display: none;
+    
+    .popupQSave {
+        width: 503px;
+
+        .popupQSaveTitle {
+            margin-bottom: 19px;
+        }
+
+        .popupQSaveInfo {
+            margin-bottom: 15px;
+            color: var(--text_dark);
+            font-weight: 500;
+        }
+    }
+}

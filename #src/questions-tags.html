@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поиск вопросов</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+        @@include('./blocks/aside.html')
+        <main class="main">
+            <div class="headerInfo">
+                <!-- <div class="container"> -->
+                    <div class="headerInfoTop">
+                        <a href="#" class="user">
+                            <div class="userImg">
+                                <!-- <img src="" alt=""> -->
+                            </div>
+                            Владимир Владимиров
+                        </a>
+                    </div>
+                <!-- </div> -->
+                <!-- <div class="container"> -->
+                    <div class="headerInfoBottom">
+                        <div class="pathList">
+                            <a href="#" class="pathItem">Вопросы</a>
+                            <a href="#" class="pathItem pathItemCurrent">Создание</a>
+                        </div>    
+                    </div>
+                <!-- </div> -->
+                
+            </div>
+            <div class="content">
+                <div class="questionsTags">
+                    <div class="questionsTagsTop topPanel">
+                        <div class="questionsTagsTopInput topPanelInput dropdownDefault">
+                            <div class="questionsTagsTopInputHead topPanelInputHead dropdownDefaultHead">
+                                <input class="input" type="text" placeholder="Теханский Владимир Владимирович">
+                                <button>
+                                    <img src="./img/search.svg" alt="search">
+                                </button>
+                            </div>
+
+                            <!-- Для добавления выпадашек -->
+                            <!-- <div class="topPanelInputList dropdownDefaultList">
+                                <div class="topPanelInputListItem dropdownDefaultListItem">Сюда элемент выпадашки</div>
+                            </div> -->
+                        </div>
+                        <div class="questionsTagsTopBtns topPanelBtns">
+                            <button class="questionsTagsTopBtn topPanelBtn btn-tr-orange">
+                                <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.4805 6.12851C12.7393 5.35203 12.0006 4.61332 11.2241 4.87214L1.88158 7.98632C1.18111 8.21981 0.971245 9.10883 1.49335 9.63093L3.64147 11.7791L7.69884 9.65377L5.57355 13.7111L7.7217 15.8593C8.2438 16.3814 9.13281 16.1715 9.3663 15.471L12.4805 6.12851Z" fill="#A9B4CB"/>
+                                    <ellipse cx="2.14076" cy="15.1864" rx="1.43666" ry="1.43666" fill="#A9B4CB"/>
+                                    </svg>   
+                                Удалить теги
+                            </button>
+                            <button class="questionsTagsTopBtn topPanelBtn btn-tr-green">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.222656" y="0.222168" width="4.5824" height="4.5824" rx="1.4" fill="#A9B4CB"/>
+                                    <rect x="0.222656" y="7.0957" width="4.5824" height="4.5824" rx="1.4" fill="#A9B4CB"/>
+                                    <rect x="7.09668" y="0.222168" width="4.5824" height="4.5824" rx="1.4" fill="#A9B4CB"/>
+                                    <rect x="7.09668" y="7.0957" width="8.0192" height="8.0192" rx="1.4" fill="#A9B4CB"/>
+                                    </svg> 
+                                Редактировать
+                            </button>
+                        </div> 
+                    </div>
+                    <div class="questionsTagsBody block scroll-custom">
+                        <table class="questionsTagsBodyTable table">
+                            <tr class="questionsTagsBodyTableHeaderRow tableHeadaRow">
+                                <th class="questionsTagsBodyTableItem tableHeadRowItem">Тег для вопроса</th>
+                                <th class="questionsTagsBodyTableItem tableHeadRowItem">Использован в</th>
+                                <th class="questionsTagsBodyTableItem tableHeadRowItem">Время бана</th>
+                                <th class="questionsTagsBodyTableItem tableHeadRowItem">Администрация</th>
+                                <th class="questionsTagsBodyTableItem tableHeadRowItem">Причина</th>
+                            </tr>
+                            <tr class="questionsTagsBodyTableRow tableRow tableRowItemActive">
+                                <td class="questionsTagsBodyItemBtn tableRowItem"><span>Игры в мяч</span></td>
+                                <td class="questionsTagsBodyTableItem tableRowItem">24 турнирах</td>
+                                <td class="questionsTagsBodyTableItem tableRowItem">25.05.2020,<br>          19:03</td>
+                                <td class="questionsTagsBodyTableItem tableRowItem">Людовиг Станислав Владимирович</td>
+                                <td class="questionsTagsBodyTableItem tableRowItem">Сквернословие и неподобающие поведие</td>
+                            </tr>
+                            <tr class="questionsTagsBodyTableRow tableRow">
+                                <td class="questionsTagsBodyItemBtn tableRowItem"><span>Игры в мяч</span></td>
+                                <td class="questionsTagsBodyTableItem tableRowItem">24 турнирах</td>
+                                <td class="questionsTagsBodyTableItem tableRowItem">25.05.2020,<br>          19:03</td>
+                                <td class="questionsTagsBodyTableItem tableRowItem">Людовиг Станислав Владимирович</td>
+                                <td class="questionsTagsBodyTableItem tableRowItem">Сквернословие и неподобающие поведие</td>
+                            </tr>
+                            <tr class="questionsTagsBodyTableRow tableRow">
+                                <td class="questionsTagsBodyItemBtn tableRowItem"><span>Игры в мяч</span></td>
+                                <td class="questionsTagsBodyTableItem tableRowItem">24 турнирах</td>
+                                <td class="questionsTagsBodyTableItem tableRowItem">25.05.2020,<br>          19:03</td>
+                                <td class="questionsTagsBodyTableItem tableRowItem">Людовиг Станислав Владимирович</td>
+                                <td class="questionsTagsBodyTableItem tableRowItem">Сквернословие и неподобающие поведие</td>
+                            </tr>
+                            <tr class="questionsTagsBodyTableRow tableRow">
+                                <td class="questionsTagsBodyItemBtn tableRowItem"><span>Игры в мяч</span></td>
+                                <td class="questionsTagsBodyTableItem tableRowItem">24 турнирах</td>
+                                <td class="questionsTagsBodyTableItem tableRowItem">25.05.2020,<br>          19:03</td>
+                                <td class="questionsTagsBodyTableItem tableRowItem">Людовиг Станислав Владимирович</td>
+                                <td class="questionsTagsBodyTableItem tableRowItem">Сквернословие и неподобающие поведие</td>
+                            </tr>
+                            <tr class="questionsTagsBodyTableRow tableRow">
+                                <td class="questionsTagsBodyItemBtn tableRowItem"><span>Игры в мяч</span></td>
+                                <td class="questionsTagsBodyTableItem tableRowItem">24 турнирах</td>
+                                <td class="questionsTagsBodyTableItem tableRowItem">25.05.2020,<br>          19:03</td>
+                                <td class="questionsTagsBodyTableItem tableRowItem">Людовиг Станислав Владимирович</td>
+                                <td class="questionsTagsBodyTableItem tableRowItem">Сквернословие и неподобающие поведие</td>
+                            </tr>
+                            <tr class="questionsTagsBodyTableRow tableRow">
+                                <td class="questionsTagsBodyItemBtn tableRowItem"><span>Игры в мяч</span></td>
+                                <td class="questionsTagsBodyTableItem tableRowItem">24 турнирах</td>
+                                <td class="questionsTagsBodyTableItem tableRowItem">25.05.2020,<br>          19:03</td>
+                                <td class="questionsTagsBodyTableItem tableRowItem">Людовиг Станислав Владимирович</td>
+                                <td class="questionsTagsBodyTableItem tableRowItem">Сквернословие и неподобающие поведие</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                
+            </div>    
+        </main>
+    </div>
+    <!-- Popups -->
+    @@include('./blocks/popup-block.html')
+    @@include('./blocks/popup-notification.html')
+    @@include('./blocks/popup-unblock.html')
+
+    <!-- Push-notifications -->
+    @@include('./blocks/push-block-success.html')
+    @@include('./blocks/push-unblock-success.html')
+    @@include('./blocks/push-block-error.html')
+    @@include('./blocks/push-unblock-error.html')
+    <script defer src="./js/bundle.js"></script>
+</body>
+</html>

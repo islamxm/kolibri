@@ -1,7 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-
-    const asideBtn = document.querySelector('.asideBtn');
     const aside = document.querySelector('.aside');
 
 
@@ -18,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     i.classList.toggle(droppedClass);
                 }
 
-                if(i.classList.contains(droppedClass)) {
+                if(i.classList.contains(droppedClass) && targetList) {
                     targetList.style.height = `${targetList.scrollHeight}px`;
                     
                     if(dropItems[0].classList.contains('asideNavItem')) {
@@ -26,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
 
                 }
-                if(!i.classList.contains(droppedClass)) {
+                if(!i.classList.contains(droppedClass) && targetList) {
                     targetList.style.height = '0px';
                 }
             });
@@ -49,6 +47,8 @@ document.addEventListener('DOMContentLoaded', () => {
     accordeonFunc('.asideNavItem', 'asideNavItemDropped', '.asideNavItemList', 'asideNavItemHead');
     accordeonFunc('.popupBlockDateDrop', 'popupBlockDateDropActive', '.popupBlockDateList', 'popupBlockDateHead');
     accordeonFunc('.dropdownDefault', 'dropdownDefaultActive', '.dropdownDefaultList', 'dropdownDefaultHead');
+    accordeonFunc('.questionsSearchBodyItem', 'questionsSearchBodyItemActive', '.questionsSearchBodyItemList', 'questionsSearchBodyItemHead');
+    
     
 });
 

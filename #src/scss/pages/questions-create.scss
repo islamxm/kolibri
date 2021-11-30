@@ -1,0 +1,189 @@
+.questionCreate {
+    max-width: 1300px;
+    width: 100%;
+
+    .questionCreateBody {
+        padding: 28px 30px;
+        width: 100%;
+
+        
+
+        .questionCreateTitle {
+            margin-bottom: 20px;
+        }
+
+        .questionsCreateContent {
+            display: flex;
+            gap: 38px;
+
+            .questionCreateBodyLeft {
+                width: 50%;
+
+                textarea {
+                    height: 92px;
+                    resize: none;
+                    margin-bottom: 15px;
+
+                    font-size: 16px;
+                    line-height: 19.2px;
+
+
+                    &::placeholder {
+                        color: var(--pallete_gray2) !important;
+                    }
+                }
+
+                .questionsTrueAns {
+                    margin-bottom: 24px;
+                    label {
+                        margin-bottom: 6px;
+                        display: block;
+                        padding-left: 12px;
+                        font-weight: 500;
+                        font-size: 12px;
+                        line-height: 19.6px;
+                    }
+                }
+
+                .questionsLeftAddBtn {
+                    display: flex;
+                    justify-content: center;
+
+                }
+            }
+
+            .questionCreateBodyRight {
+                width: 50%;
+
+                label {
+                    margin-bottom: 6px;
+                    display: block;
+                    padding-left: 12px;
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 19.6px;
+                }
+
+                .questionCreateBodyRightTags {
+                    margin-bottom: 19px;
+                }
+
+                .questionCreateBodyRightTypes {
+                    display: flex;
+                    gap: 21px;
+                    width: 100%;
+                    margin-bottom: 15px;
+
+                    .questionsTypeName {
+                        margin-bottom: 6px;
+                        display: block;
+                        padding-left: 12px;
+                        font-weight: 500;
+                        font-size: 12px;
+                        line-height: 14.09px;
+                        color: var(--pallete_gray3);
+                    }
+                    .questionsTypeDropdown.dropdownDefaultActive {
+                        .questionsTypeDropdownHead {
+                            &:after {
+                                transform: rotate(180deg);
+                            }
+                        }
+                    }
+                    .questionsTypeDropdown {
+                        cursor: pointer;
+                        font-size: 14px;
+                        font-weight: 600;
+                        line-height: 16.8px;
+                        color: var(--pallete_gray3);
+
+                        .questionsTypeDropdownHead {
+                            padding: 14px 15px;
+                            border: 1px solid var(--devaider);
+                            border-radius: 10px;
+                            position: relative;
+
+                            &:after {
+                                position: absolute;
+                                content: url('../img/top-ar.svg');
+                                top: calc(50% - 8.4px);
+                                right: 16px;
+                                @include ease-02;
+                            }
+                        }
+                    }
+                    .questionsTheme {
+                        width: 50%;
+                    }
+
+                    .questionsLevel {
+                        width: 50%;
+                    }
+                }
+
+                .questionCreateBodyRightBottom {
+                    display: flex;
+                    gap: 21px;
+                    margin-bottom: 20px;
+
+                    .questionCreateBodyRightBottomDrop.dropdownDefaultActive {
+                        .questionCreateBodyRightBottomDropHead {
+
+                            &:after {
+                                transform: rotate(180deg);
+                            }
+                        }
+                    }
+                    .questionCreateBodyRightBottomDrop {
+                        font-size: 14px;
+                        line-height: 16.8px;
+                        color: var(--pallete_gray3);
+                        font-weight: 600;
+                        width: 50%;
+                        cursor: pointer;
+
+
+                        .formName {
+                            padding-left: 12px;
+                            margin-bottom: 6px;
+                        }
+
+                        .questionCreateBodyRightBottomDropHead {
+                            padding: 14px 15px;
+                            border-radius: 10px;
+                            border: 1px solid var(--devaider);
+                            position: relative;
+
+                            &:after {
+                                position: absolute;
+                                content: url('../img/top-ar.svg');
+                                top: calc(50% - 8.4px);
+                                right: 16px;
+                                @include ease-02;
+                            }
+                        }
+
+                        .questionCreateBodyRightBottomDropList {
+
+                            .questionCreateBodyRightBottomDropListItem {
+
+                            }
+                        }
+                    }
+
+                    .questionCreateBodyRightBottomSwitcher {
+                        width: 50%;
+                        padding-top: 20px;
+
+                        label {
+                            padding-right: 50px;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 19.6px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

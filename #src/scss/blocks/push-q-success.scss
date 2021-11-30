@@ -1,0 +1,17 @@
+#pushQSuccess {
+    display: none;
+    .pushQSuccess {
+
+        .pushQSuccessTitle {
+            margin-bottom: 19px;
+            position: relative;
+            padding-left: 40px;
+
+            svg {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+    }
+}

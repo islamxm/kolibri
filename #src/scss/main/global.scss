@@ -39,7 +39,7 @@ button, input, textarea {
         font-family: 'Raleway', sans-serif;
         font-size: inherit;
         line-height: inherit;
-        color: var(--text_dark);
+        color: var(--text_dark2);
     }
     &:disabled {
         pointer-events: none;
@@ -84,6 +84,25 @@ body {
     box-shadow:var(--block-shadow);
 }
 
+.tag {
+    border-radius: 8px;
+    border: 1px solid #E0E0E0;
+    background-color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16.8px;
+    color: var(--pallete_gray3);
+    padding: 5px 8px 5px 10px;
+}
+
+
 .hide {
     display: none !important;
 }
+
+.formName {
+    font-size: 12px;
+    line-height: 14.09px;
+}
+
+

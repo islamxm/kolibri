@@ -1,0 +1,33 @@
+#pushQError {   
+    display: none;
+    .pushQError {
+
+        .pushQErrorTitle {
+            position: relative;
+            padding-left: 40px;
+            margin-bottom: 20px;
+            
+
+            svg {
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                path {
+                    fill: #fff;
+                }
+                circle {
+                    fill: #E54D4D;
+                }
+            }
+        }
+
+        .pushQErrorDescr {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 19.6px;
+            color: var(--text_dark2);
+            margin-bottom: 15px;
+        }
+    }
+}

@@ -1,0 +1,57 @@
+.switcher {
+    
+
+    input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        appearance: none;
+        visibility: hidden;
+        pointer-events: none;
+        opacity: 0;
+    }
+
+    label {
+        cursor: pointer;
+        position: relative;
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 46px;
+            height: 24px;
+            border-radius: 15px;
+            background-color: var(--text_dark2);
+            @include ease-02;
+        }
+
+        &:before {
+            position: absolute;
+            top: 2px;
+            right: 24px;
+            content: url('../img/switch-no.svg');
+            width: 20px;
+            height: 20px;
+            background-color: #fff;
+            border-radius: 100%;
+            z-index: 2;
+            @include ease-02;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    input:checked ~ label {
+
+        &:after {
+            background-color: var(--base_green);
+        }
+        &:before {
+            right: 2px;
+            content: url('../img/switch-yes.svg');
+        }
+    }
+}

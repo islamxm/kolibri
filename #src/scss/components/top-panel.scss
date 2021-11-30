@@ -1,0 +1,22 @@
+.topPanel {
+    display: flex;
+    justify-content: space-between;
+    
+    .topPanelInput {
+        width: 420px;
+    }
+
+    .topPanelBtns {
+
+        .topPanelBtn {
+
+            &:nth-child(1) {
+                margin-right: 10px;
+            }
+
+            &:nth-child(2) {
+
+            }
+        }
+    }
+}

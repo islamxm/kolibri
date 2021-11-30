@@ -1,0 +1,37 @@
+.questionsTags {
+    max-width: 1300px;
+    width: 100%;
+
+    .questionsTagsTop {
+        margin-bottom: 22px;
+    }
+
+    .questionsTagsBody {
+        height: 265px;
+
+        .questionsTagsBodyTableRow.tableRowItemActive {
+            .questionsTagsBodyItemBtn {
+                span {
+                    background-color: var(--base_green);
+                    color: var(--pallete_green1);
+                }
+            }
+        }
+
+        .questionsTagsBodyItemBtn {
+            
+            span {
+                padding: 5px 10px;
+                background-color: blue;
+                background-color: var(--pallete_gray1);
+                border-radius: 8px;
+
+                color: var(--pallete_gray3);
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 19.6px;
+
+            }
+        }
+    }
+}

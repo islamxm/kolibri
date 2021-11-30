@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поиск вопросов</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+        @@include('./blocks/aside.html')
+        <main class="main">
+            <div class="headerInfo">
+                <!-- <div class="container"> -->
+                    <div class="headerInfoTop">
+                        <a href="#" class="user">
+                            <div class="userImg">
+                                <!-- <img src="" alt=""> -->
+                            </div>
+                            Владимир Владимиров
+                        </a>
+                    </div>
+                <!-- </div> -->
+                <!-- <div class="container"> -->
+                    <div class="headerInfoBottom">
+                        <div class="pathList">
+                            <a href="#" class="pathItem">Вопросы</a>
+                            <a href="#" class="pathItem pathItemCurrent">Поиск</a>
+                        </div>    
+                    </div>
+                <!-- </div> -->
+                
+            </div>
+            <div class="content">
+                <div class="questionsSearch">
+
+                    <div class="questionsSearchBlock block">
+                        <form class="questionsSearchForm">
+                            <div class="questionsSearchFormTags">
+                                <label class="questionsSearchFormName">Теги</label>
+                                <div class="questionsSearchFormTagsList">
+                                    <div class="tag">помощь</div> 
+                                    <div class="tag">рим</div> 
+                                    <div class="tag">страшный день</div> 
+                                    <div class="tag">правитель</div> 
+                                    <div class="tag">правитель</div> 
+                                </div>
+                            </div>
+                            
+                            <div class="questionsSearchFormAuthor">
+                                <label class="questionsSearchFormName" for="">Автор</label>
+                                <input type="text" class="input" placeholder="Бондарева Анастасия Владимировна">
+                            </div>
+
+                            <div class="questionsSearchFormDates">
+                                <div class="dateFrom">
+                                    <label class="questionsSearchFormName" for="">Дата создания вопроса</label>
+                                    <input class="input" type="text" placeholder="от 12.02.2020">
+                                </div>
+                                <div class="dateTo">
+                                    <label class="questionsSearchFormName" for="">Дата создания вопроса</label>
+                                    <input class="input" type="text" placeholder="по 24.10.2021">
+                                </div>
+                            </div>
+
+                            <div class="questionsSearchFormTypes">
+
+                                <div class="questionsSearchFormLeague">
+                                    <div class="questionsSearchFormName">Лига</div>    
+                                    <div class="typeDropdown dropdownDefault">
+                                        <div class="typeDropdownHead dropdownDefaultHead">
+                                            Студеньческая
+                                        </div>  
+                                        <div class="typeDropdownList dropdownDefaultList">
+                                            <div class="typeDropdownListItem dropdownDefaultListItem">Студеньческая</div>    
+                                            <div class="typeDropdownListItem dropdownDefaultListItem">Студеньческая</div>    
+                                            <div class="typeDropdownListItem dropdownDefaultListItem">Студеньческая</div>    
+                                        </div>  
+                                    </div>
+                                </div>
+                                <div class="questionsSearchFormTheme">
+                                    <div class="questionsSearchFormName">Тематика</div>
+                                    <div class="typeDropdown dropdownDefault">
+                                        <div class="typeDropdownHead dropdownDefaultHead">
+                                            История
+                                        </div>
+                                        <div class="typeDropdownList dropdownDefaultList">
+                                            <div class="typeDropdownListItem dropdownDefaultListItem">История</div>
+                                            <div class="typeDropdownListItem dropdownDefaultListItem">История</div>
+                                            <div class="typeDropdownListItem dropdownDefaultListItem">История</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="questionsSearchFormUse">
+                                <div class="useItem checkbox">
+                                    <input type="checkbox" id="use">
+                                    <label for="use">Используемые</label>
+                                </div>  
+                                <div class="useItem checkbox">
+                                    <input type="checkbox" id="dontuse">
+                                    <label for="dontuse">Не используемые</label>
+                                </div>    
+                            </div>
+                            <div class="questionsSearchFormBtn">
+                                <button class="btn-blue">
+                                    Поиск
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7 0C10.866 0 14 3.13401 14 7C14 8.57638 13.4789 10.0311 12.5996 11.2012L12.6545 11.2441L12.7071 11.2929L15.7071 14.2929C16.0976 14.6834 16.0976 15.3166 15.7071 15.7071C15.3466 16.0676 14.7794 16.0953 14.3871 15.7903L14.2929 15.7071L11.2929 12.7071C11.2587 12.6729 11.2275 12.6368 11.1993 12.5992C10.031 13.4789 8.57638 14 7 14C3.13401 14 0 10.866 0 7C0 3.13401 3.13401 0 7 0ZM7 2C4.23858 2 2 4.23858 2 7C2 9.76142 4.23858 12 7 12C9.76142 12 12 9.76142 12 7C12 4.23858 9.76142 2 7 2Z" fill="#627698"/>
+                                        </svg>
+                                        
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="questionsSearchBody block scroll-custom">
+                        <div class="questionsSearchBodyItem free">
+                            <div class="questionsSearchBodyItemHead">
+                                <h3 class="questionsSearchBodyItemHeadTitle">
+                                    Какое минимальное преимущество над противником должно быть для победы в волейбольной партии?
+                                </h3>
+                                <div class="questionsSearchBodyItemHeadTags">
+                                    <div class="tag">рим</div>
+                                    <div class="tag">смерти</div>
+                                    <div class="tag">правители</div>
+                                    <div class="tag">Иисус</div>
+                                    <div class="tag">Цезарь</div>
+                                    <div class="tag">правители</div>
+                                    <div class="tag">правители</div>
+                                    <div class="tag">суд</div>
+                                    <div class="tag">игры</div>
+                                    <div class="tag">игры</div>
+                                </div>
+                            </div>
+                            <div class="questionsSearchBodyItemList">
+                                <div class="bodyInfo">
+                                    <div class="names">
+                                        <div class="name">Автор</div>
+                                        <div class="name">Лига</div>
+                                        <div class="name">Тема</div>
+                                        <div class="name">Дата</div>
+                                    </div>
+                                    <div class="values">
+                                        <div class="value">Бондарева Анастасия Владимировна</div>
+                                        <div class="value">Студеньческая</div>
+                                        <div class="value">История</div>
+                                        <div class="value">24.05.2020</div>
+                                    </div>
+                                </div>   
+                                <div class="bodyLink">
+                                    Свободен
+                                </div> 
+                            </div>
+
+                        </div>
+                        <div class="questionsSearchBodyItem used">
+                            <div class="questionsSearchBodyItemHead">
+                                <h3 class="questionsSearchBodyItemHeadTitle">
+                                    Какое минимальное преимущество над противником должно быть для победы в волейбольной партии?
+                                </h3>
+                                <div class="questionsSearchBodyItemHeadTags">
+                                    <div class="tag">рим</div>
+                                    <div class="tag">смерти</div>
+                                    <div class="tag">правители</div>
+                                    <div class="tag">Иисус</div>
+                                    <div class="tag">Цезарь</div>
+                                    <div class="tag">правители</div>
+                                    <div class="tag">правители</div>
+                                    <div class="tag">суд</div>
+                                    <div class="tag">игры</div>
+                                    <div class="tag">игры</div>
+                                </div>
+                            </div>
+                            <div class="questionsSearchBodyItemList">
+                                <div class="bodyInfo">
+                                    <div class="names">
+                                        <div class="name">Автор</div>
+                                        <div class="name">Лига</div>
+                                        <div class="name">Тема</div>
+                                        <div class="name">Дата</div>
+                                    </div>
+                                    <div class="values">
+                                        <div class="value">Бондарева Анастасия Владимировна</div>
+                                        <div class="value">Студеньческая</div>
+                                        <div class="value">История</div>
+                                        <div class="value">24.05.2020</div>
+                                    </div>
+                                </div>   
+                                <div class="bodyLink">
+                                    Используется
+                                </div> 
+                            </div>
+
+                        </div>
+                        <div class="questionsSearchBodyItem free">
+                            <div class="questionsSearchBodyItemHead">
+                                <h3 class="questionsSearchBodyItemHeadTitle">
+                                    Какое минимальное преимущество над противником должно быть для победы в волейбольной партии?
+                                </h3>
+                                <div class="questionsSearchBodyItemHeadTags">
+                                    <div class="tag">рим</div>
+                                    <div class="tag">смерти</div>
+                                    <div class="tag">правители</div>
+                                    <div class="tag">Иисус</div>
+                                    <div class="tag">Цезарь</div>
+                                    <div class="tag">правители</div>
+                                    <div class="tag">правители</div>
+                                    <div class="tag">суд</div>
+                                    <div class="tag">игры</div>
+                                    <div class="tag">игры</div>
+                                </div>
+                            </div>
+                            <div class="questionsSearchBodyItemList">
+                                <div class="bodyInfo">
+                                    <div class="names">
+                                        <div class="name">Автор</div>
+                                        <div class="name">Лига</div>
+                                        <div class="name">Тема</div>
+                                        <div class="name">Дата</div>
+                                    </div>
+                                    <div class="values">
+                                        <div class="value">Бондарева Анастасия Владимировна</div>
+                                        <div class="value">Студеньческая</div>
+                                        <div class="value">История</div>
+                                        <div class="value">24.05.2020</div>
+                                    </div>
+                                </div>   
+                                <div class="bodyLink">
+                                    Свободен
+                                </div> 
+                            </div>
+
+                        </div>
+                        <div class="questionsSearchBodyItem used">
+                            <div class="questionsSearchBodyItemHead">
+                                <h3 class="questionsSearchBodyItemHeadTitle">
+                                    Какое минимальное преимущество над противником должно быть для победы в волейбольной партии?
+                                </h3>
+                                <div class="questionsSearchBodyItemHeadTags">
+                                    <div class="tag">рим</div>
+                                    <div class="tag">смерти</div>
+                                    <div class="tag">правители</div>
+                                    <div class="tag">Иисус</div>
+                                    <div class="tag">Цезарь</div>
+                                    <div class="tag">правители</div>
+                                    <div class="tag">правители</div>
+                                    <div class="tag">суд</div>
+                                    <div class="tag">игры</div>
+                                    <div class="tag">игры</div>
+                                </div>
+                            </div>
+                            <div class="questionsSearchBodyItemList">
+                                <div class="bodyInfo">
+                                    <div class="names">
+                                        <div class="name">Автор</div>
+                                        <div class="name">Лига</div>
+                                        <div class="name">Тема</div>
+                                        <div class="name">Дата</div>
+                                    </div>
+                                    <div class="values">
+                                        <div class="value">Бондарева Анастасия Владимировна</div>
+                                        <div class="value">Студеньческая</div>
+                                        <div class="value">История</div>
+                                        <div class="value">24.05.2020</div>
+                                    </div>
+                                </div>   
+                                <div class="bodyLink">
+                                    Используется
+                                </div> 
+                            </div>
+
+                        </div>
+                        <div class="questionsSearchBodyItem free">
+                            <div class="questionsSearchBodyItemHead">
+                                <h3 class="questionsSearchBodyItemHeadTitle">
+                                    Какое минимальное преимущество над противником должно быть для победы в волейбольной партии?
+                                </h3>
+                                <div class="questionsSearchBodyItemHeadTags">
+                                    <div class="tag">рим</div>
+                                    <div class="tag">смерти</div>
+                                    <div class="tag">правители</div>
+                                    <div class="tag">Иисус</div>
+                                    <div class="tag">Цезарь</div>
+                                    <div class="tag">правители</div>
+                                    <div class="tag">правители</div>
+                                    <div class="tag">суд</div>
+                                    <div class="tag">игры</div>
+                                    <div class="tag">игры</div>
+                                </div>
+                            </div>
+                            <div class="questionsSearchBodyItemList">
+                                <div class="bodyInfo">
+                                    <div class="names">
+                                        <div class="name">Автор</div>
+                                        <div class="name">Лига</div>
+                                        <div class="name">Тема</div>
+                                        <div class="name">Дата</div>
+                                    </div>
+                                    <div class="values">
+                                        <div class="value">Бондарева Анастасия Владимировна</div>
+                                        <div class="value">Студеньческая</div>
+                                        <div class="value">История</div>
+                                        <div class="value">24.05.2020</div>
+                                    </div>
+                                </div>   
+                                <div class="bodyLink">
+                                    Свободен
+                                </div> 
+                            </div>
+
+                        </div>
+                        <div class="questionsSearchBodyItem used">
+                            <div class="questionsSearchBodyItemHead">
+                                <h3 class="questionsSearchBodyItemHeadTitle">
+                                    Какое минимальное преимущество над противником должно быть для победы в волейбольной партии?
+                                </h3>
+                                <div class="questionsSearchBodyItemHeadTags">
+                                    <div class="tag">рим</div>
+                                    <div class="tag">смерти</div>
+                                    <div class="tag">правители</div>
+                                    <div class="tag">Иисус</div>
+                                    <div class="tag">Цезарь</div>
+                                    <div class="tag">правители</div>
+                                    <div class="tag">правители</div>
+                                    <div class="tag">суд</div>
+                                    <div class="tag">игры</div>
+                                    <div class="tag">игры</div>
+                                </div>
+                            </div>
+                            <div class="questionsSearchBodyItemList">
+                                <div class="bodyInfo">
+                                    <div class="names">
+                                        <div class="name">Автор</div>
+                                        <div class="name">Лига</div>
+                                        <div class="name">Тема</div>
+                                        <div class="name">Дата</div>
+                                    </div>
+                                    <div class="values">
+                                        <div class="value">Бондарева Анастасия Владимировна</div>
+                                        <div class="value">Студеньческая</div>
+                                        <div class="value">История</div>
+                                        <div class="value">24.05.2020</div>
+                                    </div>
+                                </div>   
+                                <div class="bodyLink">
+                                    Используется
+                                </div> 
+                            </div>
+
+                        </div>
+                        <div class="questionsSearchBodyItem free">
+                            <div class="questionsSearchBodyItemHead">
+                                <h3 class="questionsSearchBodyItemHeadTitle">
+                                    Какое минимальное преимущество над противником должно быть для победы в волейбольной партии?
+                                </h3>
+                                <div class="questionsSearchBodyItemHeadTags">
+                                    <div class="tag">рим</div>
+                                    <div class="tag">смерти</div>
+                                    <div class="tag">правители</div>
+                                    <div class="tag">Иисус</div>
+                                    <div class="tag">Цезарь</div>
+                                    <div class="tag">правители</div>
+                                    <div class="tag">правители</div>
+                                    <div class="tag">суд</div>
+                                    <div class="tag">игры</div>
+                                    <div class="tag">игры</div>
+                                </div>
+                            </div>
+                            <div class="questionsSearchBodyItemList">
+                                <div class="bodyInfo">
+                                    <div class="names">
+                                        <div class="name">Автор</div>
+                                        <div class="name">Лига</div>
+                                        <div class="name">Тема</div>
+                                        <div class="name">Дата</div>
+                                    </div>
+                                    <div class="values">
+                                        <div class="value">Бондарева Анастасия Владимировна</div>
+                                        <div class="value">Студеньческая</div>
+                                        <div class="value">История</div>
+                                        <div class="value">24.05.2020</div>
+                                    </div>
+                                </div>   
+                                <div class="bodyLink">
+                                    Свободен
+                                </div> 
+                            </div>
+
+                        </div>
+                        <div class="questionsSearchBodyItem used">
+                            <div class="questionsSearchBodyItemHead">
+                                <h3 class="questionsSearchBodyItemHeadTitle">
+                                    Какое минимальное преимущество над противником должно быть для победы в волейбольной партии?
+                                </h3>
+                                <div class="questionsSearchBodyItemHeadTags">
+                                    <div class="tag">рим</div>
+                                    <div class="tag">смерти</div>
+                                    <div class="tag">правители</div>
+                                    <div class="tag">Иисус</div>
+                                    <div class="tag">Цезарь</div>
+                                    <div class="tag">правители</div>
+                                    <div class="tag">правители</div>
+                                    <div class="tag">суд</div>
+                                    <div class="tag">игры</div>
+                                    <div class="tag">игры</div>
+                                </div>
+                            </div>
+                            <div class="questionsSearchBodyItemList">
+                                <div class="bodyInfo">
+                                    <div class="names">
+                                        <div class="name">Автор</div>
+                                        <div class="name">Лига</div>
+                                        <div class="name">Тема</div>
+                                        <div class="name">Дата</div>
+                                    </div>
+                                    <div class="values">
+                                        <div class="value">Бондарева Анастасия Владимировна</div>
+                                        <div class="value">Студеньческая</div>
+                                        <div class="value">История</div>
+                                        <div class="value">24.05.2020</div>
+                                    </div>
+                                </div>   
+                                <div class="bodyLink">
+                                    Используется
+                                </div> 
+                            </div>
+
+                        </div>
+                        <div class="questionsSearchBodyItem free">
+                            <div class="questionsSearchBodyItemHead">
+                                <h3 class="questionsSearchBodyItemHeadTitle">
+                                    Какое минимальное преимущество над противником должно быть для победы в волейбольной партии?
+                                </h3>
+                                <div class="questionsSearchBodyItemHeadTags">
+                                    <div class="tag">рим</div>
+                                    <div class="tag">смерти</div>
+                                    <div class="tag">правители</div>
+                                    <div class="tag">Иисус</div>
+                                    <div class="tag">Цезарь</div>
+                                    <div class="tag">правители</div>
+                                    <div class="tag">правители</div>
+                                    <div class="tag">суд</div>
+                                    <div class="tag">игры</div>
+                                    <div class="tag">игры</div>
+                                </div>
+                            </div>
+                            <div class="questionsSearchBodyItemList">
+                                <div class="bodyInfo">
+                                    <div class="names">
+                                        <div class="name">Автор</div>
+                                        <div class="name">Лига</div>
+                                        <div class="name">Тема</div>
+                                        <div class="name">Дата</div>
+                                    </div>
+                                    <div class="values">
+                                        <div class="value">Бондарева Анастасия Владимировна</div>
+                                        <div class="value">Студеньческая</div>
+                                        <div class="value">История</div>
+                                        <div class="value">24.05.2020</div>
+                                    </div>
+                                </div>   
+                                <div class="bodyLink">
+                                    Свободен
+                                </div> 
+                            </div>
+
+                        </div>
+                        <div class="questionsSearchBodyItem used">
+                            <div class="questionsSearchBodyItemHead">
+                                <h3 class="questionsSearchBodyItemHeadTitle">
+                                    Какое минимальное преимущество над противником должно быть для победы в волейбольной партии?
+                                </h3>
+                                <div class="questionsSearchBodyItemHeadTags">
+                                    <div class="tag">рим</div>
+                                    <div class="tag">смерти</div>
+                                    <div class="tag">правители</div>
+                                    <div class="tag">Иисус</div>
+                                    <div class="tag">Цезарь</div>
+                                    <div class="tag">правители</div>
+                                    <div class="tag">правители</div>
+                                    <div class="tag">суд</div>
+                                    <div class="tag">игры</div>
+                                    <div class="tag">игры</div>
+                                </div>
+                            </div>
+                            <div class="questionsSearchBodyItemList">
+                                <div class="bodyInfo">
+                                    <div class="names">
+                                        <div class="name">Автор</div>
+                                        <div class="name">Лига</div>
+                                        <div class="name">Тема</div>
+                                        <div class="name">Дата</div>
+                                    </div>
+                                    <div class="values">
+                                        <div class="value">Бондарева Анастасия Владимировна</div>
+                                        <div class="value">Студеньческая</div>
+                                        <div class="value">История</div>
+                                        <div class="value">24.05.2020</div>
+                                    </div>
+                                </div>   
+                                <div class="bodyLink">
+                                    Используется
+                                </div> 
+                            </div>
+
+                        </div>
+                        <div class="questionsSearchBodyItem free">
+                            <div class="questionsSearchBodyItemHead">
+                                <h3 class="questionsSearchBodyItemHeadTitle">
+                                    Какое минимальное преимущество над противником должно быть для победы в волейбольной партии?
+                                </h3>
+                                <div class="questionsSearchBodyItemHeadTags">
+                                    <div class="tag">рим</div>
+                                    <div class="tag">смерти</div>
+                                    <div class="tag">правители</div>
+                                    <div class="tag">Иисус</div>
+                                    <div class="tag">Цезарь</div>
+                                    <div class="tag">правители</div>
+                                    <div class="tag">правители</div>
+                                    <div class="tag">суд</div>
+                                    <div class="tag">игры</div>
+                                    <div class="tag">игры</div>
+                                </div>
+                            </div>
+                            <div class="questionsSearchBodyItemList">
+                                <div class="bodyInfo">
+                                    <div class="names">
+                                        <div class="name">Автор</div>
+                                        <div class="name">Лига</div>
+                                        <div class="name">Тема</div>
+                                        <div class="name">Дата</div>
+                                    </div>
+                                    <div class="values">
+                                        <div class="value">Бондарева Анастасия Владимировна</div>
+                                        <div class="value">Студеньческая</div>
+                                        <div class="value">История</div>
+                                        <div class="value">24.05.2020</div>
+                                    </div>
+                                </div>   
+                                <div class="bodyLink">
+                                    Свободен
+                                </div> 
+                            </div>
+
+                        </div>
+                        <div class="questionsSearchBodyItem used">
+                            <div class="questionsSearchBodyItemHead">
+                                <h3 class="questionsSearchBodyItemHeadTitle">
+                                    Какое минимальное преимущество над противником должно быть для победы в волейбольной партии?
+                                </h3>
+                                <div class="questionsSearchBodyItemHeadTags">
+                                    <div class="tag">рим</div>
+                                    <div class="tag">смерти</div>
+                                    <div class="tag">правители</div>
+                                    <div class="tag">Иисус</div>
+                                    <div class="tag">Цезарь</div>
+                                    <div class="tag">правители</div>
+                                    <div class="tag">правители</div>
+                                    <div class="tag">суд</div>
+                                    <div class="tag">игры</div>
+                                    <div class="tag">игры</div>
+                                </div>
+                            </div>
+                            <div class="questionsSearchBodyItemList">
+                                <div class="bodyInfo">
+                                    <div class="names">
+                                        <div class="name">Автор</div>
+                                        <div class="name">Лига</div>
+                                        <div class="name">Тема</div>
+                                        <div class="name">Дата</div>
+                                    </div>
+                                    <div class="values">
+                                        <div class="value">Бондарева Анастасия Владимировна</div>
+                                        <div class="value">Студеньческая</div>
+                                        <div class="value">История</div>
+                                        <div class="value">24.05.2020</div>
+                                    </div>
+                                </div>   
+                                <div class="bodyLink">
+                                    Используется
+                                </div> 
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </main>
+    </div>
+    <!-- Popups -->
+    @@include('./blocks/popup-block.html')
+    @@include('./blocks/popup-notification.html')
+    @@include('./blocks/popup-unblock.html')
+
+    <!-- Push-notifications -->
+    @@include('./blocks/push-block-success.html')
+    @@include('./blocks/push-unblock-success.html')
+    @@include('./blocks/push-block-error.html')
+    @@include('./blocks/push-unblock-error.html')
+    <script defer src="./js/bundle.js"></script>
+</body>
+</html>

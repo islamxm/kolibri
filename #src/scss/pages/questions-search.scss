@@ -1,0 +1,254 @@
+.questionsSearch {
+    display: flex;
+    max-width: 1300px;
+    width: 100%;
+    justify-content: space-between;
+
+    .questionsSearchBlock {
+        width: 420px;
+        height: 710px;
+        padding: 30px;
+
+        .questionsSearchForm {
+            label {
+                display: block;
+            }
+
+            .questionsSearchFormName {
+                padding-left: 12px;
+                font-size: 12px;
+                line-height: 14px;
+                color: var(--text_dark2);
+                margin-bottom: 6px;
+            }
+    
+            .questionsSearchFormTags {
+                
+                margin-bottom: 15px;
+                .questionsSearchFormTagsList {
+                    border-radius: 10px;
+                    background-color: var(--hover);
+                    padding: 10px 15px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 5px;
+                }
+            }
+
+            .questionsSearchFormAuthor {
+                margin-bottom: 19px;
+            }
+
+            .questionsSearchFormDates {
+                display: flex;
+                gap: 10px;
+                margin-bottom: 19px;
+            }
+
+            .questionsSearchFormTypes {
+                display: flex;
+                gap: 10px;
+                margin-bottom: 17px;
+
+                .questionsSearchFormName {
+                    color: var(--pallete_gray3);
+                }
+
+                .questionsSearchFormLeague {
+                    width: 50%;
+                }
+
+                .questionsSearchFormTheme {
+                    width: 50%;
+                }
+                .typeDropdown {
+                    cursor: pointer;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: var(--pallete_gray3);
+                    
+                }
+                .typeDropdown.dropdownDefaultActive {
+                    .typeDropdownHead {
+                        &:after {
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
+
+                .typeDropdownHead {
+                    padding: 14px 15px;
+                    background-color: #fff;
+                    border: 1px solid #C5D0E7;
+                    border-radius: 10px;
+
+                    position: relative;
+
+                    &:after {
+                        position: absolute;
+                        content: url('../img/top-ar.svg');
+                        top: calc(50% - 8.4px);
+                        right: 17px;
+                        @include ease-02;
+                    }
+                }
+            }
+
+            .questionsSearchFormUse {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 20px;
+            }
+
+            .questionsSearchFormBtn {
+
+                .btn-blue {
+                    display: flex;
+                    align-items: center;
+
+                    svg {
+                        margin-left: 11px;
+                    }
+                }
+            }
+        }
+        
+    }
+
+    .questionsSearchBody {
+        width: 848px;
+        height: 710px;
+        
+
+        .questionsSearchBodyItem.questionsSearchBodyItemActive {
+            .questionsSearchBodyItemHead {
+                .questionsSearchBodyItemHeadTitle {
+                    &:after {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+            .questionsSearchBodyItemList {
+                opacity: 1;
+            }
+        }
+
+        .questionsSearchBodyItem.free {
+            &:after {
+                content: url('../img/flag-gr.svg');
+            }
+
+            .questionsSearchBodyItemList {
+                .bodyLink {
+                    color: var(--base_green);
+                }
+            }
+        }
+        .questionsSearchBodyItem.used {
+            &:after {
+                content: url('../img/flag-yl.svg');
+            } 
+
+            .questionsSearchBodyItemList {
+                .bodyLink {
+                    color: var(--base_yellow);
+                }
+            }
+        }
+        .questionsSearchBodyItem {
+            padding-top: 30px;
+            padding-bottom: 20px;
+            position: relative;
+            border-bottom: 1px solid var(--devaider);
+
+
+            &:last-child {
+                border: none;
+            }
+            
+            &:after {
+                position: absolute;
+                top: 30px;
+                right: 0;
+            }
+
+            .questionsSearchBodyItemHead {
+                cursor: pointer;
+                padding-left: 15px;
+
+                .questionsSearchBodyItemHeadTitle {
+                    max-width: 660px;
+                    font-weight: 700;
+                    color: var(--base_blue);
+                    font-size: 16px;
+                    line-height: 19.2px;
+                    margin-bottom: 10px;
+                    padding-left: 51px;
+                    position: relative;
+
+                    &:after {
+                        position: absolute;
+                        content: url('../img/drop-btn.svg');
+                        top: 0;
+                        left: 0;
+                        @include ease-02;
+                    }
+                }
+
+                .questionsSearchBodyItemHeadTags {
+                    display: flex;
+                    gap: 5px;
+                    margin-bottom: 30px;
+                    padding-left: 51px;
+                    padding-right: 20px;
+                }
+            }
+
+            .questionsSearchBodyItemList {
+                height: 0;
+                opacity: 0;
+                overflow: hidden;
+                @include ease-02;
+
+                padding-left: 66px;
+                padding-right: 20px;
+                
+
+                
+
+                .bodyInfo {
+                    display: flex;
+                    margin-bottom: 20px;
+
+                    .names {
+                        margin-right: 30px;
+                        .name {
+                            font-size: 14px;
+                            line-height: 16.8px;
+                            color: var(--text_dark2);
+                        }
+                    }
+
+                    .values {
+
+                        .value {
+                            color: var(--pallete_gray3);
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 16.8px;
+                        }
+                    }
+                }
+
+                .bodyLink {
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 16.8px;
+                    color: var(--base_green);
+                }
+
+            }
+        }
+    }
+}
