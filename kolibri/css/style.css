@@ -1650,6 +1650,9 @@ body {
 }
 
 /* Попапы */
+#popupBlock {
+  display: none;
+}
 #popupBlock .popupOverlay .popupBlock {
   max-width: 551px;
   width: 100%;

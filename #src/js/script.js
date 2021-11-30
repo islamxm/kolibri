@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const asideBtn = document.querySelector('.asideBtn');
     const aside = document.querySelector('.aside');
-    const asideNavList = document.querySelectorAll('.asideNavItemList');
 
 
     function accordeonFunc(dropItemsQuery, droppedClass, dropListQuery, targetItem) {
@@ -34,38 +33,23 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    
+    function asideToggler(asideBtnQuery) {
+        let asideBtn = document.querySelector(asideBtnQuery)
+        asideBtn.addEventListener('click', () => {
+            aside.classList.toggle('asideActive');
+        });
+    }
 
 
-    // function asideShow() {
-    //     // aside.style.backgroundColor = '#fff';
-    // }
+    /* Функционал для показа/скрытия сайдбара */
+    asideToggler('.asideBtn');
 
-    // function asideHide() {
-    //     // aside.style.backgroundColor = 'green';
-    // }
-
-    asideBtn.addEventListener('click', () => {
-        aside.classList.toggle('asideActive');
-        // if (aside.classList.contains('asideActive')) {
-        //     asideShow();
-        //     // asideNavList.forEach(i => {
-        //     //     i.style.height = '0px';
-        //     // });
-        // }
-
-        // if(!aside.classList.contains('asideActive')) {
-        //     asideHide();
-            
-            
-        // }
-    });
 
     /* Функционал для аккордеона главного меню(сайдбара) */
     accordeonFunc('.asideNavItem', 'asideNavItemDropped', '.asideNavItemList', 'asideNavItemHead');
     accordeonFunc('.popupBlockDateDrop', 'popupBlockDateDropActive', '.popupBlockDateList', 'popupBlockDateHead');
     accordeonFunc('.dropdownDefault', 'dropdownDefaultActive', '.dropdownDefaultList', 'dropdownDefaultHead');
-    // accordeonFunc('.playersBlacklistTopInput', 'playersBlacklistTopInputActive', '.playersBlacklistTopInputList', 'playersBlacklistTopInputHead');
+    
 });
 
 
