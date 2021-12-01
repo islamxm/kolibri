@@ -33,6 +33,11 @@
   --window: 0px 4px 50px #E3ECFA;
   --block-shadow: 0px 4px 50px #DDE7F7;
   --push_shadow: 4px 10px 20px 3px rgba(178, 172, 220, 0.6);
+  --btn_close: #FFE1C7;
+  --btn_done: #C5FBDA;
+  --btn_more: #FCF2BC;
+  --btn_drop: #DCEEFC;
+  --btn_create: #DCDFFF;
 }
 
 /* КНОПКИ */
@@ -168,6 +173,83 @@ body {
 .formName {
   font-size: 12px;
   line-height: 14.09px;
+  color: var(--text_dark2);
+}
+
+.btn_close {
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.btn_close svg circle {
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.btn_close:hover svg circle {
+  fill: var(--btn_close);
+}
+.btn_close:active {
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.btn_done {
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.btn_done svg circle {
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.btn_done:hover svg circle {
+  fill: var(--btn_done);
+}
+.btn_done:active {
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.btn_drop svg {
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.btn_drop svg circle {
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.btn_drop:hover svg circle {
+  fill: var(--btn_drop);
+}
+.btn_drop:active svg {
+  -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.btn_create {
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.btn_create svg circle {
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.btn_create:hover svg circle {
+  fill: var(--btn_create);
+}
+.btn_create:active {
+  -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+          transform: scale(0.8);
 }
 
 /* Компонетны */
@@ -203,6 +285,11 @@ body {
   --window: 0px 4px 50px #E3ECFA;
   --block-shadow: 0px 4px 50px #DDE7F7;
   --push_shadow: 4px 10px 20px 3px rgba(178, 172, 220, 0.6);
+  --btn_close: #FFE1C7;
+  --btn_done: #C5FBDA;
+  --btn_more: #FCF2BC;
+  --btn_drop: #DCEEFC;
+  --btn_create: #DCDFFF;
 }
 
 /* КНОПКИ */
@@ -224,6 +311,21 @@ body {
   -webkit-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
+}
+.input::-webkit-input-placeholder {
+  color: var(--pallete_gray2);
+}
+.input::-moz-placeholder {
+  color: var(--pallete_gray2);
+}
+.input:-ms-input-placeholder {
+  color: var(--pallete_gray2);
+}
+.input::-ms-input-placeholder {
+  color: var(--pallete_gray2);
+}
+.input::placeholder {
+  color: var(--pallete_gray2);
 }
 .input:hover {
   border-color: var(--pallete_blue2);
@@ -253,6 +355,21 @@ body {
   transition: all 0.2s ease;
   border: 2px solid var(--pallete_green2);
 }
+.input.inputSuccess::-webkit-input-placeholder {
+  color: var(--pallete_gray2);
+}
+.input.inputSuccess::-moz-placeholder {
+  color: var(--pallete_gray2);
+}
+.input.inputSuccess:-ms-input-placeholder {
+  color: var(--pallete_gray2);
+}
+.input.inputSuccess::-ms-input-placeholder {
+  color: var(--pallete_gray2);
+}
+.input.inputSuccess::placeholder {
+  color: var(--pallete_gray2);
+}
 .input.inputSuccess:hover {
   border-color: var(--pallete_blue2);
 }
@@ -280,6 +397,21 @@ body {
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
   border: 2px solid var(--pallete_red3);
+}
+.input.inputError::-webkit-input-placeholder {
+  color: var(--pallete_gray2);
+}
+.input.inputError::-moz-placeholder {
+  color: var(--pallete_gray2);
+}
+.input.inputError:-ms-input-placeholder {
+  color: var(--pallete_gray2);
+}
+.input.inputError::-ms-input-placeholder {
+  color: var(--pallete_gray2);
+}
+.input.inputError::placeholder {
+  color: var(--pallete_gray2);
 }
 .input.inputError:hover {
   border-color: var(--pallete_blue2);
@@ -726,6 +858,7 @@ body {
 .table .tableRow .tableRowItem {
   padding: 16px 30px;
   border-bottom: 1px solid var(--devaider);
+  color: var(--text_dark2);
   font-weight: 500;
   font-size: 14px;
   line-height: 19.6px;
@@ -1910,10 +2043,10 @@ body {
   width: 848px;
   height: 710px;
 }
-.questionsSearch .questionsSearchBody .questionsSearchBodyItem.questionsSearchBodyItemActive .questionsSearchBodyItemHead .questionsSearchBodyItemHeadTitle:after {
-  -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-          transform: rotate(180deg);
+.questionsSearch .questionsSearchBody .questionsSearchBodyItem.questionsSearchBodyItemActive .questionsSearchBodyItemHead .questionsSearchBodyItemHeadTitle svg {
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg);
 }
 .questionsSearch .questionsSearchBody .questionsSearchBodyItem.questionsSearchBodyItemActive .questionsSearchBodyItemList {
   opacity: 1;
@@ -1958,9 +2091,8 @@ body {
   padding-left: 51px;
   position: relative;
 }
-.questionsSearch .questionsSearchBody .questionsSearchBodyItem .questionsSearchBodyItemHead .questionsSearchBodyItemHeadTitle:after {
+.questionsSearch .questionsSearchBody .questionsSearchBodyItem .questionsSearchBodyItemHead .questionsSearchBodyItemHeadTitle svg {
   position: absolute;
-  content: url("../img/drop-btn.svg");
   top: 0;
   left: 0;
   -webkit-transition: all 0.2s ease;
@@ -2211,6 +2343,178 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 19.6px;
+}
+
+.teamsList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1300px;
+  width: 100%;
+}
+.teamsList .teamsListTable {
+  width: 970.38px;
+  max-height: 829px;
+}
+.teamsList .teamsListSearch {
+  width: 310px;
+  height: 710px;
+  padding: 20px;
+}
+.teamsList .teamsListSearch .teamsListSearchForm .formName {
+  margin-bottom: 6px;
+  padding-left: 15px;
+}
+.teamsList .teamsListSearch .teamsListSearchForm .teamsListSearchFormTeam {
+  margin-bottom: 19px;
+}
+.teamsList .teamsListSearch .teamsListSearchForm .teamsListSearchFormDate {
+  margin-bottom: 19px;
+}
+.teamsList .teamsListSearch .teamsListSearchForm .teamsListSearchFormLeagueItem.dropdownDefaultActive .teamsListSearchFormLeagueHead {
+  border: 2px solid var(--pallete_blue2);
+}
+.teamsList .teamsListSearch .teamsListSearchForm .teamsListSearchFormLeagueItem.dropdownDefaultActive .teamsListSearchFormLeagueHead:after {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.teamsList .teamsListSearch .teamsListSearchForm .teamsListSearchFormLeagueItem {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--pallete_gray3);
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+.teamsList .teamsListSearch .teamsListSearchForm .teamsListSearchFormLeagueHead {
+  padding: 14px 15px;
+  border: 2px solid var(--devaider);
+  border-radius: 10px;
+  position: relative;
+}
+.teamsList .teamsListSearch .teamsListSearchForm .teamsListSearchFormLeagueHead:after {
+  position: absolute;
+  top: calc(50% - 8.4px);
+  right: 17px;
+  content: url("../img/top-ar.svg");
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.teamsList .teamsListSearch .teamsListSearchForm .teamsListSearchFormCheckboxs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+.teamsList .teamsListSearch .teamsListSearchForm .teamsListSearchFormBtn .btn-blue {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.teamsList .teamsListSearch .teamsListSearchForm .teamsListSearchFormBtn .btn-blue svg {
+  margin-left: 10px;
+}
+
+.searchItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1300px;
+  width: 100%;
+}
+.searchItem .searchItemInfo {
+  width: 530px;
+  max-height: 488px;
+}
+.searchItem .searchItemInfo .searchItemInfoTitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21.6px;
+  padding: 30px 30px 15px 30px;
+}
+.searchItem .searchItemInfo .searchItemInfoTable .table .tableRow:last-child .tableRowItem {
+  border-bottom: 1px solid var(--devaider);
+}
+.searchItem .searchItemInfo .searchItemInfoTable .table .tableRow .tableRowItem {
+  color: var(--pallete_gray3);
+}
+.searchItem .searchItemInfo .searchItemInfoTable .table .tableRow .tableRowItem.tableRowItemProfile {
+  position: relative;
+  padding-left: 70px;
+}
+.searchItem .searchItemInfo .searchItemInfoTable .table .tableRow .tableRowItem.tableRowItemProfile:after {
+  position: absolute;
+  top: calc(50% - 15px);
+  left: 30px;
+  content: url("../img/ph.svg");
+}
+.searchItem .searchItemInfo .searchItemInfoTable .table .tableRow .tableRowItem.tableRowItemAmp span {
+  padding: 5px 10px;
+  display: inline-block;
+  border-radius: 8px;
+}
+.searchItem .searchItemInfo .searchItemInfoTable .table .tableRow .tableRowItem.captain span {
+  background-color: var(--pallete_red1);
+  color: var(--pallete_red3);
+}
+.searchItem .searchItemInfo .searchItemInfoTable .table .tableRow .tableRowItem.base span {
+  background-color: var(--pallete_green1);
+  color: var(--pallete_green3);
+}
+.searchItem .searchItemInfo .searchItemInfoTable .table .tableRow .tableRowItem.legion span {
+  background-color: var(--pallete_yellow1);
+  color: var(--pallete_yellow3);
+}
+.searchItem .searchItemInfo .searchItemInfoBottom {
+  padding: 25px 30px 25px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.searchItem .searchItemInfo .searchItemInfoBottom .bottomInfo .bottomInfoItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.searchItem .searchItemInfo .searchItemInfoBottom .bottomInfo .bottomInfoItem .bottomInfoItemName {
+  width: 120px;
+  color: var(--text_dark2);
+}
+.searchItem .searchItemInfo .searchItemInfoBottom .bottomInfo .bottomInfoItem .bottomInfoItemValue {
+  font-weight: 600;
+  color: var(--pallete_gray3);
+}
+.searchItem .searchItemInfo .searchItemInfoBottom .bottomBtns {
+  margin-left: 31px;
+}
+.searchItem .searchItemInfo .searchItemInfoBottom .bottomBtns button:first-child {
+  margin-bottom: 11px;
+}
+.searchItem .searchItemReglist {
+  width: 743px;
+  height: 410px;
+}
+.searchItem .searchItemReglist .searchItemReglistTitle {
+  padding: 30px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21.6px;
 }
 
 /* Попапы */

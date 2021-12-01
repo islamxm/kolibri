@@ -124,8 +124,8 @@
         .questionsSearchBodyItem.questionsSearchBodyItemActive {
             .questionsSearchBodyItemHead {
                 .questionsSearchBodyItemHeadTitle {
-                    &:after {
-                        transform: rotate(180deg);
+                    svg {
+                        transform: rotate(-180deg);
                     }
                 }
             }
@@ -187,13 +187,20 @@
                     padding-left: 51px;
                     position: relative;
 
-                    &:after {
+
+                    svg {
                         position: absolute;
-                        content: url('../img/drop-btn.svg');
                         top: 0;
                         left: 0;
                         @include ease-02;
                     }
+                    // &:after {
+                    //     position: absolute;
+                    //     content: url('../img/drop-btn.svg');
+                    //     top: 0;
+                    //     left: 0;
+                    //     @include ease-02;
+                    // }
                 }
 
                 .questionsSearchBodyItemHeadTags {

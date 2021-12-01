@@ -49,6 +49,17 @@
     --push_shadow: 4px 10px 20px 3px rgba(178, 172, 220, 0.6);
     // --table_border: 1px solid #C5D0E7;
 
+
+    //Фон при наведении для круглых кнопок
+    --btn_close: #FFE1C7;
+    --btn_done: #C5FBDA;
+    --btn_more: #FCF2BC;
+    --btn_drop: #DCEEFC;
+    --btn_create: #DCDFFF;
+
+
+
+
 }
 
 
@@ -510,6 +521,10 @@
     font-weight: 600;
     @include ease-02;
 
+
+    &::placeholder {
+        color: var(--pallete_gray2);
+    }
     &:hover {
         border-color: var(--pallete_blue2);
     }

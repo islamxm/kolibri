@@ -178,7 +178,7 @@
                                     <input id="trueAnswer1" type="text" class="input" placeholder="Красный цвет">
                                 </div>
                                 <div class="questionsLeftAddBtn">
-                                    <button>
+                                    <button class="btn_create">
                                         <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <circle r="18" transform="matrix(1 0 0 -1 18 18)" fill="#F0F1FF"/>
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M17.7561 25.0488C18.2949 25.0488 18.7317 24.612 18.7317 24.0732V18.2196H24.5853C25.1241 18.2196 25.5609 17.7828 25.5609 17.2439C25.5609 16.7051 25.1241 16.2683 24.5853 16.2683H18.7317V10.4147C18.7317 9.87587 18.2949 9.43907 17.7561 9.43907C17.2172 9.43907 16.7804 9.87587 16.7804 10.4147V16.2683H10.9268C10.388 16.2683 9.95117 16.7051 9.95117 17.2439C9.95117 17.7828 10.388 18.2196 10.9268 18.2196H16.7804V24.0732C16.7804 24.612 17.2172 25.0488 17.7561 25.0488Z" fill="#7F84EC"/>
@@ -260,7 +260,7 @@
     <div class="popup" id="popupQSave">
     <div class="popupOverlay">
         <div class="popupContent popupQSave block">
-            <button class="popupCloseBtn"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <button class="popupCloseBtn btn_close"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="15" cy="15" r="15" fill="#FFF1E5"/>
             <path fill-rule="evenodd" clip-rule="evenodd" d="M16.4142 15L20.7072 10.707C21.0982 10.316 21.0982 9.68401 20.7072 9.29301C20.3162 8.90201 19.6842 8.90201 19.2933 9.29301L15.0002 13.586L10.7072 9.29301C10.3162 8.90201 9.68425 8.90201 9.29325 9.29301C8.90225 9.68401 8.90225 10.316 9.29325 10.707L13.5862 15L9.29325 19.293C8.90225 19.684 8.90225 20.316 9.29325 20.707C9.48825 20.902 9.74425 21 10.0002 21C10.2563 21 10.5122 20.902 10.7072 20.707L15.0002 16.414L19.2933 20.707C19.4882 20.902 19.7443 21 20.0002 21C20.2562 21 20.5122 20.902 20.7072 20.707C21.0982 20.316 21.0982 19.684 20.7072 19.293L16.4142 15Z" fill="#FAB294"/>
             </svg>
@@ -281,7 +281,7 @@
     <!-- Push-notifications -->
     <div class="push" id="pushQError">
     <div class="pushContent pushQError block">
-        <button class="pushClose">
+        <button class="pushClose btn_close">
             <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="15" cy="15" r="15" fill="#FFF1E5"/>
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M16.4142 15L20.7072 10.707C21.0982 10.316 21.0982 9.68401 20.7072 9.29301C20.3162 8.90201 19.6842 8.90201 19.2933 9.29301L15.0002 13.586L10.7072 9.29301C10.3162 8.90201 9.68425 8.90201 9.29325 9.29301C8.90225 9.68401 8.90225 10.316 9.29325 10.707L13.5862 15L9.29325 19.293C8.90225 19.684 8.90225 20.316 9.29325 20.707C9.48825 20.902 9.74425 21 10.0002 21C10.2563 21 10.5122 20.902 10.7072 20.707L15.0002 16.414L19.2933 20.707C19.4882 20.902 19.7443 21 20.0002 21C20.2562 21 20.5122 20.902 20.7072 20.707C21.0982 20.316 21.0982 19.684 20.7072 19.293L16.4142 15Z" fill="#FAB294"/>
@@ -307,7 +307,7 @@
 </div>
     <div class="push" id="pushQSuccess">
     <div class="pushContent pushQSuccess block">
-        <button class="pushClose">
+        <button class="pushClose btn_close">
             <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="15" cy="15" r="15" fill="#FFF1E5"/>
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M16.4142 15L20.7072 10.707C21.0982 10.316 21.0982 9.68401 20.7072 9.29301C20.3162 8.90201 19.6842 8.90201 19.2933 9.29301L15.0002 13.586L10.7072 9.29301C10.3162 8.90201 9.68425 8.90201 9.29325 9.29301C8.90225 9.68401 8.90225 10.316 9.29325 10.707L13.5862 15L9.29325 19.293C8.90225 19.684 8.90225 20.316 9.29325 20.707C9.48825 20.902 9.74425 21 10.0002 21C10.2563 21 10.5122 20.902 10.7072 20.707L15.0002 16.414L19.2933 20.707C19.4882 20.902 19.7443 21 20.0002 21C20.2562 21 20.5122 20.902 20.7072 20.707C21.0982 20.316 21.0982 19.684 20.7072 19.293L16.4142 15Z" fill="#FAB294"/>

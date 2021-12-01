@@ -1,0 +1,80 @@
+.teamsList {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1300px;
+    width: 100%;
+
+    .teamsListTable {
+        width: 970.38px;
+        max-height: 829px;
+    }
+    .teamsListSearch {
+        width: 310px;
+        height: 710px;
+
+        padding: 20px;
+
+        .teamsListSearchForm {
+
+            .formName {
+                margin-bottom: 6px;
+                padding-left: 15px;
+            }
+
+            .teamsListSearchFormTeam {
+                margin-bottom: 19px;
+            } 
+            .teamsListSearchFormDate {
+                margin-bottom: 19px;
+            }
+            .teamsListSearchFormLeagueItem.dropdownDefaultActive {
+                .teamsListSearchFormLeagueHead {
+                    border: 2px solid var(--pallete_blue2);
+                    &:after {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+            .teamsListSearchFormLeagueItem {
+                font-weight: 600;
+                font-size: 14px;
+                color: var(--pallete_gray3);
+                cursor: pointer;
+                margin-bottom: 15px;
+            }
+            .teamsListSearchFormLeagueHead {
+                padding: 14px 15px;
+                border: 2px solid var(--devaider);
+                border-radius: 10px;
+                position: relative;
+
+                &:after {
+                    position: absolute;
+                    top: calc(50% - 8.4px);
+                    right: 17px;
+                    content: url('../img/top-ar.svg');
+                    @include ease-02;
+                }
+            }
+
+            .teamsListSearchFormCheckboxs {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 20px;
+
+
+            }
+
+            .teamsListSearchFormBtn {
+                .btn-blue {
+                    display: flex;
+                    align-items: center;
+
+                    svg {
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

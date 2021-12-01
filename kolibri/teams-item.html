@@ -145,7 +145,7 @@
 </aside>
         <main class="main">
             <div class="headerInfo">
-<!--                 <div class="container"> -->
+                <!-- <div class="container"> -->
                     <div class="headerInfoTop">
                         <a href="#" class="user">
                             <div class="userImg">
@@ -154,104 +154,135 @@
                             Владимир Владимиров
                         </a>
                     </div>
-<!--                 </div> -->
-<!--                 <div class="container"> -->
+                <!-- </div> -->
+                <!-- <div class="container"> -->
                     <div class="headerInfoBottom">
                         <div class="pathList">
                             <a href="#" class="pathItem">Игроки</a>
-                            <a href="#" class="pathItem pathItemCurrent">Черный список</a>
+                            <a href="#" class="pathItem pathItemCurrent">Участники</a>
                         </div>    
                     </div>
-<!--                 </div> -->
+                <!-- </div> -->
+                
             </div>
-
             <div class="content">
-                <div class="playersBlacklist">
-                    <div class="playersBlacklistTop">
-                        <div class="playersBlacklistTopInput searchInput dropdownDefault">
-                            <div class="playersBlacklistTopInputHead dropdownDefaultHead">
-                                <input class="input" type="text" placeholder="Теханский Владимир Владимирович">
-                                <button>
-                                    <img src="./img/search.svg" alt="search">
+                <div class="searchItem">
+                    <div class="searchItemInfo block">
+                        <div class="searchItemInfoTitle">Светоносный рыцарь</div>
+                        <div class="searchItemInfoTable">
+                            <table class="table">
+                                <tr class="tableRow">
+                                    <td class="tableRowItem tableRowItemProfile">Анна Держинская</td>
+                                    <td class="tableRowItem tableRowItemAmp captain"><span>Капитан</span></td>
+                                    <td class="tableRowItem tableRowItemNum">Номер 1</td>
+                                </tr>
+                                <tr class="tableRow">
+                                    <td class="tableRowItem tableRowItemProfile">Анна Держинская</td>
+                                    <td class="tableRowItem tableRowItemAmp base"><span>Базовый</span></td>
+                                    <td class="tableRowItem tableRowItemNum">Номер 1</td>
+                                </tr>
+                                <tr class="tableRow">
+                                    <td class="tableRowItem tableRowItemProfile">Анна Держинская</td>
+                                    <td class="tableRowItem tableRowItemAmp base"><span>Базовый</span></td>
+                                    <td class="tableRowItem tableRowItemNum">Номер 1</td>
+                                </tr>
+                                <tr class="tableRow">
+                                    <td class="tableRowItem tableRowItemProfile">Анна Держинская</td>
+                                    <td class="tableRowItem tableRowItemAmp legion"><span>Легионер</span></td>
+                                    <td class="tableRowItem tableRowItemNum">Номер 1</td>
+                                </tr>
+                                <tr class="tableRow">
+                                    <td class="tableRowItem tableRowItemProfile">Анна Держинская</td>
+                                    <td class="tableRowItem tableRowItemAmp legion"><span>Легионер</span></td>
+                                    <td class="tableRowItem tableRowItemNum">Номер 1</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="searchItemInfoBottom">
+                            <div class="bottomInfo">
+                                <div class="bottomInfoItem">
+                                    <div class="bottomInfoItemName">Лига турнира</div>
+                                    <div class="bottomInfoItemValue">Студеньческая</div>
+                                </div>
+                                <div class="bottomInfoItem">
+                                    <div class="bottomInfoItemName">Дата создания</div>
+                                    <div class="bottomInfoItemValue">25.05.2020</div>
+                                </div>
+                            </div>
+                            <div class="bottomBtns">
+                                <button class="funcBtn btnSendPush">
+                                    <div>
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.2258 0.419409C10.4412 -0.190641 9.30676 -0.135181 8.58579 0.585786L0.585786 8.58579L0.412161 8.78394C0.146329 9.13103 0 9.55797 0 10V14L0.0134555 14.2332C0.128986 15.2279 0.974328 16 2 16H6L6.26289 15.9827C6.69629 15.9252 7.10165 15.7268 7.41421 15.4142L15.4142 7.41421L15.5806 7.2258C16.1906 6.44122 16.1352 5.30675 15.4142 4.58579L11.4142 0.585786L11.2258 0.419409ZM2.20967 12.1573C1.91546 11.9285 1.49003 11.9493 1.21967 12.2197L1.15456 12.294C1.05487 12.4241 1 12.5842 1 12.75V14.25L1.00505 14.3375C1.04837 14.7105 1.36537 15 1.75 15H3.25L3.34858 14.9935C3.51111 14.9719 3.66312 14.8975 3.78033 14.7803L3.84272 14.7097C4.07149 14.4155 4.05069 13.99 3.78033 13.7197L2.28033 12.2197L2.20967 12.1573Z" fill="#52616B"/>
+                                            </svg>
+                                            
+                                    </div>
+                                    Написать уведомление
+                                </button>
+                                <button class="funcBtn btnBlock">
+                                    <div>
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C12.4183 0 16 3.58172 16 8C16 12.4183 12.4183 16 8 16C3.58172 16 0 12.4183 0 8C0 3.58172 3.58172 0 8 0ZM8 11C7.44772 11 7 11.4477 7 12C7 12.5523 7.44772 13 8 13C8.55228 13 9 12.5523 9 12C9 11.4477 8.55228 11 8 11ZM8 3C7.48716 3 7.06449 3.38604 7.00673 3.88338L7 4V9C7 9.55229 7.44772 10 8 10C8.51284 10 8.93551 9.61396 8.99327 9.11662L9 9V4C9 3.44772 8.55229 3 8 3Z" fill="#52616B"></path>
+                                            </svg>
+                                    </div>
+                                    Заблокировать
                                 </button>
                             </div>
-                            <div class="playersBlacklistTopInputList dropdownDefaultList">
-                                <div class="playersBlacklistTopInputListItem dropdownDefaultListItem">Теханский Владимир Владимирович</div>
-                                <div class="playersBlacklistTopInputListItem dropdownDefaultListItem">Теханский Владимир Владимирович</div>
-                                <div class="playersBlacklistTopInputListItem dropdownDefaultListItem">Теханский Владимир Владимирович</div>
-                            </div>
-                        </div>
-                        <div class="playersBlacklistTopBtns">
-                            <button class="playersBlacklistTopBtn btn-tr-orange">
-                                <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.4805 6.12851C12.7393 5.35203 12.0006 4.61332 11.2241 4.87214L1.88158 7.98632C1.18111 8.21981 0.971245 9.10883 1.49335 9.63093L3.64147 11.7791L7.69884 9.65377L5.57355 13.7111L7.7217 15.8593C8.2438 16.3814 9.13281 16.1715 9.3663 15.471L12.4805 6.12851Z" fill="#A9B4CB"/>
-                                <ellipse cx="2.14076" cy="15.1864" rx="1.43666" ry="1.43666" fill="#A9B4CB"/>
-                                </svg>     
-                                Увеличить срок
-                            </button>
-                            <button class="playersBlacklistTopBtn btn-tr-green">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="0.222656" y="0.222168" width="4.5824" height="4.5824" rx="1.4" fill="#A9B4CB"/>
-                                <rect x="0.222656" y="7.0957" width="4.5824" height="4.5824" rx="1.4" fill="#A9B4CB"/>
-                                <rect x="7.09668" y="0.222168" width="4.5824" height="4.5824" rx="1.4" fill="#A9B4CB"/>
-                                <rect x="7.09668" y="7.0957" width="8.0192" height="8.0192" rx="1.4" fill="#A9B4CB"/>
-                                </svg>                                    
-                                Разблокировать
-                            </button>
                         </div>
                     </div>
-                    <div class="playersBlacklistMain block scroll-custom">
+                    <div class="searchItemReglist block scroll-custom">
+                        <div class="searchItemReglistTitle">
+                            Зарегистрированы на турниры
+                        </div>
                         <table class="table">
                             <tr class="tableHeadaRow">
-                                <th class="tableHeadRowItem">Имя участника</th>
-                                <th class="tableHeadRowItem">Дата разблокировки</th>
-                                <th class="tableHeadRowItem">Время бана</th>
-                                <th class="tableHeadRowItem">Администрация</th>
-                                <th class="tableHeadRowItem">Причина</th>
+                                <th class="tableHeadRowItem">Название мероприятия</th>
+                                <th class="tableHeadRowItem">Код турнира</th>
+                                <th class="tableHeadRowItem">Дата</th>
+                                <th class="tableHeadRowItem">Время</th>
                             </tr>
                             <tr class="tableRow">
-                                <td class="tableRowItem">Велонская Анастасия Николаевна,<br> ID 0120120102102</td>
-                                <td class="tableRowItem">25.06.2020, 19:03</td>
-                                <td class="tableRowItem">25.05.2020,<br> 19:03</td>
-                                <td class="tableRowItem">Людовиг Станислав Владимирович</td>
-                                <td class="tableRowItem">Сквернословие и неподобающие поведие</td>
-                            </tr>
-                            <tr class="tableRow tableRowItemActive">
-                                <td class="tableRowItem">Велонская Анастасия Николаевна,<br> ID 0120120102102</td>
-                                <td class="tableRowItem">25.06.2020, 19:03</td>
-                                <td class="tableRowItem">25.05.2020,<br> 19:03</td>
-                                <td class="tableRowItem">Людовиг Станислав Владимирович</td>
-                                <td class="tableRowItem">Сквернословие и неподобающие поведие</td>
+                                <td class="tableRowItem">Эрудит-лото / Командное первенство сезона</td>
+                                <td class="tableRowItem">ЭЛМН001</td>
+                                <td class="tableRowItem">25.05.2020</td>
+                                <td class="tableRowItem">17.00</td>
                             </tr>
                             <tr class="tableRow">
-                                <td class="tableRowItem">Велонская Анастасия Николаевна,<br> ID 0120120102102</td>
-                                <td class="tableRowItem">25.06.2020, 19:03</td>
-                                <td class="tableRowItem">25.05.2020,<br> 19:03</td>
-                                <td class="tableRowItem">Людовиг Станислав Владимирович</td>
-                                <td class="tableRowItem">Сквернословие и неподобающие поведие</td>
+                                <td class="tableRowItem">Эрудит-лото / Командное первенство сезона</td>
+                                <td class="tableRowItem">ЭЛМН001</td>
+                                <td class="tableRowItem">25.05.2020</td>
+                                <td class="tableRowItem">17.00</td>
                             </tr>
                             <tr class="tableRow">
-                                <td class="tableRowItem">Велонская Анастасия Николаевна,<br> ID 0120120102102</td>
-                                <td class="tableRowItem">25.06.2020, 19:03</td>
-                                <td class="tableRowItem">25.05.2020,<br> 19:03</td>
-                                <td class="tableRowItem">Людовиг Станислав Владимирович</td>
-                                <td class="tableRowItem">Сквернословие и неподобающие поведие</td>
+                                <td class="tableRowItem">Эрудит-лото / Командное первенство сезона</td>
+                                <td class="tableRowItem">ЭЛМН001</td>
+                                <td class="tableRowItem">25.05.2020</td>
+                                <td class="tableRowItem">17.00</td>
                             </tr>
                             <tr class="tableRow">
-                                <td class="tableRowItem">Велонская Анастасия Николаевна,<br> ID 0120120102102</td>
-                                <td class="tableRowItem">25.06.2020, 19:03</td>
-                                <td class="tableRowItem">25.05.2020,<br> 19:03</td>
-                                <td class="tableRowItem">Людовиг Станислав Владимирович</td>
-                                <td class="tableRowItem">Сквернословие и неподобающие поведие</td>
+                                <td class="tableRowItem">Эрудит-лото / Командное первенство сезона</td>
+                                <td class="tableRowItem">ЭЛМН001</td>
+                                <td class="tableRowItem">25.05.2020</td>
+                                <td class="tableRowItem">17.00</td>
                             </tr>
                             <tr class="tableRow">
-                                <td class="tableRowItem">Велонская Анастасия Николаевна,<br> ID 0120120102102</td>
-                                <td class="tableRowItem">25.06.2020, 19:03</td>
-                                <td class="tableRowItem">25.05.2020,<br> 19:03</td>
-                                <td class="tableRowItem">Людовиг Станислав Владимирович</td>
-                                <td class="tableRowItem">Сквернословие и неподобающие поведие</td>
+                                <td class="tableRowItem">Эрудит-лото / Командное первенство сезона</td>
+                                <td class="tableRowItem">ЭЛМН001</td>
+                                <td class="tableRowItem">25.05.2020</td>
+                                <td class="tableRowItem">17.00</td>
                             </tr>
-                            
+                            <tr class="tableRow">
+                                <td class="tableRowItem">Эрудит-лото / Командное первенство сезона</td>
+                                <td class="tableRowItem">ЭЛМН001</td>
+                                <td class="tableRowItem">25.05.2020</td>
+                                <td class="tableRowItem">17.00</td>
+                            </tr>
+                            <tr class="tableRow">
+                                <td class="tableRowItem">Эрудит-лото / Командное первенство сезона</td>
+                                <td class="tableRowItem">ЭЛМН001</td>
+                                <td class="tableRowItem">25.05.2020</td>
+                                <td class="tableRowItem">17.00</td>
+                            </tr>
                         </table>
                     </div>
                 </div>
@@ -452,6 +483,6 @@
         
     </div>
 </div>
-    <script src="./js/bundle.js"></script>
+    <script defer src="./js/bundle.js"></script>
 </body>
 </html>

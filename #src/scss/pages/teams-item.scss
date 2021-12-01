@@ -1,0 +1,118 @@
+.searchItem {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1300px;
+    width: 100%;
+
+    .searchItemInfo {
+        width: 530px;
+        max-height: 488px;
+
+        .searchItemInfoTitle {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 21.6px;
+            padding: 30px 30px 15px 30px;
+        }
+
+        .searchItemInfoTable {
+
+            .table {
+                .tableRow {
+
+                    &:last-child {
+                        .tableRowItem {
+                            border-bottom: 1px solid var(--devaider);
+                        }
+                    }
+                    .tableRowItem {
+                        color: var(--pallete_gray3);
+                    }
+                    .tableRowItem.tableRowItemProfile {
+                        position: relative;
+                        padding-left: 70px;
+
+                        &:after {
+                            position: absolute;
+                            top: calc(50% - 15px);
+                            left: 30px;
+                            content: url('../img/ph.svg');
+                        }
+                    }
+                    .tableRowItem.tableRowItemAmp {
+                        span {
+                            padding: 5px 10px;
+                            display: inline-block;
+                            border-radius: 8px;
+                        }
+                    }
+                    .tableRowItem.tableRowItemNum {
+
+                    }
+
+                    .tableRowItem.captain {
+                        span {
+                            background-color: var(--pallete_red1);
+                            color: var(--pallete_red3);
+                        }
+                    }
+                    .tableRowItem.base {    
+                        span {
+                            background-color: var(--pallete_green1);
+                            color: var(--pallete_green3);
+                        }
+                    }
+                    .tableRowItem.legion {
+                        span {
+                            background-color: var(--pallete_yellow1);
+                            color: var(--pallete_yellow3);
+                        }
+                    }
+                }
+            }
+        }
+
+
+        .searchItemInfoBottom {
+            padding: 25px 30px 25px 30px;
+            display: flex;
+            justify-content: space-between;
+            .bottomInfo {
+                .bottomInfoItem {
+                    display: flex;
+                    .bottomInfoItemName {
+                        width: 120px;
+                        color: var(--text_dark2);
+                    }
+                    .bottomInfoItemValue {
+                        font-weight: 600;
+                        color: var(--pallete_gray3);
+                    }   
+                }
+            }
+            .bottomBtns {
+                margin-left: 31px;
+
+                button {
+                    &:first-child {
+                        margin-bottom: 11px;
+                    }
+                }
+            }
+        }
+    }
+
+    .searchItemReglist {
+        width: 743px;
+        height: 410px;
+
+
+        .searchItemReglistTitle {
+            padding: 30px;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 21.6px;
+        }
+
+    }
+}

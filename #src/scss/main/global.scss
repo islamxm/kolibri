@@ -103,6 +103,95 @@ body {
 .formName {
     font-size: 12px;
     line-height: 14.09px;
+    color: var(--text_dark2);
+}
+
+.btn_close {
+    @include ease-02;
+
+    svg {
+        circle {
+            @include ease-02;
+        }
+    }
+    &:hover {
+        svg {
+            circle {
+                fill: var(--btn_close);
+            }
+        }
+    }
+
+    &:active {
+        transform: scale(0.90);
+    }
+}
+
+.btn_done {
+    @include ease-02;
+
+    svg {
+        circle {
+            @include ease-02;
+        }
+    }
+
+    &:hover {
+        svg {
+            circle {
+                fill: var(--btn_done);
+            }
+        }
+    }
+
+    &:active {
+        transform: scale(0.90);
+    }
+}
+
+.btn_drop {
+
+    svg {
+        @include ease-02;
+        circle {
+            @include ease-02;
+        }
+    }
+
+    &:hover {
+        svg {
+            circle {
+                fill: var(--btn_drop);
+            }
+        }
+    }
+
+    &:active {
+        svg {
+            transform: scale(0.80);
+        }
+    }
+}
+
+.btn_create {
+    @include ease-02;
+    svg {
+        circle {
+            @include ease-02;
+        }
+    }
+
+    &:hover {
+        svg {
+            circle {
+                fill: var(--btn_create);
+            }
+        }
+    }
+
+    &:active {
+        transform: scale(0.80);
+    }
 }
 
 
