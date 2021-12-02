@@ -33,11 +33,11 @@
   --window: 0px 4px 50px #E3ECFA;
   --block-shadow: 0px 4px 50px #DDE7F7;
   --push_shadow: 4px 10px 20px 3px rgba(178, 172, 220, 0.6);
-  --btn_close: #FFE1C7;
-  --btn_done: #C5FBDA;
-  --btn_more: #FCF2BC;
-  --btn_drop: #DCEEFC;
-  --btn_create: #DCDFFF;
+  --polutone_red: #FFE1C7;
+  --polutone_green: #C5FBDA;
+  --polutone_yellow: #FCF2BC;
+  --polutone_blue: #DCEEFC;
+  --polutone_gray: #DCDFFF;
 }
 
 /* КНОПКИ */
@@ -285,11 +285,11 @@ body {
   --window: 0px 4px 50px #E3ECFA;
   --block-shadow: 0px 4px 50px #DDE7F7;
   --push_shadow: 4px 10px 20px 3px rgba(178, 172, 220, 0.6);
-  --btn_close: #FFE1C7;
-  --btn_done: #C5FBDA;
-  --btn_more: #FCF2BC;
-  --btn_drop: #DCEEFC;
-  --btn_create: #DCDFFF;
+  --polutone_red: #FFE1C7;
+  --polutone_green: #C5FBDA;
+  --polutone_yellow: #FCF2BC;
+  --polutone_blue: #DCEEFC;
+  --polutone_gray: #DCDFFF;
 }
 
 /* КНОПКИ */
@@ -601,6 +601,59 @@ body {
   fill: var(--pallete_gray2) !important;
 }
 
+.search {
+  font-size: 16px;
+  line-height: 18.78px;
+  font-weight: 600;
+  color: var(--pallete_blue1);
+  background-color: var(--pallete_blue2);
+  border-radius: 15px;
+  padding: 15px 30px;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.search svg path {
+  fill: var(--pallete_blue1);
+}
+.search svg rect {
+  fill: var(--pallete_blue1);
+}
+.search svg ellipse {
+  fill: var(--pallete_blue1);
+}
+.search:hover {
+  border-radius: 20px;
+}
+.search:active {
+  border-radius: 20px;
+  -webkit-transform: scale(0.97);
+      -ms-transform: scale(0.97);
+          transform: scale(0.97);
+}
+.search:disabled {
+  color: var(--pallete_gray2);
+  background-color: var(--pallete_gray1);
+}
+.search:disabled svg path {
+  fill: var(--pallete_gray2) !important;
+}
+.search:disabled svg rect {
+  fill: var(--pallete_gray2) !important;
+}
+.search:disabled svg ellipse {
+  fill: var(--pallete_gray2) !important;
+}
+.search svg {
+  margin-left: 8px;
+}
+
 .funcBtn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -612,6 +665,12 @@ body {
   line-height: 16.44px;
   color: var(--text_dark2);
   font-weight: 600;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.funcBtn:hover {
+  color: var(--pallete_gray3);
 }
 .funcBtn div {
   width: 30px;
@@ -627,6 +686,14 @@ body {
           justify-content: center;
   border-radius: 100%;
   margin-right: 6px;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.funcBtn:active div {
+  -webkit-transform: scale(0.85);
+      -ms-transform: scale(0.85);
+          transform: scale(0.85);
 }
 
 .funcBtn.btnSendPush div {
@@ -2131,12 +2198,20 @@ body {
   font-size: 14px;
   line-height: 16.8px;
   color: var(--text_dark2);
+  margin-bottom: 8px;
+}
+.questionsSearch .questionsSearchBody .questionsSearchBodyItem .questionsSearchBodyItemList .bodyInfo .names .name:last-child {
+  margin: 0;
 }
 .questionsSearch .questionsSearchBody .questionsSearchBodyItem .questionsSearchBodyItemList .bodyInfo .values .value {
   color: var(--pallete_gray3);
   font-weight: 600;
   font-size: 14px;
   line-height: 16.8px;
+  margin-bottom: 8px;
+}
+.questionsSearch .questionsSearchBody .questionsSearchBodyItem .questionsSearchBodyItemList .bodyInfo .values .value:last-child {
+  margin: 0;
 }
 .questionsSearch .questionsSearchBody .questionsSearchBodyItem .questionsSearchBodyItemList .bodyLink {
   font-weight: 600;
@@ -2495,10 +2570,18 @@ body {
 .searchItem .searchItemInfo .searchItemInfoBottom .bottomInfo .bottomInfoItem .bottomInfoItemName {
   width: 120px;
   color: var(--text_dark2);
+  margin-bottom: 8px;
+}
+.searchItem .searchItemInfo .searchItemInfoBottom .bottomInfo .bottomInfoItem .bottomInfoItemName:last-child {
+  margin: 0;
 }
 .searchItem .searchItemInfo .searchItemInfoBottom .bottomInfo .bottomInfoItem .bottomInfoItemValue {
   font-weight: 600;
   color: var(--pallete_gray3);
+  margin-bottom: 8px;
+}
+.searchItem .searchItemInfo .searchItemInfoBottom .bottomInfo .bottomInfoItem .bottomInfoItemValue:last-child {
+  margin: 0;
 }
 .searchItem .searchItemInfo .searchItemInfoBottom .bottomBtns {
   margin-left: 31px;

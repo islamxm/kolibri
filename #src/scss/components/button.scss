@@ -13,3 +13,13 @@
 .btn-yellow {
     @include btn-yellow;
 }
+
+.search {
+    @include btn-blue;
+    display: flex;
+    align-items: center;
+
+    svg {
+        margin-left: 8px;
+    }
+}

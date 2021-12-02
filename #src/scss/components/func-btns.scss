@@ -5,6 +5,11 @@
     line-height: 16.44px;
     color: var(--text_dark2);
     font-weight: 600;
+    @include ease-02;
+
+    &:hover {
+        color: var(--pallete_gray3);
+    }
 
     div {
         width: 30px;
@@ -14,6 +19,13 @@
         justify-content: center;
         border-radius: 100%;
         margin-right: 6px;
+        @include ease-02;
+    }
+
+    &:active {
+        div {
+            transform: scale(0.85);
+        }
     }
 }
 

@@ -83,10 +83,20 @@
                     .bottomInfoItemName {
                         width: 120px;
                         color: var(--text_dark2);
+                        margin-bottom: 8px;
+
+                        &:last-child {
+                            margin: 0;
+                        }
                     }
                     .bottomInfoItemValue {
                         font-weight: 600;
                         color: var(--pallete_gray3);
+                        margin-bottom: 8px;
+
+                        &:last-child {
+                            margin: 0;
+                        }
                     }   
                 }
             }

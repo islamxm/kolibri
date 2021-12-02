@@ -234,6 +234,11 @@
                             font-size: 14px;
                             line-height: 16.8px;
                             color: var(--text_dark2);
+                            margin-bottom: 8px;
+
+                            &:last-child {
+                                margin: 0;
+                            }
                         }
                     }
 
@@ -244,6 +249,11 @@
                             font-weight: 600;
                             font-size: 14px;
                             line-height: 16.8px;
+                            margin-bottom: 8px;
+
+                            &:last-child {
+                                margin: 0;
+                            }
                         }
                     }
                 }
