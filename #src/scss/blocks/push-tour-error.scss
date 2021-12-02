@@ -1,0 +1,28 @@
+#pushTourError {
+    display: none;
+    .pushTourError {
+
+        .pushTourErrorTitle {
+            position: relative;
+            padding-left: 40px;
+            margin-bottom: 20px;
+
+            svg {
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                path {
+                    fill: #fff;
+                }
+                circle {
+                    fill: #E54D4D;
+                }
+            }
+        }
+
+        .pushInfo {
+            margin-bottom: 15px;
+        }
+    }
+}

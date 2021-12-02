@@ -1,0 +1,17 @@
+#pushTourSuccess {
+    display: none;
+    .pushTourSuccess {
+
+        .pushTourSuccessTitle {
+            position: relative;
+            padding-left: 40px;
+            margin-bottom: 20px;
+
+            svg {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+    }
+}

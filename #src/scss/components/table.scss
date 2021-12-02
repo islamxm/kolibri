@@ -13,6 +13,11 @@
             font-size: 14px;
             line-height: 16.8px;
             color: var(--pallete_gray3);
+            @include ease-02;
+
+            &:hover {
+                background-color: var(--pallete_gray1);
+            }
         }
     }
 

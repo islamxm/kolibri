@@ -1,0 +1,74 @@
+.tourItem {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    
+    .tourItemInfo {
+        width: 640px;
+        height: 301px;
+
+        .tourItemInfoHead {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19.2px;
+            color: var(--text_dark2);
+            padding: 26px 20px 28px;
+            display: flex;
+            align-items: center;
+
+            .tourItemInfoHeadImg {
+                margin-right: 15px;
+            }
+        }   
+
+        .tourItemInfoList {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 20px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid var(--pallete_gray2);
+
+            .tourItemInfoListItem {
+                width: 50%;
+                display: flex;
+                margin-bottom: 10px;
+                
+
+                .name {
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 16.8px;
+                    width: 136px;
+                    color: var(--text_dark2);
+                }
+
+                .value {
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 16.8px;
+                    color: var(--pallete_gray3);
+                }
+            }
+        }
+
+        .tourItemInfoBottom {
+            padding: 20px;
+
+            button {
+                &:first-child {
+                    margin-bottom: 11px;
+                }
+            }
+        }
+    }
+
+    .tourItemTables {
+        width: 640px;
+        
+        .tourItemTeamsTable {
+            height: 257px;
+
+            margin-bottom: 20px;
+        }
+    }
+}

@@ -1,5 +1,333 @@
 @charset "UTF-8";
 /* Библиотеки */
+.noUi-target, .noUi-target * {
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -ms-touch-action: none;
+  touch-action: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.noUi-target {
+  position: relative;
+}
+
+.noUi-base, .noUi-connects {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.noUi-connects {
+  overflow: hidden;
+  z-index: 0;
+}
+
+.noUi-connect, .noUi-origin {
+  will-change: transform;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  -ms-transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+  -webkit-transform-style: preserve-3d;
+  transform-origin: 0 0;
+  -webkit-transform-style: flat;
+          transform-style: flat;
+}
+
+.noUi-txt-dir-rtl.noUi-horizontal .noUi-origin {
+  left: 0;
+  right: auto;
+}
+
+.noUi-vertical .noUi-origin {
+  top: -100%;
+  width: 0;
+}
+
+.noUi-horizontal .noUi-origin {
+  height: 0;
+}
+
+.noUi-handle {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+}
+
+.noUi-touch-area {
+  height: 100%;
+  width: 100%;
+}
+
+.noUi-state-tap .noUi-connect, .noUi-state-tap .noUi-origin {
+  -webkit-transition: transform 0.3s;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  -o-transition: transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.noUi-state-drag * {
+  cursor: inherit !important;
+}
+
+.noUi-horizontal {
+  height: 18px;
+}
+
+.noUi-horizontal .noUi-handle {
+  width: 34px;
+  height: 28px;
+  right: -17px;
+  top: -6px;
+}
+
+.noUi-vertical {
+  width: 18px;
+}
+
+.noUi-vertical .noUi-handle {
+  width: 28px;
+  height: 34px;
+  right: -6px;
+  bottom: -17px;
+}
+
+.noUi-txt-dir-rtl.noUi-horizontal .noUi-handle {
+  left: -17px;
+  right: auto;
+}
+
+.noUi-target {
+  background: #FAFAFA;
+  border-radius: 4px;
+  border: 1px solid #D3D3D3;
+  -webkit-box-shadow: inset 0 1px 1px #F0F0F0, 0 3px 6px -5px #BBB;
+          box-shadow: inset 0 1px 1px #F0F0F0, 0 3px 6px -5px #BBB;
+}
+
+.noUi-connects {
+  border-radius: 3px;
+}
+
+.noUi-connect {
+  background: #3FB8AF;
+}
+
+.noUi-draggable {
+  cursor: ew-resize;
+}
+
+.noUi-vertical .noUi-draggable {
+  cursor: ns-resize;
+}
+
+.noUi-handle {
+  border: 1px solid #D9D9D9;
+  border-radius: 3px;
+  background: #FFF;
+  cursor: default;
+  -webkit-box-shadow: inset 0 0 1px #FFF, inset 0 1px 7px #EBEBEB, 0 3px 6px -3px #BBB;
+          box-shadow: inset 0 0 1px #FFF, inset 0 1px 7px #EBEBEB, 0 3px 6px -3px #BBB;
+}
+
+.noUi-active {
+  -webkit-box-shadow: inset 0 0 1px #FFF, inset 0 1px 7px #DDD, 0 3px 6px -3px #BBB;
+          box-shadow: inset 0 0 1px #FFF, inset 0 1px 7px #DDD, 0 3px 6px -3px #BBB;
+}
+
+.noUi-handle:after, .noUi-handle:before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 14px;
+  width: 1px;
+  background: #E8E7E6;
+  left: 14px;
+  top: 6px;
+}
+
+.noUi-handle:after {
+  left: 17px;
+}
+
+.noUi-vertical .noUi-handle:after, .noUi-vertical .noUi-handle:before {
+  width: 14px;
+  height: 1px;
+  left: 6px;
+  top: 14px;
+}
+
+.noUi-vertical .noUi-handle:after {
+  top: 17px;
+}
+
+[disabled] .noUi-connect {
+  background: #B8B8B8;
+}
+
+[disabled] .noUi-handle, [disabled].noUi-handle, [disabled].noUi-target {
+  cursor: not-allowed;
+}
+
+.noUi-pips, .noUi-pips * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.noUi-pips {
+  position: absolute;
+  color: #999;
+}
+
+.noUi-value {
+  position: absolute;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.noUi-value-sub {
+  color: #ccc;
+  font-size: 10px;
+}
+
+.noUi-marker {
+  position: absolute;
+  background: #CCC;
+}
+
+.noUi-marker-sub {
+  background: #AAA;
+}
+
+.noUi-marker-large {
+  background: #AAA;
+}
+
+.noUi-pips-horizontal {
+  padding: 10px 0;
+  height: 80px;
+  top: 100%;
+  left: 0;
+  width: 100%;
+}
+
+.noUi-value-horizontal {
+  -webkit-transform: translate(-50%, 50%);
+  -ms-transform: translate(-50%, 50%);
+      transform: translate(-50%, 50%);
+}
+
+.noUi-rtl .noUi-value-horizontal {
+  -webkit-transform: translate(50%, 50%);
+  -ms-transform: translate(50%, 50%);
+      transform: translate(50%, 50%);
+}
+
+.noUi-marker-horizontal.noUi-marker {
+  margin-left: -1px;
+  width: 2px;
+  height: 5px;
+}
+
+.noUi-marker-horizontal.noUi-marker-sub {
+  height: 10px;
+}
+
+.noUi-marker-horizontal.noUi-marker-large {
+  height: 15px;
+}
+
+.noUi-pips-vertical {
+  padding: 0 10px;
+  height: 100%;
+  top: 0;
+  left: 100%;
+}
+
+.noUi-value-vertical {
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+  padding-left: 25px;
+}
+
+.noUi-rtl .noUi-value-vertical {
+  -webkit-transform: translate(0, 50%);
+  -ms-transform: translate(0, 50%);
+      transform: translate(0, 50%);
+}
+
+.noUi-marker-vertical.noUi-marker {
+  width: 5px;
+  height: 2px;
+  margin-top: -1px;
+}
+
+.noUi-marker-vertical.noUi-marker-sub {
+  width: 10px;
+}
+
+.noUi-marker-vertical.noUi-marker-large {
+  width: 15px;
+}
+
+.noUi-tooltip {
+  display: block;
+  position: absolute;
+  border: 1px solid #D9D9D9;
+  border-radius: 3px;
+  background: #fff;
+  color: #000;
+  padding: 5px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.noUi-horizontal .noUi-tooltip {
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+      transform: translate(-50%, 0);
+  left: 50%;
+  bottom: 120%;
+}
+
+.noUi-vertical .noUi-tooltip {
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+  top: 50%;
+  right: 120%;
+}
+
+.noUi-horizontal .noUi-origin > .noUi-tooltip {
+  -webkit-transform: translate(50%, 0);
+  -ms-transform: translate(50%, 0);
+      transform: translate(50%, 0);
+  left: auto;
+  bottom: 10px;
+}
+
+.noUi-vertical .noUi-origin > .noUi-tooltip {
+  -webkit-transform: translate(0, -18px);
+  -ms-transform: translate(0, -18px);
+      transform: translate(0, -18px);
+  top: auto;
+  right: 28px;
+}
+
 /* Главные стили */
 :root {
   --bg: #F3F9FF;
@@ -174,6 +502,13 @@ body {
   font-size: 12px;
   line-height: 14.09px;
   color: var(--text_dark2);
+  margin-bottom: 6px;
+}
+
+.blockTitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21.6px;
 }
 
 .btn_close {
@@ -187,7 +522,7 @@ body {
   transition: all 0.2s ease;
 }
 .btn_close:hover svg circle {
-  fill: var(--btn_close);
+  fill: var(--polutone_red);
 }
 .btn_close:active {
   -webkit-transform: scale(0.9);
@@ -206,7 +541,7 @@ body {
   transition: all 0.2s ease;
 }
 .btn_done:hover svg circle {
-  fill: var(--btn_done);
+  fill: var(--polutone_green);
 }
 .btn_done:active {
   -webkit-transform: scale(0.9);
@@ -225,7 +560,7 @@ body {
   transition: all 0.2s ease;
 }
 .btn_drop:hover svg circle {
-  fill: var(--btn_drop);
+  fill: var(--polutone_blue);
 }
 .btn_drop:active svg {
   -webkit-transform: scale(0.8);
@@ -244,7 +579,7 @@ body {
   transition: all 0.2s ease;
 }
 .btn_create:hover svg circle {
-  fill: var(--btn_create);
+  fill: var(--polutone_gray);
 }
 .btn_create:active {
   -webkit-transform: scale(0.8);
@@ -915,6 +1250,12 @@ body {
   font-size: 14px;
   line-height: 16.8px;
   color: var(--pallete_gray3);
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.table .tableHeadaRow .tableHeadRowItem:hover {
+  background-color: var(--pallete_gray1);
 }
 .table .tableRow {
   -webkit-transition: all 0.2s ease;
@@ -1016,7 +1357,7 @@ body {
 .push .pushContent .pushTitle {
   font-weight: 600;
   font-size: 18px;
-  line-height: 21.6px;
+  line-height: 30px;
   max-width: 360px;
   width: 100%;
 }
@@ -1027,6 +1368,14 @@ body {
   color: var(--text_dark2);
 }
 
+.dropdownDefault.dropdownDefaultActive .dropdownDefaultHead {
+  border-color: var(--pallete_blue2);
+}
+.dropdownDefault.dropdownDefaultActive .dropdownDefaultHead:after {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
 .dropdownDefault.dropdownDefaultActive .dropdownDefaultList {
   opacity: 1;
   -webkit-box-shadow: var(--push_shadow);
@@ -1035,15 +1384,30 @@ body {
 }
 
 .dropdownDefault {
+  cursor: pointer;
   position: relative;
 }
 .dropdownDefault .dropdownDefaultHead {
   position: relative;
+  border: 2px solid var(--devaider);
+  border-radius: 10px;
+  padding: 14px 15px;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.dropdownDefault .dropdownDefaultHead:hover {
+  border-color: var(--pallete_blue2);
 }
 .dropdownDefault .dropdownDefaultHead button {
   position: absolute;
   right: 16px;
   top: calc(50% - 6.4px);
+}
+.dropdownDefault .dropdownDefaultHead:after {
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 .dropdownDefault .dropdownDefaultList {
   background-color: #fff;
@@ -2420,6 +2784,370 @@ body {
   line-height: 19.6px;
 }
 
+.tourCreate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.tourCreate .leftSide {
+  width: 750px;
+}
+.tourCreate .rightSide {
+  width: 530px;
+}
+.tourCreate .tourCreatePanel {
+  width: 100%;
+  height: 340px;
+  padding: 30px 35px;
+  margin-bottom: 10px;
+}
+.tourCreate .tourCreatePanel .tourCreateTitle {
+  margin-bottom: 28px;
+}
+.tourCreate .tourCreatePanel .tourCreateForm .tourCreateFormFields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.tourCreate .tourCreatePanel .tourCreateForm .tourCreateFormFields .formName {
+  padding-left: 12px;
+}
+.tourCreate .tourCreatePanel .tourCreateForm .tourCreateFormFields .tourName {
+  max-width: 332px;
+  width: 100%;
+  margin-bottom: 19px;
+}
+.tourCreate .tourCreatePanel .tourCreateForm .tourCreateFormFields .tourAuth {
+  max-width: 332px;
+  width: 100%;
+  margin-bottom: 19px;
+}
+.tourCreate .tourCreatePanel .tourCreateForm .tourCreateFormFields .tourType {
+  max-width: 268.36px;
+  width: 100%;
+  margin-bottom: 35px;
+}
+.tourCreate .tourCreatePanel .tourCreateForm .tourCreateFormFields .tourLeague {
+  max-width: 225px;
+  width: 100%;
+}
+.tourCreate .tourCreatePanel .tourCreateForm .tourCreateFormFields .tourDate {
+  max-width: 163px;
+  width: 100%;
+}
+.tourCreate .tourAdd {
+  height: 498px;
+}
+.tourCreate .tourAdd .tourAddItem.tourAddItemActive .tourItemHead svg {
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+.tourCreate .tourAdd .tourAddItem.tourAddItemActive .tourItemList {
+  opacity: 1;
+  z-index: 1;
+}
+.tourCreate .tourAdd .tourAddItem {
+  cursor: pointer;
+}
+.tourCreate .tourAdd .tourAddItem .tourItemHead {
+  padding: 22px 42px;
+  padding-right: 24px;
+  border-bottom: 1px solid var(--devaider);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.tourCreate .tourAdd .tourAddItem .tourItemList {
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  z-index: -1;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.tourCreate .tourAdd .tourAddItem .tourItemList .tourItemListItem {
+  border-bottom: 1px solid var(--devaider);
+  padding: 16px 30px;
+  background-color: var(--hover);
+}
+.tourCreate .tourAdd .tourAddBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px 0;
+}
+.tourCreate .tourSearch {
+  width: 100%;
+  height: 361px;
+  padding: 30px;
+  margin-bottom: 10px;
+}
+.tourCreate .tourSearch .tourSearchForm .tourSearchTags {
+  margin-bottom: 14px;
+}
+.tourCreate .tourSearch .tourSearchForm .tourSearchTags .tourSearchTagsList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+  background-color: var(--hover);
+  padding: 10px 15px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-radius: 10px;
+}
+.tourCreate .tourSearch .tourSearchForm .tourSearchKeywords {
+  margin-bottom: 30px;
+}
+.tourCreate .tourSearch .tourSearchForm .tourSearchCheckboxes {
+  margin-bottom: 23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.tourCreate .tourSearch .tourSearchForm .tourSearchCheckboxes .checkbox:first-child {
+  margin-right: 86px;
+}
+.tourCreate .tourQue {
+  width: 100%;
+  height: 360px;
+}
+.tourCreate .tourQue .tourQueItem {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 52px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid var(--devaider);
+}
+.tourCreate .tourQue .tourQueItem:last-child {
+  border: none;
+}
+.tourCreate .tourQue .tourQueItem svg {
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.tourCreate .tourQue .tourQueItem svg path {
+  fill: var(--pallete_green3);
+}
+.tourCreate .tourQue .tourQueItem svg circle {
+  fill: var(--pallete_green1);
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.tourCreate .tourQue .tourQueItem:hover svg circle {
+  fill: var(--polutone_green);
+}
+.tourCreate .tourQue .tourQueItem:active svg {
+  -webkit-transform: scale(0.85);
+      -ms-transform: scale(0.85);
+          transform: scale(0.85);
+}
+.tourCreate .tourQue .tourQueItem .tourQueItemHead {
+  padding: 16px 16px 16px 30px;
+  max-width: 410px;
+  font-size: 14px;
+  line-height: 19.6px;
+  color: var(--text_dark2);
+}
+
+.tourList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+.tourList .tourListTable {
+  width: 970px;
+  height: 849px;
+}
+.tourList .tourListTable .tableRowItemFixWidth {
+  max-width: 293px;
+}
+.tourList .tourListSearch {
+  width: 310px;
+  height: 710px;
+  padding: 20px;
+}
+.tourList .tourListSearch .tourListSearchForm .formName {
+  padding-left: 12px;
+}
+.tourList .tourListSearch .tourListSearchForm .tourListSearchName {
+  margin-bottom: 19px;
+}
+.tourList .tourListSearch .tourListSearchForm .tourListSearchDate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 19px;
+}
+.tourList .tourListSearch .tourListSearchForm .tourListSearchLeague {
+  margin-bottom: 15px;
+}
+.tourList .tourListSearch .tourListSearchForm .tourListSearchLeague .leagueItemHead {
+  position: relative;
+}
+.tourList .tourListSearch .tourListSearchForm .tourListSearchLeague .leagueItemHead:after {
+  position: absolute;
+  content: url(../img/top-ar.svg);
+  right: 17px;
+}
+.tourList .tourListSearch .tourListSearchForm .tourListSearchRange {
+  margin-bottom: 42px;
+  padding-right: 10px;
+}
+.tourList .tourListSearch .tourListSearchForm .tourListSearchRange .formName {
+  margin-bottom: 15px;
+}
+.tourList .tourListSearch .tourListSearchForm .tourListSearchRange .range {
+  border: none;
+  height: 6px;
+}
+.tourList .tourListSearch .tourListSearchForm .tourListSearchRange .range .noUi-base .noUi-connects {
+  background-color: var(--pallete_blue2);
+  border-radius: 22px;
+}
+.tourList .tourListSearch .tourListSearchForm .tourListSearchRange .range .noUi-base .noUi-connects .noUi-connect {
+  background-color: #F2F2F2;
+}
+.tourList .tourListSearch .tourListSearchForm .tourListSearchRange .range .noUi-base .noUi-handle {
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  background-color: var(--pallete_blue2);
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.tourList .tourListSearch .tourListSearchForm .tourListSearchRange .range .noUi-base .noUi-handle:after {
+  display: none;
+}
+.tourList .tourListSearch .tourListSearchForm .tourListSearchRange .range .noUi-base .noUi-handle:before {
+  display: none;
+}
+.tourList .tourListSearch .tourListSearchForm .tourListSearchRange .range .noUi-base .noUi-handle .noUi-tooltip {
+  bottom: unset;
+  border: none;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 14.09px;
+  color: var(--text_dark2);
+}
+.tourList .tourListSearch .tourListSearchForm .tourListSearchCheckboxs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.tourItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.tourItem .tourItemInfo {
+  width: 640px;
+  height: 301px;
+}
+.tourItem .tourItemInfo .tourItemInfoHead {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19.2px;
+  color: var(--text_dark2);
+  padding: 26px 20px 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.tourItem .tourItemInfo .tourItemInfoHead .tourItemInfoHeadImg {
+  margin-right: 15px;
+}
+.tourItem .tourItemInfo .tourItemInfoList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0 20px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--pallete_gray2);
+}
+.tourItem .tourItemInfo .tourItemInfoList .tourItemInfoListItem {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+}
+.tourItem .tourItemInfo .tourItemInfoList .tourItemInfoListItem .name {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16.8px;
+  width: 136px;
+  color: var(--text_dark2);
+}
+.tourItem .tourItemInfo .tourItemInfoList .tourItemInfoListItem .value {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16.8px;
+  color: var(--pallete_gray3);
+}
+.tourItem .tourItemInfo .tourItemInfoBottom {
+  padding: 20px;
+}
+.tourItem .tourItemInfo .tourItemInfoBottom button:first-child {
+  margin-bottom: 11px;
+}
+.tourItem .tourItemTables {
+  width: 640px;
+}
+.tourItem .tourItemTables .tourItemTeamsTable {
+  height: 257px;
+  margin-bottom: 20px;
+}
+
 .teamsList {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2867,6 +3595,20 @@ body {
   font-weight: 500;
 }
 
+#popupTour {
+  display: none;
+}
+#popupTour .popupTour {
+  width: 503px;
+}
+#popupTour .popupTour .popupTourTitle {
+  margin-bottom: 15px;
+}
+#popupTour .popupTour .popupTourInfo {
+  margin-bottom: 15px;
+  color: var(--pallete_blue2);
+}
+
 /* Пуш уведомления */
 #pushBlockSucces {
   display: none;
@@ -2975,4 +3717,41 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+#pushTourSuccess {
+  display: none;
+}
+#pushTourSuccess .pushTourSuccess .pushTourSuccessTitle {
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 20px;
+}
+#pushTourSuccess .pushTourSuccess .pushTourSuccessTitle svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#pushTourError {
+  display: none;
+}
+#pushTourError .pushTourError .pushTourErrorTitle {
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 20px;
+}
+#pushTourError .pushTourError .pushTourErrorTitle svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#pushTourError .pushTourError .pushTourErrorTitle svg path {
+  fill: #fff;
+}
+#pushTourError .pushTourError .pushTourErrorTitle svg circle {
+  fill: #E54D4D;
+}
+#pushTourError .pushTourError .pushInfo {
+  margin-bottom: 15px;
 }

@@ -1,6 +1,9 @@
+import noUiSlider from 'nouislider';
+
 document.addEventListener('DOMContentLoaded', () => {
 
     const aside = document.querySelector('.aside');
+    const tourRange = document.querySelector('#tourRange');
 
 
     function accordeonFunc(dropItemsQuery, droppedClass, dropListQuery, targetItem) {
@@ -38,6 +41,31 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    if(tourRange) {
+        noUiSlider.create(tourRange, {
+            start: [4500, 50000],
+            connect: true,
+            range: {
+                'min': 0,
+                'max': 50000
+            },
+            step: 100,
+            tooltips: true,
+            format: {
+                from: function(value) {
+                        return parseInt(value);
+                    },
+                to: function(value) {
+                        return parseInt(value);
+                    }
+                }
+        });
+    }
+
+   
+
+
+
 
     /* Функционал для показа/скрытия сайдбара */
     asideToggler('.asideBtn');
@@ -48,6 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
     accordeonFunc('.popupBlockDateDrop', 'popupBlockDateDropActive', '.popupBlockDateList', 'popupBlockDateHead');
     accordeonFunc('.dropdownDefault', 'dropdownDefaultActive', '.dropdownDefaultList', 'dropdownDefaultHead');
     accordeonFunc('.questionsSearchBodyItem', 'questionsSearchBodyItemActive', '.questionsSearchBodyItemList', 'questionsSearchBodyItemHead');
+    accordeonFunc('.tourAddItem', 'tourAddItemActive', '.tourItemList', 'tourItemHead');
     
     
 });

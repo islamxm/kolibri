@@ -35,5 +35,8 @@
   },
   "browserslist": [
     ">1%"
-  ]
+  ],
+  "dependencies": {
+    "nouislider": "^15.5.0"
+  }
 }

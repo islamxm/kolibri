@@ -82,6 +82,7 @@ body {
     border-radius: 15px;
     background-color: #fff;
     box-shadow:var(--block-shadow);
+    // overflow: hidden;
 }
 
 .tag {
@@ -104,6 +105,13 @@ body {
     font-size: 12px;
     line-height: 14.09px;
     color: var(--text_dark2);
+    margin-bottom: 6px;
+}
+
+.blockTitle {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21.6px;
 }
 
 .btn_close {
@@ -117,7 +125,7 @@ body {
     &:hover {
         svg {
             circle {
-                fill: var(--btn_close);
+                fill: var(--polutone_red);
             }
         }
     }
@@ -139,7 +147,7 @@ body {
     &:hover {
         svg {
             circle {
-                fill: var(--btn_done);
+                fill: var(--polutone_green);
             }
         }
     }
@@ -161,7 +169,7 @@ body {
     &:hover {
         svg {
             circle {
-                fill: var(--btn_drop);
+                fill: var(--polutone_blue);
             }
         }
     }
@@ -184,7 +192,7 @@ body {
     &:hover {
         svg {
             circle {
-                fill: var(--btn_create);
+                fill: var(--polutone_gray);
             }
         }
     }

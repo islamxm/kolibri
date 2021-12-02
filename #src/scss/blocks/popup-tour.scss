@@ -1,0 +1,15 @@
+#popupTour {
+    display: none;
+    
+    .popupTour {
+        width: 503px;
+        .popupTourTitle {
+            margin-bottom: 15px;
+        }
+
+        .popupTourInfo {
+            margin-bottom: 15px;
+            color: var(--pallete_blue2);
+        }
+    }
+}

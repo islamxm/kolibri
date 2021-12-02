@@ -1,5 +1,5 @@
 /* Библиотеки */
-
+@import './libs/nouislider.scss';
 
 /* Главные стили */
 @import './main/vars.scss';
@@ -30,6 +30,10 @@
 @import './blocks/header-info.scss';
 
 
+
+
+
+
 /* Страницы */
 //Игроки========================================
 @import './pages/players-list.scss';
@@ -41,15 +45,27 @@
 @import './pages/questions-tags.scss';
 @import './pages/questions-create.scss';
 
+//Турниры========================================
+@import './pages/tournaments-create.scss';
+@import './pages/tournaments-list.scss';
+@import './pages/tournaments-item.scss';
+
 //Команды========================================
 @import './pages/teams-list.scss';
 @import './pages/teams-item.scss';
+
+
+
+
+
+
 
 /* Попапы */
 @import './blocks/popup-block.scss';
 @import './blocks/popup-notification.scss';
 @import './blocks/popup-unblock.scss';
 @import './blocks/popup-q-save.scss';
+@import './blocks/popup-tour.scss';
 
 /* Пуш уведомления */
 @import './blocks/push-block-success.scss';
@@ -58,4 +74,6 @@
 @import './blocks/push-unblock-error.scss';
 @import './blocks/push-q-error.scss';
 @import './blocks/push-q-success.scss';
+@import './blocks/push-tour-success.scss';
+@import './blocks/push-tour-error.scss';
 

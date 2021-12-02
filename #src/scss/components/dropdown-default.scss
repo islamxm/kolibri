@@ -1,22 +1,44 @@
 .dropdownDefault.dropdownDefaultActive {
+    .dropdownDefaultHead {
+        border-color: var(--pallete_blue2);
+        &:after {
+            transform: rotate(180deg);
+        }
+    }
     .dropdownDefaultList {
         opacity: 1;
         box-shadow: var(--push_shadow);
         z-index: 10;
 
+        
+
     }
 }
 
 .dropdownDefault {
+    cursor: pointer;
     position: relative;
     .dropdownDefaultHead {
         position: relative;
+        border: 2px solid var(--devaider);
+        border-radius: 10px;
+        padding: 14px 15px;
+        @include ease-02;
+
+        &:hover {
+            border-color: var(--pallete_blue2);
+        }
 
         button {
             position: absolute;
             right: 16px;
             top:calc(50% - 6.4px);
         }
+
+        &:after {
+            @include ease-02;
+        }
+
     }
 
     .dropdownDefaultList {

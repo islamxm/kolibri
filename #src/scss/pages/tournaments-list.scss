@@ -1,0 +1,109 @@
+.tourList {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+
+    .tourListTable {
+        width: 970px;
+        height: 849px;
+
+        .tableRowItemFixWidth {
+            max-width: 293px;
+        }
+
+        .tableHeadRowItem {
+            
+        }
+    }
+
+    .tourListSearch {
+        width: 310px;
+        height: 710px;
+        padding: 20px;
+
+        .tourListSearchForm {
+
+            .formName {
+                padding-left: 12px;
+            }
+
+            .tourListSearchName {
+                margin-bottom: 19px;
+            }
+
+            .tourListSearchDate {
+                display: flex;
+                gap: 10px;
+                margin-bottom: 19px;
+            }
+
+            .tourListSearchLeague {
+                margin-bottom: 15px;
+                .leagueItemHead {
+                    position: relative;
+
+                    &:after {
+                        position: absolute;
+                        content: url(../img/top-ar.svg);
+                        right: 17px;
+                    }
+                }
+            }
+
+            .tourListSearchRange {
+                margin-bottom: 42px;
+                padding-right: 10px;
+                .formName {
+                    margin-bottom: 15px;
+                }
+                .range  {
+                    border: none;
+                    height: 6px;
+                    
+
+                    .noUi-base {
+
+                        .noUi-connects {
+                            
+                            background-color: var(--pallete_blue2);
+                            border-radius: 22px;
+
+                            .noUi-connect {
+                                background-color: #F2F2F2;
+                            }
+                        }
+
+                        .noUi-handle {
+                            height: 20px;
+                            width: 20px;
+                            border-radius: 100%;
+                            background-color: var(--pallete_blue2);
+                            border: none;
+                            box-shadow: none;
+
+                            &:after {display: none;}
+                            &:before {display: none;}
+
+                            .noUi-tooltip {
+                                bottom: unset;
+                                border: none;
+                                background-color: transparent;
+                                font-size: 12px;
+                                line-height: 14.09px;
+                                color: var(--text_dark2);
+                            }
+                        }
+                    }
+                }
+                
+            }
+
+            .tourListSearchCheckboxs {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

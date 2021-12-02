@@ -1,0 +1,205 @@
+.tourCreate {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    .leftSide {
+        width: 750px;
+    }
+    .rightSide {
+        width: 530px;
+    }
+    .tourCreatePanel {
+        width: 100%;
+        height: 340px;
+
+        padding: 30px 35px;
+        margin-bottom: 10px;
+
+        .tourCreateTitle {
+            margin-bottom: 28px;
+        }
+
+        .tourCreateForm {
+
+            .tourCreateFormFields {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                .formName {
+                    padding-left: 12px;
+                }
+
+                .tourName {
+                    max-width: 332px;
+                    width: 100%;
+                    margin-bottom: 19px;
+                }
+
+                .tourAuth {
+                    max-width: 332px;
+                    width: 100%;
+                    margin-bottom: 19px;
+                }
+
+                .tourType {
+                    max-width: 268.36px;
+                    width: 100%;
+                    margin-bottom: 35px;
+                }
+
+                .tourLeague {
+                    max-width: 225px;
+                    width: 100%;
+                }
+
+                .tourDate {
+                    max-width: 163px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+
+    .tourAdd {
+        height: 498px;
+
+        .tourAddItem.tourAddItemActive {
+
+            .tourItemHead {
+                svg {
+                    transform: rotate(-180deg);
+                }
+            }
+            .tourItemList {
+                opacity: 1;
+                z-index: 1;
+            }
+
+        }
+        .tourAddItem {
+            cursor: pointer;
+
+            .tourItemHead {
+                padding: 22px 42px;
+                padding-right: 24px;
+                border-bottom: 1px solid var(--devaider);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+            }
+            .tourItemList {
+                height: 0;
+                overflow: hidden;
+                opacity: 0;
+                z-index: -1;
+                @include ease-02;
+
+                .tourItemListItem {
+                    border-bottom: 1px solid var(--devaider); 
+                    padding: 16px 30px;
+                    background-color: var(--hover);
+                }
+            }
+        }
+
+        .tourAddBtn {
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+        }
+    }
+
+    .tourSearch {
+        width: 100%;
+        height: 361px;
+        padding: 30px;
+        margin-bottom: 10px;
+
+        .tourSearchForm {
+
+            .tourSearchTags {
+                margin-bottom: 14px;
+
+                .tourSearchTagsList {
+                    display: flex;
+                    gap: 5px;
+                    background-color: var(--hover);
+                    padding: 10px 15px;
+                    flex-wrap: wrap;
+                    border-radius: 10px;
+                }
+            }
+
+            .tourSearchKeywords {
+                margin-bottom: 30px;
+            }
+
+            .tourSearchCheckboxes {
+                margin-bottom: 23px;
+                display: flex;
+                .checkbox {
+                    &:first-child {
+                        margin-right: 86px;
+                    }
+                }
+            }
+        }
+    }
+
+    .tourQue {
+        width: 100%;
+        height: 360px;
+
+        .tourQueItem {
+            cursor: pointer;
+            display: flex;
+            padding-right: 52px;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--devaider);
+
+            &:last-child {
+                border: none;
+            }
+
+            svg {
+                @include ease-02;
+                path {
+                    fill: var(--pallete_green3);
+                }
+                circle {
+                    fill: var(--pallete_green1);
+                    @include ease-02;
+                }
+            }
+
+            &:hover {
+                svg {
+                    circle {
+                        fill: var(--polutone_green);
+                    }
+                }
+            }
+
+            &:active {
+                svg {
+                    transform: scale(0.85);
+                }
+            }
+
+            .tourQueItemHead {
+                padding: 16px 16px 16px 30px;
+                max-width: 410px;
+                font-size: 14px;
+                line-height: 19.6px;
+                color: var(--text_dark2);
+            }
+        }
+    }
+
+
+}
