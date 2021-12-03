@@ -6,7 +6,7 @@
 
         .setEditPanelLeft {
             width: 330px;
-            padding: 30px 20px 0 15px;
+            padding: 30px 20px 20px 15px;
             height: 100%;
             border-right: 1px solid var(--devaider);
 
@@ -31,7 +31,8 @@
             }
 
             .setEditPanelList {
-                height: 200px;
+                max-height: 270px;
+                height: 100%;
                 margin-bottom: 15px;
 
                 .setEditPanelListItem {
