@@ -3502,10 +3502,13 @@ body {
   width: 100%;
 }
 .setEdit .setEditPanel {
-  height: 438px;
+  height: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .setEdit .setEditPanel .setEditPanelLeft {
-  width: 330px;
+  min-width: 330px;
   padding: 30px 20px 20px 15px;
   height: 100%;
   border-right: 1px solid var(--devaider);
@@ -3528,7 +3531,7 @@ body {
   left: 0;
 }
 .setEdit .setEditPanel .setEditPanelLeft .setEditPanelList {
-  max-height: 270px;
+  max-height: 640px;
   height: 100%;
   margin-bottom: 15px;
 }
@@ -3573,6 +3576,288 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+.setEdit .setEditPanel .setEditPanelRight {
+  padding: 30px;
+}
+.setEdit .setEditPanel .setEditPanelRight .baseSettings .baseSettingsMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+.setEdit .setEditPanel .setEditPanelRight .baseSettings .baseSettingsName {
+  max-width: 277px;
+  width: 100%;
+}
+.setEdit .setEditPanel .setEditPanelRight .baseSettings .baseSettingsColors {
+  max-width: 268px;
+  width: 100%;
+}
+.setEdit .setEditPanel .setEditPanelRight .baseSettings .baseSettingsColors .colorsList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.setEdit .setEditPanel .setEditPanelRight .baseSettings .baseSettingsColors .colorsListWr {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+  max-width: 157px;
+}
+.setEdit .setEditPanel .setEditPanelRight .baseSettings .baseSettingsColors .baseSettingsPipette {
+  width: 90px;
+  height: 58px;
+  background-color: #E0E0E0;
+  border-radius: 5px;
+  position: relative;
+}
+.setEdit .setEditPanel .setEditPanelRight .baseSettings .baseSettingsColors .baseSettingsPipette button {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+}
+.setEdit .setEditPanel .setEditPanelRight .baseSettings .baseSettingsColors .baseSettingsPipette button svg path {
+  fill: var(--pallete_gray3);
+}
+.setEdit .setEditPanel .setEditPanelRight .baseSettings .baseSettingsColors .color.colorSelected svg {
+  opacity: 1;
+}
+.setEdit .setEditPanel .setEditPanelRight .baseSettings .baseSettingsColors .color {
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.setEdit .setEditPanel .setEditPanelRight .baseSettings .baseSettingsColors .color svg {
+  opacity: 0;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.setEdit .setEditPanel .setEditPanelRight .baseSettings .baseSettingsColors .color.colorOrange {
+  background-color: var(--orange);
+}
+.setEdit .setEditPanel .setEditPanelRight .baseSettings .baseSettingsColors .color.colorYellow {
+  background-color: var(--yellow);
+}
+.setEdit .setEditPanel .setEditPanelRight .baseSettings .baseSettingsColors .color.colorGreen {
+  background-color: var(--green);
+}
+.setEdit .setEditPanel .setEditPanelRight .baseSettings .baseSettingsColors .color.colorGreenTwo {
+  background-color: var(--green2);
+}
+.setEdit .setEditPanel .setEditPanelRight .baseSettings .baseSettingsColors .color.colorBlue {
+  background-color: var(--blue);
+}
+.setEdit .setEditPanel .setEditPanelRight .baseSettings .baseSettingsColors .color.colorBlueTwo {
+  background-color: var(--blue2);
+}
+.setEdit .setEditPanel .setEditPanelRight .baseSettings .baseSettingsColors .color.colorBlueThree {
+  background-color: var(--blue3);
+}
+.setEdit .setEditPanel .setEditPanelRight .baseSettings .baseSettingsColors .color.colorBluePurple {
+  background-color: var(--purple);
+}
+.setEdit .setEditPanel .setEditPanelRight .baseSettings .baseSettingsColors .color.colorBluePurpleTwo {
+  background-color: var(--purple2);
+}
+.setEdit .setEditPanel .setEditPanelRight .baseSettings .baseSettingsColors .color.colorGray {
+  background-color: var(--gray);
+}
+.setEdit .setEditPanel .setEditPanelRight .baseSettings .baseSettingsBottom {
+  border-bottom: 1px solid var(--devaider);
+}
+.setEdit .setEditPanel .setEditPanelRight .baseSettings .baseSettingsBottom label {
+  font-size: 16px;
+  line-height: 24px;
+  padding: 0;
+  font-weight: 500;
+  color: var(--text_dark) !important;
+  display: block;
+}
+.setEdit .setEditPanel .setEditPanelRight .baseSettings .baseSettingsBottom .switcher {
+  margin-bottom: 12px;
+}
+.setEdit .setEditPanel .setEditPanelRight .baseSettings .baseSettingsBottom .info {
+  color: var(--text_dark2);
+  font-size: 14px;
+  line-height: 16.8px;
+  padding-bottom: 20px;
+  max-width: 500px;
+}
+.setEdit .setEditPanel .setEditPanelRight .accessRights .accessRightsList {
+  max-height: 600px;
+  height: 100%;
+  padding-right: 5px;
+}
+.setEdit .setEditPanel .setEditPanelRight .accessRights .accessRightsList .accessRightsItem {
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--devaider);
+  margin-bottom: 30px;
+}
+.setEdit .setEditPanel .setEditPanelRight .accessRights .accessRightsList .accessRightsItem .switcher {
+  margin-bottom: 12px;
+}
+.setEdit .setEditPanel .setEditPanelRight .accessRights .accessRightsList .accessRightsItem .switcher label {
+  font-weight: 600 !important;
+  font: 16px !important;
+  line-height: 22px !important;
+  color: var(--text_dark) !important;
+  padding: 0;
+  display: block;
+}
+.setEdit .setEditPanel .setEditPanelRight .participants .participantsBtn {
+  margin-bottom: 49px;
+}
+.setEdit .setEditPanel .setEditPanelRight .participants .participantsBtn .btn-blue {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.setEdit .setEditPanel .setEditPanelRight .participants .participantsBtn svg {
+  margin-right: 12px;
+}
+.setEdit .setEditPanel .setEditPanelRight .participants .participantsBtn svg path {
+  fill: #fff;
+}
+.setEdit .setEditPanel .setEditPanelRight .participants .participantsBtn svg line {
+  stroke: #fff;
+}
+.setEdit .setEditPanel .setEditPanelRight .participants .participantsList {
+  max-height: 480px;
+  height: 100%;
+  padding-right: 10px;
+}
+.setEdit .setEditPanel .setEditPanelRight .participants .participantsList .participantsItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 10px;
+}
+.setEdit .setEditPanel .setEditPanelRight .participants .participantsList .participantsItem:last-child {
+  margin: 0;
+}
+.setEdit .setEditPanel .setEditPanelRight .participants .participantsList .participantsItem .participantsItemProfile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.setEdit .setEditPanel .setEditPanelRight .participants .participantsList .participantsItem .participantsItemProfile .profileImg {
+  margin-right: 10px;
+}
+.setEdit .setEditPanel .setEditPanelRight .participants .participantsList .participantsItem .participantsItemProfile .profileName {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19.6px;
+  color: var(--pallete_gray3);
+}
+.setEdit .setEditPanel .setEditPanelRight .setEditPanelTitle {
+  margin-bottom: 30px;
+}
+.setEdit .setEditPanel .setEditPanelRight .setEditPanelTabs {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 580px;
+}
+.setEdit .setEditPanel .setEditPanelRight .setEditPanelTabs:after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2.5px;
+  background-color: var(--pallete_gray2);
+  z-index: 0;
+}
+.setEdit .setEditPanel .setEditPanelRight .setEditPanelTabs label {
+  padding: 10px 20px;
+  width: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: pointer;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: var(--pallete_gray2);
+}
+.setEdit .setEditPanel .setEditPanelRight .setEditPanelTabs .slide {
+  position: absolute;
+  background-color: var(--pallete_blue2);
+  width: calc(100% / 3);
+  height: 2.5px;
+  left: 0;
+  top: calc(100% - 2.5px);
+  z-index: 1;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.setEdit .setEditPanel .setEditPanelRight .setEditPanelTabs .tabLabelContent {
+  width: 100%;
+}
+.setEdit .setEditPanel .setEditPanelRight .setEditPanelTabs .tabLabelContent .tabContent {
+  position: absolute;
+  top: 65px;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 600px;
+}
+.setEdit .setEditPanel .setEditPanelRight .setEditPanelTabs input[type=radio][name=tabs] {
+  position: absolute;
+  z-index: -1;
+}
+.setEdit .setEditPanel .setEditPanelRight .setEditPanelTabs input[type=radio][name=tabs]:checked + .tabLabelContent label {
+  color: var(--pallete_blue2);
+}
+.setEdit .setEditPanel .setEditPanelRight .setEditPanelTabs input[type=radio][name=tabs]:checked + .tabLabelContent .tabContent {
+  display: block !important;
+}
+.setEdit .setEditPanel .setEditPanelRight .setEditPanelTabs input[type=radio][name=tabs]:nth-of-type(1):checked ~ .slide {
+  left: calc((100% / 3) * 0);
+}
+.setEdit .setEditPanel .setEditPanelRight .setEditPanelTabs input[type=radio][name=tabs]:nth-of-type(2):checked ~ .slide {
+  left: calc((100% / 3) * 1);
+}
+.setEdit .setEditPanel .setEditPanelRight .setEditPanelTabs input[type=radio][name=tabs]:nth-of-type(3):checked ~ .slide {
+  left: calc((100% / 3) * 2);
+}
+.setEdit .setEditPanel .setEditPanelRight .setEditPanelTabs input[type=radio][name=tabs]:first-of-type:checked ~ .slide {
+  left: 0;
 }
 
 /* Попапы */
