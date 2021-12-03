@@ -47,11 +47,35 @@
                     max-width: 268.36px;
                     width: 100%;
                     margin-bottom: 35px;
+
+                    .tourTypeHead {
+                        position: relative;
+
+                        &:after {
+                            content: url('../img/top-ar.svg');
+                            position: absolute;
+                            top: calc(50% - 8.4px);
+                            right: 16px;
+
+                        }
+                    }
                 }
 
                 .tourLeague {
                     max-width: 225px;
                     width: 100%;
+
+                    .tourLeagueHead {
+                        position: relative;
+                        
+
+                        &:after {
+                            content: url('../img/top-ar.svg');
+                            top: calc(50% - 8.4px);
+                            right: 16px;
+                            position: absolute;
+                        }
+                    }
                 }
 
                 .tourDate {
@@ -102,6 +126,14 @@
                     border-bottom: 1px solid var(--devaider); 
                     padding: 16px 30px;
                     background-color: var(--hover);
+
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    button {
+                        margin-left: 90px;
+                    }
                 }
             }
         }

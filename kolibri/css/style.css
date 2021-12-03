@@ -492,6 +492,15 @@ body {
   line-height: 16.8px;
   color: var(--pallete_gray3);
   padding: 5px 8px 5px 10px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.tag button {
+  width: 9.6px;
+  height: 9.6px;
+  margin-left: 3px;
 }
 
 .hide {
@@ -1389,9 +1398,6 @@ body {
 }
 .dropdownDefault .dropdownDefaultHead {
   position: relative;
-  border: 2px solid var(--devaider);
-  border-radius: 10px;
-  padding: 14px 15px;
   -webkit-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
@@ -1402,7 +1408,7 @@ body {
 .dropdownDefault .dropdownDefaultHead button {
   position: absolute;
   right: 16px;
-  top: calc(50% - 6.4px);
+  top: calc(50% - 10px);
 }
 .dropdownDefault .dropdownDefaultHead:after {
   -webkit-transition: all 0.2s ease;
@@ -2836,9 +2842,27 @@ body {
   width: 100%;
   margin-bottom: 35px;
 }
+.tourCreate .tourCreatePanel .tourCreateForm .tourCreateFormFields .tourType .tourTypeHead {
+  position: relative;
+}
+.tourCreate .tourCreatePanel .tourCreateForm .tourCreateFormFields .tourType .tourTypeHead:after {
+  content: url("../img/top-ar.svg");
+  position: absolute;
+  top: calc(50% - 8.4px);
+  right: 16px;
+}
 .tourCreate .tourCreatePanel .tourCreateForm .tourCreateFormFields .tourLeague {
   max-width: 225px;
   width: 100%;
+}
+.tourCreate .tourCreatePanel .tourCreateForm .tourCreateFormFields .tourLeague .tourLeagueHead {
+  position: relative;
+}
+.tourCreate .tourCreatePanel .tourCreateForm .tourCreateFormFields .tourLeague .tourLeagueHead:after {
+  content: url("../img/top-ar.svg");
+  top: calc(50% - 8.4px);
+  right: 16px;
+  position: absolute;
 }
 .tourCreate .tourCreatePanel .tourCreateForm .tourCreateFormFields .tourDate {
   max-width: 163px;
@@ -2886,6 +2910,18 @@ body {
   border-bottom: 1px solid var(--devaider);
   padding: 16px 30px;
   background-color: var(--hover);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.tourCreate .tourAdd .tourAddItem .tourItemList .tourItemListItem button {
+  margin-left: 90px;
 }
 .tourCreate .tourAdd .tourAddBtn {
   display: -webkit-box;
