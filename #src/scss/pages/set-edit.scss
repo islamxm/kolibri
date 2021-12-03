@@ -1,0 +1,72 @@
+.setEdit {
+    width: 100%;
+
+    .setEditPanel {
+        height: 438px;
+
+        .setEditPanelLeft {
+            width: 330px;
+            padding: 30px 20px 0 15px;
+            height: 100%;
+            border-right: 1px solid var(--devaider);
+
+            .setEditPanelBack {
+                margin-bottom: 27px;
+
+                a {
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 21.6px;
+                    color: var(--pallete_gray3);
+                    position: relative;
+                    padding-left: 24px;
+
+                    &:after {
+                        position: absolute; 
+                        content: url('../img/left-ar.svg');
+                        top: 0;
+                        left: 0;
+                    }
+                }
+            }
+
+            .setEditPanelList {
+                height: 200px;
+                margin-bottom: 15px;
+
+                .setEditPanelListItem {
+                    display: flex;
+                    align-items: center;
+                    padding: 10px 17px;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 16.8px;
+                    color: var(--text_dark2);
+                    border-radius: 10px;
+                    cursor: pointer;
+                    margin-bottom: 7px;
+                    @include ease-02;
+
+                    &:last-child {
+                        margin: 0;
+                    }
+                    
+                    .roleLogo {
+                        margin-right: 14px;
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    &:hover {
+                        background-color: var(--hover);
+                    }
+                }
+            }
+
+            .setEditPanelBtn {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}

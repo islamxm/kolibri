@@ -1,0 +1,66 @@
+.setAdmin {
+    width: 100%;
+    
+    .setAdminPanel {
+        width: 970px;
+        height: 438px;
+        padding: 30px 0 0 0;
+
+        .setAdminPanelTitle {
+            margin-bottom: 21px;
+            padding: 0 30px;
+        }
+
+        .setAdminPanelSearch {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 21px;
+            padding: 0 30px; 
+            
+            .setAdminPanelSearchInput {
+                max-width: 420px;
+                width: 100%;
+                // position: relative;
+
+                // button {
+                //     position: absolute;
+                //     top: calc(50% - 10px);
+                //     right: 16px;
+
+                // }
+            }
+
+            .setAdminPanelSearchBtn {
+
+            }
+        }
+
+        .setAdminPanelTable {
+            
+            .tableRow {
+            }
+            .tableRowItemRole {
+                width: 40%;
+               
+                .tableRole {
+                    display: flex;
+                    align-items: center;
+                    gap: 14px;
+                }
+
+                .tableRoleLogo  {
+                    display: inline-flex;
+                    align-items: center;
+                }
+            }
+            .tableRowItemithBtn {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                
+            }
+        }
+    } 
+
+}

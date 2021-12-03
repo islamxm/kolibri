@@ -212,4 +212,20 @@ body {
     }
 }
 
+.btn_more {
+    @include ease-02;
+    svg {
+        circle {
+            @include ease-02;
+        }
+    }
+    &:hover {
+        svg {
+            circle {
+                fill: var(--polutone_yellow);
+            }
+        }
+    }
+}
+
 

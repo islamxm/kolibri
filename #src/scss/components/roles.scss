@@ -1,0 +1,100 @@
+.roleYellow {
+    svg {
+        path {
+            &:first-child {
+                fill: var(--yellow);
+            }
+        }
+    }
+}
+
+.roleBlue {
+    svg {
+        path {
+            &:first-child {
+                fill: var(--blue);
+            }
+        }
+    }
+}
+
+.roleBlueTwo {
+    svg {
+        path {
+            &:first-child {
+                fill: var(--blue2);
+            }
+        }
+    }
+}
+
+.roleBlueThree {
+    svg {
+        path {
+            &:first-child {
+                fill: var(--blue3);
+            }
+        }
+    }
+}
+
+.rolePurple {
+    svg {
+        path {
+            &:first-child {
+                fill: var(--purple);
+            }
+        }
+    }
+}
+
+.rolePurple2 {
+    svg {
+        path {
+            &:first-child {
+                fill: var(--purple2);
+            }
+        }
+    }
+}
+
+.roleGreen {
+    svg {
+        path {
+            &:first-child {
+                fill: var(--green);
+            }
+        }
+    }
+}
+
+.roleGreenTwo {
+    svg {
+        path {
+            &:first-child {
+                fill: var(--green2);
+            }
+        }
+    }
+}
+
+.roleOrange {
+    svg {
+        path {
+            &:first-child {
+                fill: var(--orange);
+            }
+        }
+    }
+}
+
+.roleGray {
+    svg {
+        path {
+            &:first-child {
+                fill: var(--gray);
+            }
+        }
+    }
+}
+

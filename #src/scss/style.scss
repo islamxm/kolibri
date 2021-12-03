@@ -20,6 +20,7 @@
 @import './components/checkbox.scss';
 @import './components/top-panel.scss';
 @import './components/switcher.scss';
+@import './components/roles.scss';
 
 
 /* Блоки */
@@ -53,6 +54,11 @@
 //Команды========================================
 @import './pages/teams-list.scss';
 @import './pages/teams-item.scss';
+
+
+//Настройки========================================
+@import './pages/set-admin.scss';
+@import './pages/set-edit.scss';
 
 
 
