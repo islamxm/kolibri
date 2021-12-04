@@ -619,6 +619,11 @@ body {
 .btn_more:hover svg circle {
   fill: var(--polutone_yellow);
 }
+.btn_more:active {
+  -webkit-transform: scale(0.85);
+      -ms-transform: scale(0.85);
+          transform: scale(0.85);
+}
 
 /* Компонетны */
 :root {
@@ -1376,7 +1381,7 @@ body {
 }
 .popup .popupOverlay .popupContent .popupTitle {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 21.6px;
 }
 
@@ -1398,7 +1403,7 @@ body {
   right: 30px;
 }
 .push .pushContent .pushTitle {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 18px;
   line-height: 30px;
   max-width: 360px;
@@ -1641,6 +1646,128 @@ body {
   fill: var(--gray);
 }
 
+.profile {
+  height: 520px;
+  width: 310px;
+}
+.profile .profileMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 0px 22px 0px;
+  border-bottom: 1px solid var(--pallete_gray2);
+}
+.profile .profileMain .profileImg {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  background-color: var(--secdr_2);
+  background-image: url("../img/ph.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 17px;
+}
+.profile .profileMain .profileName {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21.6px;
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.profile .profileMain .profileName .profileNameImg {
+  margin-right: 10px;
+}
+.profile .profileMain .profileName .profileNameImg svg path:first-child {
+  fill: var(--yellow);
+}
+.profile .profileMain .profileId {
+  font-size: 14px;
+  line-height: 16.8px;
+  margin-bottom: 15px;
+}
+.profile .profileMain .profileEdit {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18.75px;
+  color: var(--pallete_gray2);
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.profile .profileMain .profileEdit:hover {
+  color: var(--pallete_gray3);
+}
+.profile .profileDrop {
+  padding: 15px 16px 20px 16px;
+}
+.profile .profileDrop .dropItem {
+  color: var(--pallete_blue2);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18.75px;
+  margin-bottom: 10px;
+}
+.profile .profileDrop .dropItem .dropHead {
+  padding: 14px 15px;
+  border-radius: 15px;
+  background-color: var(--pallete_blue1);
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  position: relative;
+}
+.profile .profileDrop .dropItem .dropHead:after {
+  position: absolute;
+  content: url("../img/top-ar.svg");
+  right: 16px;
+  top: calc(50% - 10px);
+}
+.profile .profileDrop .dropItem .dropHead:hover {
+  color: var(--pallete_gray3);
+}
+.profile .profileDrop .profileLink {
+  display: block;
+  padding: 14px 15px;
+  font-weight: 600;
+  font-size: 16px;
+  font-weight: 18.75px;
+  color: var(--pallete_gray2);
+  border-radius: 15px;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  position: relative;
+}
+.profile .profileDrop .profileLink:after {
+  opacity: 0;
+  position: absolute;
+  content: url("../img/right-ar.svg");
+  right: 16px;
+  top: calc(50% - 10px);
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.profile .profileDrop .profileLink:hover {
+  background-color: var(--pallete_blue1);
+  color: var(--pallete_gray3);
+}
+.profile .profileDrop .profileLink:hover:after {
+  opacity: 1;
+}
 /* Блоки */
 .aside.asideActive {
   width: 64px;
@@ -3466,6 +3593,10 @@ body {
   max-width: 420px;
   width: 100%;
 }
+.setAdmin .setAdminPanel .setAdminPanelTable {
+  max-height: 256px;
+  height: 100%;
+}
 .setAdmin .setAdminPanel .setAdminPanelTable .tableRowItemRole {
   width: 40%;
 }
@@ -3515,6 +3646,7 @@ body {
 }
 .setEdit .setEditPanel .setEditPanelLeft .setEditPanelBack {
   margin-bottom: 27px;
+  padding-left: 15px;
 }
 .setEdit .setEditPanel .setEditPanelLeft .setEditPanelBack a {
   font-weight: 600;
@@ -3579,6 +3711,15 @@ body {
 }
 .setEdit .setEditPanel .setEditPanelRight {
   padding: 30px;
+}
+.setEdit .setEditPanel .setEditPanelRight .setEditPanelTitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21.6px;
+  color: var(--text_dark2);
+}
+.setEdit .setEditPanel .setEditPanelRight .setEditPanelTitle .role {
+  color: var(--text_dark);
 }
 .setEdit .setEditPanel .setEditPanelRight .baseSettings .baseSettingsMain {
   display: -webkit-box;
@@ -3813,6 +3954,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   color: var(--pallete_gray2);
+  font-weight: 600;
 }
 .setEdit .setEditPanel .setEditPanelRight .setEditPanelTabs .slide {
   position: absolute;
@@ -3858,6 +4000,771 @@ body {
 }
 .setEdit .setEditPanel .setEditPanelRight .setEditPanelTabs input[type=radio][name=tabs]:first-of-type:checked ~ .slide {
   left: 0;
+}
+
+.setPlayer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 970px;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.setPlayer .setPlayerInfo {
+  width: 640px;
+  height: 317px;
+  padding: 30px;
+}
+.setPlayer .setPlayerInfo .setPlayerInfoItem {
+  margin-bottom: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.setPlayer .setPlayerInfo .setPlayerInfoItem:nth-child(2) {
+  margin-bottom: 42px;
+}
+.setPlayer .setPlayerInfo .setPlayerInfoItem:nth-child(4) {
+  margin-bottom: 42px;
+}
+.setPlayer .setPlayerInfo .setPlayerInfoItem .name {
+  width: 200px;
+  color: var(--text_dark2);
+  font-size: 16px;
+  line-height: 19.2px;
+}
+.setPlayer .setPlayerInfo .setPlayerInfoItem .value {
+  color: var(--pallete_gray3);
+  font-size: 16px;
+  line-height: 19.2px;
+  font-weight: 600;
+}
+
+.setPlayerEdit {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.setPlayerEdit .setPlayerEditMain {
+  width: 971px;
+}
+.setPlayerEdit .setPlayerEditMain .editInfo {
+  padding: 30px 50px;
+  padding-right: 46px;
+  margin-bottom: 20px;
+}
+.setPlayerEdit .setPlayerEditMain .editInfo .formName {
+  padding-left: 12px;
+}
+.setPlayerEdit .setPlayerEditMain .editInfo .editInfoTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 31px;
+}
+.setPlayerEdit .setPlayerEditMain .editInfo .editInfoTop .war {
+  font-size: 14px;
+  line-height: 16.8px;
+  color: var(--pallete_gray2);
+}
+.setPlayerEdit .setPlayerEditMain .editInfo .editInfoForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.setPlayerEdit .setPlayerEditMain .editInfo .editInfoForm label {
+  display: block;
+}
+.setPlayerEdit .setPlayerEditMain .editInfo .editInfoForm .editName {
+  width: 277px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+.setPlayerEdit .setPlayerEditMain .editInfo .editInfoForm .editSurname {
+  width: 277px;
+  margin-bottom: 20px;
+  margin-right: 24px;
+}
+.setPlayerEdit .setPlayerEditMain .editInfo .editInfoForm .editSex {
+  width: 232px;
+  margin-bottom: 20px;
+}
+.setPlayerEdit .setPlayerEditMain .editInfo .editInfoForm .editSex .editSexWr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 10px;
+}
+.setPlayerEdit .setPlayerEditMain .editInfo .editInfoForm .editSex .editSexWr input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -ms-touch-action: none;
+      touch-action: none;
+}
+.setPlayerEdit .setPlayerEditMain .editInfo .editInfoForm .editSex .editSexWr label {
+  position: relative;
+  padding-left: 30px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--text_dark2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+.setPlayerEdit .setPlayerEditMain .editInfo .editInfoForm .editSex .editSexWr label:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  content: url("../img/radio.svg");
+}
+.setPlayerEdit .setPlayerEditMain .editInfo .editInfoForm .editSex .editSexWr input:checked ~ label:after {
+  content: url("../img/radio-checked.svg");
+}
+.setPlayerEdit .setPlayerEditMain .editInfo .editInfoForm .editDate {
+  margin-right: 15px;
+  margin-bottom: 33px;
+}
+.setPlayerEdit .setPlayerEditMain .editInfo .editInfoForm .editPlace {
+  width: 649px;
+  margin-bottom: 33px;
+}
+.setPlayerEdit .setPlayerEditMain .editInfo .editInfoForm .editPlace .editPlaceWr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.setPlayerEdit .setPlayerEditMain .editInfo .editInfoForm .editPlace .editPlaceWr .editPlaceCountry {
+  width: 201px;
+}
+.setPlayerEdit .setPlayerEditMain .editInfo .editInfoForm .editPlace .editPlaceWr .editPlaceRegion {
+  width: 220px;
+}
+.setPlayerEdit .setPlayerEditMain .editInfo .editInfoForm .editPlace .editPlaceWr .editPlaceCity {
+  width: 220px;
+}
+.setPlayerEdit .setPlayerEditMain .editInfo .editInfoForm .editPlace .editPlaceWr .dropdownDefault.dropdownDefaultActive .editPlaceHead {
+  color: var(--pallete_gray3) !important;
+}
+.setPlayerEdit .setPlayerEditMain .editInfo .editInfoForm .editPlace .editPlaceWr .editPlaceHead {
+  color: var(--pallete_gray2);
+  padding-right: 13px !important;
+  position: relative;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.setPlayerEdit .setPlayerEditMain .editInfo .editInfoForm .editPlace .editPlaceWr .editPlaceHead:after {
+  position: absolute;
+  content: url("../img/top-ar.svg");
+  top: calc(50% - 10px);
+  right: 13px;
+}
+.setPlayerEdit .setPlayerEditMain .editInfo .editInfoForm .editBusiness {
+  width: 277px;
+  margin-right: 20px;
+}
+.setPlayerEdit .setPlayerEditMain .editInfo .editInfoForm .editTel {
+  width: 277px;
+  margin-right: 20px;
+}
+.setPlayerEdit .setPlayerEditMain .editInfo .editInfoForm .editMail {
+  width: 277px;
+}
+.setPlayerEdit .setPlayerEditMain .editInfo .editInfoForm .editBtn {
+  margin-top: 34px;
+}
+.setPlayerEdit .setPlayerEditMain .editPassword {
+  width: 420px;
+  height: 451px;
+  padding: 30px 50px;
+}
+.setPlayerEdit .setPlayerEditMain .editPassword .blockTitle {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.setPlayerEdit .setPlayerEditMain .editPassword .editPasswordForm .formName {
+  padding-left: 12px;
+  display: block;
+}
+.setPlayerEdit .setPlayerEditMain .editPassword .editPasswordForm .pass {
+  position: absolute;
+  top: calc(50% - 7.6px);
+  right: 16px;
+  z-index: 10;
+  height: 15.32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.setPlayerEdit .setPlayerEditMain .editPassword .editPasswordForm .passOld {
+  position: relative;
+  margin-bottom: 34px;
+}
+.setPlayerEdit .setPlayerEditMain .editPassword .editPasswordForm .passNew {
+  position: relative;
+  margin-bottom: 34px;
+}
+.setPlayerEdit .setPlayerEditMain .editPassword .editPasswordForm .passConfirm {
+  position: relative;
+  margin-bottom: 34px;
+}
+.setPlayerEdit .setPlayerEditMain .editPassword .editPasswordForm .passBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.setAudit .setAuditPanel {
+  width: 860px;
+  height: 520px;
+  padding: 30px 23px;
+}
+.setAudit .setAuditPanel .setAuditFilter {
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 7px;
+}
+.setAudit .setAuditPanel .setAuditFilter .formName {
+  margin: 0;
+  margin-right: 15px;
+  font-size: 14px;
+  line-height: 19.2px;
+  font-weight: 500;
+}
+.setAudit .setAuditPanel .setAuditFilter .filterDrop {
+  width: 220px;
+}
+.setAudit .setAuditPanel .setAuditFilter .filterDrop .filterDropHead {
+  position: relative;
+}
+.setAudit .setAuditPanel .setAuditFilter .filterDrop .filterDropHead:after {
+  position: absolute;
+  content: url("../img/top-ar.svg");
+  top: calc(50% - 10px);
+  right: 13px;
+}
+.setAudit .setAuditPanel .setAuditFilter .filterUsers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.setAudit .setAuditPanel .setAuditFilter .filterAction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.setAudit .setAuditPanel .setAuditFilter .filterAction .filterDrop {
+  width: 210px;
+}
+.setAudit .setAuditPanel .setAuditList {
+  max-height: 381px;
+  height: 100%;
+}
+.setAudit .setAuditPanel .setAuditList .setAuditListItem.ban .setAuditListItemHead {
+  position: relative;
+}
+.setAudit .setAuditPanel .setAuditList .setAuditListItem.ban .setAuditListItemHead:before {
+  position: absolute;
+  top: calc(50% - 8px);
+  left: 17px;
+  content: url("../img/ban.svg");
+}
+.setAudit .setAuditPanel .setAuditList .setAuditListItem.add .setAuditListItemHead {
+  position: relative;
+}
+.setAudit .setAuditPanel .setAuditList .setAuditListItem.add .setAuditListItemHead:before {
+  position: absolute;
+  top: calc(50% - 8px);
+  left: 17px;
+  content: url("../img/plus-l.svg");
+}
+.setAudit .setAuditPanel .setAuditList .setAuditListItem.setAuditListItemActive .setAuditListItemHead:after {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.setAudit .setAuditPanel .setAuditList .setAuditListItem.setAuditListItemActive .setAuditListItemUl {
+  opacity: 1;
+}
+.setAudit .setAuditPanel .setAuditList .setAuditListItem {
+  border-radius: 10px;
+  border: 1px solid var(--devaider);
+  cursor: pointer;
+  overflow: hidden;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  margin-bottom: 5px;
+}
+.setAudit .setAuditPanel .setAuditList .setAuditListItem .setAuditListItemHead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12.5px 30px 12.5px 50px;
+  position: relative;
+}
+.setAudit .setAuditPanel .setAuditList .setAuditListItem .setAuditListItemHead:after {
+  position: absolute;
+  content: url("../img/top-ar.svg");
+  top: calc(50% - 10px);
+  right: 36px;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.setAudit .setAuditPanel .setAuditList .setAuditListItem .itemImg {
+  width: 50px;
+  height: 50px;
+  background-image: url("../img/ph.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 15px;
+}
+.setAudit .setAuditPanel .setAuditList .setAuditListItem .itemInfo .itemInfoText {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19.2px;
+  color: var(--text_dark2);
+  margin-bottom: 8px;
+}
+.setAudit .setAuditPanel .setAuditList .setAuditListItem .itemInfo .itemInfoText span {
+  font-weight: 700;
+  color: var(--text_dark);
+}
+.setAudit .setAuditPanel .setAuditList .setAuditListItem .setAuditListItemUl {
+  height: 0px;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.setAudit .setAuditPanel .setAuditList .setAuditListItem .setAuditListItemUl .setAuditListItemLi {
+  padding: 15px 50px;
+  background-color: var(--hover);
+  border: 1px solid var(--devaider);
+  border-right: none;
+  border-left: none;
+  border-bottom: none;
+  font-weight: 500;
+  color: var(--text_dark2);
+  font-size: 16px;
+  line-height: 19.2px;
+}
+.setAudit .setAuditPanel .setAuditList .setAuditListItem .setAuditListItemUl .setAuditListItemLi .ind {
+  color: var(--base_red);
+  font-weight: 700;
+}
+.setAudit .setAuditPanel .setAuditList .setAuditListItem .setAuditListItemUl .setAuditListItemLi .ex {
+  font-weight: 700;
+  color: var(--text_dark2);
+}
+
+.setMail {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.setMail .setMailEdit {
+  width: 860px;
+  height: 700px;
+  padding: 18px 30px;
+}
+.setMail .setMailEdit .setMailEditSample {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 32px;
+}
+.setMail .setMailEdit .setMailEditSample .blockTitle {
+  margin-right: 20px;
+}
+.setMail .setMailEdit .setMailEditSample .setMailEditSampleDrop {
+  width: 220px;
+  margin-right: 15px;
+}
+.setMail .setMailEdit .setMailEditSample .setMailEditSampleDrop .setMailEditSampleDropHead {
+  color: var(--pallete_gray3);
+  position: relative;
+}
+.setMail .setMailEdit .setMailEditSample .setMailEditSampleDrop .setMailEditSampleDropHead:after {
+  position: absolute;
+  top: calc(50% - 10px);
+  right: 16px;
+  content: url("../img/top-ar.svg");
+}
+.setMail .setMailEdit .toolsPanel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+.setMail .setMailEdit .toolsPanel .toolsPanelList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.setMail .setMailEdit .toolsPanel .toolsPanelList .toolsPanelItem {
+  margin-right: 15px;
+  font-size: 16px;
+  line-height: 19.2px;
+}
+.setMail .setMailEdit .toolsPanel .toolsPanelList .toolsPanelItem button {
+  font-weight: 600;
+  padding: 2px 4px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  color: var(--pallete_gray3);
+  cursor: pointer;
+}
+.setMail .setMailEdit .toolsPanel .toolsPanelList .toolsPanelItem button:active {
+  border-color: var(--devaider);
+  color: var(--base_violet);
+}
+.setMail .setMailEdit .toolsPanel .toolsPanelList .toolsPanelItem button:focus {
+  border-color: var(--devaider);
+  color: var(--base_violet);
+}
+.setMail .setMailEdit .toolsPanel .toolsPanelList .toolsPanelItem button:hover {
+  color: var(--base_violet);
+}
+.setMail .setMailEdit .toolsPanel .toolsPanelList .toolsPanelItem .tool1 {
+  font-weight: 700;
+}
+.setMail .setMailEdit .toolsPanel .toolsPanelList .toolsPanelItem .tool2 {
+  font-style: italic;
+}
+.setMail .setMailEdit .toolsPanel .toolsPanelList .toolsPanelItem .tool3 {
+  text-decoration: underline;
+}
+.setMail .setMailEdit .toolsPanel .toolsPanelList .toolsPanelItem .tool4 {
+  text-decoration: line-through;
+}
+.setMail .setMailEdit .toolsPanel .toolsPanelList .toolsPanelItem .tool5 {
+  position: relative;
+}
+.setMail .setMailEdit .toolsPanel .toolsPanelList .toolsPanelItem .tool5 .tool5Head {
+  padding-right: 15px;
+  position: relative;
+}
+.setMail .setMailEdit .toolsPanel .toolsPanelList .toolsPanelItem .tool5 .tool5Head:after {
+  position: absolute;
+  content: url("../img/tool-ar.svg");
+  top: 0;
+  right: 0;
+}
+.setMail .setMailEdit .toolsPanel .toolsPanelList .toolsPanelItem .tool5 .tool5List {
+  border-radius: 5px;
+  border: 1px solid var(--devaider);
+  padding: 6px 7px;
+}
+.setMail .setMailEdit .toolsPanel .toolsPanelList .toolsPanelItem .tool5 .tool5List .tool5Item {
+  width: 18px !important;
+  height: 18px !important;
+  border-radius: 3px;
+  margin-bottom: 9px;
+}
+.setMail .setMailEdit .toolsPanel .toolsPanelList .toolsPanelItem .tool5 .tool5List .tool5Item.orange {
+  background-color: var(--orange);
+}
+.setMail .setMailEdit .toolsPanel .toolsPanelList .toolsPanelItem .tool5 .tool5List .tool5Item.blue {
+  background-color: var(--blue);
+}
+.setMail .setMailEdit .toolsPanel .toolsPanelList .toolsPanelItem .tool5 .tool5List .tool5Item.green {
+  background-color: var(--green);
+}
+.setMail .setMailEdit .toolsPanel .toolsPanelList .toolsPanelItem .tool5 .tool5List .tool5Item.red {
+  background-color: var(--base_red);
+}
+.setMail .setMailEdit .toolsPanel .toolsPanelList .toolsPanelItem .tool5 span {
+  position: relative;
+}
+.setMail .setMailEdit .toolsPanel .toolsPanelList .toolsPanelItem .tool5 span:after {
+  position: absolute;
+  height: 2px;
+  background-color: var(--base_red);
+  width: 100%;
+  content: "";
+  left: 0;
+  bottom: 0;
+}
+.setMail .setMailEdit .toolsPanel .toolsPanelList .toolsPanelItem .tool6 .tool6Head {
+  padding-right: 15px;
+  position: relative;
+}
+.setMail .setMailEdit .toolsPanel .toolsPanelList .toolsPanelItem .tool6 .tool6Head:after {
+  position: absolute;
+  content: url("../img/tool-ar.svg");
+  top: 0;
+  right: 0;
+}
+.setMail .setMailEdit .toolsPanel .toolsPanelList .toolsPanelItem .tool6 .tool6List {
+  border-radius: 5px;
+  border: 1px solid var(--devaider);
+  padding: 6px 0;
+}
+.setMail .setMailEdit .toolsPanel .toolsPanelList .toolsPanelItem .tool6 .tool6List .tool6Item {
+  color: var(--pallete_gray3);
+  padding: 2px 0;
+  padding-left: 4px;
+  padding-right: 18px;
+  margin-bottom: 5px;
+}
+.setMail .setMailEdit .toolsPanel .toolsPanelList .toolsPanelItem .tool6 .tool6List .tool6Item:hover {
+  color: var(--base_violet);
+  background-color: var(--hover);
+}
+.setMail .setMailEdit .toolsPanel .toolsPanelList .toolsPanelItem .tool7 .tool7Head {
+  position: relative;
+  padding-right: 15px;
+}
+.setMail .setMailEdit .toolsPanel .toolsPanelList .toolsPanelItem .tool7 .tool7Head:after {
+  position: absolute;
+  content: url("../img/tool-ar.svg");
+  top: 0;
+  right: 0;
+}
+.setMail .setMailEdit .toolsPanel .toolsPanelList .toolsPanelItem .tool7 .tool7Head:hover svg path {
+  fill: var(--base_violet);
+}
+.setMail .setMailEdit .toolsPanel .toolsPanelList .toolsPanelItem .tool7 .tool7List {
+  border-radius: 5px;
+  border: 1px solid var(--devaider);
+}
+.setMail .setMailEdit .toolsPanel .toolsPanelList .toolsPanelItem .tool7 .tool7List .tool7Item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-left: 4px;
+  margin-bottom: 5px;
+}
+.setMail .setMailEdit .toolsPanel .toolsPanelList .toolsPanelItem .tool7 .tool7List .tool7Item:hover {
+  background-color: var(--hover);
+}
+.setMail .setMailEdit .toolsPanel .toolsPanelList .toolsPanelItem .tool7 .tool7List .tool7Item:hover svg path {
+  fill: var(--base_violet);
+}
+.setMail .setMailEdit .toolsPanel .toolsPanelList .toolsPanelItem .tool8 svg path {
+  fill: var(--pallete_gray3);
+}
+.setMail .setMailEdit .toolsPanel .toolsPanelList .toolsPanelItem .tool8:hover svg path {
+  fill: var(--base_violet);
+}
+.setMail .setMailEdit .toolsPanel .toolsPanelList .toolsPanelItem .tool8:focus svg path {
+  fill: var(--base_violet);
+}
+.setMail .setMailEdit .toolsPanel .toolsPanelList .toolsPanelItem .tool9 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 2px;
+}
+.setMail .setMailEdit .toolsPanel .toolsPanelList .toolsPanelItem .tool9 svg path {
+  fill: var(--pallete_gray3);
+}
+.setMail .setMailEdit .toolsPanel .toolsPanelList .toolsPanelItem .tool9:hover svg path {
+  fill: var(--base_violet);
+}
+.setMail .setMailEdit .toolsPanel .toolsPanelList .toolsPanelItem .tool9:focus svg path {
+  fill: var(--base_violet);
+}
+.setMail .setMailEdit .toolsPanel .toolsPanelList .toolsPanelItem .tool10 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 2px;
+}
+.setMail .setMailEdit .toolsPanel .toolsPanelList .toolsPanelItem .tool10 svg path {
+  fill: var(--pallete_gray3);
+}
+.setMail .setMailEdit .toolsPanel .toolsPanelList .toolsPanelItem .tool10:hover svg path {
+  fill: var(--base_violet);
+}
+.setMail .setMailEdit .toolsPanel .toolsPanelList .toolsPanelItem .tool10:focus svg path {
+  fill: var(--base_violet);
+}
+.setMail .setMailEdit .toolsPanel .toolsPanelList .toolsPanelItem .tool11 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 2px;
+}
+.setMail .setMailEdit .toolsPanel .toolsPanelList .toolsPanelItem .tool11 svg path {
+  fill: var(--pallete_gray3);
+}
+.setMail .setMailEdit .toolsPanel .toolsPanelList .toolsPanelItem .tool11:hover svg path {
+  fill: var(--base_violet);
+}
+.setMail .setMailEdit .toolsPanel .toolsPanelList .toolsPanelItem .tool11:focus svg path {
+  fill: var(--base_violet);
+}
+.setMail .setMailEdit .textField textarea {
+  padding: 20px;
+  width: 100%;
+  height: 254px;
+  resize: none;
+}
+.setMail .setMailEdit .btns {
+  margin-top: 15px;
+}
+.setMail .setMailEdit .btns .btn-green {
+  margin-right: 15px;
+}
+.setMail .setMailSelect {
+  width: 420px;
+  height: 700px;
+  padding: 30px 0;
+}
+.setMail .setMailSelect .blockTitle {
+  margin-bottom: 20px;
+  padding: 0 30px;
+}
+.setMail .setMailSelect .setMailSelectForm {
+  padding: 0 30px;
+}
+.setMail .setMailSelect .setMailSelectForm .setMailSelectFormList {
+  border-bottom: 1px solid var(--devaider);
+}
+.setMail .setMailSelect .setMailSelectForm .mailItem {
+  margin-bottom: 14px;
+}
+.setMail .setMailSelect .setMailSelectForm .mailItem:last-child {
+  margin-bottom: 19px;
+}
+.setMail .setMailSelect .setMailSelectSearch {
+  padding: 13px 30px 0 30px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.setMail .setMailSelect .setMailSelectSearch label {
+  display: block;
+  padding-left: 12px;
+}
+.setMail .setMailSelect .setMailSelectSearch .inputWr {
+  position: relative;
+}
+.setMail .setMailSelect .setMailSelectSearch .inputWr button {
+  position: absolute;
+  top: calc(50% - 10px);
+  right: 16px;
+}
+.setMail .setMailSelect .setMailSelectList {
+  max-height: 380px;
+  height: 100%;
+}
+.setMail .setMailSelect .setMailSelectList .mailItem {
+  padding: 16px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid var(--devaider);
+}
+.setMail .setMailSelect .setMailSelectList .mailItem .mailItemProf {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.setMail .setMailSelect .setMailSelectList .mailItem .mailItemProf .maiItemImg {
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/ph.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-right: 10px;
+}
+.setMail .setMailSelect .setMailSelectList .mailItem .mailItemProf .mailItemName {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19.6px;
 }
 
 /* Попапы */
@@ -4141,6 +5048,23 @@ body {
   color: var(--pallete_blue2);
 }
 
+#popupSample {
+  display: none;
+}
+#popupSample .popupSample {
+  width: 503px;
+  height: 223px;
+}
+#popupSample .popupSample .popupSampleTitle {
+  margin-bottom: 16px;
+}
+#popupSample .popupSample .input {
+  width: 277px;
+}
+#popupSample .popupSample .popupSampleInfo {
+  margin-bottom: 26px;
+}
+
 /* Пуш уведомления */
 #pushBlockSucces {
   display: none;
@@ -4285,5 +5209,24 @@ body {
   fill: #E54D4D;
 }
 #pushTourError .pushTourError .pushInfo {
+  margin-bottom: 15px;
+}
+
+#pushSendSuccess {
+  display: none;
+}
+#pushSendSuccess .pushSendSuccess .pushSendSuccessTitle {
+  margin-bottom: 19px;
+}
+#pushSendError {
+  display: none;
+}
+#pushSendError .pushSendError .pushSendErrorTitle {
+  margin-bottom: 19px;
+}
+#pushSendError .pushSendError .pushSendErrorTitle svg {
+  margin-right: 5px;
+}
+#pushSendError .pushSendError .pushSendErrorDescr {
   margin-bottom: 15px;
 }

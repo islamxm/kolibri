@@ -1,0 +1,225 @@
+.setPlayerEdit {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .setPlayerEditMain {
+        width: 971px;
+        
+
+        .editInfo {
+            padding: 30px 50px;
+            padding-right: 46px;
+            margin-bottom: 20px;
+
+            .formName {
+                padding-left: 12px;
+            }
+
+            .editInfoTop {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 31px;
+
+                .war {
+                    font-size: 14px;
+                    line-height: 16.8px;
+                    color: var(--pallete_gray2);
+                }
+            }
+
+
+            .editInfoForm {
+                display: flex;
+                flex-wrap: wrap;
+
+                label {
+                    display: block;
+                }
+
+
+
+                .editName {
+                    width: 277px;
+                    margin-bottom: 20px;
+                    
+                    margin-right: 20px;
+                }
+
+                .editSurname {
+                    width: 277px;
+                    margin-bottom: 20px;
+
+                    margin-right: 24px;
+                }
+
+                .editSex {
+                    width: 232px;
+                    margin-bottom: 20px;
+
+                    .editSexWr {
+                        display: flex;
+                        justify-content: space-between;
+                        padding-top: 10px;
+                        input {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            opacity: 0;
+                            appearance: none;
+                            touch-action: none;
+                        }
+                        label {
+                            position: relative;
+                            padding-left: 30px;
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 21px;
+                            color: var(--text_dark2);
+                            display: flex;
+                            align-items: center;
+                            cursor: pointer;
+
+                            &:after {
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                width: 20px;
+                                height: 20px;
+                                content: url('../img/radio.svg');
+                            }
+                            
+                        }
+
+                        input:checked ~ label {
+                            &:after {
+                                content: url('../img/radio-checked.svg');
+                            }
+                        }
+                    }
+                }
+
+                .editDate {
+                    margin-right: 15px;
+                    margin-bottom: 33px;
+                }
+
+                .editPlace {
+                    width: 649px;
+                    margin-bottom: 33px;
+
+                    
+
+                    .editPlaceWr {
+                        display: flex;
+                        justify-content: space-between;
+
+                        .editPlaceCountry {
+                            width: 201px;
+                        }
+
+                        .editPlaceRegion {
+                            width: 220px;
+                        }
+
+                        .editPlaceCity {
+                            width: 220px;
+                        }
+
+                        .dropdownDefault.dropdownDefaultActive {
+                            .editPlaceHead {
+                                color: var(--pallete_gray3) !important;
+                            }
+                        }
+
+                        .editPlaceHead {
+                            // padding: 14px 13px 14px 15px;
+                            // border: 1px solid 
+                            color: var(--pallete_gray2);
+                            padding-right: 13px !important;
+                            position: relative;
+                            @include ease-02;
+
+                            &:after {
+                                position: absolute;
+                                content: url('../img/top-ar.svg');
+                                top: calc(50% - 10px);
+                                right: 13px;
+                            }
+                        }
+
+                        
+                    }
+                }
+
+                .editBusiness {
+                    width: 277px;
+                    margin-right: 20px;
+                }
+                .editTel {
+                    width: 277px;
+                    margin-right: 20px;
+                }
+                .editMail {
+                    width: 277px;
+
+                }
+                .editBtn {
+                    margin-top: 34px;
+                }
+
+            }
+        }
+
+        .editPassword {
+            width: 420px;
+            height: 451px;
+
+            padding: 30px 50px;
+
+            .blockTitle {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .editPasswordForm {
+                .formName {
+                    padding-left: 12px;
+                    display: block;
+                }
+                .pass {
+                    position: absolute;
+                    top: calc(50% - 7.6px);
+                    right: 16px;
+                    z-index: 10;
+                    height: 15.32px;
+                    display: flex;
+                    align-items: center;
+
+                    .passImg {
+
+                    }
+                }
+                .passOld {
+                    position: relative;
+                    margin-bottom: 34px;
+                }
+
+                .passNew {
+                    position: relative;
+                    margin-bottom: 34px;
+                }
+
+                .passConfirm {
+                    position: relative;
+                    margin-bottom: 34px;
+                }
+
+                .passBtn {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}

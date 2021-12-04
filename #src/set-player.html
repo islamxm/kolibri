@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+        @@include('./blocks/aside.html')
+        <main class="main">
+            <div class="headerInfo">
+                <!-- <div class="container"> -->
+                    <div class="headerInfoTop">
+                        <a href="#" class="user">
+                            <div class="userImg">
+                                <!-- <img src="" alt=""> -->
+                            </div>
+                            Владимир Владимиров
+                        </a>
+                    </div>
+                <!-- </div> -->
+                <!-- <div class="container">
+ -->                    <div class="headerInfoBottom">
+                        <div class="pathList">
+                            <a href="#" class="pathItem">Личный кабинет</a>
+                            <a href="#" class="pathItem pathItemCurrent">Владимир Владимиров</a>
+                        </div>    
+                    </div>
+                <!-- </div> -->
+            </div>
+
+            <div class="content">
+                <div class="setPlayer">
+                    <div class="setPlayerProfile profile block">
+                        <div class="setPlayerProfileMain profileMain">
+                            <div class="profileImg">
+                                <!-- <img src="" alt=""> -->
+                            </div>
+                            <div class="profileName">
+                                <div class="profileNameImg">
+                                    <svg width="22" height="26" viewBox="0 0 22 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 4.14541C0 1.85596 1.85596 0 4.14541 0H11H17.8546C20.144 0 22 1.85596 22 4.14541V15.0894C22 16.3377 21.4375 17.5195 20.4687 18.3067L13.6141 23.8761C12.091 25.1135 9.90897 25.1135 8.38594 23.8761L1.53134 18.3067C0.562519 17.5195 0 16.3377 0 15.0894V4.14541Z" fill="#A9B4CB"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.75 11.2734H13.25C15.3211 11.2734 17 12.8649 17 14.8281C17 15.2208 16.6642 15.5391 16.25 15.5391C15.8654 15.5391 15.875 15.5391 15.5 15.5427C14.3839 15.5427 14.375 15.5391 13.3822 15.5427L13.25 15.5391H8.75C7.50736 15.5391 8.375 15.5391 6.5 15.5391C6.125 15.5427 6.16421 15.5391 5.75 15.5391C5.33579 15.5391 5 15.2208 5 14.8281C5 12.9166 6.59173 11.3575 8.58733 11.2767L8.75 11.2734ZM11 4.875C12.6569 4.875 14 6.14819 14 7.71875C14 9.28931 12.6569 10.5625 11 10.5625C9.34315 10.5625 8 9.28931 8 7.71875C8 6.14819 9.34315 4.875 11 4.875Z" fill="#F0F3FF"/>
+                                        </svg>
+                                </div>
+                                Владимир Владимиров
+                            </div>
+                            <div class="profileId">
+                                ID
+                                <span>000 000 001</span>
+                            </div>
+                            <a href="#" class="profileEdit">Редактировать профиль</a>
+                        </div>
+                        <div class="setPlayerProfileDrops profileDrop">
+                            <div class="profileDropItem dropdownDefault dropItem">
+                                <div class="profileDropHead dropdownDefaultHead dropHead">
+                                    Профиль
+                                </div>
+                                <div class="profileDropList dropdownDefaultList dropList">
+                                    <div class="profileDropListItem dropdownDefaultListItem dropListItem">Профиль</div>
+                                    <div class="profileDropListItem dropdownDefaultListItem">Профиль</div>
+                                    <div class="profileDropListItem dropdownDefaultListItem">Профиль</div>
+                                </div>
+                            </div>
+                            <a href="#" class="profileLink">
+                                Мой рейтинг
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="setPlayerInfo block">
+                        <div class="setPlayerInfoItem">
+                            <div class="name">Дата рождения</div>
+                            <div class="value">12.12.2002</div>
+                        </div>
+                        <div class="setPlayerInfoItem">
+                            <div class="name">Пол</div>
+                            <div class="value">Мужской</div>
+                        </div>
+                        <div class="setPlayerInfoItem">
+                            <div class="name">Телефон</div>
+                            <div class="value">+ 7 (962) 161 50 10</div>
+                        </div>
+                        <div class="setPlayerInfoItem">
+                            <div class="name">Почта</div>
+                            <div class="value">AnnaEllfdj134@mail.ru</div>
+                        </div>
+                        <div class="setPlayerInfoItem">
+                            <div class="name">Место проживания</div>
+                            <div class="value">Россия, Ивановская область, г.Шуя</div>
+                        </div>
+                        <div class="setPlayerInfoItem">
+                            <div class="name">Место работы | учебы </div>
+                            <div class="value">Колибрина</div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </main>
+    </div>
+    <!-- Popups -->
+    @@include('./blocks/popup-block.html')
+    @@include('./blocks/popup-notification.html')
+    @@include('./blocks/popup-unblock.html')
+
+    <!-- Push-notifications -->
+    @@include('./blocks/push-block-success.html')
+    @@include('./blocks/push-unblock-success.html')
+    @@include('./blocks/push-block-error.html')
+    @@include('./blocks/push-unblock-error.html')
+    <script src="./js/bundle.js"></script>
+</body>
+</html>

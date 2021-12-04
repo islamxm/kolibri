@@ -37,7 +37,8 @@
         }
 
         .setAdminPanelTable {
-            
+            max-height: 256px;
+            height: 100%;
             .tableRow {
             }
             .tableRowItemRole {

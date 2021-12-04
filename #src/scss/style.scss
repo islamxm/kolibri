@@ -21,6 +21,7 @@
 @import './components/top-panel.scss';
 @import './components/switcher.scss';
 @import './components/roles.scss';
+@import './components/profile.scss';
 
 
 /* Блоки */
@@ -59,6 +60,10 @@
 //Настройки========================================
 @import './pages/set-admin.scss';
 @import './pages/set-edit.scss';
+@import './pages/set-player.scss';
+@import './pages/set-player-edit.scss';
+@import './pages/set-audit.scss';
+@import './pages/set-mail.scss';
 
 
 
@@ -72,6 +77,7 @@
 @import './blocks/popup-unblock.scss';
 @import './blocks/popup-q-save.scss';
 @import './blocks/popup-tour.scss';
+@import './blocks/popup-sample.scss';
 
 /* Пуш уведомления */
 @import './blocks/push-block-success.scss';
@@ -82,4 +88,6 @@
 @import './blocks/push-q-success.scss';
 @import './blocks/push-tour-success.scss';
 @import './blocks/push-tour-error.scss';
+@import './blocks/push-send-success.scss';
+@import './blocks/push-send-error.scss';
 

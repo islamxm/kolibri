@@ -1,0 +1,17 @@
+#pushSendError {
+    display: none;
+    
+    .pushSendError {
+
+        .pushSendErrorTitle {
+            margin-bottom: 19px;
+
+            svg {
+                margin-right: 5px;
+            }
+        }
+        .pushSendErrorDescr {
+            margin-bottom: 15px;
+        }
+    }
+}

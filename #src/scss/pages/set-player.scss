@@ -1,0 +1,88 @@
+.setPlayer {
+    display: flex;
+    max-width: 970px;
+    width: 100%;
+    justify-content: space-between;
+
+    .setPlayerProfile {
+        
+
+        .setPlayerProfileMain {
+            
+
+            .profileImg {
+                
+            }
+
+            .profileName {
+                
+
+                .profileNameImg {
+                    
+                }
+            }
+
+            .profileId {
+                
+            }
+            .profileEdit {
+                
+            }
+        }
+
+        .setPlayerProfileDrops {
+
+            .profileDropItem {
+                
+
+                .profileDropHead {
+                    
+                }
+
+                .profileDropList {
+
+                    .profileDropListItem {
+
+                    }
+                }
+            }
+
+            .profileLink {
+                
+            }
+        }
+    }
+
+    .setPlayerInfo {
+        width: 640px;
+        height: 317px;
+        padding: 30px;
+
+        .setPlayerInfoItem {
+            margin-bottom: 17px;
+
+            display: flex;
+
+            &:nth-child(2) {
+                margin-bottom: 42px;
+            }
+            &:nth-child(4) {
+                margin-bottom: 42px;
+            }
+
+            .name {
+                width: 200px;
+                color: var(--text_dark2);
+                font-size: 16px;
+                line-height: 19.2px;
+            }
+
+            .value {
+                color: var(--pallete_gray3);
+                font-size: 16px;
+                line-height: 19.2px;
+                font-weight: 600;
+            }
+        }
+    }
+}

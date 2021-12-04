@@ -13,6 +13,7 @@
 
             .setEditPanelBack {
                 margin-bottom: 27px;
+                padding-left: 15px;
 
                 a {
                     font-weight: 600;
@@ -74,7 +75,15 @@
         .setEditPanelRight {
             padding: 30px;
 
-
+            .setEditPanelTitle {
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 21.6px;
+                color: var(--text_dark2);
+                .role {
+                    color: var(--text_dark);
+                }
+            }
 
             .baseSettings {
                 .baseSettingsMain {
@@ -343,6 +352,7 @@
                     cursor: pointer;
                     justify-content: center;
                     color: var(--pallete_gray2);
+                    font-weight: 600;
                 }
                 .slide {
                     position: absolute;

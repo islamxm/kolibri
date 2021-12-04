@@ -1,0 +1,180 @@
+.setAudit {
+
+    .setAuditPanel {
+        width: 860px;
+        height: 520px;
+        padding: 30px 23px;
+
+
+        .setAuditFilter {
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 7px;
+            .formName {
+                margin: 0;
+                margin-right: 15px;
+                font-size: 14px;
+                line-height: 19.2px;
+                font-weight: 500;
+            }
+            .filterDrop {
+                width: 220px;
+                .filterDropHead {
+                    position: relative;
+
+                    &:after {
+                        position: absolute;
+                        content: url('../img/top-ar.svg');
+                        top: calc(50% - 10px);
+                        right: 13px;
+                    }
+
+                }
+            }
+
+            .filterUsers {
+                display: flex;
+                align-items: center;
+                
+            }
+            .filterAction {
+                display: flex;
+                align-items: center;
+
+                .filterDrop {
+                    width: 210px;
+                }
+            }
+        }
+        .setAuditList {
+            max-height: 381px;
+            height: 100%;
+
+            .setAuditListItem.ban {
+                .setAuditListItemHead {
+                    position: relative;
+
+                    &:before {
+                        position: absolute;
+                        top: calc(50% - 8px);
+                        left: 17px;
+                        content: url('../img/ban.svg');
+                        
+                    }
+                }
+                
+            }
+            .setAuditListItem.add {
+                .setAuditListItemHead {
+                    position: relative;
+
+                    &:before {
+                        position: absolute;
+                        top: calc(50% - 8px);
+                        left: 17px;
+                        content: url('../img/plus-l.svg');
+                    }
+                }
+                
+            }
+            .setAuditListItem.setAuditListItemActive {
+
+                .setAuditListItemHead {
+                    &:after {
+                        transform: rotate(180deg);
+                    }
+                }
+                .setAuditListItemUl {
+                    opacity: 1;
+                }
+                
+            }
+
+            .setAuditListItem {
+                border-radius: 10px;
+                border: 1px solid var(--devaider);
+                cursor: pointer;
+                overflow: hidden;
+                @include ease-02;
+                margin-bottom: 5px;
+
+                .setAuditListItemHead {
+                    display: flex;
+                    align-items: center;
+                    padding: 12.5px 30px 12.5px 50px;
+                    position: relative;
+
+                    &:after {
+                        position: absolute;
+                        content: url('../img/top-ar.svg');
+                        top: calc(50% - 10px);
+                        right: 36px;
+                        @include ease-02;
+                    }
+                }
+
+
+                .itemImg {
+                    width: 50px;
+                    height: 50px;
+                    background-image: url('../img/ph.svg');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    margin-right: 15px; 
+                }
+
+                .itemInfo {
+                    
+                    .itemInfoText {
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 19.2px;
+                        color: var(--text_dark2);
+                        margin-bottom: 8px;
+
+                        span {
+                            font-weight: 700;
+                            color: var(--text_dark);
+                        }
+                    }
+
+                    .itemInfoDate {
+
+                    }
+                }
+
+                .setAuditListItemUl {
+                    height: 0px;
+                    opacity: 0;
+                    @include ease-02;
+
+                    .setAuditListItemLi {
+                        padding: 15px 50px;
+                        background-color: var(--hover);
+                        border: 1px solid var(--devaider);
+                        border-right: none;
+                        border-left: none;
+                        border-bottom: none;
+                        font-weight: 500;
+                        color: var(--text_dark2);
+                        font-size: 16px;
+                        line-height: 19.2px;
+
+
+                        .ind {
+                            color: var(--base_red);
+                            font-weight: 700;
+                        }
+                        .ex {
+                            font-weight: 700;
+                            color: var(--text_dark2);
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}

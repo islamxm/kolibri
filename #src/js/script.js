@@ -61,10 +61,38 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
         });
     }
+    const passForm = document.querySelector('.editPasswordForm');
 
-   
+    if(passForm) {
+        const passFields = document.querySelectorAll('.password');
+    const passInputs = passForm.querySelectorAll('.input');
 
+    passFields.forEach(i => {
 
+        i.addEventListener('click', (e) => {
+            
+            let current = e.currentTarget;
+            let input = current.querySelector('.input');
+            let btn = e.currentTarget.querySelector('.pass');
+            let btnImg = btn.querySelector('.passImg');
+
+            if(e.target.classList.contains('pass') || e.target.classList.contains('passImg')) {
+                i.classList.toggle('showPass');
+
+                if(i.classList.contains('showPass')) {
+                    btnImg.setAttribute('src', './img/show.svg');
+                    input.setAttribute('type', 'password');
+                    
+                }
+                if(!i.classList.contains('showPass')) {
+                    btnImg.setAttribute('src', './img/hide.svg');
+                    input.setAttribute('type', 'text');
+                }
+            }
+        });
+    });
+    }
+    
 
 
     /* Функционал для показа/скрытия сайдбара */
@@ -77,6 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
     accordeonFunc('.dropdownDefault', 'dropdownDefaultActive', '.dropdownDefaultList', 'dropdownDefaultHead');
     accordeonFunc('.questionsSearchBodyItem', 'questionsSearchBodyItemActive', '.questionsSearchBodyItemList', 'questionsSearchBodyItemHead');
     accordeonFunc('.tourAddItem', 'tourAddItemActive', '.tourItemList', 'tourItemHead');
+    accordeonFunc('.setAuditListItem', 'setAuditListItemActive', '.setAuditListItemUl', 'setAuditListItemHead');
     
     
 });

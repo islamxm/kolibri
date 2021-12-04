@@ -1,0 +1,441 @@
+.setMail {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .setMailEdit {
+        width: 860px;
+        height: 700px;
+        padding: 18px 30px;
+    
+        .setMailEditSample {
+            display: flex;
+            align-items: center;
+            margin-bottom: 32px;
+    
+            .blockTitle {
+                margin-right: 20px;
+            }
+    
+            .setMailEditSampleDrop {
+                width: 220px;
+                margin-right: 15px;
+                .setMailEditSampleDropHead {
+                    color: var(--pallete_gray3);
+                    position: relative;
+    
+                    &:after {
+                        position: absolute;
+                        top: calc(50% - 10px);
+                        right: 16px;
+                        content: url('../img/top-ar.svg');
+                    }
+                }
+            }
+        }
+
+        .toolsPanel {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+
+            .toolsPanelList {
+                display: flex;
+
+                .toolsPanelItem {
+                    margin-right: 15px;
+                    font-size: 16px;
+                    line-height: 19.2px;
+                    
+
+                    button {
+                        font-weight: 600;
+                        padding: 2px 4px;
+                        border: 1px solid #fff;
+                        border-radius: 5px;
+                        color: var(--pallete_gray3);
+                        cursor: pointer;
+
+                        &:active {
+                            border-color: var(--devaider);
+                            color: var(--base_violet);
+                        }
+
+                        &:focus {
+                            border-color: var(--devaider);
+                            color: var(--base_violet);
+                        }
+
+                        &:hover {
+                            color: var(--base_violet);
+                        }
+                    }
+
+                    .tool1 {
+                        
+                        font-weight: 700;
+                    }
+
+                    .tool2 {
+                        font-style: italic;
+                    }
+
+                    .tool3 {
+                        text-decoration: underline;
+                    }
+
+                    .tool4 {
+                        text-decoration: line-through;
+                    }
+                    
+                    .tool5 {
+                        position: relative;
+
+                        .tool5Head {
+                            padding-right: 15px;
+                            position: relative;
+
+                            &:after {
+                                position: absolute;
+                                content: url('../img/tool-ar.svg');
+                                // top: calc(50% - 10px);
+                                top: 0;
+                                right: 0;
+                            }
+                        }
+
+                        .tool5List {
+                            // height: 0;
+                            border-radius: 5px;
+                            border: 1px solid var(--devaider);
+                            padding: 6px 7px;
+
+                            .tool5Item {
+                                width: 18px !important;
+                                height: 18px !important;
+                                border-radius: 3px;
+                                margin-bottom: 9px;
+                            }
+
+                            .tool5Item.orange {
+                                background-color: var(--orange);
+                            }
+                            .tool5Item.blue {
+                                background-color: var(--blue);
+                            }
+                            .tool5Item.green {
+                                background-color: var(--green);
+                            }
+                            .tool5Item.red {
+                                background-color: var(--base_red);
+                            }
+                        }
+                        
+
+                        span {
+                            position: relative;
+                            &:after {
+                                position: absolute;
+                                height: 2px;
+                                background-color: var(--base_red);
+                                width: 100%;
+                                content: '';
+                                left: 0;
+                                bottom: 0;
+                            }
+                        }
+                        
+                    }
+
+                    .tool6 {
+
+
+                        .tool6Head {
+                            padding-right: 15px;
+                            position: relative;
+                            &:after {
+                                position: absolute;
+                                content: url('../img/tool-ar.svg');
+                                top: 0;
+                                right: 0;
+                            }
+                        }
+
+                        .tool6List {
+                            border-radius: 5px;
+                            border: 1px solid var(--devaider);
+                            padding: 6px 0;
+                            
+
+                            .tool6Item {
+                                color: var(--pallete_gray3);
+                                padding: 2px 0;
+                                padding-left: 4px;
+                                padding-right: 18px;
+                                margin-bottom: 5px;
+
+                                &:hover {
+                                    color: var(--base_violet);
+                                    background-color: var(--hover);
+                                }
+                            }
+                        }
+
+
+                    }
+
+                    .tool7 {
+
+                        .tool7Head {
+                            position: relative;
+                            padding-right: 15px;
+
+                            &:after {
+                                position: absolute;
+                                content: url('../img/tool-ar.svg');
+                                top: 0;
+                                right: 0;
+                            }
+
+                            &:hover {
+
+                                svg {
+                                    path {
+                                        fill: var(--base_violet);
+                                    }
+                                }
+                            }
+                        }
+
+                        .tool7List {
+                            border-radius: 5px;
+                            border: 1px solid var(--devaider);
+
+                            .tool7Item {
+                                display: flex;
+                                padding-top: 5px;
+                                padding-bottom: 5px;
+                                justify-content: flex-start;
+                                padding-left: 4px;
+
+                                margin-bottom: 5px;
+                                &:hover {
+                                    background-color: var(--hover);
+
+                                    svg {
+                                        path {
+                                            fill: var(--base_violet);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .tool8 {
+                        svg {
+                            path {
+                                fill: var(--pallete_gray3);
+
+                            }
+                        }
+
+                        &:hover {
+                            svg {
+                                path {
+                                    fill: var(--base_violet);
+                                }
+                            }
+                        }
+
+                        &:focus {
+                            svg {
+                                path {
+                                    fill: var(--base_violet);
+                                }
+                            }
+                        }
+                    }
+
+                    .tool9 {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding-left: 2px;
+                        svg {
+                            path {
+                                fill: var(--pallete_gray3);
+                            }
+                        }
+
+                        &:hover {
+                            svg {
+                                path {
+                                    fill: var(--base_violet);
+                                }
+                            }
+                        }
+                        &:focus {
+                            svg {
+                                path {
+                                    fill: var(--base_violet);
+                                }
+                            }
+                        }
+                    }
+
+                    .tool10 {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding-left: 2px;
+                        svg {
+                            path {
+                                fill: var(--pallete_gray3);
+                            }
+                        }
+
+                        &:hover {
+                            svg {
+                                path {
+                                    fill: var(--base_violet);
+                                }
+                            }
+                        }
+                        &:focus {
+                            svg {
+                                path {
+                                    fill: var(--base_violet);
+                                }
+                            }
+                        }
+                    }
+
+                    .tool11 {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding-left: 2px;
+                        svg {
+                            path {
+                                fill: var(--pallete_gray3);
+                            }
+                        }
+
+                        &:hover {
+                            svg {
+                                path {
+                                    fill: var(--base_violet);
+                                }
+                            }
+                        }
+                        &:focus {
+                            svg {
+                                path {
+                                    fill: var(--base_violet);
+                                }
+                            }
+                        }
+                    }
+
+
+                }
+            }
+        }
+
+        .textField {
+            textarea {
+                padding: 20px;
+                width: 100%;
+                height: 254px;
+                resize: none;
+            }
+        }
+
+        .btns {
+            margin-top: 15px;
+
+            .btn-green {
+                margin-right: 15px;
+            }
+        }
+    }
+    .setMailSelect {
+        width: 420px;
+        height: 700px;
+        padding: 30px 0;
+
+        .blockTitle {
+            margin-bottom: 20px;
+            padding: 0 30px;
+        }
+
+        .setMailSelectForm {
+            padding: 0 30px;
+
+            .setMailSelectFormList {
+                border-bottom: 1px solid var(--devaider);
+            }
+            .mailItem {
+                margin-bottom: 14px;
+                
+                &:last-child {
+                    margin-bottom: 19px;
+                }
+            }
+        }
+
+        .setMailSelectSearch {
+            padding: 13px 30px 0 30px;
+            margin-bottom: 10px;
+            position: relative;
+            label {
+                display: block;
+                padding-left: 12px;
+            }
+
+            .inputWr {
+                position: relative;
+                button {
+                    position: absolute;
+                    top: calc(50% - 10px);
+                    right: 16px;
+                    
+                }
+            }
+
+            
+        }
+
+        .setMailSelectList {
+            max-height: 380px;
+            height: 100%;
+
+            .mailItem {
+                padding: 16px 30px;
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid var(--devaider);
+
+                .mailItemProf {
+                    display: flex;
+                    align-items: center;
+                    .maiItemImg {
+                        width: 30px;
+                        height: 30px;
+                        background-image: url('../img/ph.svg');
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: center;
+                        margin-right: 10px;
+                    }
+                    .mailItemName {
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 19.6px;
+                    }
+                }
+            }
+        }
+    }
+}

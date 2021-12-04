@@ -1,0 +1,131 @@
+.profile {
+    height: 520px;
+    width: 310px;
+    .profileMain {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 0px 22px 0px;
+        border-bottom: 1px solid var(--pallete_gray2);
+
+        .profileImg {
+            width: 150px;
+            height: 150px;
+            border-radius: 100%;
+            background-color: var(--secdr_2);
+            background-image: url('../img/ph.svg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-bottom: 17px;
+        }
+        .profileName {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 21.6px;
+            margin-bottom: 15px;
+
+            display: flex;
+            // align-items: center;
+            justify-content: center;
+            .profileNameImg {
+                margin-right: 10px;
+
+                svg {
+                    path {
+                        &:first-child {
+                            fill: var(--yellow);
+                        }
+                    }
+                }
+            }   
+
+        }
+        .profileId {
+            font-size: 14px;
+            line-height: 16.8px;
+            margin-bottom: 15px;
+        }
+        .profileEdit {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 18.75px;
+            color: var(--pallete_gray2);
+            @include ease-02;
+
+            &:hover {
+                color: var(--pallete_gray3);
+            }
+        }
+    }
+
+    .profileDrop {
+        padding: 15px 16px 20px 16px;
+        .dropItem {
+            color: var(--pallete_blue2);
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 18.75px;
+            margin-bottom: 10px;
+            .dropHead {
+                padding: 14px 15px;
+                border-radius: 15px;
+                background-color: var(--pallete_blue1);
+                @include ease-02;
+                position: relative;
+
+                &:after {
+                    position: absolute;
+                    content: url('../img/top-ar.svg');
+                    right: 16px;
+                    top: calc(50% - 10px);
+                }
+
+                &:hover {
+                    color: var(--pallete_gray3);
+                }
+            }
+
+            .dropList {
+                .dropListItem {
+
+                }
+            }
+        }
+        .profileLink {
+            display: block;
+            padding: 14px 15px;
+            font-weight: 600;
+            font-size: 16px;
+            font-weight: 18.75px;
+            color: var(--pallete_gray2);
+
+            border-radius: 15px;
+                
+            @include ease-02;
+            position: relative;
+
+            &:after {
+                opacity: 0;
+                position: absolute;
+                content: url('../img/right-ar.svg');
+                right: 16px;
+                top: calc(50% - 10px);
+                @include ease-02;
+            }
+
+            &:hover {
+                background-color: var(--pallete_blue1);
+                color: var(--pallete_gray3);
+
+                &:after {
+                    opacity: 1;
+                }
+            }
+        }
+
+    }
+    .profileInfo {
+
+    }
+}

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Участники</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+        @@include('./blocks/aside.html')
+        <main class="main">
+            <div class="headerInfo">
+                <!-- <div class="container"> -->
+                    <div class="headerInfoTop">
+                        <a href="#" class="user">
+                            <div class="userImg">
+                                <!-- <img src="" alt=""> -->
+                            </div>
+                            Владимир Владимиров
+                        </a>
+                    </div>
+                <!-- </div> -->
+                <!-- <div class="container">
+ -->                    <div class="headerInfoBottom">
+                        <div class="pathList">
+                            <a href="#" class="pathItem">Личный кабинет</a>
+                            <a href="#" class="pathItem">Владимир Владимиров</a>
+                            <a href="#" class="pathItem pathItemCurrent">Редактирование профиля</a>
+                        </div>    
+                    </div>
+                <!-- </div> -->
+            </div>
+
+            <div class="content">
+                <div class="setPlayerEdit">
+                    <div class="profile block">
+                        <div class="profileMain">
+                            <div class="profileImg">
+                                <!-- <img src="" alt=""> -->
+                            </div>
+                            <div class="profileName">
+                                <div class="profileNameIMg">
+                                    
+                                </div>
+                                Владимир Владимиров
+                            </div>
+                            <div class="profileId">
+                                ID <span>000 000 001</span>
+                            </div>
+                            <a href="#" class="profileEdit">
+                                Редактировать профиль
+                            </a>
+                        </div>
+                        <div class="profileDrop">
+                            <div class="dropItem dropdownDefault">
+                                <div class="dropHead dropdownDefaultHead">
+                                    Профиль
+                                </div>
+                                <div class="dropList dropdownDefaultList">
+                                    <div class="dropListItem dropdownDefaultListItem">Профиль</div>
+                                    <div class="dropListItem dropdownDefaultListItem">Профиль</div>
+                                    <div class="dropListItem dropdownDefaultListItem">Профиль</div>
+                                </div>
+                            </div>
+                            <a href="#" class="profileLink">
+                                Мой рейтинг
+                            </a>
+                        </div>
+                    </div>
+                    <div class="setPlayerEditMain">
+                        <div class="editInfo block">
+                            <div class="editInfoTop">
+                                <h2 class="blockTitle">Информация о участнике</h2>
+                                <div class="war">Все поля должны быть заполнены</div>
+                            </div>
+                            <form class="editInfoForm">
+                                <div class="editName">
+                                    <label class="formName" for="">Имя</label>
+                                    <input class="input" type="text" placeholder="Владимир">
+                                </div>
+                                <div class="editSurname">
+                                    <label for="" class="formName">Фамилия</label>
+                                    <input class="input" type="text" placeholder="Владимиров">
+                                </div>
+                                <div class="editSex">
+                                    <div class="formName">Пол</div>
+                                    <div class="editSexWr">
+                                        <div class="female">
+                                            <input type="radio" id="female" name="sex">
+                                            <label for="female">Женский</label>
+                                        </div>
+                                        <div class="male">
+                                            <input type="radio" id="male" name="sex">
+                                            <label for="male">Мужской</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="editDate">
+                                    <label class="formName">Дата</label>
+                                    <input type="text" class="input" placeholder="12.02.2020">
+                                </div>
+                                <div class="editPlace">
+                                    <label for="" class="formName">Место проживания</label>
+                                    <div class="editPlaceWr">
+                                        <div class="editPlaceCountry dropdownDefault">
+                                            <div class="editPlaceHead input dropdownDefaultHead">Россия</div>
+                                            <div class="editPlaceList dropdownDefaultList">
+                                                <div class="editPlaceListItem dropdownDefaultListItem">Россия</div>
+                                                <div class="editPlaceListItem dropdownDefaultListItem">Россия</div>
+                                                <div class="editPlaceListItem dropdownDefaultListItem">Россия</div>
+                                            </div>
+                                        </div>
+                                        <div class="editPlaceRegion dropdownDefault">
+                                            <div class="editPlaceHead input dropdownDefaultHead">Регион</div>
+                                            <div class="editPlaceList dropdownDefaultList">
+                                                <div class="editPlaceListItem dropdownDefaultListItem">Регион</div>
+                                                <div class="editPlaceListItem dropdownDefaultListItem">Регион</div>
+                                                <div class="editPlaceListItem dropdownDefaultListItem">Регион</div>
+                                            </div>
+                                        </div>
+                                        <div class="editPlaceCity dropdownDefault">
+                                            <div class="editPlaceHead input dropdownDefaultHead">Город</div>
+                                            <div class="editPlaceList dropdownDefaultList">
+                                                <div class="editPlaceListItem dropdownDefaultListItem">Город</div>
+                                                <div class="editPlaceListItem dropdownDefaultListItem">Город</div>
+                                                <div class="editPlaceListItem dropdownDefaultListItem">Город</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="editBusiness">
+                                    <label for="" class="formName">Место работы | учебы </label>
+                                    <input type="text" class="input" placeholder="Гимназия номер 2">
+                                </div>
+                                <div class="editTel">
+                                    <label for="" class="formName">Телефон</label>
+                                    <input type="text" class="input" placeholder="+ 7 962 161 50 10">
+                                </div>
+                                <div class="editMail">
+                                    <label for="" class="formName">Почта</label>
+                                    <input type="email" class="input" placeholder="AnnaEllfdj134@">
+                                </div>
+                                <div class="editBtn">
+                                    <button class="btn-green">Сохранить изменения</button>
+                                </div>
+                            </form>
+
+                        </div>
+                        <div class="editPassword block">
+                            <h2 class="blockTitle">Сменить пароль</h2>
+                            <form class="editPasswordForm">
+                                <label class="formName" for="">Старый пароль</label>
+                                <div class="passOld password">
+                                    <input type="text" class="input" placeholder="Password">
+                                    <button type="button" class="pass">
+                                        <img class="passImg" src="./img/hide.svg"> 
+                                    </button>
+                                </div>
+                                <label class="formName" for="">Новый пароль</label>
+                                <div class="passNew password">
+                                    <input type="text" class="input" placeholder="Password">
+                                    <button type="button" class="pass">
+                                        <img class="passImg" src="./img/hide.svg"> 
+                                    </button>
+                                </div>
+                                <label class="formName" for="">Повторить новый пароль</label>
+                                <div class="passConfirm password">
+                                    <input type="text" class="input" placeholder="Password">
+                                    <button type="button" class="pass">
+                                        <img class="passImg" src="./img/hide.svg">   
+                                    </button>
+                                </div>    
+                                <div class="passBtn">
+                                    <button class="btn-green">Сохранить пароль</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </main>
+    </div>
+    <!-- Popups -->
+    @@include('./blocks/popup-block.html')
+    @@include('./blocks/popup-notification.html')
+    @@include('./blocks/popup-unblock.html')
+
+    <!-- Push-notifications -->
+    @@include('./blocks/push-block-success.html')
+    @@include('./blocks/push-unblock-success.html')
+    @@include('./blocks/push-block-error.html')
+    @@include('./blocks/push-unblock-error.html')
+    <script src="./js/bundle.js"></script>
+</body>
+</html>
