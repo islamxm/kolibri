@@ -128,11 +128,24 @@
         </main>
     </div>
     <!-- Popups -->
+    @@include('./blocks/popup-block.html')
+    @@include('./blocks/popup-notification.html')
     @@include('./blocks/popup-q-save.html')
-    
+    @@include('./blocks/popup-sample.html')
+    @@include('./blocks/popup-tour.html')
+    @@include('./blocks/popup-unblock.html')
+
     <!-- Push-notifications -->
+    @@include('./blocks/push-block-error.html')
+    @@include('./blocks/push-block-success.html')
     @@include('./blocks/push-q-error.html')
     @@include('./blocks/push-q-success.html')
+    @@include('./blocks/push-send-error.html')
+    @@include('./blocks/push-send-success.html')
+    @@include('./blocks/push-tour-error.html')
+    @@include('./blocks/push-tour-success.html')
+    @@include('./blocks/push-unblock-error.html')
+    @@include('./blocks/push-unblock-success.html')
 
     <script defer src="./js/bundle.js"></script>
 </body>

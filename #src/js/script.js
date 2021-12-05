@@ -1,6 +1,9 @@
 import noUiSlider from 'nouislider';
+import MicroModal from 'micromodal';
 
 document.addEventListener('DOMContentLoaded', () => {
+
+    MicroModal.init();
 
     const aside = document.querySelector('.aside');
     const tourRange = document.querySelector('#tourRange');

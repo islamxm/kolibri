@@ -1376,7 +1376,7 @@ body {
 }
 .popup .popupOverlay .popupContent .popupCloseBtn {
   position: absolute;
-  top: 30px;
+  top: 25px;
   right: 30px;
 }
 .popup .popupOverlay .popupContent .popupTitle {
@@ -1408,6 +1408,15 @@ body {
   line-height: 30px;
   max-width: 360px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.push .pushContent .pushTitle svg {
+  margin-right: 10px;
 }
 .push .pushContent .pushInfo {
   font-size: 16px;
@@ -3571,7 +3580,7 @@ body {
 }
 .setAdmin .setAdminPanel {
   width: 970px;
-  height: 438px;
+  height: 700px;
   padding: 30px 0 0 0;
 }
 .setAdmin .setAdminPanel .setAdminPanelTitle {
@@ -3594,7 +3603,7 @@ body {
   width: 100%;
 }
 .setAdmin .setAdminPanel .setAdminPanelTable {
-  max-height: 256px;
+  max-height: 536px;
   height: 100%;
 }
 .setAdmin .setAdminPanel .setAdminPanelTable .tableRowItemRole {
@@ -4011,6 +4020,33 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+.setPlayer .setPlayerProfile .setPlayerProfileDrops .profileDropItem.dropdownDefaultActive .profileDropHead {
+  background-color: var(--hover);
+  color: var(--pallete_gray3);
+}
+.setPlayer .setPlayerProfile .setPlayerProfileDrops .profileDropItem.dropdownDefaultActive .profileDropHead:after {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+  opacity: 1;
+}
+.setPlayer .setPlayerProfile .setPlayerProfileDrops .profileDropItem .profileDropHead {
+  background-color: #fff;
+  color: var(--pallete_gray2);
+}
+.setPlayer .setPlayerProfile .setPlayerProfileDrops .profileDropItem .profileDropHead:after {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  opacity: 0;
+}
+.setPlayer .setPlayerProfile .setPlayerProfileDrops .profileDropItem:hover .profileDropHead {
+  background-color: var(--hover);
+  color: var(--pallete_gray3);
+}
+.setPlayer .setPlayerProfile .setPlayerProfileDrops .profileDropItem:hover .profileDropHead:after {
+  opacity: 1;
 }
 .setPlayer .setPlayerInfo {
   width: 640px;

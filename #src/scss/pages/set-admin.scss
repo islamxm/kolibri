@@ -3,7 +3,7 @@
     
     .setAdminPanel {
         width: 970px;
-        height: 438px;
+        height: 700px;
         padding: 30px 0 0 0;
 
         .setAdminPanelTitle {
@@ -37,7 +37,8 @@
         }
 
         .setAdminPanelTable {
-            max-height: 256px;
+            // max-height: 256px;
+            max-height: 536px;
             height: 100%;
             .tableRow {
             }

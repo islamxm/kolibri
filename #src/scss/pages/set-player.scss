@@ -31,12 +31,40 @@
         }
 
         .setPlayerProfileDrops {
+            .profileDropItem.dropdownDefaultActive {
+                .profileDropHead {  
 
+                    background-color: var(--hover);
+                    color: var(--pallete_gray3);
+
+                    &:after {
+                        transform: rotate(180deg);
+                        opacity: 1;
+                    }
+                }
+            }
             .profileDropItem {
                 
 
                 .profileDropHead {
-                    
+                    background-color: #fff;
+                    color: var(--pallete_gray2);
+
+                    &:after {
+                        transform: rotate(90deg);
+                        opacity: 0;
+                    }
+                }
+
+                &:hover {
+                    .profileDropHead {
+                        background-color: var(--hover);
+                        color: var(--pallete_gray3);
+
+                        &:after {
+                            opacity: 1;
+                        }
+                    }
                 }
 
                 .profileDropList {
