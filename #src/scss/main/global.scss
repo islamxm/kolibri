@@ -118,6 +118,19 @@ body {
 
     }
 }
+
+.empty {
+    // width: 0 !important;
+    // padding: 0 !important;
+    // margin: 0 !important;
+
+
+    // button {
+    //     width: 0 !important;
+    //     padding: 0 !important;
+    //     margin: 0 !important;
+    // }
+}
 .addTag {
     // width: 100%;
     max-width: 100%;
@@ -127,7 +140,7 @@ body {
 #addTag {
     width: 100%;
     display: block;
-    padding: 4px;
+    padding: 6px;
 }
 
 

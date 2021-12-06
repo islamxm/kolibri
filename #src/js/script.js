@@ -100,8 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const tagsList = document.querySelector('#tagsList');
     const tagInput = document.querySelector('#addTag');
-    const tags = document.querySelectorAll('.tag');
-    const tagsBtns = document.querySelectorAll('.tag_close');
+    // const tags = document.querySelectorAll('.tag');
     const inputParent = tagInput.parentElement;
     const tagDel = `
         <button type="button" class="tag_close">
@@ -110,10 +109,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 </svg>                                                
         </button>
     `;
+    
 
-
-    function createTag(e) {
+    function createTag() {
         const newTag = document.createElement('div');
+        
+
         newTag.classList.add('tag');
         const newTagText = tagInput.value;
         newTag.innerHTML = `${newTagText}${tagDel}`;
@@ -121,45 +122,36 @@ document.addEventListener('DOMContentLoaded', () => {
         if(!tagInput.value == '') {
             inputParent.before(newTag);
         }
+
+        
     }
 
     tagInput.addEventListener('keypress', (e) => {
+        
         if(e.key == 'Enter') {
             e.preventDefault();
         }
         const keyEnter = 'Enter';
 
         if(e.key == keyEnter) {
+            
             createTag();
+            let tags = document.querySelectorAll('.tag');
+            tags.forEach(tag => {
+                tag.addEventListener('click', (e) => {
+                    console.log(tags.length);
+                    let btn = e.currentTarget.querySelector('tag_close');
+
+                    if(e.target && e.target.classList.contains('tag_close') || e.target.tagName == 'svg' || e.target.tagName == 'path') {
+                        tag.remove();
+                    }
+                });
+            });
+            
             e.currentTarget.value = '';
         }
         
     });
-
-    // tags.forEach(i => {
-    //     i.addEventListener('click', (e) => {
-    //         let delBtn = e.currentTarget.querySelector('button');
-    //         console.log('')
-
-    //         if(e.target && e.target == delBtn) {
-    //             i.remove();
-    //         }
-    //     });
-    // });
-
-    tagsBtns.forEach(i => {
-        i.addEventListener('click', (e) => {
-            e.preventDefault();
-
-            i.parentElement.remove();
-        });
-    });
-
-    
-
-
-
-    
 
     
 
