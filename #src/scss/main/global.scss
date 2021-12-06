@@ -97,14 +97,40 @@ body {
     cursor: pointer;
 
     display: flex;
+    align-items: center;
 
     button {
         width: 9.6px;
         height: 9.6px;
-        margin-left: 3px;
+        margin-left: 5px;
+        display: flex;
+        align-items: center;
+
+        @include ease-02;
+
+        &:hover {
+            svg {
+                path {
+                    fill: var(--base_red);
+                }
+            }
+        }
 
     }
 }
+.addTag {
+    // width: 100%;
+    max-width: 100%;
+    flex: 1 0 auto;
+    display: flex;
+}
+#addTag {
+    width: 100%;
+    display: block;
+    padding: 4px;
+}
+
+
 
 
 .hide {

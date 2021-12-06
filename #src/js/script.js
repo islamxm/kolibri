@@ -68,33 +68,99 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if(passForm) {
         const passFields = document.querySelectorAll('.password');
-    const passInputs = passForm.querySelectorAll('.input');
+        const passInputs = passForm.querySelectorAll('.input');
 
-    passFields.forEach(i => {
+        passFields.forEach(i => {
 
+            i.addEventListener('click', (e) => {
+                
+                let current = e.currentTarget;
+                let input = current.querySelector('.input');
+                let btn = e.currentTarget.querySelector('.pass');
+                let btnImg = btn.querySelector('.passImg');
+
+                if(e.target.classList.contains('pass') || e.target.classList.contains('passImg')) {
+                    i.classList.toggle('showPass');
+
+                    if(i.classList.contains('showPass')) {
+                        btnImg.setAttribute('src', './img/show.svg');
+                        input.setAttribute('type', 'password');
+                        
+                    }
+                    if(!i.classList.contains('showPass')) {
+                        btnImg.setAttribute('src', './img/hide.svg');
+                        input.setAttribute('type', 'text');
+                    }
+                }
+            });
+        });
+    }
+
+
+
+    const tagsList = document.querySelector('#tagsList');
+    const tagInput = document.querySelector('#addTag');
+    const tags = document.querySelectorAll('.tag');
+    const tagsBtns = document.querySelectorAll('.tag_close');
+    const inputParent = tagInput.parentElement;
+    const tagDel = `
+        <button type="button" class="tag_close">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.41425 6.00001L11.7072 1.70701C12.0982 1.31601 12.0982 0.684006 11.7072 0.293006C11.3162 -0.0979941 10.6843 -0.0979941 10.2933 0.293006L6.00025 4.58601L1.70725 0.293006C1.31625 -0.0979941 0.68425 -0.0979941 0.29325 0.293006C-0.09775 0.684006 -0.09775 1.31601 0.29325 1.70701L4.58625 6.00001L0.29325 10.293C-0.09775 10.684 -0.09775 11.316 0.29325 11.707C0.48825 11.902 0.74425 12 1.00025 12C1.25625 12 1.51225 11.902 1.70725 11.707L6.00025 7.41401L10.2933 11.707C10.4883 11.902 10.7442 12 11.0002 12C11.2562 12 11.5122 11.902 11.7072 11.707C12.0982 11.316 12.0982 10.684 11.7072 10.293L7.41425 6.00001Z" fill="#627698"/>
+                </svg>                                                
+        </button>
+    `;
+
+
+    function createTag(e) {
+        const newTag = document.createElement('div');
+        newTag.classList.add('tag');
+        const newTagText = tagInput.value;
+        newTag.innerHTML = `${newTagText}${tagDel}`;
+
+        if(!tagInput.value == '') {
+            inputParent.before(newTag);
+        }
+    }
+
+    tagInput.addEventListener('keypress', (e) => {
+        if(e.key == 'Enter') {
+            e.preventDefault();
+        }
+        const keyEnter = 'Enter';
+
+        if(e.key == keyEnter) {
+            createTag();
+            e.currentTarget.value = '';
+        }
+        
+    });
+
+    // tags.forEach(i => {
+    //     i.addEventListener('click', (e) => {
+    //         let delBtn = e.currentTarget.querySelector('button');
+    //         console.log('')
+
+    //         if(e.target && e.target == delBtn) {
+    //             i.remove();
+    //         }
+    //     });
+    // });
+
+    tagsBtns.forEach(i => {
         i.addEventListener('click', (e) => {
-            
-            let current = e.currentTarget;
-            let input = current.querySelector('.input');
-            let btn = e.currentTarget.querySelector('.pass');
-            let btnImg = btn.querySelector('.passImg');
+            e.preventDefault();
 
-            if(e.target.classList.contains('pass') || e.target.classList.contains('passImg')) {
-                i.classList.toggle('showPass');
-
-                if(i.classList.contains('showPass')) {
-                    btnImg.setAttribute('src', './img/show.svg');
-                    input.setAttribute('type', 'password');
-                    
-                }
-                if(!i.classList.contains('showPass')) {
-                    btnImg.setAttribute('src', './img/hide.svg');
-                    input.setAttribute('type', 'text');
-                }
-            }
+            i.parentElement.remove();
         });
     });
-    }
+
+    
+
+
+
+    
+
     
 
 
