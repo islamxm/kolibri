@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 let targetHead = target.querySelector(`.${targetItem}`);
 
 
-                if(targetHead) {
+                if(e.target && e.target.hasAttribute('data-head')) {
                     i.classList.toggle(droppedClass);
                 }
 
