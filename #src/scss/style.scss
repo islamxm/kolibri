@@ -27,6 +27,8 @@
 @import './components/game-total.scss';
 @import './components/game-admin-mes.scss';
 @import './components/game-wrong.scss';
+@import './components/victory.scss';
+@import './components/game-action.scss';
 
 
 /* Блоки */
@@ -75,6 +77,7 @@
 //Игра========================================
 @import './pages/game-train.scss';
 @import './pages/game-over.scss';
+@import './pages/game-victory.scss';
 
 
 

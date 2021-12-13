@@ -1,0 +1,18 @@
+.gameAction {
+	padding: 20px 30px;
+    border-top: 1px solid var(--devaider);
+
+            button {
+                margin-right: 15px;
+                display: inline-flex;
+                align-items: center;
+
+                svg {
+                    margin-right: 12px;
+                }
+
+                &:last-child {
+                    margin: 0;
+                }
+            }
+}

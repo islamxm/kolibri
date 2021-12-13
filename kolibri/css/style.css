@@ -2178,6 +2178,142 @@ body {
   top: calc(50% - 15px);
 }
 
+.victory {
+  background-color: var(--pallete_blue3);
+  height: 461px;
+  width: 970px;
+  padding: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("../img/victory-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: 10px solid #FFD565;
+  border-radius: 15px;
+  position: relative;
+  -webkit-box-shadow: inset 0px 2px 6px rgba(255, 230, 97, 0.25), inset 0px 4px 7px #DE9F24;
+          box-shadow: inset 0px 2px 6px rgba(255, 230, 97, 0.25), inset 0px 4px 7px #DE9F24;
+}
+.victory .topLight {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 269.5px);
+  z-index: 0;
+}
+.victory .victoryHead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 1;
+}
+.victory .victoryHead .victoryHeadLogo {
+  margin-right: 10px;
+}
+.victory .victoryHead .victoryHeadName {
+  font-size: 18px;
+  line-height: 21.6px;
+  font-weight: 600;
+  color: #fff;
+}
+.victory .victoryHead .victoryHeadName span {
+  display: block;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 600;
+}
+.victory .victoryTitle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+.victory .victoryStars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 1;
+}
+.victory .victoryStars .star {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.victory .victoryInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 21px;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+.victory .victoryInfo .name {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21.6px;
+  color: var(--pallete_yellow2);
+}
+.victory .victoryInfo .value {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21.6px;
+  color: var(--pallete_yellow2);
+  padding: 19px 28px;
+  border-radius: 76px;
+  background-color: #fff;
+}
+.victory .victoryBtn {
+  position: relative;
+  z-index: 1;
+}
+
+.gameAction {
+  padding: 20px 30px;
+  border-top: 1px solid var(--devaider);
+}
+.gameAction button {
+  margin-right: 15px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.gameAction button svg {
+  margin-right: 12px;
+}
+.gameAction button:last-child {
+  margin: 0;
+}
+
 /* Блоки */
 .aside.asideActive {
   width: 64px;
@@ -5480,25 +5616,6 @@ body {
   line-height: 14px;
   color: var(--text_dark2);
 }
-.gameOver .gameOverBody .gameOverBodyAction {
-  padding: 20px 30px;
-  border-top: 1px solid var(--devaider);
-}
-.gameOver .gameOverBody .gameOverBodyAction button {
-  margin-right: 15px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.gameOver .gameOverBody .gameOverBodyAction button svg {
-  margin-right: 12px;
-}
-.gameOver .gameOverBody .gameOverBodyAction button:last-child {
-  margin: 0;
-}
 .gameOver .gameOverEx .gameTotal {
   margin-bottom: 10px;
 }
@@ -5572,6 +5689,36 @@ body {
   font-size: 14px;
   line-height: 17px;
   color: var(--pallete_gray3);
+}
+
+.gameVictory {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.gameVictory .gameVictoryBody {
+  width: 970px;
+  min-height: 461px;
+  overflow: hidden;
+  max-height: 582px;
+}
+.gameVictory .gameVictoryEx {
+  width: 310px;
+}
+.gameVictory .gameVictoryEx .note {
+  width: 310px;
+  height: 163px;
+  padding: 15px 20px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19.2px;
+  color: var(--base_blue);
+}
+.gameVictory .gameVictoryEx .note a {
+  color: var(--base_orange) !important;
 }
 
 /* Попапы */

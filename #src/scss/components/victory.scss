@@ -1,0 +1,106 @@
+.victory {
+	background-color: var(--pallete_blue3);
+	height: 461px;
+	width: 970px;
+	padding: 50px 0;
+	display: flex;
+	// justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	background-image: url('../img/victory-bg.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	border: 10px solid #FFD565;
+	border-radius: 15px;
+	position: relative;
+	box-shadow: inset 0px 2px 6px rgba(255, 230, 97, 0.25), inset 0px 4px 7px #DE9F24;
+
+	.topLight {
+		position: absolute;
+		top: 0;
+		left: calc(50% - (539px / 2));
+		z-index: 0;
+	}
+
+	.victoryHead {
+		display: flex;
+		margin-bottom: 30px;
+		position: relative;
+		z-index: 1;
+
+		.victoryHeadLogo {
+			margin-right: 10px;
+		}
+
+		.victoryHeadName {
+			font-size: 18px;
+			line-height: 21.6px;
+			font-weight: 600;
+			color: #fff;
+
+			span {
+				display: block;
+				font-size: 24px;
+				line-height: 29px;
+				font-weight: 600;
+			}
+		}
+	}
+
+	.victoryTitle {
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 29px;
+		color: #fff;
+		text-align: center;
+		margin-bottom: 20px;
+		position: relative;
+		z-index: 1;
+	}
+
+	.victoryStars {
+		display: flex;
+		gap: 15px;
+		margin-bottom: 15px;
+		position: relative;
+		z-index: 1;
+		.star {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+
+	.victoryInfo {
+		display: flex;
+		align-items: center;
+		gap: 21px;
+		margin-bottom: 20px;
+		position: relative;
+		z-index: 1;
+
+		.name {
+			font-weight: 800;
+			font-size: 18px;
+			line-height: 21.6px;
+			color: var(--pallete_yellow2);
+		}
+
+		.value {
+			font-weight: 800;
+			font-size: 18px;
+			line-height: 21.6px;
+			color: var(--pallete_yellow2);
+			padding: 19px 28px;
+			border-radius: 76px;
+			background-color: #fff;
+		} 
+	}
+
+	.victoryBtn {
+		position: relative;
+		z-index: 1;
+	}
+}
