@@ -1,0 +1,46 @@
+#popupGameVictory {
+	display: none;
+	
+	.popupGameVictory {
+		width: 640px;
+
+		.popupGameVictoryTitle {
+			padding-left: 60px;
+			position: relative;
+			margin-bottom: 30px;
+
+			&:after {
+				position: absolute;
+				top: calc(50% - 25px);
+				left: 0;
+				content: url('../img/game-pop.png');
+			}
+		}
+
+		.popupGameVictoryBody {
+
+			.text {
+				font-weight: 500;
+				font-size: 16px;
+				line-height: 19.2px;
+				color: var(--text_dark2);
+				margin-bottom: 30px;
+			}
+
+			.form {
+
+				textarea {
+					resize: none;
+					width: 580px;
+					height: 202px;
+					margin-bottom: 20px;
+				}
+
+				.formBtns {
+					display: flex;
+					gap: 15px;
+				}
+			}
+		}
+	}
+}

@@ -174,6 +174,7 @@ document.addEventListener('DOMContentLoaded', () => {
     accordeonFunc('.questionsSearchBodyItem', 'questionsSearchBodyItemActive', '.questionsSearchBodyItemList', 'questionsSearchBodyItemHead');
     accordeonFunc('.tourAddItem', 'tourAddItemActive', '.tourItemList', 'tourItemHead');
     accordeonFunc('.setAuditListItem', 'setAuditListItemActive', '.setAuditListItemUl', 'setAuditListItemHead');
+    accordeonFunc('.gameShowBodyDropItem', 'gameShowBodyDropItemActive', '.itemList', 'itemHead');
     
     
 });

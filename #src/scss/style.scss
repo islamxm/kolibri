@@ -33,6 +33,7 @@
 @import './components/game-place.scss';
 @import './components/game-level.scss';
 @import './components/goldfish.scss';
+@import './components/game-vars.scss';
 
 
 /* Блоки */
@@ -82,6 +83,7 @@
 @import './pages/game-train.scss';
 @import './pages/game-over.scss';
 @import './pages/game-victory.scss';
+@import './pages/game-show.scss';
 
 
 
@@ -96,6 +98,7 @@
 @import './blocks/popup-q-save.scss';
 @import './blocks/popup-tour.scss';
 @import './blocks/popup-sample.scss';
+@import './blocks/popup-game-victory.scss';
 
 /* Пуш уведомления */
 @import './blocks/push-block-success.scss';

@@ -2388,6 +2388,15 @@ body {
   color: var(--pallete_gray3);
 }
 
+.gameVars .var {
+  margin-bottom: 20px;
+}
+.gameVars .var label {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21.6px;
+  color: var(--text_dark2);
+}
 /* Блоки */
 .aside.asideActive {
   width: 64px;
@@ -5727,6 +5736,315 @@ body {
   color: var(--base_orange) !important;
 }
 
+.gameShow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.gameShow .gameShowBody {
+  width: 970px;
+}
+.gameShow .gameShowBody .gameShowBodyHead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid var(--devaider);
+  padding: 30px 45px;
+}
+.gameShow .gameShowBody .gameShowBodyHead .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--pallete_gray2);
+}
+.gameShow .gameShowBody .gameShowBodyHead .name .nameImg {
+  margin-right: 10px;
+}
+.gameShow .gameShowBody .gameShowBodyHead .name span {
+  font-size: 24px;
+  line-height: 29px;
+}
+.gameShow .gameShowBody .gameShowBodyHead .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+}
+.gameShow .gameShowBody .gameShowBodyHead .info .time {
+  padding: 12px 15px;
+  color: var(--pallete_gray3);
+  font-size: 14px;
+  line-height: 16.8px;
+  font-weight: 600;
+  border: 1px solid var(--devaider);
+  border-radius: 10px;
+}
+.gameShow .gameShowBody .gameShowBodyHead .info .time svg {
+  margin-left: 5px;
+}
+.gameShow .gameShowBody .gameShowBodyContent {
+  padding: 20px 45px;
+}
+.gameShow .gameShowBody .gameShowBodyContent .segList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+.gameShow .gameShowBody .gameShowBodyContent .segList .segItem {
+  width: 60px;
+  height: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19.2px;
+  color: var(--text_dark2);
+  position: relative;
+}
+.gameShow .gameShowBody .gameShowBodyContent .segList .segItem .seg-tl {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.gameShow .gameShowBody .gameShowBodyContent .segList .segItem .seg-tr {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.gameShow .gameShowBody .gameShowBodyContent .segList .segItem .seg-bl {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.gameShow .gameShowBody .gameShowBodyContent .segList .segItem .seg-br {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.gameShow .gameShowBody .gameShowBodyContent .segList .segItem .num {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: var(--secdr_2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: calc(50% - 17px);
+  left: calc(50% - 15px);
+}
+.gameShow .gameShowBody .gameShowBodyContent .totalInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+.gameShow .gameShowBody .gameShowBodyContent .totalInfo .infoItem {
+  margin-right: 30px;
+  width: 40%;
+}
+.gameShow .gameShowBody .gameShowBodyContent .totalInfo .infoItem .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 13px;
+}
+.gameShow .gameShowBody .gameShowBodyContent .totalInfo .infoItem .item:last-child {
+  margin: 0;
+}
+.gameShow .gameShowBody .gameShowBodyContent .totalInfo .infoItem .item .name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19.2px;
+  color: var(--pallete_gray3);
+}
+.gameShow .gameShowBody .gameShowBodyContent .totalInfo .infoItem .item .value {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21.6px;
+  color: var(--text_dark);
+}
+.gameShow .gameShowBody .gameShowBodyContent .totalInfo .infoItemTotal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20%;
+  padding-left: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-left: 1px solid var(--devaider);
+}
+.gameShow .gameShowBody .gameShowBodyContent .totalInfo .infoItemTotal .name {
+  margin-right: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19.2px;
+  color: var(--pallete_gray3);
+}
+.gameShow .gameShowBody .gameShowBodyContent .totalInfo .infoItemTotal .value {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21.6px;
+  color: var(--text_dark);
+}
+.gameShow .gameShowBody .gameShowBodyContent .gameQuestion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.gameShow .gameShowBody .gameShowBodyContent .gameQuestion .hints .hint {
+  margin-bottom: 10px;
+}
+.gameShow .gameShowBody .gameShowBodyContent .gameQuestion .questionContent .questionItem {
+  max-width: 580px;
+  padding: 15px 20px;
+  position: relative;
+  border: 1px solid var(--devaider);
+  border-radius: 15px;
+  font-size: 16px;
+  line-height: 19.2px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.gameShow .gameShowBody .gameShowBodyContent .gameQuestion .questionContent .questionItem .questionNum {
+  display: block;
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: 30px;
+  height: 30px;
+  background-color: var(--base_green);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 100%;
+  color: #fff;
+  font-size: 16px;
+  line-height: 19.2px;
+}
+.gameShow .gameShowBody .gameShowBodyDrops .gameShowBodyDropItem.gameShowBodyDropItemActive .itemHead button {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.gameShow .gameShowBody .gameShowBodyDrops .gameShowBodyDropItem {
+  border-bottom: 1px solid var(--devaider);
+}
+.gameShow .gameShowBody .gameShowBodyDrops .gameShowBodyDropItem:last-child {
+  border: none;
+}
+.gameShow .gameShowBody .gameShowBodyDrops .gameShowBodyDropItem .itemHead {
+  padding: 27px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21.6px;
+  background: var(--hover);
+  cursor: pointer;
+  border-bottom: 1px solid var(--devaider);
+}
+.gameShow .gameShowBody .gameShowBodyDrops .gameShowBodyDropItem .itemHead button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.gameShow .gameShowBody .gameShowBodyDrops .gameShowBodyDropItem .itemHead button svg circle {
+  fill: var(--pallete_blue2);
+}
+.gameShow .gameShowBody .gameShowBodyDrops .gameShowBodyDropItem .itemHead button svg path {
+  fill: #fff;
+}
+.gameShow .gameShowBody .gameShowBodyDrops .gameShowBodyDropItem .itemList {
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  height: 0;
+  overflow: hidden;
+}
+.gameShow .gameShowBody .gameShowBodyDrops .gameShowBodyDropItem .itemList .table .tableHeadaRow {
+  border-top: 1px solid var(--devaider);
+}
+.gameShow .gameShowBody .gameShowBodyDrops .gameShowBodyDropItem .itemList .table .tableRow .tableRowItem.tableRowItemFirst {
+  text-align: center;
+}
+.gameShow .gameShowBody .gameShowBodyDrops .gameShowBodyDropItem .itemList .table .tableRow.first {
+  background-color: var(--pallete_yellow1);
+}
+.gameShow .gameShowBody .gameShowBodyDrops .gameShowBodyDropItem .itemList .table .tableRow.second {
+  background-color: var(--pallete_gray1);
+}
+.gameShow .gameShowBody .gameShowBodyDrops .gameShowBodyDropItem .itemList .table .tableRow.third {
+  background-color: var(--pallete_red1);
+}
+
 /* Попапы */
 #popupBlock {
   display: none;
@@ -6023,6 +6341,43 @@ body {
 }
 #popupSample .popupSample .popupSampleInfo {
   margin-bottom: 26px;
+}
+
+#popupGameVictory {
+  display: none;
+}
+#popupGameVictory .popupGameVictory {
+  width: 640px;
+}
+#popupGameVictory .popupGameVictory .popupGameVictoryTitle {
+  padding-left: 60px;
+  position: relative;
+  margin-bottom: 30px;
+}
+#popupGameVictory .popupGameVictory .popupGameVictoryTitle:after {
+  position: absolute;
+  top: calc(50% - 25px);
+  left: 0;
+  content: url("../img/game-pop.png");
+}
+#popupGameVictory .popupGameVictory .popupGameVictoryBody .text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19.2px;
+  color: var(--text_dark2);
+  margin-bottom: 30px;
+}
+#popupGameVictory .popupGameVictory .popupGameVictoryBody .form textarea {
+  resize: none;
+  width: 580px;
+  height: 202px;
+  margin-bottom: 20px;
+}
+#popupGameVictory .popupGameVictory .popupGameVictoryBody .form .formBtns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
 }
 
 /* Пуш уведомления */
