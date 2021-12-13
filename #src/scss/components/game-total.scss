@@ -1,0 +1,62 @@
+.gameTotal {
+    width: 310px;
+    height: 213px;
+    
+    .gameTotalTop {
+        padding: 10px 0 17px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .gameTotalTopImg {
+            margin-bottom: 9px;
+        }
+        .gameTotalTopTitle {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 21.6px;
+            color: var(--text_dark2);
+        }
+    }
+
+    .gameTotalList {
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid var(--devaider);
+        border-bottom: 1px solid var(--devaider);
+    }
+
+    .gameTotalItem {
+        width: 100%;
+        border-right: 1px solid var(--devaider);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 12px 0;
+
+        &:last-child {
+            border: none;
+        }
+        .name {
+            color: var(--pallete_gray2);
+            font-size: 14px;
+            line-height: 16.8px;
+            font-weight: 600;
+            margin-bottom: 7px;
+        }
+        .value {
+            font-weight: 700;
+            color: var(--pallete_gray3);
+        }
+    }
+
+    .gameTotalAuth {
+        color: var(--text_dark2);
+        font-size: 14px;
+        line-height: 16.8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10px;
+    }
+}

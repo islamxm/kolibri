@@ -1,0 +1,134 @@
+.hint {
+    width: 280px;
+    border-radius: 15px;
+    padding: 15px 10px;
+    padding-left: 19px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    @include ease-02;
+
+    svg {
+        margin-right: 19px;
+    }
+
+
+    &:active {
+        transform: scale(0.95);
+    }
+}
+
+.hint_green {
+    background-color: #DDFFE4;
+    color: var(--pallete_green3);   
+
+    &:hover {
+        background-color: #C3F4CE;
+        color: #2FC083;
+
+        svg {
+            path {
+                fill: #2FC083;
+            }
+        }
+    }
+    svg {
+        path {
+            fill: var(--pallete_green3);
+        }
+    }
+
+    
+}
+
+.hint_yellow {
+    background-color: #FCFFDD;
+    color: #FCB853;
+
+    &:hover {
+        background-color: #FFF7AA;
+        color: #FCB853;
+        svg {
+            path {
+                fill: #FCB853;
+            }
+        }
+    }
+
+    svg {
+        path {
+            fill: #FCB853;
+        }
+    }
+}
+
+.hint_red {
+    background-color: #FFE9DD;
+    color: #FF6D6D;
+
+    &:hover {
+        background-color: #FAD9C7;
+        color: #FC6363;
+        svg {
+            path {
+                fill: #FC6363;
+            }
+        }
+    }
+    svg {
+        path {
+            fill: #FF6D6D;
+        }
+    }
+
+    
+}
+
+.hint_blue {
+    background-color: #E0DDFF;
+    color: #6369FC;
+
+    &:hover {
+        background-color: #D1CDFA;
+        color: #6369FC;
+
+        svg {
+            path {
+                fill: #6369FC;
+            }
+        }
+    }
+
+    svg {
+        path {
+            fill: #6369FC;
+        }
+    }
+
+    
+}
+
+.hint_purp {
+    background-color: #FFDDFA;
+    color: #EE6CD1;
+
+    &:hover {
+        background-color: #F9CAF1;
+        color: #FF51D9;
+
+        svg {
+            path {
+                fill: #FF51D9;
+            }
+        }
+    }
+
+    svg {
+        path {
+            fill: #EE6CD1;
+        }
+    }
+}

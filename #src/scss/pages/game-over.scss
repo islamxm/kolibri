@@ -1,0 +1,201 @@
+.gameOver {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+
+    .gameOverBody {
+
+        max-height: 582px;
+        min-height: 461px;
+
+        .gameOverBodyC {
+            display: flex;
+            width: 970px;
+            margin-bottom: 31px;
+
+            .gameOverBodyContent {
+                padding: 30px;
+                max-width: 629px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+        
+                .top {
+                    .item {
+                        padding: 15px 20px;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 19.2px;
+                        color: var(--text_dark);
+                        border: 1px solid var(--devaider);
+                        border-radius: 15px;
+                        margin-bottom: 20px;
+                    }
+        
+                    .info {
+        
+                        .infoItem {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            max-width: 255px;
+                            width: 100%;
+                            margin-bottom: 10px;
+        
+                            .name {
+                                color: var(--pallete_gray3);
+                                font-size: 18px;
+                                line-height: 21.6px;
+                                font-weight: 500;
+                            }
+        
+                            .value {
+                                padding: 10px;
+                                background-color: var(--pallete_gray1);
+                                border-radius: 8px;
+                                color: var(--pallete_gray3);
+                                font-size: 18px;
+                                line-height: 21.6px;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                }
+    
+                .auth {
+                    align-self: flex-end;
+                    
+                    .authName {
+                        font-size: 14px;
+                        line-height: 16.8px;
+                        color: var(--text_dark2);
+                        margin-bottom: 8px;
+                    }
+    
+                    .authRate {
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                        .rate {
+                            margin-right: 12px;
+                            
+                            svg {
+                                path {
+                                    fill: var(--pallete_yellow2);
+                                }
+                            }
+                        }
+    
+                        .rateInfo {
+                            font-size: 12px;
+                            line-height: 14px;
+                            color: var(--text_dark2);
+                        }
+                    }
+                }
+            }
+        }
+
+        .gameOverBodyAction {
+            padding: 20px 30px;
+            border-top: 1px solid var(--devaider);
+
+            button {
+                margin-right: 15px;
+                display: inline-flex;
+                align-items: center;
+
+                svg {
+                    margin-right: 12px;
+                }
+
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+
+        
+    }
+
+    .gameOverEx {
+        .gameTotal {
+            margin-bottom: 10px;
+        }
+        .gameLeaguePlace {
+            padding: 10px 20px;
+            width: 310px;
+            height: 86px;
+            margin-bottom: 10px;
+
+            .head {
+                text-align: center;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 21.6px;
+                color: var(--text_dark2);
+                margin-bottom: 10px;
+            }
+
+            .value {
+                display: flex;
+                justify-content: center;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 29px;
+                color: var(--pallete_gray2);
+
+                .place {
+                    margin-right: 10px;
+                    color: var(--pallete_gray3);
+                }
+                .total {
+                    margin-left: 10px;
+                }
+            }
+        }
+
+        .gamePlayerLev {
+            padding: 10px 35px;
+            margin-bottom: 10px;
+
+            .head {
+                margin-bottom: 15px;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 21.6px;
+                color: var(--text_dark2);
+                text-align: center;
+            }
+
+            .levList {
+                padding: 0 10px;
+                .levItem {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 15px;
+
+                    &:last-child {
+                        margin: 0;
+                    }
+                    .name {
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: var(--text_dark2);
+                    }
+
+                    .value {
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: var(--pallete_gray3);
+                        
+
+                    }
+                }
+            }
+        }
+    }
+    
+}

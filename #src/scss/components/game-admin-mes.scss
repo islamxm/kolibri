@@ -1,0 +1,20 @@
+.gameAdminMes {
+    padding: 20px;
+    border: 1px solid var(--base_red);
+    width: 310px;
+    height: 262px;
+
+    .gameAdminMesBody {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19.2px;
+        color: var(--text_dark2);
+        margin-bottom: 15px;
+    }
+
+    .gameAdminMesBtn {
+        display: flex;
+        justify-content: center;
+    }
+
+}

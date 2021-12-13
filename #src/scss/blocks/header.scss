@@ -1,16 +1,41 @@
 .header {
-    background: linear-gradient(90.19deg, #4881B6 0%, #5C35CB 50.83%, #2D129A 100%);
+    // background: linear-gradient(90.19deg, #4881B6 0%, #5C35CB 50.83%, #2D129A 100%);
+    background: linear-gradient(90.19deg, #4881B6 0%, #5758F2 27.4%, #805BE8 50.83%, #7746D9 77.4%, #641FD5 100%);
     // background-image: url('../img/header-bg.svg');
     // background-repeat: no-repeat;
     // background-size: contain;
     // background-position: 120% 100%;
+    overflow: hidden;
+    position: relative;
+
+    &:after {
+        position: absolute;
+        content: url('../img/header-right.svg');
+        right: 0;
+        top: 0;
+        z-index: 0;
+    }
+
+    &:before {
+        position: absolute;
+        content: url('../img/header-left.svg');
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
     .headerIn {
-        padding: 15px 0;
-        padding-left: 5%;
-        padding-right: 10%;
+        padding: 15px 20px;
+        // padding-left: 5%;
+        // padding-right: 10%;
         display: flex;
         align-items: flex-end;
         justify-content: space-between;
+        max-width: 1340px;
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+
+        z-index: 1;
     }
 
     .headerLogo {

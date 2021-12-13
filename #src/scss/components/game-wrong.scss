@@ -1,0 +1,133 @@
+.gameWrong {
+    width: 341px;
+    height: 461px;
+    background-color: var(--base_red);
+    box-shadow: inset 0px 4px 7px #FB4930;
+    border-radius: 15px;
+    padding: 30px;
+    // border: 8px solid #FFEDDE;
+    .gameWrongHead {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 17px;
+        margin-bottom: 30px;
+        .logo {
+            margin-right: 10px;
+        }
+
+        .name { 
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 29px;
+            color: var(--pallete_red1);
+
+            span {
+                font-size: 18px;
+                line-height: 21.6px;
+                display: block;
+                
+            }
+        }
+    }
+
+    .gameWrongTitle {
+        text-align: center;
+        font-weight: 800;
+        color: var(--pallete_red1);
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 20px;
+    }
+
+    .gameWrongStars {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 30px;
+
+        .star {
+
+        }
+        
+    }
+
+    .gameWrongInfo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+
+
+        .name {
+            font-weight: 800;
+            font-size: 18px;
+            line-height: 21.6px;
+            color: var(--pallete_yellow2);
+        }
+
+        .value {
+            font-weight: 800;
+            padding: 19px 30px;
+            font-size: 18px;
+            line-height: 21.6px;
+            background-color: var(--pallete_yellow1);
+            border-radius: 76px;
+            color: var(--pallete_yellow2);
+
+        }
+    }
+
+    .gameWrongBtn {
+        display: flex;
+        justify-content: center;
+        
+        .attemptNote {
+            display: none;
+        }
+    }
+
+    .gameWrongBtn.attemptEnd {
+        position: relative;
+
+        .btn-green {
+            background-color: var(--pallete_gray1);
+            color: var(--pallete_gray2);
+
+            &:active {
+                transform: scale(1.0);
+            }
+
+            &:hover {
+                border-radius: 15px;
+            }
+
+        }
+
+        .attemptNote {
+            display: block;
+            position: absolute;
+            top: -17px;
+            right: -110%;
+            background-color: var(--pallete_gray3);
+            max-width: 311px;
+            padding: 18px 20px;
+            color: #fff;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+
+            &:after {
+                position: absolute;
+                content:'';
+                width: 30px;
+                height: 30px;
+                background-color: var(--pallete_gray3);
+                transform: rotate(45deg);
+                left: -15px;
+                top: calc(50% - 15px);
+            }
+        }
+
+    }
+}

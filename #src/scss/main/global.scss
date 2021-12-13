@@ -216,6 +216,7 @@ body {
     }
 
     &:hover {
+
         svg {
             circle {
                 fill: var(--polutone_blue);
@@ -224,6 +225,7 @@ body {
     }
 
     &:active {
+
         svg {
             transform: scale(0.80);
         }
@@ -232,6 +234,7 @@ body {
 
 .btn_create {
     @include ease-02;
+    
     svg {
         circle {
             @include ease-02;

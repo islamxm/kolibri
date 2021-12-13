@@ -1,0 +1,32 @@
+.radio {
+    
+    input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        visibility: hidden;
+        appearance: none;
+        pointer-events: none;
+        z-index: -1;
+        opacity: 0;
+    }
+
+    label {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        padding-left: 30px;
+        &:after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: url('../img/radio.svg');
+        }
+    }
+
+    input:checked ~ label {
+        &:after {
+            content: url('../img/radio-checked.svg');
+        }
+    }
+}

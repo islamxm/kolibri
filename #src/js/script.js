@@ -39,9 +39,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function asideToggler(asideBtnQuery) {
         let asideBtn = document.querySelector(asideBtnQuery)
-        asideBtn.addEventListener('click', () => {
-            aside.classList.toggle('asideActive');
-        });
+        if(asideBtn) {
+            asideBtn.addEventListener('click', () => {
+                aside.classList.toggle('asideActive');
+            });
+        }
     }
 
     if(tourRange) {
