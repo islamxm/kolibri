@@ -1,0 +1,40 @@
+.gamePlayerLev {
+    padding: 10px 35px;
+    margin-bottom: 10px;
+
+    .head {
+        margin-bottom: 15px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 21.6px;
+        color: var(--text_dark2);
+        text-align: center;
+    }
+
+    .levList {
+        padding: 0 10px;
+        .levItem {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+
+            &:last-child {
+                margin: 0;
+            }
+            .name {
+                font-size: 14px;
+                line-height: 17px;
+                color: var(--text_dark2);
+            }
+
+            .value {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 17px;
+                color: var(--pallete_gray3);
+                
+
+            }
+        }
+    }
+}

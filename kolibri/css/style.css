@@ -1942,6 +1942,7 @@ body {
 .gameTotal {
   width: 310px;
   height: 213px;
+  margin-bottom: 10px;
 }
 .gameTotal .gameTotalTop {
   padding: 10px 0 17px;
@@ -2312,6 +2313,79 @@ body {
 }
 .gameAction button:last-child {
   margin: 0;
+}
+
+.gameLeaguePlace {
+  padding: 10px 20px;
+  width: 310px;
+  height: 86px;
+  margin-bottom: 10px;
+}
+.gameLeaguePlace .head {
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21.6px;
+  color: var(--text_dark2);
+  margin-bottom: 10px;
+}
+.gameLeaguePlace .value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: var(--pallete_gray2);
+}
+.gameLeaguePlace .value .place {
+  margin-right: 10px;
+  color: var(--pallete_gray3);
+}
+.gameLeaguePlace .value .total {
+  margin-left: 10px;
+}
+
+.gamePlayerLev {
+  padding: 10px 35px;
+  margin-bottom: 10px;
+}
+.gamePlayerLev .head {
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21.6px;
+  color: var(--text_dark2);
+  text-align: center;
+}
+.gamePlayerLev .levList {
+  padding: 0 10px;
+}
+.gamePlayerLev .levList .levItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 15px;
+}
+.gamePlayerLev .levList .levItem:last-child {
+  margin: 0;
+}
+.gamePlayerLev .levList .levItem .name {
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--text_dark2);
+}
+.gamePlayerLev .levList .levItem .value {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--pallete_gray3);
 }
 
 /* Блоки */
@@ -5619,77 +5693,6 @@ body {
 .gameOver .gameOverEx .gameTotal {
   margin-bottom: 10px;
 }
-.gameOver .gameOverEx .gameLeaguePlace {
-  padding: 10px 20px;
-  width: 310px;
-  height: 86px;
-  margin-bottom: 10px;
-}
-.gameOver .gameOverEx .gameLeaguePlace .head {
-  text-align: center;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 21.6px;
-  color: var(--text_dark2);
-  margin-bottom: 10px;
-}
-.gameOver .gameOverEx .gameLeaguePlace .value {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 29px;
-  color: var(--pallete_gray2);
-}
-.gameOver .gameOverEx .gameLeaguePlace .value .place {
-  margin-right: 10px;
-  color: var(--pallete_gray3);
-}
-.gameOver .gameOverEx .gameLeaguePlace .value .total {
-  margin-left: 10px;
-}
-.gameOver .gameOverEx .gamePlayerLev {
-  padding: 10px 35px;
-  margin-bottom: 10px;
-}
-.gameOver .gameOverEx .gamePlayerLev .head {
-  margin-bottom: 15px;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 21.6px;
-  color: var(--text_dark2);
-  text-align: center;
-}
-.gameOver .gameOverEx .gamePlayerLev .levList {
-  padding: 0 10px;
-}
-.gameOver .gameOverEx .gamePlayerLev .levList .levItem {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 15px;
-}
-.gameOver .gameOverEx .gamePlayerLev .levList .levItem:last-child {
-  margin: 0;
-}
-.gameOver .gameOverEx .gamePlayerLev .levList .levItem .name {
-  font-size: 14px;
-  line-height: 17px;
-  color: var(--text_dark2);
-}
-.gameOver .gameOverEx .gamePlayerLev .levList .levItem .value {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
-  color: var(--pallete_gray3);
-}
 
 .gameVictory {
   display: -webkit-box;
@@ -5704,6 +5707,9 @@ body {
   min-height: 461px;
   overflow: hidden;
   max-height: 582px;
+}
+.gameVictory .gameVictoryBody .gameAction {
+  margin-top: 31px;
 }
 .gameVictory .gameVictoryEx {
   width: 310px;
