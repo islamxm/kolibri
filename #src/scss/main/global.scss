@@ -70,7 +70,29 @@ body {
     // height: auto;
     // align-items: stretch;
 }
+.wrapper.authBg {
+    background-image: url('../img/auth-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
+    .main {
+        background-color: transparent;
+    }
+}
+
+.wrapper.logBg {
+    background-image: url('../img/login-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    // background-color: linear-gradient(193.19deg, #401B68 18.69%, #26537C 89.6%);
+    // mix-blend-mode: overlay;
+
+    .main {
+        background-color: transparent;
+    }
+}
 .container {
     max-width: 1410px;
     margin: 0 auto 0 0;

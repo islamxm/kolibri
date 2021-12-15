@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Участники</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body>
+     
+    <div class="wrapper authBg">
+        <main class="main">
+            @@include('./blocks/auth-header.html') 
+            <div class="auth">
+                <div class="authPanel">
+                    <h2 class="authTitle">Регистрация в Kolibrina</h2>
+                    <div class="authInd">
+                        <div class="name">2 шаг</div>
+                        <div class="line third"><div class="current"></div></div>
+                    </div>
+                    <div class="authSubText final">
+                        Вы справились безупречно! 
+                        <span class="rate">
+                            <img src="./img/auth-star.png" alt="">
+                            <img src="./img/auth-star.png" alt="">
+                            <img src="./img/auth-star.png" alt="">
+                        </span>
+                    </div>
+
+                    <div class="authInfo">
+                        <div class="title">Нажимая кнопку «Создать акаунт», вы принимаете Условия, </div>
+                        <a href="#" class="policy">Политика конфиденциальности, Политика в отношении файлов cookie, Политика использованиях персональных данных, Политика авторского соглашения, Правила игр </a>
+                    </div>   
+
+                    <form class="authForm">
+                        <div class="authFormBtns">
+                            <button class="btn-green">Завершить регистрацию</button>
+                            <button class="btn-tr-yellow">Войти в аккаунт</button>
+                        </div>
+                    </form> 
+                </div>
+            </div>  
+        </main>
+    </div>
+    <!-- Popups -->
+    @@include('./blocks/popup-block.html')
+    @@include('./blocks/popup-notification.html')
+    @@include('./blocks/popup-q-save.html')
+    @@include('./blocks/popup-sample.html')
+    @@include('./blocks/popup-tour.html')
+    @@include('./blocks/popup-unblock.html')
+
+    <!-- Push-notifications -->
+    @@include('./blocks/push-block-error.html')
+    @@include('./blocks/push-block-success.html')
+    @@include('./blocks/push-q-error.html')
+    @@include('./blocks/push-q-success.html')
+    @@include('./blocks/push-send-error.html')
+    @@include('./blocks/push-send-success.html')
+    @@include('./blocks/push-tour-error.html')
+    @@include('./blocks/push-tour-success.html')
+    @@include('./blocks/push-unblock-error.html')
+    @@include('./blocks/push-unblock-success.html')
+    <script defer src="./js/bundle.js"></script>
+</body>
+</html>

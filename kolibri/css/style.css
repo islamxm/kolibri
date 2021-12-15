@@ -479,6 +479,26 @@ body {
   height: 100%;
 }
 
+.wrapper.authBg {
+  background-image: url("../img/auth-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.wrapper.authBg .main {
+  background-color: transparent;
+}
+
+.wrapper.logBg {
+  background-image: url("../img/login-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.wrapper.logBg .main {
+  background-color: transparent;
+}
+
 .container {
   max-width: 1410px;
   margin: 0 auto 0 0;
@@ -2397,6 +2417,193 @@ body {
   line-height: 21.6px;
   color: var(--text_dark2);
 }
+.authPanel.bluePanel {
+  border-color: #3BC1DE;
+}
+.authPanel.bluePanel:after {
+  content: url("../img/blue-line.png");
+}
+.authPanel.bluePanel:before {
+  content: url("../img/blue-item.svg");
+}
+
+.authPanel {
+  width: 650px;
+  padding: 90px 60px 50px 60px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#225A6C), to(rgba(47, 108, 180, 0.5)));
+  background: -o-linear-gradient(top, #225A6C 0%, rgba(47, 108, 180, 0.5) 100%);
+  background: linear-gradient(180deg, #225A6C 0%, rgba(47, 108, 180, 0.5) 100%);
+  border: 2px solid #3DDF99;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 15px;
+  position: relative;
+}
+.authPanel:after {
+  position: absolute;
+  content: url("../img/auth-line.png");
+  top: -2.5px;
+  left: calc(50% - 294.5px);
+}
+.authPanel:before {
+  position: absolute;
+  top: -13px;
+  left: 192.69px;
+  content: url("../img/auth-bl.svg");
+}
+.authPanel .authTitle.mail {
+  margin-bottom: 14px;
+}
+.authPanel .authTitle {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28.8px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.authPanel .authInd {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.authPanel .authInd .name {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16.8px;
+  margin-right: 14px;
+  color: #fff;
+}
+.authPanel .authInd .line.second .current {
+  width: 70%;
+}
+.authPanel .authInd .line.third .current {
+  width: 100%;
+}
+.authPanel .authInd .line {
+  width: 420px;
+  height: 20px;
+  border-radius: 15px;
+  overflow: hidden;
+  background: rgba(196, 196, 196, 0.1);
+}
+.authPanel .authInd .line .current {
+  background: -o-linear-gradient(346.52deg, #FFDE82 19.64%, #33F9A7 60.41%);
+  background: linear-gradient(103.48deg, #FFDE82 19.64%, #33F9A7 60.41%);
+  width: 33%;
+  border-radius: 15px;
+  height: 100%;
+}
+.authPanel .authSubText {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21.6px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.authPanel .authSubText.mail {
+  color: var(--pallete_yellow2);
+  font-size: 24px;
+  line-height: 28.8px;
+}
+.authPanel .authSubText.ex {
+  font-size: 14px;
+  line-height: 16.8px;
+  color: var(--pallete_gray2);
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+.authPanel .authSubText.final {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--pallete_gray2);
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+.authPanel .authSubText.final .rate {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: 12px;
+}
+.authPanel .authInfo {
+  margin-bottom: 30px;
+}
+.authPanel .authInfo .title {
+  font-size: 14px;
+  line-height: 16.8px;
+  color: var(--pallete_gray2);
+  margin-bottom: 10px;
+}
+.authPanel .authInfo .title a {
+  font-size: 14px;
+  line-height: 16.8px;
+  color: var(--base_yellow);
+}
+.authPanel .authInfo .title a:hover {
+  text-decoration: underline;
+}
+.authPanel .authInfo .policy {
+  font-size: 14px;
+  line-height: 16.8px;
+  color: var(--base_yellow);
+}
+.authPanel .authForm .authFormFields.fp {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.authPanel .authForm .authFormFields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.authPanel .authForm .authFormFields .item.note {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--pallete_gray2);
+}
+.authPanel .authForm .authFormFields .item {
+  width: 250px;
+  margin-bottom: 19px;
+}
+.authPanel .authForm .authFormFields .item label {
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 6px;
+  display: block;
+  color: var(--pallete_gray2);
+}
+.authPanel .authForm .authFormFields .item .input {
+  background-color: transparent;
+  color: var(--pallete_gray2);
+}
+.authPanel .authForm .authFormBtns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.authPanel .authForm .authFormBtns .btn-green {
+  margin-right: 15px;
+}
+
 /* Блоки */
 .aside.asideActive {
   width: 64px;
@@ -2837,6 +3044,27 @@ body {
   padding: 30px 20px;
   width: 100%;
   margin: 0 auto;
+}
+
+.authHeader {
+  padding: 35px 0;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+}
+.authHeader .authHeaderIn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1410px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 20px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 /* Страницы */
@@ -6043,6 +6271,21 @@ body {
 }
 .gameShow .gameShowBody .gameShowBodyDrops .gameShowBodyDropItem .itemList .table .tableRow.third {
   background-color: var(--pallete_red1);
+}
+
+/*Аутентификация*/
+.auth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /* Попапы */
