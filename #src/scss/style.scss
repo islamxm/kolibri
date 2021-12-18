@@ -35,6 +35,11 @@
 @import './components/goldfish.scss';
 @import './components/game-vars.scss';
 @import './components/auth-panel.scss';
+@import './components/tournament-item.scss';
+@import './components/tournament-error.scss';
+@import './components/tournament-wait.scss';
+@import './components/tournament-q.scss';
+@import './components/tournament-count.scss';
 
 
 /* Блоки */
@@ -45,6 +50,7 @@
 @import './blocks/header-info.scss';
 @import './blocks/game.scss';
 @import './blocks/auth-header.scss';
+@import './blocks/tr.scss';
 
 
 

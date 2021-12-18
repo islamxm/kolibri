@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Участники</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body>
+     
+    <div class="wrapper">
+        <main class="main">
+            @@include('./blocks/header.html') 
+            <div class="tr">
+                <div class="trMenu">
+                    <h2 class="trTitle">Меню турниров</h2>
+                    
+                    
+                    <!-- <div class="trCount">
+                        <h3 class="trCountTitle">
+                            Турнир «Название мероприятия» еще не запущен, пожалуйста дождитесь начала
+                        </h3>
+                        <div class="trCountBody">
+                            <div class="countdown">
+                                <span>365 дней</span>
+                                <span>24:00:00</span>
+                            </div>
+
+                            <div class="btns">
+                                <button disabled class="btn-blue">Начать игру!</button>
+                                <button class="btn-orange">Закрыть</button>
+                            </div>
+                        </div>
+                    </div> -->
+
+
+                    <div class="trErrorNote">
+                        <h3 class="trErrorTitle">
+                            Предупреждение!
+                        </h3>
+                        <div class="trErrorText">
+                            Участник, желающий поучаствовать в официальных или рейтинговых
+                            турнирах, должен в первую очередь пройти <a href="#">регистрацию</a> и заполнить данные в ЛК – <a href="#">Личном кабинете</a>
+                        </div>
+                    </div>
+                    <div class="trMenuWrapper">
+
+                        <div class="trItem block">
+                            <div class="trItemBody">
+                                <div class="trItemHead">
+                                    <div class="logo">
+                                        <img src="./img/tr-3.png" alt="">
+                                    </div>
+                                    <div class="name">Эрудит Лото</div>
+                                </div>
+                                <div class="trItemInfo">
+                                    Количество вопросов : 24
+                                </div>
+                                <div class="trItemDescr">
+                                    Игра состоит из нескольких туров. По окончании каждого тура подводится итог. Та команда, которая наберёт меньшее количество очков, в следующем туре не участвует. Выигрывает та команда, которая одержит победу в последнем туре.
+                                </div>
+                            </div>
+
+                            <div class="trItemBtn">
+                                <button class="btn-blue">Играть!</button>
+                            </div>
+
+                        </div>
+
+                        <div class="trItem block disabled">
+                            <div class="trItemBody">
+                                <div class="trItemHead">
+                                    <div class="logo">
+                                        <img src="./img/tr-3.png" alt="">
+                                    </div>
+                                    <div class="name">Эрудит Лото</div>
+                                </div>
+                                <div class="trItemInfo">
+                                    Количество вопросов : 24
+                                </div>
+                                <div class="trItemDescr">
+                                    Игра состоит из нескольких туров. По окончании каждого тура подводится итог. Та команда, которая наберёт меньшее количество очков, в следующем туре не участвует. Выигрывает та команда, которая одержит победу в последнем туре.
+                                </div>
+                            </div>
+
+                            <div class="trItemBtn">
+                                <button class="btn-blue">Играть!</button>
+                            </div>
+
+                        </div>
+
+                        <div class="trItem block">
+                            <div class="trItemBody">
+                                <div class="trItemHead">
+                                    <div class="logo">
+                                        <img src="./img/tr-3.png" alt="">
+                                    </div>
+                                    <div class="name">Эрудит Лото</div>
+                                </div>
+                                <div class="trItemInfo">
+                                    Количество вопросов : 24
+                                </div>
+                                <div class="trItemDescr">
+                                    Игра состоит из нескольких туров. По окончании каждого тура подводится итог. Та команда, которая наберёт меньшее количество очков, в следующем туре не участвует. Выигрывает та команда, которая одержит победу в последнем туре.
+                                </div>
+                            </div>
+
+                            <div class="trItemBtn">
+                                <button class="btn-blue">Играть!</button>
+                            </div>
+
+                        </div>
+
+                        <div class="trItem block">
+                            <div class="trItemBody">
+                                <div class="trItemHead">
+                                    <div class="logo">
+                                        <img src="./img/tr-3.png" alt="">
+                                    </div>
+                                    <div class="name">Эрудит Лото</div>
+                                </div>
+                                <div class="trItemInfo">
+                                    Количество вопросов : 24
+                                </div>
+                                <div class="trItemDescr">
+                                    Игра состоит из нескольких туров. По окончании каждого тура подводится итог. Та команда, которая наберёт меньшее количество очков, в следующем туре не участвует. Выигрывает та команда, которая одержит победу в последнем туре.
+                                </div>
+                            </div>
+
+                            <div class="trItemBtn">
+                                <button class="btn-blue">Играть!</button>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!-- Popups -->
+    @@include('./blocks/popup-block.html')
+    @@include('./blocks/popup-notification.html')
+    @@include('./blocks/popup-q-save.html')
+    @@include('./blocks/popup-sample.html')
+    @@include('./blocks/popup-tour.html')
+    @@include('./blocks/popup-unblock.html')
+
+    <!-- Push-notifications -->
+    @@include('./blocks/push-block-error.html')
+    @@include('./blocks/push-block-success.html')
+    @@include('./blocks/push-q-error.html')
+    @@include('./blocks/push-q-success.html')
+    @@include('./blocks/push-send-error.html')
+    @@include('./blocks/push-send-success.html')
+    @@include('./blocks/push-tour-error.html')
+    @@include('./blocks/push-tour-success.html')
+    @@include('./blocks/push-unblock-error.html')
+    @@include('./blocks/push-unblock-success.html')
+    <script defer src="./js/bundle.js"></script>
+</body>
+</html>

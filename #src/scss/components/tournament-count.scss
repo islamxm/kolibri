@@ -1,0 +1,52 @@
+.trCount {
+    width: 781px;
+    height: 352px;
+    border-radius: 15px;
+    background-color: var(--pallete_blue3);
+    background-image: url('../img/count-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 40px 60px 79px;
+
+    .trCountTitle {
+        text-align: center;
+        color: var(--pallete_red1);
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 28.8px;
+        margin-bottom: 30px;
+
+    }
+
+    .trCountBody {
+        max-width: 550px;
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+
+        .countdown {
+            width: 100%;
+            padding: 20px 39px 57px 20px;
+            border-radius: 15px;
+            border: 3px solid var(--base_yellow);
+
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 57.6px;
+            color: var(--base_yellow);
+            text-shadow: 0px 3px 3px rgba(240, 55, 67, 0.25);
+        }
+
+        .btns {
+            position: absolute;
+            display: flex;
+            gap: 15px;
+            bottom: -23px;
+            left: calc(50% - 151.5px);
+        }
+    }
+}

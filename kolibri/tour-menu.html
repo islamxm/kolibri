@@ -12,53 +12,167 @@
 </head>
 <body>
      
-    <div class="wrapper authBg">
+    <div class="wrapper">
         <main class="main">
-            <header class="authHeader">
-	<div class="authHeaderIn">
-		<a href="#" class="authHeaderLogo">
-			<img src="./img/logo-wh.png" alt="Logotype">
-		</a>
-	</div>
-</header> 
-            <div class="auth">
-                <div class="authPanel">
-                    <h2 class="authTitle">Регистрация в Kolibrina</h2>
-                    <div class="authInd">
-                        <div class="name">2 шаг</div>
-                        <div class="line second"><div class="current"></div></div>
-                    </div>
-                    <div class="authSubText">
-                        Нужно защитить ваш аккаунт, придумайте что то интересное
-                    </div>
+            <div class="header">
+    <div class="headerIn">
+        <a href="#" class="headerLogo">
+            <img src="./img/logo-wh.png" alt="Logotype">
+        </a>
+        <ul class="headerNav">
+            <li>
+                <a href="#" class="headerNavItem">Новости</a>
+            </li>
+            <li>
+                <a href="#" class="headerNavItem">Турниры</a>
+            </li>
+            <li>
+                <a href="#" class="headerNavItem">Рейтинги</a>
+            </li>
+            <li>
+                <a href="#" class="headerNavItem">Добавить вопрос</a>
+            </li>
+            <li>
+                <a href="#" class="headerNavItem">Правила</a>
+            </li>
+            <li>
+                <a href="#" class="headerNavItem">Чат</a>
+            </li>
+        </ul>
+        <a href="#" class="headerAcc">
+            <svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.32171 14.3355H10.6789C13.1444 14.3355 15.1431 16.3343 15.1431 18.7998C15.1431 19.2929 14.7434 19.6927 14.2503 19.6927C13.7924 19.6927 13.415 19.348 13.3634 18.904L13.3529 18.6424C13.2744 17.2884 12.1902 16.2043 10.8362 16.1258L10.6789 16.1213H5.32171C3.84237 16.1213 2.64314 17.3205 2.64314 18.7998C2.64314 19.2929 2.24339 19.6927 1.75028 19.6927C1.25717 19.6927 0.857422 19.2929 0.857422 18.7998C0.857422 16.3992 2.75234 14.4411 5.12806 14.3397L5.32171 14.3355H10.6789H5.32171ZM8.00035 5.40698C10.4659 5.40698 12.4646 7.40572 12.4646 9.87128C12.4646 12.3368 10.4659 14.3356 8.00035 14.3356C5.53479 14.3356 3.53606 12.3368 3.53606 9.87128C3.53606 7.40572 5.53479 5.40698 8.00035 5.40698ZM8.00028 7.19267C6.52094 7.19267 5.32171 8.39191 5.32171 9.87125C5.32171 11.3506 6.52094 12.5498 8.00028 12.5498C9.47961 12.5498 10.6789 11.3506 10.6789 9.87125C10.6789 8.39191 9.47961 7.19267 8.00028 7.19267Z" fill="#1E2022"/>
+            <path d="M1 6.95459L8.64998 3.47735L16.3 6.95464L8.65001 10.4319L1 6.95459Z" fill="#1E2022"/>
+            </svg>
+            Кабинет
+        </a>
+    </div>
+</div> 
+            <div class="tr">
+                <div class="trMenu">
+                    <h2 class="trTitle">Меню турниров</h2>
+                    
+                    
+                    <!-- <div class="trCount">
+                        <h3 class="trCountTitle">
+                            Турнир «Название мероприятия» еще не запущен, пожалуйста дождитесь начала
+                        </h3>
+                        <div class="trCountBody">
+                            <div class="countdown">
+                                <span>365 дней</span>
+                                <span>24:00:00</span>
+                            </div>
 
-                    <!-- Если добавить инпуту класс "true" то бордер перекрасится на зеленый -->
-                    <!-- Если добавить инпуту класс "wrong" то бордер перекрасится на красный-->
-                    <form class="authForm">
-                        <div class="authFormFields">
-                            <div class="item">
-                                <label for="">Почта</label>
-                                <input type="text" class="input" placeholder="AnnaStr245452mail.ru">
-                            </div>
-                            <div class="item note">
-                                На вашу почту прийдет сообщение с подтверждением
-                            </div>
-                            <div class="item">
-                                <label for="">Пароль</label>
-                                <input type="password" class="input">
-                            </div>
-                            <div class="item">
-                                <label for="">Повторите пароль</label>
-                                <input type="password" class="input">
+                            <div class="btns">
+                                <button disabled class="btn-blue">Начать игру!</button>
+                                <button class="btn-orange">Закрыть</button>
                             </div>
                         </div>
-                        <div class="authFormBtns">
-                            <button class="btn-green">Перейти к следующему шагу</button>
-                            <button class="btn-tr-yellow">Войти в аккаунт</button>
+                    </div> -->
+
+
+                    <div class="trErrorNote">
+                        <h3 class="trErrorTitle">
+                            Предупреждение!
+                        </h3>
+                        <div class="trErrorText">
+                            Участник, желающий поучаствовать в официальных или рейтинговых
+                            турнирах, должен в первую очередь пройти <a href="#">регистрацию</a> и заполнить данные в ЛК – <a href="#">Личном кабинете</a>
                         </div>
-                    </form>
+                    </div>
+                    <div class="trMenuWrapper">
+
+                        <div class="trItem block">
+                            <div class="trItemBody">
+                                <div class="trItemHead">
+                                    <div class="logo">
+                                        <img src="./img/tr-3.png" alt="">
+                                    </div>
+                                    <div class="name">Эрудит Лото</div>
+                                </div>
+                                <div class="trItemInfo">
+                                    Количество вопросов : 24
+                                </div>
+                                <div class="trItemDescr">
+                                    Игра состоит из нескольких туров. По окончании каждого тура подводится итог. Та команда, которая наберёт меньшее количество очков, в следующем туре не участвует. Выигрывает та команда, которая одержит победу в последнем туре.
+                                </div>
+                            </div>
+
+                            <div class="trItemBtn">
+                                <button class="btn-blue">Играть!</button>
+                            </div>
+
+                        </div>
+
+                        <div class="trItem block disabled">
+                            <div class="trItemBody">
+                                <div class="trItemHead">
+                                    <div class="logo">
+                                        <img src="./img/tr-3.png" alt="">
+                                    </div>
+                                    <div class="name">Эрудит Лото</div>
+                                </div>
+                                <div class="trItemInfo">
+                                    Количество вопросов : 24
+                                </div>
+                                <div class="trItemDescr">
+                                    Игра состоит из нескольких туров. По окончании каждого тура подводится итог. Та команда, которая наберёт меньшее количество очков, в следующем туре не участвует. Выигрывает та команда, которая одержит победу в последнем туре.
+                                </div>
+                            </div>
+
+                            <div class="trItemBtn">
+                                <button class="btn-blue">Играть!</button>
+                            </div>
+
+                        </div>
+
+                        <div class="trItem block">
+                            <div class="trItemBody">
+                                <div class="trItemHead">
+                                    <div class="logo">
+                                        <img src="./img/tr-3.png" alt="">
+                                    </div>
+                                    <div class="name">Эрудит Лото</div>
+                                </div>
+                                <div class="trItemInfo">
+                                    Количество вопросов : 24
+                                </div>
+                                <div class="trItemDescr">
+                                    Игра состоит из нескольких туров. По окончании каждого тура подводится итог. Та команда, которая наберёт меньшее количество очков, в следующем туре не участвует. Выигрывает та команда, которая одержит победу в последнем туре.
+                                </div>
+                            </div>
+
+                            <div class="trItemBtn">
+                                <button class="btn-blue">Играть!</button>
+                            </div>
+
+                        </div>
+
+                        <div class="trItem block">
+                            <div class="trItemBody">
+                                <div class="trItemHead">
+                                    <div class="logo">
+                                        <img src="./img/tr-3.png" alt="">
+                                    </div>
+                                    <div class="name">Эрудит Лото</div>
+                                </div>
+                                <div class="trItemInfo">
+                                    Количество вопросов : 24
+                                </div>
+                                <div class="trItemDescr">
+                                    Игра состоит из нескольких туров. По окончании каждого тура подводится итог. Та команда, которая наберёт меньшее количество очков, в следующем туре не участвует. Выигрывает та команда, которая одержит победу в последнем туре.
+                                </div>
+                            </div>
+
+                            <div class="trItemBtn">
+                                <button class="btn-blue">Играть!</button>
+                            </div>
+
+                        </div>
+                        
+                    </div>
                 </div>
-            </div>  
+            </div>
         </main>
     </div>
     <!-- Popups -->

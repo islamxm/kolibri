@@ -1,0 +1,28 @@
+.trErrorNote {
+    padding: 40px 50px;
+    margin: 0 auto;
+    max-width: 870px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 15px;
+    border: 1px solid var(--pallete_red3);
+    margin-bottom: 30px;
+
+    .trErrorTitle {
+        text-align: center;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 28.8px;
+        margin-bottom: 15px;
+    }
+
+    .trErrorText {
+        font-size: 18px;
+        line-height: 21.6px;
+        color: var(--base_blue);
+        text-align: center;
+        a {
+            color: var(--base_orange);
+        }
+    }
+}

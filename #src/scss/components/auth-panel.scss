@@ -2,35 +2,45 @@
 	border-color: #3BC1DE;
 
 	&:after {
-		content: url('../img/blue-line.png');
+		content: url('../img/auth-green.png');
 	}
-
-	&:before {
-		content: url('../img/blue-item.svg');
-	}
+	
 }
 
 .authPanel {
-	width: 650px;
-	padding: 90px 60px 50px 60px;
+	width: 640px;
+	padding: 34px 66px 50px 54px;
 	background: linear-gradient(180deg, #225A6C 0%, rgba(47, 108, 180, 0.5) 100%);
-	border: 2px solid #3DDF99;
+	border: 3px solid #3DDF99;
 	box-sizing: border-box;
+	border-top: none;
 	border-radius: 15px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
 	position: relative;
-	
-	&:after {
-		position: absolute;
-		content: url('../img/auth-line.png');
-		top: -2.5px;
-		left: calc(50% - 294.5px);
+
+	.input {
+
+		color: #fff !important;
 	}
 
-	&:before {
+	.input.true {
+		border-color: var(--pallete_green2);
+		border-width: 3px;
+	}
+
+	.input.wrong {
+		border-color: var(--pallete_red3);
+		border-width: 3px;
+	}
+
+
+	&:after {
 		position: absolute;
-		top: -13px;
-		left: 192.69px;
-		content: url('../img/auth-bl.svg');
+		top: -51px;
+		left: calc(50% - 319.5px);
+		width: 100%;
+		content: url('../img/auth-blue.png');
 	}
 
 	.authTitle.mail {
