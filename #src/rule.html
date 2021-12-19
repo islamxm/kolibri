@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Участники</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body>
+     
+    <div class="wrapper">
+        <main class="main">
+            @@include('./blocks/header.html') 
+            <div class="rule">
+                <div class="ruleTop">
+                    <div class="ruleTitle">Введение. Основный положения
+                    </div>
+                    <div class="ruleSearch">
+                        <input type="text" class="input" placeholder="Что желаете найти?">
+                        <button>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7 0C10.866 0 14 3.13401 14 7C14 8.57638 13.4789 10.0311 12.5996 11.2012L12.6545 11.2441L12.7071 11.2929L15.7071 14.2929C16.0976 14.6834 16.0976 15.3166 15.7071 15.7071C15.3466 16.0676 14.7794 16.0953 14.3871 15.7903L14.2929 15.7071L11.2929 12.7071C11.2587 12.6729 11.2275 12.6368 11.1993 12.5992C10.031 13.4789 8.57638 14 7 14C3.13401 14 0 10.866 0 7C0 3.13401 3.13401 0 7 0ZM7 2C4.23858 2 2 4.23858 2 7C2 9.76142 4.23858 12 7 12C9.76142 12 12 9.76142 12 7C12 4.23858 9.76142 2 7 2Z" fill="#627698"/>
+                                </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="ruleWr">
+                    <div class="descr block mainDescr">
+                        Сборник популярных интеллектуальных игр online «Колибрина» разработан Московским центром интеллектуальных игр под руководством Владимира Задорожного и предназначен для широкого круга любителей интеллектуальных игр
+                    </div>
+
+                    <div class="ruleList">
+
+                        <div class="ruleItem">
+                            <div class="ruleItemHead">
+                                <div class="num">01</div>
+                                <div class="title">Зарегистрированный участник попадает в одну из шести лиг: </div>
+                            </div>
+                            <div class="descr block">
+                                Детская лига, Школьная лига, Лига колледжей, Студенческая лига, Высшая лига, Премьер-лига и Суперлига. И при достижении определённых результатов автоматически переводится из лиги в лигу. Первоначально, игрок сам устанавливает себе лигу в  Личном кабинете
+                            </div>
+                        </div>
+
+                        <div class="ruleItem">
+                            <div class="ruleItemHead">
+                                <div class="num">02</div>
+                                <div class="title">Каждый игрок играет со знатоками только своей лиги </div>
+                            </div>
+                            <div class="descr block">
+                                Кроме лиг на портале действует система Уровней знатока. Каждый играющий начинает с независимо от былых заслуг и медальных зачётов и  растёт через Уровня J-1 (юниор-1), L (любитель), Z (знаток), M (мастер) до P-10 (профи), то есть до десятого уровня «профессионала». Всего 50 уровней.
+                            </div>
+                        </div>
+
+                        <div class="ruleItem">
+                            <div class="ruleItemHead">
+                                <div class="num">03</div>
+                                <div class="title">«Меню турниров»</div>
+                            </div>
+                            <div class="descr block">
+                                Основная страничка, на которой обозначены все мероприятия, в которых знатоки могут принять участие
+                            </div>
+                        </div>
+
+                        <div class="ruleItem">
+                            <div class="ruleItemHead">
+                                <div class="num">04</div>
+                                <div class="title">Тренировка</div>
+                            </div>
+                            <div class="descr block">
+                                Все тренировочные процессы можно играть без регистрации и взносов, при этом вы не участвуете в рейтингах, не получаете ценные призы и подарки, дипломы, грамоты, премии, благодарственные письма
+                            </div>
+                        </div>
+
+                        <div class="ruleItem">
+                            <div class="ruleItemHead">
+                                <div class="num">05</div>
+                                <div class="title">Зрители</div>
+                            </div>
+                            <div class="descr block">
+                                На многих турнирах можно зарегистрироваться как зритель и просто наблюдать игру
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!-- Popups -->
+    @@include('./blocks/popup-block.html')
+    @@include('./blocks/popup-notification.html')
+    @@include('./blocks/popup-q-save.html')
+    @@include('./blocks/popup-sample.html')
+    @@include('./blocks/popup-tour.html')
+    @@include('./blocks/popup-unblock.html')
+
+    <!-- Push-notifications -->
+    @@include('./blocks/push-block-error.html')
+    @@include('./blocks/push-block-success.html')
+    @@include('./blocks/push-q-error.html')
+    @@include('./blocks/push-q-success.html')
+    @@include('./blocks/push-send-error.html')
+    @@include('./blocks/push-send-success.html')
+    @@include('./blocks/push-tour-error.html')
+    @@include('./blocks/push-tour-success.html')
+    @@include('./blocks/push-unblock-error.html')
+    @@include('./blocks/push-unblock-success.html')
+    <script defer src="./js/bundle.js"></script>
+</body>
+</html>

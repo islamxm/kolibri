@@ -1,0 +1,175 @@
+.rule {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 0;
+    .ruleTop {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        .ruleTitle {
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 38px;
+        }
+
+        .ruleSearch {
+            width: 420px;
+            position: relative;
+
+            input {
+                padding-right: 35px;
+            }
+
+            button {
+                right: 15px;
+                top: calc(50% - 8px);
+                position: absolute;
+            }
+
+        }
+    }
+
+    .ruleWr {
+
+        .descr {
+            padding: 25px 30px; 
+            background-color: #fff;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 21.6px;
+            color: var(--text_dark2);
+        }
+
+        .descr.mainDescr {
+            width: 640px;
+            margin-bottom: 60px;
+        }
+
+        .ruleList {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding-right: 100px;
+            .ruleItem {
+                width: 530px;
+                margin-bottom: 68px;
+
+                .ruleItemHead {
+                    display: flex;
+                    align-items: flex-start;
+                    margin-bottom: 20px;
+
+                    .num {
+                        font-size: 18px;
+                        line-height: 21.6px;
+                        color: var(--pallete_gray2);
+                        margin-right: 20px;
+                    }
+
+                    .title {
+                        font-weight: 600;
+                        font-size: 24px;
+                        line-height: 30px;
+                    }
+                }
+            }
+        }
+
+        .ruleInt {
+
+        
+
+            .ruleIntPanel {
+                margin: 0 auto;
+                width: 358px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 30px 0;
+                position: relative;
+
+                .ruleIntPanelTitle {
+                    text-align: center;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 29px;
+                    margin-bottom: 20px;
+                }
+
+                .hint {
+                    margin-bottom: 11px;
+                }
+
+                .mes {
+                    width: 475px;
+                    background-color: var(--pallete_blue2);
+                    padding: 11px 30px;
+                    color: var(--pallete_blue1);
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 19.2px;
+                    position: absolute;
+
+                    &:after {
+                        position: absolute;
+                        content: '';
+                        width: 20px;
+                        height: 20px;
+                        background-color: var(--pallete_blue2);
+                        transform: rotate(45deg);
+                        top: calc(50% - 10px);
+                    }
+                }
+
+                .mes.mes1 {
+                    top: 80px;
+                    right: -465px;
+
+                    &:after {
+                        left: -10px;
+                    }
+                }
+
+                .mes.mes2 {
+                    top: 131px;
+                    left: -462px;
+
+                    &:after {
+                        right: -10px;
+                    }
+                    
+                }
+
+                .mes.mes3 {
+                    top: 179px;
+                    right: -465px;
+
+                    &:after {
+                        left: -10px;
+                    }
+                    
+                }
+
+                .mes.mes4 {
+                    top: 242px;
+                    left: -462px;
+
+                    &:after {
+                        right: -10px;
+                    }
+                    
+                }
+
+                .mes.mes5 {
+                    top: 273px;
+                    right: -465px;
+
+                    &:after {
+                        left: -10px;
+                    }
+                }
+            }
+        }
+    }
+}

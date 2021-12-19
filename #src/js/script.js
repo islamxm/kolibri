@@ -29,9 +29,12 @@ document.addEventListener('DOMContentLoaded', () => {
                         aside.classList.remove('asideActive');
                     }
 
+                    i.classList.remove('nonact');
+
                 }
                 if(!i.classList.contains(droppedClass) && targetList) {
                     targetList.style.height = '0px';
+                    i.classList.add('nonact');
                 }
             });
         });
@@ -159,6 +162,45 @@ document.addEventListener('DOMContentLoaded', () => {
 
     }
     
+    const tabsParent = document.querySelector('.tabs');
+
+    const tabs = document.querySelectorAll('.tab');
+    const tabContents = document.querySelectorAll('.ratingSideTabContent');
+
+    if(tabsParent) {
+        function hideTabContent() {
+            tabContents.forEach(content => {
+                content.style.display = 'none';
+            });
+            tabs.forEach(i => {
+                i.classList.remove('active');
+            });
+        }
+    
+        function showTabContent(i = 0) {
+            tabContents[i].style.display = 'block';
+            tabs[i].classList.add('active');
+        }
+    
+        hideTabContent();
+        showTabContent();
+    
+    
+        tabsParent.addEventListener('click', (e) => {
+            let tar = e.target;
+    
+            if(tar && tar.classList.contains('tab')) {
+                tabs.forEach((i,index) => {
+                    if(tar == i) {
+                        hideTabContent();
+                        showTabContent(index);
+                    }
+                });
+            }
+        });
+    }
+
+
 
     
 
@@ -175,6 +217,7 @@ document.addEventListener('DOMContentLoaded', () => {
     accordeonFunc('.tourAddItem', 'tourAddItemActive', '.tourItemList', 'tourItemHead');
     accordeonFunc('.setAuditListItem', 'setAuditListItemActive', '.setAuditListItemUl', 'setAuditListItemHead');
     accordeonFunc('.gameShowBodyDropItem', 'gameShowBodyDropItemActive', '.itemList', 'itemHead');
+    accordeonFunc('.ratingBodyItem', 'active', '.body', 'bodyBtn');
     
     
 });

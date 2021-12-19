@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Участники</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body>
+     
+    <div class="wrapper">
+        <main class="main">
+            @@include('./blocks/header.html') 
+            <div class="rule">
+                <div class="ruleTop">
+                    <div class="ruleTitle">Правила игры «Эрудит-Лото» (ЭЛ)
+                    </div>
+                    <div class="ruleSearch">
+                        <input type="text" class="input" placeholder="Что желаете найти?">
+                        <button>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7 0C10.866 0 14 3.13401 14 7C14 8.57638 13.4789 10.0311 12.5996 11.2012L12.6545 11.2441L12.7071 11.2929L15.7071 14.2929C16.0976 14.6834 16.0976 15.3166 15.7071 15.7071C15.3466 16.0676 14.7794 16.0953 14.3871 15.7903L14.2929 15.7071L11.2929 12.7071C11.2587 12.6729 11.2275 12.6368 11.1993 12.5992C10.031 13.4789 8.57638 14 7 14C3.13401 14 0 10.866 0 7C0 3.13401 3.13401 0 7 0ZM7 2C4.23858 2 2 4.23858 2 7C2 9.76142 4.23858 12 7 12C9.76142 12 12 9.76142 12 7C12 4.23858 9.76142 2 7 2Z" fill="#627698"/>
+                                </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="ruleWr">
+                    <div class="descr block mainDescr">
+                        Игра, созданная по принципу телевизионных форматов «О, счастливчик» или «Кто хочет стать миллионером?».
+Дается вопрос и четыре варианта ответа, из которых участнику нужно выбрать один, который является верным
+                    </div>
+
+                    <div class="ruleInt">
+                        <div class="ruleIntPanel block">
+                            <div class="ruleIntPanelTitle">В игре 4 подсказки:</div>
+                            <div class="hints">
+                                <div class="hint hint_green">
+                                    <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8 14C8.55229 14 9 14.4477 9 15C9 15.5523 8.55229 16 8 16H4C3.44772 16 3 15.5523 3 15C3 14.4477 3.44772 14 4 14H8ZM5.99976 0C9.51542 0 12 2.14732 12 5.55614C12 7.03449 11.4264 8.2346 10.3487 9.57121L9.4566 10.6387L9.3379 10.7907L9.23694 10.9317L9.13923 11.0851C9.09505 11.6025 8.66217 12 8.14286 12H3.85714C3.33783 12 2.90495 11.6025 2.86077 11.0851L2.76306 10.9317L2.66209 10.7906L2.54339 10.6386L1.65131 9.57113C0.573702 8.23455 0 7.03449 0 5.5562C0 2.1474 2.4845 0 5.99976 0Z" fill="#627698"/>
+                                        </svg>
+                                        
+                                    Спросить у мастера
+                                </div>
+                                <div class="hint hint_yellow">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13 0C14.6569 0 16 1.34315 16 3V11C16 12.6569 14.6569 14 13 14H10.4142L8.70711 15.7071C8.31658 16.0976 7.68342 16.0976 7.29289 15.7071L5.58579 14H3C1.34315 14 0 12.6569 0 11V3C0 1.34315 1.34315 0 3 0H13ZM11 8C11.5523 8 12 8.44771 12 9C12 9.55229 11.5523 10 11 10H5C4.44772 10 4 9.55229 4 9C4 8.44771 4.44772 8 5 8H11ZM11 4C11.5523 4 12 4.44772 12 5C12 5.55228 11.5523 6 11 6H5C4.44772 6 4 5.55228 4 5C4 4.44772 4.44772 4 5 4H11Z" fill="#627698"/>
+                                        </svg>
+                                            
+                                    Убрать 2 ответа
+                                </div>
+                                <div class="hint hint_red">
+                                    <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 6C12.5523 6 13 6.44772 13 7V13C13 14.6569 11.6569 16 10 16H4C2.34315 16 1 14.6569 1 13V7C1 6.44772 1.44772 6 2 6H12ZM4 1C4 0.447715 4.44772 0 5 0H9C9.55229 0 10 0.447715 10 1V2H13C13.5523 2 14 2.44772 14 3C14 3.55228 13.5523 4 13 4H1C0.447715 4 0 3.55228 0 3C0 2.44772 0.447715 2 1 2H4V1Z" fill="#627698"/>
+                                        </svg>
+                                        
+                                    Пропустить вопрос
+                                </div>
+                                <div class="hint hint_blue">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13 0C14.6569 0 16 1.34315 16 3V11C16 12.6569 14.6569 14 13 14H10.4142L8.70711 15.7071C8.31658 16.0976 7.68342 16.0976 7.29289 15.7071L5.58579 14H3C1.34315 14 0 12.6569 0 11V3C0 1.34315 1.34315 0 3 0H13ZM8 4C8.55229 4 9 4.44772 9 5V6H10C10.5523 6 11 6.44772 11 7C11 7.55228 10.5523 8 10 8H9V9C9 9.55229 8.55229 10 8 10C7.44772 10 7 9.55229 7 9V8H6C5.44772 8 5 7.55228 5 7C5 6.44772 5.44772 6 6 6H7V5C7 4.44772 7.44772 4 8 4Z" fill="#627698"/>
+                                        </svg>
+                                        
+                                    Ответ со второй попыткой
+                                </div>
+                                <div class="hint hint_purp">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.17071 2L4.23766 1.82776C4.69415 0.753414 5.75909 0 7 0C8.293 0 9.40322 0.820612 9.82315 2H11C12.6569 2 14 3.34315 14 5V6.17071C15.1652 6.58254 16 7.69378 16 9C16 10.3062 15.1652 11.4175 14 11.8293V13C14 14.6569 12.6569 16 11 16H9C8.48716 16 8.06449 15.614 8.00673 15.1166L7.99327 14.8834C7.93551 14.386 7.51284 14 7 14C6.48716 14 6.06449 14.386 6.00673 14.8834L5.99327 15.1166C5.93551 15.614 5.51284 16 5 16H3C1.34315 16 0 14.6569 0 13V11C0 10.4872 0.38604 10.0645 0.883379 10.0067L1.11662 9.99327C1.61396 9.93551 2 9.51284 2 9C2 8.48716 1.61396 8.06449 1.11662 8.00673L0.883379 7.99327C0.38604 7.93551 0 7.51284 0 7V5C0 3.34315 1.34315 2 3 2H4.17071Z" fill="#627698"/>
+                                        </svg>
+                                            
+                                    Добавить баллы на счет (3)
+                                </div>
+                            </div>
+
+                            <div class="mes mes1">
+                                при нажатии мастер напишет вам свой вариант
+                            </div>
+                            <div class="mes mes2">
+                                программа оставит два варианта, один из которых будет правильным
+                            </div>
+                            <div class="mes mes3">
+                                программа вам просто заменит нежелательный вопрос на другой без изменения количества вопросов
+                            </div>
+                            <div class="mes mes4">
+                                вы выбираете первый вариант, при этом если он правильный, то играете дальше, если нет, то можете выбрать ещё один вариант ответа
+                            </div>
+                            <div class="mes mes5">
+                                функция, которая сохраняет все предыдущие набранные очки, и, в случае проигрыша, позволит игроку записать указанныебаллы на счёт. У игрока есть 3 возможности записать баллы на счёт. После третьего раза игра заканчивается и баллы записываются игроку в рейтинг
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!-- Popups -->
+    @@include('./blocks/popup-block.html')
+    @@include('./blocks/popup-notification.html')
+    @@include('./blocks/popup-q-save.html')
+    @@include('./blocks/popup-sample.html')
+    @@include('./blocks/popup-tour.html')
+    @@include('./blocks/popup-unblock.html')
+
+    <!-- Push-notifications -->
+    @@include('./blocks/push-block-error.html')
+    @@include('./blocks/push-block-success.html')
+    @@include('./blocks/push-q-error.html')
+    @@include('./blocks/push-q-success.html')
+    @@include('./blocks/push-send-error.html')
+    @@include('./blocks/push-send-success.html')
+    @@include('./blocks/push-tour-error.html')
+    @@include('./blocks/push-tour-success.html')
+    @@include('./blocks/push-unblock-error.html')
+    @@include('./blocks/push-unblock-success.html')
+    <script defer src="./js/bundle.js"></script>
+</body>
+</html>
