@@ -3255,6 +3255,103 @@ body {
 .tr .trMenu .questionCreate {
   padding: 30px 0;
 }
+.tr .trTable {
+  max-width: 1300px;
+  margin: 0 auto;
+  width: 100%;
+}
+.tr .trTable .trTableTabs {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+.tr .trTable .trTableTabs .trTableTabContent {
+  width: 181px !important;
+}
+.tr .trTable .trTableTabs .trTableTabContent .tabContent {
+  max-height: 731px;
+}
+.tr .trTable .trTableTabs .trTableTabContent .table .tableRow.follow .tableRowItem:last-child span {
+  padding: 5px 10px;
+  border-radius: 8px;
+  background-color: var(--pallete_green1);
+  color: var(--pallete_green3);
+}
+.tr .trTable .trTableTabs .trTableTabContent .table .tableRow.notfollow .tableRowItem:last-child span {
+  padding: 5px 10px;
+  border-radius: 8px;
+  background-color: var(--pallete_yellow1);
+  color: var(--pallete_yellow3);
+}
+.tr .trTable .trTableTabs:after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 543px;
+  height: 2.5px;
+  background-color: var(--pallete_gray2);
+  z-index: 0;
+}
+.tr .trTable .trTableTabs label {
+  padding: 10px 20px;
+  width: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  cursor: pointer;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: var(--pallete_gray2);
+  font-weight: 600;
+}
+.tr .trTable .trTableTabs .slide {
+  position: absolute;
+  background-color: var(--pallete_blue2);
+  width: calc(543px / 3);
+  height: 2.5px;
+  left: 0;
+  top: calc(100% - 2.5px);
+  z-index: 1;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.tr .trTable .trTableTabs .trTableTabContent {
+  width: 100%;
+}
+.tr .trTable .trTableTabs .trTableTabContent .tabContent {
+  position: absolute;
+  top: 65px;
+  left: 0;
+  display: none;
+  width: 100%;
+}
+.tr .trTable .trTableTabs input[type=radio][name=tabs] {
+  position: absolute;
+  z-index: -1;
+}
+.tr .trTable .trTableTabs input[type=radio][name=tabs]:checked + .trTableTabContent label {
+  color: var(--pallete_blue2);
+}
+.tr .trTable .trTableTabs input[type=radio][name=tabs]:checked + .trTableTabContent .tabContent {
+  display: block !important;
+}
+.tr .trTable .trTableTabs input[type=radio][name=tabs]:nth-of-type(1):checked ~ .slide {
+  left: calc((543px / 3) * 0);
+}
+.tr .trTable .trTableTabs input[type=radio][name=tabs]:nth-of-type(2):checked ~ .slide {
+  left: calc((543px / 3) * 1);
+}
+.tr .trTable .trTableTabs input[type=radio][name=tabs]:nth-of-type(3):checked ~ .slide {
+  left: calc((543px / 3) * 2);
+}
+.tr .trTable .trTableTabs input[type=radio][name=tabs]:first-of-type:checked ~ .slide {
+  left: 0;
+}
 .tr .trTitle {
   text-align: center;
   padding: 30px 0;
