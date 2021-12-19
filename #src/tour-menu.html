@@ -20,22 +20,7 @@
                     <h2 class="trTitle">Меню турниров</h2>
                     
                     
-                    <!-- <div class="trCount">
-                        <h3 class="trCountTitle">
-                            Турнир «Название мероприятия» еще не запущен, пожалуйста дождитесь начала
-                        </h3>
-                        <div class="trCountBody">
-                            <div class="countdown">
-                                <span>365 дней</span>
-                                <span>24:00:00</span>
-                            </div>
-
-                            <div class="btns">
-                                <button disabled class="btn-blue">Начать игру!</button>
-                                <button class="btn-orange">Закрыть</button>
-                            </div>
-                        </div>
-                    </div> -->
+                    
 
 
                     <div class="trErrorNote">
@@ -66,7 +51,7 @@
                             </div>
 
                             <div class="trItemBtn">
-                                <button class="btn-blue">Играть!</button>
+                                <button data-micromodal-trigger="popupChangeGame" class="btn-blue">Играть!</button>
                             </div>
 
                         </div>
@@ -88,7 +73,7 @@
                             </div>
 
                             <div class="trItemBtn">
-                                <button class="btn-blue">Играть!</button>
+                                <button data-micromodal-trigger="popupChangeGame" class="btn-blue">Играть!</button>
                             </div>
 
                         </div>
@@ -110,7 +95,7 @@
                             </div>
 
                             <div class="trItemBtn">
-                                <button class="btn-blue">Играть!</button>
+                                <button data-micromodal-trigger="popupChangeGame" class="btn-blue">Играть!</button>
                             </div>
 
                         </div>
@@ -132,7 +117,7 @@
                             </div>
 
                             <div class="trItemBtn">
-                                <button class="btn-blue">Играть!</button>
+                                <button data-micromodal-trigger="popupChangeGame" class="btn-blue">Играть!</button>
                             </div>
 
                         </div>
@@ -149,6 +134,7 @@
     @@include('./blocks/popup-sample.html')
     @@include('./blocks/popup-tour.html')
     @@include('./blocks/popup-unblock.html')
+    @@include('./blocks/popup-change-game.html')
 
     <!-- Push-notifications -->
     @@include('./blocks/push-block-error.html')

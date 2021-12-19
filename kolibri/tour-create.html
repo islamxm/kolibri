@@ -481,7 +481,7 @@
         </main>
     </div>
     <!-- Popups -->
-    <div class="popup" id="popupBlock">
+    <div class="popup" id="popupBlock" data-micromodal-close>
     <div class="popupOverlay">
         <div class="popupContent popupBlock block">
             <div class="popupTitle popupBlockTitle">
@@ -517,7 +517,7 @@
                         <div class="popupBlockDate">
                             <div class="popupBlockDateTitle">Время блокировки </div>
                             <div class="popupBlockDateDrop">
-                                <div class="popupBlockDateHead">1 месяц</div>
+                                <div class="popupBlockDateHead" data-head>1 месяц</div>
                                 <div class="popupBlockDateList">
                                     <div class="popupBlockDateListItem">2 месяц</div>
                                     <div class="popupBlockDateListItem">3 месяц</div>
@@ -532,14 +532,14 @@
                     </div>
                     <div class="popupBlockBtns">
                         <button class="btn-orange">Заблокировать</button>
-                        <button class="btn-tr-yellow">Отмена</button>
+                        <button class="btn-tr-yellow" data-micromodal-close>Отмена</button>
                     </div>
                 </form>  
             </div>
         </div>
     </div>
 </div>
-    <div class="popup" id="popupNotification">
+    <div class="popup" id="popupNotification" >
     <div class="popupOverlay">
         <div class="popupContent popupNotification block">
             <button class="popupCloseBtn btn_close"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -559,12 +559,12 @@
         </div>
     </div>
 </div>
-    <div class="popup" id="popupQSave">
+    <div class="popup" id="popupQSave" data-micromodal-close>
     <div class="popupOverlay">
         <div class="popupContent popupQSave block">
-            <button class="popupCloseBtn btn_close"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="15" cy="15" r="15" fill="#FFF1E5"/>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.4142 15L20.7072 10.707C21.0982 10.316 21.0982 9.68401 20.7072 9.29301C20.3162 8.90201 19.6842 8.90201 19.2933 9.29301L15.0002 13.586L10.7072 9.29301C10.3162 8.90201 9.68425 8.90201 9.29325 9.29301C8.90225 9.68401 8.90225 10.316 9.29325 10.707L13.5862 15L9.29325 19.293C8.90225 19.684 8.90225 20.316 9.29325 20.707C9.48825 20.902 9.74425 21 10.0002 21C10.2563 21 10.5122 20.902 10.7072 20.707L15.0002 16.414L19.2933 20.707C19.4882 20.902 19.7443 21 20.0002 21C20.2562 21 20.5122 20.902 20.7072 20.707C21.0982 20.316 21.0982 19.684 20.7072 19.293L16.4142 15Z" fill="#FAB294"/>
+            <button data-micromodal-close class="popupCloseBtn btn_close"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle data-micromodal-close cx="15" cy="15" r="15" fill="#FFF1E5"/>
+            <path data-micromodal-close fill-rule="evenodd" clip-rule="evenodd" d="M16.4142 15L20.7072 10.707C21.0982 10.316 21.0982 9.68401 20.7072 9.29301C20.3162 8.90201 19.6842 8.90201 19.2933 9.29301L15.0002 13.586L10.7072 9.29301C10.3162 8.90201 9.68425 8.90201 9.29325 9.29301C8.90225 9.68401 8.90225 10.316 9.29325 10.707L13.5862 15L9.29325 19.293C8.90225 19.684 8.90225 20.316 9.29325 20.707C9.48825 20.902 9.74425 21 10.0002 21C10.2563 21 10.5122 20.902 10.7072 20.707L15.0002 16.414L19.2933 20.707C19.4882 20.902 19.7443 21 20.0002 21C20.2562 21 20.5122 20.902 20.7072 20.707C21.0982 20.316 21.0982 19.684 20.7072 19.293L16.4142 15Z" fill="#FAB294"/>
             </svg>
             </button>
             <div class="popupTitle popupQSaveTitle">
@@ -579,12 +579,12 @@
         </div>
     </div>
 </div>    
-    <div class="popup" id="popupSample">
+    <div class="popup" id="popupSample" data-micromodal-close>
     <div class="popupOverlay">
         <div class="popupContent popupSample block">
-            <button class="popupCloseBtn btn_close"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="15" cy="15" r="15" fill="#FFF1E5"/>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.4142 15L20.7072 10.707C21.0982 10.316 21.0982 9.68401 20.7072 9.29301C20.3162 8.90201 19.6842 8.90201 19.2933 9.29301L15.0002 13.586L10.7072 9.29301C10.3162 8.90201 9.68425 8.90201 9.29325 9.29301C8.90225 9.68401 8.90225 10.316 9.29325 10.707L13.5862 15L9.29325 19.293C8.90225 19.684 8.90225 20.316 9.29325 20.707C9.48825 20.902 9.74425 21 10.0002 21C10.2563 21 10.5122 20.902 10.7072 20.707L15.0002 16.414L19.2933 20.707C19.4882 20.902 19.7443 21 20.0002 21C20.2562 21 20.5122 20.902 20.7072 20.707C21.0982 20.316 21.0982 19.684 20.7072 19.293L16.4142 15Z" fill="#FAB294"/>
+            <button data-micromodal-close class="popupCloseBtn btn_close"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle data-micromodal-close cx="15" cy="15" r="15" fill="#FFF1E5"/>
+            <path data-micromodal-close fill-rule="evenodd" clip-rule="evenodd" d="M16.4142 15L20.7072 10.707C21.0982 10.316 21.0982 9.68401 20.7072 9.29301C20.3162 8.90201 19.6842 8.90201 19.2933 9.29301L15.0002 13.586L10.7072 9.29301C10.3162 8.90201 9.68425 8.90201 9.29325 9.29301C8.90225 9.68401 8.90225 10.316 9.29325 10.707L13.5862 15L9.29325 19.293C8.90225 19.684 8.90225 20.316 9.29325 20.707C9.48825 20.902 9.74425 21 10.0002 21C10.2563 21 10.5122 20.902 10.7072 20.707L15.0002 16.414L19.2933 20.707C19.4882 20.902 19.7443 21 20.0002 21C20.2562 21 20.5122 20.902 20.7072 20.707C21.0982 20.316 21.0982 19.684 20.7072 19.293L16.4142 15Z" fill="#FAB294"/>
             </svg>
             </button>
             <div class="popupTitle popupSampleTitle">
@@ -599,12 +599,12 @@
         </div>
     </div>
 </div>    
-    <div class="popup" id="popupTour">
+    <div class="popup" id="popupTour" data-micromodal-close>
     <div class="popupOverlay">
         <div class="popupContent popupTour block">
-            <button class="popupCloseBtn btn_close"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="15" cy="15" r="15" fill="#FFF1E5"/>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.4142 15L20.7072 10.707C21.0982 10.316 21.0982 9.68401 20.7072 9.29301C20.3162 8.90201 19.6842 8.90201 19.2933 9.29301L15.0002 13.586L10.7072 9.29301C10.3162 8.90201 9.68425 8.90201 9.29325 9.29301C8.90225 9.68401 8.90225 10.316 9.29325 10.707L13.5862 15L9.29325 19.293C8.90225 19.684 8.90225 20.316 9.29325 20.707C9.48825 20.902 9.74425 21 10.0002 21C10.2563 21 10.5122 20.902 10.7072 20.707L15.0002 16.414L19.2933 20.707C19.4882 20.902 19.7443 21 20.0002 21C20.2562 21 20.5122 20.902 20.7072 20.707C21.0982 20.316 21.0982 19.684 20.7072 19.293L16.4142 15Z" fill="#FAB294"/>
+            <button data-micromodal-close class="popupCloseBtn btn_close"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle data-micromodal-close cx="15" cy="15" r="15" fill="#FFF1E5"/>
+            <path data-micromodal-close fill-rule="evenodd" clip-rule="evenodd" d="M16.4142 15L20.7072 10.707C21.0982 10.316 21.0982 9.68401 20.7072 9.29301C20.3162 8.90201 19.6842 8.90201 19.2933 9.29301L15.0002 13.586L10.7072 9.29301C10.3162 8.90201 9.68425 8.90201 9.29325 9.29301C8.90225 9.68401 8.90225 10.316 9.29325 10.707L13.5862 15L9.29325 19.293C8.90225 19.684 8.90225 20.316 9.29325 20.707C9.48825 20.902 9.74425 21 10.0002 21C10.2563 21 10.5122 20.902 10.7072 20.707L15.0002 16.414L19.2933 20.707C19.4882 20.902 19.7443 21 20.0002 21C20.2562 21 20.5122 20.902 20.7072 20.707C21.0982 20.316 21.0982 19.684 20.7072 19.293L16.4142 15Z" fill="#FAB294"/>
             </svg>
             </button>
             <div class="popupTitle popupTourTitle">
@@ -619,12 +619,12 @@
         </div>
     </div>
 </div>    
-    <div class="popup" id="popupUnblock">
+    <div class="popup" id="popupUnblock" data-micromodal-close>
     <div class="popupOverlay">
         <div class="popupContent popupUnblock block">
-            <button class="popupCloseBtn btn_close"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="15" cy="15" r="15" fill="#FFF1E5"/>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.4142 15L20.7072 10.707C21.0982 10.316 21.0982 9.68401 20.7072 9.29301C20.3162 8.90201 19.6842 8.90201 19.2933 9.29301L15.0002 13.586L10.7072 9.29301C10.3162 8.90201 9.68425 8.90201 9.29325 9.29301C8.90225 9.68401 8.90225 10.316 9.29325 10.707L13.5862 15L9.29325 19.293C8.90225 19.684 8.90225 20.316 9.29325 20.707C9.48825 20.902 9.74425 21 10.0002 21C10.2563 21 10.5122 20.902 10.7072 20.707L15.0002 16.414L19.2933 20.707C19.4882 20.902 19.7443 21 20.0002 21C20.2562 21 20.5122 20.902 20.7072 20.707C21.0982 20.316 21.0982 19.684 20.7072 19.293L16.4142 15Z" fill="#FAB294"/>
+            <button data-micromodal-close class="popupCloseBtn btn_close"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle  data-micromodal-close cx="15" cy="15" r="15" fill="#FFF1E5"/>
+            <path data-micromodal-close fill-rule="evenodd" clip-rule="evenodd" d="M16.4142 15L20.7072 10.707C21.0982 10.316 21.0982 9.68401 20.7072 9.29301C20.3162 8.90201 19.6842 8.90201 19.2933 9.29301L15.0002 13.586L10.7072 9.29301C10.3162 8.90201 9.68425 8.90201 9.29325 9.29301C8.90225 9.68401 8.90225 10.316 9.29325 10.707L13.5862 15L9.29325 19.293C8.90225 19.684 8.90225 20.316 9.29325 20.707C9.48825 20.902 9.74425 21 10.0002 21C10.2563 21 10.5122 20.902 10.7072 20.707L15.0002 16.414L19.2933 20.707C19.4882 20.902 19.7443 21 20.0002 21C20.2562 21 20.5122 20.902 20.7072 20.707C21.0982 20.316 21.0982 19.684 20.7072 19.293L16.4142 15Z" fill="#FAB294"/>
             </svg>
             </button>
             <div class="popupTitle popupUnblockTitle">

@@ -1398,13 +1398,17 @@ body {
 }
 
 .popup {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.3);
-  z-index: 100;
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 .popup .popupOverlay {
   display: -webkit-box;
@@ -1434,6 +1438,11 @@ body {
   font-size: 18px;
   font-weight: 700;
   line-height: 21.6px;
+}
+
+.popup.is-open {
+  opacity: 1;
+  z-index: 100000;
 }
 
 .push {
@@ -6592,9 +6601,6 @@ body {
 }
 
 /* Попапы */
-#popupBlock {
-  display: none;
-}
 #popupBlock .popupOverlay .popupBlock {
   max-width: 551px;
   width: 100%;
@@ -6797,9 +6803,6 @@ body {
   margin-left: 10px;
 }
 
-#popupNotification {
-  display: none;
-}
 #popupNotification .popupOverlay .popupNotification {
   max-width: 560px;
   width: 100%;
@@ -6824,9 +6827,6 @@ body {
           justify-content: flex-end;
 }
 
-#popupUnblock {
-  display: none;
-}
 #popupUnblock .popupOverlay .popupUnblock {
   max-width: 447px;
   width: 100%;
@@ -6843,9 +6843,6 @@ body {
   line-height: 19.6px;
 }
 
-#popupQSave {
-  display: none;
-}
 #popupQSave .popupQSave {
   width: 503px;
 }
@@ -6858,9 +6855,6 @@ body {
   font-weight: 500;
 }
 
-#popupTour {
-  display: none;
-}
 #popupTour .popupTour {
   width: 503px;
 }
@@ -6872,9 +6866,6 @@ body {
   color: var(--pallete_blue2);
 }
 
-#popupSample {
-  display: none;
-}
 #popupSample .popupSample {
   width: 503px;
   height: 223px;
@@ -6889,9 +6880,6 @@ body {
   margin-bottom: 26px;
 }
 
-#popupGameVictory {
-  display: none;
-}
 #popupGameVictory .popupGameVictory {
   width: 640px;
 }
@@ -6924,6 +6912,53 @@ body {
   display: -ms-flexbox;
   display: flex;
   gap: 15px;
+}
+
+#popupChangeGame .popupOverlay .popupChangeGame {
+  width: 802px;
+  height: 363px;
+}
+#popupChangeGame .popupOverlay .popupChangeGame .popupChangeGameHead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21.6px;
+  margin-bottom: 20px;
+}
+#popupChangeGame .popupOverlay .popupChangeGame .popupChangeGameHead .logo {
+  margin-right: 15px;
+}
+#popupChangeGame .popupOverlay .popupChangeGame .popupChangeGameEx {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19.2px;
+  color: var(--pallete_gray3);
+  margin-bottom: 15px;
+}
+#popupChangeGame .popupOverlay .popupChangeGame .popupChangeGameText {
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19.2px;
+  color: var(--pallete_gray3);
+}
+#popupChangeGame .popupOverlay .popupChangeGame .popupChangeGameBtns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 450px;
+  width: 100%;
+  gap: 10px;
+}
+#popupChangeGame .popupOverlay .popupChangeGame .popupChangeGameBtns .btn-tr-blue {
+  width: 47%;
 }
 
 /* Пуш уведомления */

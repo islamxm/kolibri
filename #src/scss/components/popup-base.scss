@@ -1,11 +1,14 @@
 .popup {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
     background-color: rgba(0,0,0, .3);
-    z-index: 100;
+    z-index: -1;
+    opacity: 0;
+    @include ease-02;
+
     .popupOverlay {
         display: flex;
         align-items: center;
@@ -30,4 +33,9 @@
             }
         }
     }
+}
+
+.popup.is-open {
+    opacity: 1;
+    z-index: 100000;
 }
