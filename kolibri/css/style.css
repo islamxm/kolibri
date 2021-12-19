@@ -341,8 +341,8 @@
   --base_orange: #F57243;
   --base_blue: #1B3764;
   --base_red: #E54D4D;
-  --text_dark: #1E2022;
-  --text_dark2: #52616B;
+  --text_dark: #1D1F58;
+  --text_dark2: #6E6E94;
   --pallete_red1: #FFF1E5;
   --pallete_red2: #FAB294;
   --pallete_red3: #F57243;
@@ -689,8 +689,8 @@ body {
   --base_orange: #F57243;
   --base_blue: #1B3764;
   --base_red: #E54D4D;
-  --text_dark: #1E2022;
-  --text_dark2: #52616B;
+  --text_dark: #1D1F58;
+  --text_dark2: #6E6E94;
   --pallete_red1: #FFF1E5;
   --pallete_red2: #FAB294;
   --pallete_red3: #F57243;
@@ -6600,6 +6600,150 @@ body {
           justify-content: center;
 }
 
+.chat {
+  width: 100%;
+  padding: 30px 0;
+}
+.chat .chatContent {
+  max-width: 860px;
+  width: 100%;
+  margin: 0 auto;
+  height: calc(100vh - 175px);
+  padding-top: 30px;
+  padding-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.chat .chatContent .chatList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+.chat .chatContent .chatList .chatItem {
+  width: 764px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+.chat .chatContent .chatList .chatItem:last-child {
+  margin: 0;
+}
+.chat .chatContent .chatList .chatItem .img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: #ccc;
+  margin-right: 15px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+.chat .chatContent .chatList .chatItem .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.chat .chatContent .chatList .chatItem .body .bodyHead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+.chat .chatContent .chatList .chatItem .body .bodyHead .name {
+  margin-right: 15px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18.7px;
+}
+.chat .chatContent .chatList .chatItem .body .bodyHead .time {
+  color: var(--pallete_gray3);
+  font-size: 12px;
+  line-height: 14px;
+}
+.chat .chatContent .chatList .chatItem .body .bodyText {
+  max-width: 611px;
+  width: 100%;
+  font-weight: 500;
+  color: var(--text_dark2);
+}
+.chat .chatContent .chatList .dateLine {
+  position: relative;
+  width: 100%;
+  border-bottom: 2px solid var(--devaider);
+  margin-bottom: 30px;
+}
+.chat .chatContent .chatList .dateLine .date {
+  width: 70px;
+  background-color: #fff;
+  position: absolute;
+  top: -4px;
+  left: calc(50% - 35px);
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: var(--pallete_gray3);
+}
+.chat .chatContent .chatAction {
+  height: 54px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  padding: 0 55px 0 51px;
+}
+.chat .chatContent .chatAction .chatActionField {
+  height: 100%;
+  background-color: var(--secdr_2);
+  border-radius: 10px;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.chat .chatContent .chatAction .chatActionField input {
+  padding: 0 15px;
+  width: 100%;
+}
+.chat .chatContent .chatAction .chatActionField button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.chat .chatContent .chatAction .chatActionField button svg path {
+  fill: var(--text_dark2);
+}
 /* Попапы */
 #popupBlock .popupOverlay .popupBlock {
   max-width: 551px;
